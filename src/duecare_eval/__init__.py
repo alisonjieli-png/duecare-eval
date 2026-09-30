@@ -1,2 +1,2 @@
-"""DueCare evaluation extension. Importing this package performs no I/O."""
+"""DueCare's offline evaluation package; I/O occurs in explicit operations."""
 __version__ = "0.1.0"

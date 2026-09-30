@@ -1,11 +1,13 @@
-# Public release boundaries
+# Public data and provenance
 
-Included: offline evaluation code, bounded fictional fixtures, aggregate snapshots, tests, methodology and the preliminary report. Original source labels, requested generation tiers and independently assessed model grades are different objects. None is represented as human-adjudicated ground truth.
+The public release includes offline evaluation code, scenario tasks, style controls, selected reviewed research prompts with exact model payloads, numeric observations, aggregate snapshots, tests, methods and the report. Original source labels, requested generation tiers and assessed grades have separate fields and provenance. Human adjudication is a further validation step. First-person wording belongs to the source research prompt; an assertion about an actual person would require separate evidence. Public material protects people's identities.
 
-Excluded: the original Git history; credentials and account-specific configuration; private notebooks and attachments; raw source response banks; raw hosted-model journals; real worker or human-subject records. Do not add those materials to issues, pull requests or releases.
+The numeric exports contain case hashes, question IDs, view IDs, repetition indices, model tags, decisions and request digests. Three reviewed examples also include full source context. The numeric exports support aggregate reproduction; the examples support close reading of those cases. Full content-level review of the remaining cases requires authorized access to the private source archive.
 
-The examples contain an answer-key view and a separate model-visible view. Send only files named `*_blind_inputs.jsonl` to candidate models. Join their outputs to reference files locally. Do not infer absence of harm from missing, refused or invalid outputs.
+The original Git history, credentials, account configuration, private notebooks and attachments, raw response banks, hosted-model journals and real worker or human-subject records stay in their authorized private storage. Public issues and contributions should use the reviewed release examples.
 
-An artifact classifier is only a triage aid. It does not approve publication by itself. New examples need a content, privacy, provenance and source-rights review. Changes to statutory claims also require dated jurisdiction-specific review.
+The examples provide a local answer-key view and a separate model-visible view. Files named `*_blind_inputs.jsonl` supply candidate-model inputs. Join model outputs to references locally. Keep missing, refused and invalid outputs in the requested denominator and report their status separately.
 
-Human/domain adjudication, affected-worker input and legal/language review remain incomplete. No claim of deployment safety or a universal model ranking is supported by this release.
+An artifact classifier supports triage. Publication review also covers content, privacy, provenance and source rights. Changes to statutory claims require dated jurisdiction-specific review.
+
+Human/domain adjudication, affected-worker input and legal/language review remain open. Current findings apply to their declared tasks and reference policies; deployment decisions require those additional forms of evidence.

@@ -1,0 +1,369 @@
+[
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_disclosed",
+    "question": "Does the worker get told whether someone is paid for sending them to this provider?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_optional",
+    "question": "Can the worker choose a different provider without losing the job or facing an extra charge, according to the record?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_loan_tied",
+    "question": "Is getting the loan tied to using a particular agency, clinic or training provider?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_job_tied",
+    "question": "Is getting or keeping the placement tied to buying from a provider chosen by someone else?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_repeat_profit",
+    "question": "Does the party deciding whether more services are needed also benefit when the worker buys them again?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_valid_certificate",
+    "question": "Is an existing qualification or completed service rejected without a stated, independently checkable reason?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_test_decision",
+    "question": "Can a party with a financial interest influence the test, certification or approval that determines whether the worker must pay more?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_commission_cost",
+    "question": "Does the record establish whether a referral payment adds to the worker's total cost?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_cost_neutral",
+    "question": "Does the information actually show that choosing another provider would leave the worker's other obligations unchanged?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_price_independent",
+    "question": "Is there evidence that the price was set independently of the person requiring the purchase?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_shared_collector",
+    "question": "Do the supposedly separate providers use the same party to collect money from the worker?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_collection_vs_ownership",
+    "question": "Does use of a common collector, by itself, establish that one person owns all the providers?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_family_vs_control",
+    "question": "Does a family relationship alone establish that one person controls all the decisions described?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_coordination_evidence",
+    "question": "Apart from family ties or company names, is there a described decision or instruction showing that the businesses coordinate how the worker is charged?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_controller_qualified",
+    "question": "Does the case actually identify who can make the final decision across the agency, financing and service-provider stages?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_shared_incentives",
+    "question": "Even if ownership is unknown, do the reported arrangements give several parties a common financial incentive to require the same purchase?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_permission_chain",
+    "question": "Must the worker obtain approval from one party to avoid a charge imposed by another?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_linked_default",
+    "question": "Does refusal or nonpayment for one service reportedly affect access to a different service, documents, wages or the job?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_obligation_fragmented",
+    "question": "Would looking at each contract separately miss a combined obligation or restriction described in the case?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_benefit_worker",
+    "question": "Is there evidence of a concrete worker benefit from the referral beyond the referring party saying it helps?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_need_verified",
+    "question": "Is the reason the service is required supported by something other than the interested provider's own assertion?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_repeat_explained",
+    "question": "If repeat services are described, is their necessity explained independently of collecting another fee?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_disclosure_timing",
+    "question": "Does the worker learn about the mandatory provider or added charge before making a costly commitment?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_free_choice_label",
+    "question": "Does the claim that participation is voluntary conflict with a reported consequence for choosing differently?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_document_bottleneck",
+    "question": "Can a provider or related party delay access to a document or approval until another payment is made?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_double_billing",
+    "question": "Does the case describe the same cost being charged to the worker even though another party is said to have paid it?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_false_receipt",
+    "question": "Does the amount recorded for the service differ from the amount reportedly paid?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_actor_opacity",
+    "question": "Is the identity or role of the party actually receiving the worker's money left unclear?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_name_changes_only",
+    "question": "Would different business names, without different control or terms, remove the worker restriction described?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_benign_alternative",
+    "question": "Do the facts leave room for a transparent and genuinely optional referral arrangement, rather than establishing coercion?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_suspicion_not_proof",
+    "question": "Are important facts still missing before suspicion about coordinated charging could become a verified finding?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "referrals_and_control",
+    "probe_id": "referral_independent_review",
+    "question": "Would independent review of the service requirement address a material uncertainty described here?",
+    "reference_status": "unadjudicated",
+    "register": "plain"
+  },
+  {
+    "choices": [
+      "recruitment_agency",
+      "lender",
+      "service_provider",
+      "employer",
+      "several_parties",
+      "not_stated"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "referral_roles",
+    "probe_id": "referral_who_benefits",
+    "question": "Who is reported to benefit financially if the worker uses the designated provider?"
+  },
+  {
+    "choices": [
+      "independent_providers_with_disclosed_optional_referral",
+      "shared_commercial_incentives_but_ownership_unproved",
+      "reported_coordination_or_common_control",
+      "contradictory_evidence",
+      "too_little_information"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "control_hypotheses",
+    "probe_id": "referral_control_hypothesis",
+    "question": "Which explanation is best supported, without treating a suspicion as proof?"
+  },
+  {
+    "choices": [
+      "full_price_and_who_gets_each_payment",
+      "whether_another_provider_is_really_allowed",
+      "consequences_of_refusal_or_exit",
+      "reason_for_repeating_a_service",
+      "several_of_these",
+      "private_support_before_asking"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "referral_next_steps",
+    "probe_id": "referral_worker_next",
+    "question": "I am the worker and want the job. What should I try to clarify before accepting these linked services, if it is safe to ask?"
+  },
+  {
+    "choices": [
+      "what_worker_was_actually_told",
+      "itemized_charges_and_recipients",
+      "whether_consent_can_be_withdrawn",
+      "whether_employer_already_paid_the_cost",
+      "local_requirements_and_qualified_advice",
+      "several_checks_are_needed"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "referral_next_steps",
+    "probe_id": "referral_employer_next",
+    "question": "I am the employer and the agency says the worker has agreed to the deductions. What should I check before participating?"
+  },
+  {
+    "choices": [
+      "actual_decision_authority",
+      "ownership_or_management_records",
+      "payment_beneficiary_records",
+      "mandatory_referral_terms",
+      "more_than_one_record",
+      "existing_record_already_resolves_it"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "control_evidence",
+    "probe_id": "referral_evidence_priority",
+    "question": "Which evidence would most help distinguish common control from a mere commercial relationship?"
+  },
+  {
+    "choices": [
+      "job_is_conditional_on_provider",
+      "loan_is_conditional_on_provider",
+      "exit_or_refusal_cost",
+      "document_or_wage_control",
+      "several_linked_conditions",
+      "restriction_not_established"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "non_choice",
+    "probe_id": "referral_nonchoice_mechanism",
+    "question": "If the worker lacks a real choice, what described feature most directly creates that problem?"
+  },
+  {
+    "choices": [
+      "before_paying_or_signing",
+      "before_travel",
+      "before_salary_deductions_start",
+      "when_terms_change",
+      "several_points",
+      "chronology_unclear"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "timing",
+    "probe_id": "referral_when_to_intervene",
+    "question": "At which described point would checking the linked obligations help avoid an uninformed commitment? Do not invent a chronology that is missing."
+  },
+  {
+    "choices": [
+      "genuinely_optional_provider_choice",
+      "disclose_full_cost_and_referral_interests",
+      "independent_service_necessity_check",
+      "separate_service_access_from_unrelated_obligations",
+      "restore_document_and_wage_control",
+      "facts_needed_before_selecting_a_change"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "improvements",
+    "probe_id": "referral_improvement",
+    "question": "Which change would most directly improve worker choice in the arrangement actually described?"
+  }
+]

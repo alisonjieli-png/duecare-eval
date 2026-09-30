@@ -1,5 +1,5 @@
 # Rights and release scope
 
-This is a public research preview prepared for Taylor S. Amarel. No new open-source or dataset redistribution licence is granted by this release; licence selection remains with the rights holder. Third-party works cited in the report retain their own rights and terms. Their source notebooks, private attachments and raw response banks are not distributed here.
+This public research preview was prepared for Taylor S. Amarel. Licence selection remains with the rights holder; reuse and redistribution require the applicable permission. Third-party works cited in the report retain their own rights and terms. Their source notebooks, private attachments and raw response banks remain with their authorized custodians.
 
-Public visibility is not worker-safety certification, legal advice, or an independently validated benchmark. The included cases are fictional, constructed evaluation fixtures. See the report and `DATA_GOVERNANCE.md` for the limits of the measurements.
+The release contains selected original research prompts, numeric model observations and separately identified constructed policy tasks. It supports educational study and reproduction of the reported measurements. Source prompts retain their research provenance, including first-person language. Worker-safety assessment, legal application and independent benchmark validation require their own evidence and review. See the report and `DATA_GOVERNANCE.md` for the scope of each measurement.

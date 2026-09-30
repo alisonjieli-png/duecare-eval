@@ -1,9 +1,9 @@
 """Study-design contracts for the full DueCare evaluation programme.
 
-The graded library serves more than one purpose, and confusing those purposes
-invalidates a result.  In particular, a model answering an ordinary worker
-question is expected to produce the best safe answer; it is not expected to
-guess the arbitrary tier attached to a calibration exemplar.
+The graded library supports target evaluation, judge calibration and generator
+calibration. Target evaluation measures the best safe answer to a question.
+Generator calibration measures adherence to a requested tier; judge calibration
+measures assessment of responses against the declared references.
 
 This module also makes the lessons from Taylor S. Amarel's two Kaggle
 publications executable:
@@ -152,7 +152,7 @@ def coverage(items: list[dict]) -> dict:
 
 
 def four_arm_audit(arms: list[dict]) -> dict:
-    """Check a declared model-weight x harness ablation without running it."""
+    """Validate the declaration of a model-weight x harness ablation."""
     observed = {
         (a.get("training_state"), a.get("harness"))
         for a in arms

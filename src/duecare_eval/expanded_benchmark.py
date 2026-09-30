@@ -1,7 +1,7 @@
 """Supplementary judge stress tests and conservative, inspectable score fusion.
 
-Source ratings and retrieval similarity are never ground truth. Controlled
-counterexamples below have an explicit fictional policy, not a legal oracle.
+Source ratings and retrieval similarity retain their roles as input labels and
+diagnostics. Controlled counterexamples use an explicit stipulated policy.
 """
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ def fuse(judgments, *, verified_failures=(), similarity=None, review_flags=()):
     """Only externally verified failures veto; model allegations cause review.
 
     One vote per model family avoids overweighting correlated/repeated calls.
-    A lower median is a descriptive consensus, never calibrated confidence.
+    The lower median summarizes the panel; confidence calibration is separate.
     """
     grouped = defaultdict(list)
     for j in judgments:
@@ -58,7 +58,7 @@ def fuse(judgments, *, verified_failures=(), similarity=None, review_flags=()):
 
 
 def selective_metrics(records, thresholds=(0.0, 0.5, 0.7, 0.9, 1.0)):
-    """Coverage denominators include missing/invalid requests, not only answers."""
+    """Keep every request in the coverage denominator, including missing outputs."""
     valid = [r for r in records if type(r.get("probability")) in (float, int)
              and math.isfinite(r["probability"]) and 0 <= r["probability"] <= 1
              and type(r.get("expected")) is int and r["expected"] in (0, 1)]
@@ -74,7 +74,7 @@ def selective_metrics(records, thresholds=(0.0, 0.5, 0.7, 0.9, 1.0)):
 
 
 def cluster_interval(records, *, samples=1000, seed=20260930):
-    """Bootstrap source families, not thousands of dependent paraphrases."""
+    """Bootstrap whole source families with their dependent variants together."""
     groups = defaultdict(list)
     for r in records:
         groups[r["group_id"]].append(float(r["correct"]))
@@ -92,7 +92,7 @@ def comparisons(cases):
     """8 controls x 72 cases x two positions = 1,152 judge requests.
 
     Ties are deliberate. Candidate facts are kept identical for format/length
-    controls; assertions about laws are not used as real legal reference facts.
+    controls; the expected decisions follow the stipulated screening policy.
     """
     result = []
     for case in cases:

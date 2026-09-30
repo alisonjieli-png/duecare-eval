@@ -1,7 +1,6 @@
 """Metrics for probabilistic, selective, subgroup and paired decision evaluation.
 
-No single number is allowed to stand in for all of these properties. Accuracy
-measures discrimination, proper scoring rules measure probability quality,
+Accuracy measures correctness at a decision rule, proper scoring rules measure probability quality,
 risk/coverage measures abstention behaviour, subgroup tables expose tails, and
 paired relations test whether a system reacts to the fact that actually changed.
 """
@@ -40,7 +39,7 @@ def fixed_ece_binary(rows: list[dict], bins: int = 10):
 
 
 def adaptive_ece_binary(rows: list[dict], bins: int = 10):
-    """Equal-mass ECE, reported beside rather than instead of fixed-bin ECE."""
+    """Equal-mass ECE, reported alongside fixed-bin ECE."""
     if not rows:
         return None
     ordered = sorted(rows, key=lambda row: (row["probability"], row["task_id"]))
@@ -246,7 +245,7 @@ def selective_risk(rows: list[dict]) -> dict:
 
 
 def prediction_set_metrics(rows: list[dict], target_coverage: float = 0.9) -> dict:
-    """Top-probability prediction sets; diagnostic, not a conformal guarantee."""
+    """Top-probability prediction sets with descriptive coverage diagnostics."""
     eligible = []
     for row in rows:
         kind = row["decision_type"]

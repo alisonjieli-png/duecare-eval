@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DueCare version targets",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "targets"],
+  "properties": {
+    "schema": {"const": "duecare-version-targets/1.0.0"},
+    "targets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["target_id", "provider", "family", "requested_name", "model_id", "exact_version", "status", "documentation_url"],
+        "properties": {
+          "target_id": {"type": "string", "minLength": 1},
+          "provider": {"type": "string", "minLength": 1},
+          "family": {"type": "string", "minLength": 1},
+          "requested_name": {"type": "string", "minLength": 1},
+          "model_id": {"type": ["string", "null"]},
+          "exact_version": {"type": ["string", "null"]},
+          "status": {"enum": ["recorded_baseline", "pinned", "exact_version_required"]},
+          "documentation_url": {"type": "string", "minLength": 1}
+        },
+        "allOf": [{
+          "if": {"properties": {"status": {"const": "exact_version_required"}}},
+          "then": {"properties": {"model_id": {"type": "null"}, "exact_version": {"type": "null"}}},
+          "else": {"properties": {"model_id": {"type": "string", "minLength": 1}, "exact_version": {"type": "string", "minLength": 1}}}
+        }]
+      }
+    }
+  }
+}

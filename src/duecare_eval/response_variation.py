@@ -48,7 +48,7 @@ def profiles(case_id, bands):
 
 
 def equivalent_text(route, register):
-    # Controlled same-policy assertions: style variation is not a quality label.
+    # Style varies under a fixed policy; quality labels need separate assessment.
     return {
         "very_simple": f"The screening result is {route}. This does not prove a crime. Check the facts and respect the worker's choice.",
         "plain": f"The screening result is {route}, not a finding of criminal liability. Review the facts and preserve worker choice.",

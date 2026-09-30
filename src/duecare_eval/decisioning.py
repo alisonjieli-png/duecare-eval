@@ -1,7 +1,7 @@
 """Reusable typed-decision benchmark tasks and scoring.
 
-Decision engines are evaluated on decisions they can make, never penalized for
-not generating prose. The same decision record can additionally be presented to
+Decision engines are evaluated through their declared decision interface.
+The same decision record can additionally be presented to
 an LLM judge as structured candidate output with the supporting evidence.
 """
 from __future__ import annotations
@@ -96,7 +96,7 @@ def validate_decision_tasks(tasks: list[dict]) -> dict:
 
 
 def decision_input(task: dict) -> dict:
-    """Return the model-visible task without its answer or label provenance."""
+    """Return the task text and response contract for the model-visible view."""
     view = {
         "schema": BLIND_DECISION_SCHEMA,
         "task_id": task["task_id"],

@@ -1,5 +1,24 @@
 {
   "created_at": "2026-09-30T15:02:29.666759+00:00",
+  "current_evidence": "results/comparison_2026-09-30/snapshot.json",
+  "evidence_snapshots": {
+    "results/comparison_2026-09-30/snapshot.json": {
+      "sha256": "c9e4d9c2e5cb962c4b1a69be6b3f93b850ac9c91e5fbef615dc3105774d02dc4",
+      "snapshot_at": "2026-09-30T20:05:37.337272+00:00"
+    },
+    "results/indicator_followup_manifest.json": {
+      "sha256": "0fae3d071efb56c4c9b45f4a5e8208fca457dcfbc7e508bce416ae0be3c63a68",
+      "snapshot_at": "2026-09-30T20:29:56.297007+00:00"
+    },
+    "results/jev_recovery_2026-09-30.json": {
+      "sha256": "88782459907eef8fd9d12168ccac1a4004e5b79890a4e2333ac37fb4976cdf23",
+      "snapshot_at": "2026-09-30T20:30:13.999049+00:00"
+    },
+    "results/release_snapshot.json": {
+      "sha256": "7c69013b40371feb068bb41a2c52590fa8165eb1ad6a4b9d0dba88f632a8203c",
+      "snapshot_at": "2026-09-30T17:21:59.689170+00:00"
+    }
+  },
   "excluded": [
     "original_git_history",
     "credentials_and_operator_configuration",
@@ -10,7 +29,54 @@
     "personal_or_worker_case_data"
   ],
   "intentional_source_difference": "decisioning.decision_tasks historical factory disabled; normalization and scoring unchanged.",
+  "interpretation": "Dated task populations and reference contracts; independent domain, worker and language review are additional evidence milestones.",
   "no_new_license_granted": true,
+  "public_extensions": [
+    "six_model_numeric_comparisons",
+    "source_question_and_referral_observations",
+    "corrected_style_controls",
+    "composite_indicator_followup",
+    "terminal_recovery_overlay",
+    "analyst_authored_grading_examples",
+    "blind_version_benchmark_workflow",
+    "reviewed_original_source_examples"
+  ],
+  "public_implementation_sha256": {
+    "src/duecare_eval/__init__.py": "de8a7722c45c838f038204f3a5cb4862edd40e25fc6f6e2c0b74aaa1c0167c25",
+    "src/duecare_eval/artifact_safety.py": "57b7ac041e3dafae6b69af616ed2faa314f75b1e340008de4defe7d3e29a427e",
+    "src/duecare_eval/benchmark.py": "c1896dfe659b85afb9c91b9113ff6f6f4e1b8973d8bc0d685a152c6c8b4a23ff",
+    "src/duecare_eval/comparison_analysis.py": "149f75977a4b7ef60697b73941455ec673c1dd001a72c38e7a3a1c180fb9d9e2",
+    "src/duecare_eval/console.py": "fc83527a144fbd30dab039b03738a7fa232550574b3c5f2d077bedb75710bee6",
+    "src/duecare_eval/contracts.py": "98293f67699b2f790bc0499f0d415c2c947a07cf390fd22949ab43e3e60abce4",
+    "src/duecare_eval/decision_metrics.py": "fa9f8bc401b1a38fdfd7f6938b22b77f8ffe7597afb316ff3cc4191f715a4c55",
+    "src/duecare_eval/decisioning.py": "edae0a0307ce2f45d00f132c501e50e0dc5ac1f3a1835b724714a20dd5b833ab",
+    "src/duecare_eval/expanded_benchmark.py": "c52fd6978e530d8b642727d0fbfce6892dde79408d31b8f8546030fd20af902e",
+    "src/duecare_eval/indicator_followup.py": "65d7f2b869ce602bc640e02b27b34b43ae78e45164df714d73819a9e97ccb52c",
+    "src/duecare_eval/ledger.py": "9723067b1fb5f6c75290a91eb3339e59488131183c00026b8e41f1b779872af6",
+    "src/duecare_eval/panel.py": "bae98cde2ac2aa7c796748ac7d15fb98b3e5e3396ec4dc6d8f1347f21e9abcb7",
+    "src/duecare_eval/public_cli.py": "8a1a13ed4e10c2839d26b414ccb7a730f257c9441f8c256ba9ba5a77f048be6b",
+    "src/duecare_eval/recovery_analysis.py": "042edd0c72cc02df2f8dc4f8da0bed21982609dfe355c9f7cc3b8ae159dd7a3f",
+    "src/duecare_eval/response_extract.py": "55ab7879aa8a2a53fb0b543ec044096ebb4f967a85f4f522a086b0f266605647",
+    "src/duecare_eval/response_taxonomy.py": "fa4b5eac0d91d20b310234d6cb4099c4d1b40338cf9f66b09bb51c6adb34bf6b",
+    "src/duecare_eval/response_variation.py": "c3fd6fc4485630bfbabcbfd06a407da272cd1721682bde40f9d33f0a62687b5a",
+    "src/duecare_eval/rubric_examples.py": "a9c280013adb1a8e5b0f245486fc842208965ffbca567cdb7a055c4b376516fd",
+    "src/duecare_eval/source_analysis.py": "41a14dff451f5dca12c933a91af23a9500e5212aca6e35e8c23e7291859548aa",
+    "src/duecare_eval/stats.py": "fcff2c4cae8fe7e1970d01f1ba452a26fee2ca0fbf27cb2359185cb1109b3960",
+    "src/duecare_eval/study_design.py": "1fec3c509f764e2b086a8224da4365052ae042961f9dc34873bffccdea22511a",
+    "src/duecare_eval/vault.py": "7b236d4e068f9449433d85854be6d877f076b1394d901d79cd35bd112f03ab7b",
+    "src/duecare_eval/version_benchmarks.py": "0c025c05491270686385befb76cb0a3b10df68d56250ec3e83459ad1be3d662a",
+    "tools/build_report.py": "f2ddb527ec3c050fb06baaf8caa5665530dc5650e627e42c16f291d0b48825bb",
+    "tools/check_grading_rubrics.py": "eccd9b1a333666466437f39c10fa32aec82c33e3d1f6f5948574b1407b2d56e3",
+    "tools/prepare_indicator_followup.py": "3b1f8bcd85faa4d668712ec731b399a8bec609104762ef0441340bac110c208a",
+    "tools/report_layout.py": "bc3d652895d8b55117e459b7621f843f737b7d7690d268e47ec04d2868739aca",
+    "tools/reproduce_comparisons.py": "176c6ead27f3812f458f372c6b43c7841d6be68973be1a892ca10666d5ec4cb9",
+    "tools/reproduce_findings.py": "0ae025a18f12aa0e89512f6f0ac347105bff901cc3f463fe4903be8d96f91b39",
+    "tools/reproduce_indicator_followup.py": "b45ad0bc1f94aadddf55e10b7b9b8731bd7a645944bf698dfa359583bc45a23e",
+    "tools/reproduce_jev_recovery.py": "f08a4c1a96659307d3c43bc3d6d86a235ee1aa0a236743cb9825bc35baf40f53",
+    "tools/version_benchmarks.py": "8727d51d461b213452f3ed11d8880c4910e038f9679e8bdc18d2929130e5e821"
+  },
+  "publication_title": "DueCare: evidence, decisions and model behavior",
+  "release": "v0.1.0-rc.3",
   "schema": "duecare-public-export/1.0.0",
   "source_campaign_hashes": {
     "bulk-ladders-v1": "0d6da61e7558264cd44ac214a1b3a8f79617aefa3052b0c70f6750d660fe3106",
@@ -33,5 +99,6 @@
     "src/duecare_eval/study_design.py": "2b3cbfddf914f531569a49b7043b09e29c53bedcf538d509f66798ec0ef18dc4",
     "tools/expanded_benchmark.py": "fbf494d0deda2718e85ceaf0ce3760d56001444d4fb1813deef85e51c321cb5e",
     "tools/response_variation.py": "3c98fdd2402dfe711a10a6449b8cfffc0962dd332aca34ef36caa8d20f76382b"
-  }
+  },
+  "updated_at": "2026-09-30T20:49:57.828051+00:00"
 }

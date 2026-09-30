@@ -1,0 +1,74 @@
+{
+  "interpretation": "Fixed receipt prefixes from running studies. Planned totals retain failed and unfinished requests.",
+  "schema": "duecare-public-snapshot/1.0.0",
+  "capture_started_at": "2026-09-30T17:15:30.993449+00:00",
+  "snapshot_at": "2026-09-30T17:21:59.689170+00:00",
+  "source_studies": {
+    "referral_control": {
+      "campaign_sha256": "394ab3bf866d7222c7d0c3acdcf44d1e5104c921f53bd2889b8e17559a169731",
+      "captured_at": "2026-09-30T17:18:58.450170+00:00",
+      "catalog": "examples/referral_question_catalog.json",
+      "completed": 11271,
+      "completed_only_export": true,
+      "input_sha256": {
+        "candidate_actions.json": "6d2396188a0f8031f6c89af036e2d71d1a0d5f9d2e54c12ba297b9a1f56711c0",
+        "frameworks.json": "9fa1526e33c860a6090cb056d7822a29a0ed43392588b9e85f48a4aa6ffd3efc",
+        "questions.jsonl": "e2f2881d3ca0482cc02e173b571bba3b6bde04e8cc609e053f250a791bbe1399",
+        "requests.jsonl": "594559ba2c3f75ada0e0429921608f03f0832bd9cc89cb05c8a358a285a56739",
+        "source_index.jsonl": "83b4348d4ffb7e5b2204e0044886b6c807cb2cf944c0bdd1b86d4e3b783618ca",
+        "views.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+      },
+      "journal_prefix_bytes": 8607984,
+      "journal_prefix_sha256": "36bace0bb175361d2511209f6c56f3e8cd36757ecea47326ee750e63b59d577e",
+      "journal_records": 11279,
+      "observations": "results/referral_control_observations.jsonl",
+      "protocol": "duecare-referral-control/1.0.0",
+      "requested": 16800,
+      "source_text_export": "Three separately reviewed source examples; other source texts are not distributed.",
+      "source_texts": 210
+    },
+    "source_questions": {
+      "campaign_sha256": "2f07c9bf5a8d24de97d2549037536fbe848b6739cde6699a7231e6fe8db4710f",
+      "captured_at": "2026-09-30T17:15:31.387720+00:00",
+      "catalog": "examples/source_question_catalog.json",
+      "completed": 16637,
+      "completed_only_export": true,
+      "input_sha256": {
+        "candidate_actions.json": "6d2396188a0f8031f6c89af036e2d71d1a0d5f9d2e54c12ba297b9a1f56711c0",
+        "frameworks.json": "9fa1526e33c860a6090cb056d7822a29a0ed43392588b9e85f48a4aa6ffd3efc",
+        "questions.jsonl": "a1fe37a3df2e5956fc50a416855bab1480fc680de88a23e155c2ff71f59b5f4e",
+        "requests.jsonl": "0091f534aba7ed7886d9f239bf79efd9e61115cf69caad3b4e458bb8b079a70c",
+        "source_index.jsonl": "30a28aa38f7099946e556a3be62b2d9884552a8e7eba5395fe76547986fdcafe",
+        "views.json": "df30b5fc65dcff644421a09cc1678573878de6e220f271d395531281f18eda0d"
+      },
+      "journal_prefix_bytes": 12599426,
+      "journal_prefix_sha256": "9e81e70e55c4680d0e37283591757bb7992e6cef8a562a544d6d57a9791e136d",
+      "journal_records": 16644,
+      "observations": "results/source_questions_observations.jsonl",
+      "protocol": "duecare-source-questioning/1.0.0",
+      "requested": 56358,
+      "source_text_export": "Three separately reviewed source examples; other source texts are not distributed.",
+      "source_texts": 251
+    }
+  },
+  "style_judges": {
+    "deepseek-v4.1-flash": {
+      "campaign_sha256": "ce943cf58ae75b61ece215e131ce0a44bee8e4ab9465ab53ef28fecc1c8481d5",
+      "captured_at": "2026-09-30T17:21:38.378672+00:00",
+      "journal_prefix_bytes": 1294057,
+      "journal_prefix_sha256": "e90af51da53dbb05e4b2b2d2ccb4cc159009c64208b698dd60d56142d6aa35b0",
+      "journal_records": 1728,
+      "observations": "results/style_deepseek_observations.jsonl",
+      "reference_sha256": "9cf0c56cbedad48ef9caa0951c68b4e6b7a79218cddc3f5c6ddfff9531cdd9fc"
+    },
+    "kimi-k3": {
+      "campaign_sha256": "ce943cf58ae75b61ece215e131ce0a44bee8e4ab9465ab53ef28fecc1c8481d5",
+      "captured_at": "2026-09-30T17:21:59.689170+00:00",
+      "journal_prefix_bytes": 1302261,
+      "journal_prefix_sha256": "25ada422adb78bbc9621fea8a56d6967d7d6eba9c280a0353299adb0892015ca",
+      "journal_records": 1728,
+      "observations": "results/style_kimi_observations.jsonl",
+      "reference_sha256": "9cf0c56cbedad48ef9caa0951c68b4e6b7a79218cddc3f5c6ddfff9531cdd9fc"
+    }
+  }
+}

@@ -1,34 +1,12 @@
-"""Multi-judge benchmarking panel: the apparatus, not the oracle.
+"""Agreement, consensus and reference-based scoring for judge panels.
 
-What a benchmark needs that a scorer does not
----------------------------------------------
-A scorer answers "what did this model output on item X". A benchmark answers
-"is system A better than system B, and how confident may a reader be in that".
-The second question needs machinery that does not exist anywhere in this
-project yet:
+Judges evaluate the same items under the same protocol. Agreement statistics
+describe their consistency; reference-based metrics assess their decisions
+against a stated label basis. Consensus provides a descriptive estimate for
+review and carries its assumptions with it.
 
-* **A panel.** Every judge must see the SAME items under the SAME protocol. As of
-  this writing every run in `runs/` has exactly ONE judge, so no agreement
-  statistic has ever been computable and no judge has ever been checked against
-  another. A single judge is an anecdote with a confidence interval.
-* **Agreement without ground truth.** Krippendorff's alpha and Fleiss' kappa
-  quantify how reliably raters agree using only their mutual agreement, so judge
-  quality can be assessed BEFORE any label exists. This is the only judge-quality
-  metric available with no adjudicators, which is why it is primary here.
-* **Latent truth by consensus.** With several noisy judges, Dawid-Skene style
-  error-correcting consensus estimates a label better than any single judge,
-  weighting each judge by observed competence. This is what replaces a perfect
-  oracle: not a better oracle, but many mediocre ones plus a principled
-  aggregation.
-* **Honest denominators.** Every metric carries its n, its coverage, and the
-  label basis. A comparison that silently drops 60% of items is not a comparison.
-
-What this is not
-----------------
-This does not claim any system is trustworthy. It measures the judges so the
-measurements can be weighed. Disagreement is reported, not averaged away: a
-panel that splits on an item is flagging that item for review, and hiding that
-behind a mean is how benchmarks end up confidently wrong.
+Reports retain coverage, missing ratings, disagreements and label provenance.
+Independent adjudication supplies a separate check on validity.
 """
 
 from __future__ import annotations
@@ -40,9 +18,7 @@ from collections import Counter, defaultdict
 from .contracts import canonical, sha
 
 PANEL_PROTOCOL = "judge-panel/2.0.0"
-# Label bases, ordered by decreasing strength. A comparison is only meaningful
-# within a basis; mixing them silently is the single easiest way to publish a
-# wrong table.
+# Label bases retain their provenance; compare scores within the same basis.
 BASIS_TIER = "requested_generation_tier"  # circular: the generator's intent
 BASIS_ORACLE = "evidence_derived_proposition"  # deterministic, auditable
 BASIS_CONSENSUS = "judge_consensus"  # Dawid-Skene over the panel
@@ -52,9 +28,7 @@ BASIS_CONSENSUS = "judge_consensus"  # Dawid-Skene over the panel
 
 
 def _matrix(items: list, judges: list, cell) -> dict:
-    """item x judge table of usable ratings. A cell is None when the judge
-    abstained, errored or ran out of budget, and those are counted as missing
-    rather than as disagreement."""
+    """Build an item x judge table, using None for missing usable ratings."""
     out = {}
     for item in items:
         row = {}
@@ -94,13 +68,7 @@ def ordinal_matrix(records: list) -> dict:
 
 
 def _ordinal_distance(rng: list) -> dict:
-    """Squared distance on RANKS, not on grade values.
-
-    Grade 1 vs 5 must be the largest gap, and 1 vs 2 a small one, but the gap
-    4->5 must not be 5x the gap 1->2 merely because the numbers differ. Ranks
-    give the ordering without inventing a magnitude, which is what a 1-5 rubric
-    actually licenses.
-    """
+    """Squared distance between normalized positions in the ordered scale."""
     index = {v: i for i, v in enumerate(rng)}
     n = len(rng)
     return {
@@ -113,14 +81,9 @@ def _ordinal_distance(rng: list) -> dict:
 def krippendorff_alpha(table: dict, value_range=None) -> float | None:
     """Ordinal Krippendorff's alpha over an item x judge table with missing cells.
 
-    Nominal/interval alpha is wrong for a 1-5 scale: treating grades 1 and 5 as
-    maximally distant is correct, but 1 and 2 are NOT maximally distant, and the
-    nominal form cannot see that. The ordinal form uses the distance actually
-    present in the data.
-
-    Works on the coincidence-matrix formulation, which is what allows the
-    item x judge grid to have unequal and missing entries - unavoidable when
-    judges abstain or run out of budget.
+    Ordinal distances use cumulative marginal mass between categories.
+    The coincidence matrix supports unequal and missing ratings, including
+    abstentions and unfinished requests.
     """
     units = []
     for row in table.values():
@@ -151,8 +114,7 @@ def krippendorff_alpha(table: dict, value_range=None) -> float | None:
     for (a, b), v in coincidence.items():
         marg[a] += v
 
-    # Ordinal distance uses cumulative marginal mass between categories, not
-    # squared numeric grade differences (which would be interval alpha).
+    # Ordinal distance uses cumulative marginal mass between categories.
     dist = {}
     for a in marg:
         for b in marg:
@@ -169,12 +131,10 @@ def krippendorff_alpha(table: dict, value_range=None) -> float | None:
 
 
 def fleiss_kappa(table: dict, categories=None) -> float | None:
-    """Fleiss' kappa with variable raters per item, which is the honest form
-    when judges abstain on different items.
+    """Chance-adjusted agreement with variable numbers of raters per item.
 
-    kappa corrects for chance agreement, so a judge that always answers 3 can
-    show high raw agreement and zero kappa. Reporting raw agreement alone would
-    reward a useless constant judge.
+    Each item's observed agreement receives equal weight. Expected agreement
+    uses the pooled category frequencies of all usable ratings.
     """
     rows = []
     for row in table.values():
@@ -195,8 +155,7 @@ def fleiss_kappa(table: dict, categories=None) -> float | None:
         same = sum(c * c for c in counts.values())
         p_bar_num += (same - n) / (n * (n - 1))
     p_bar = p_bar_num / len(rows)
-    # Nominal kappa ignores the size of a disagreement; independence should
-    # nevertheless give zero. The old missing factor n produced false agreement.
+    # Expected agreement uses category counts across all usable ratings.
     total_ratings = sum(len(v) for v in rows)
     if total_ratings == 0:
         return None
@@ -208,10 +167,7 @@ def fleiss_kappa(table: dict, categories=None) -> float | None:
 
 
 def weighted_kappa(table: dict, categories=None) -> float | None:
-    """Quadratic-weighted kappa: closer to Krippendorff ordinal, useful as a
-    cross-check when the two disagree materially. Weights are on RANKS, so the
-    value is bounded by 1; weighting raw grade values let it exceed 1, which is
-    not a real value and would silently corrupt any ranking built on it."""
+    """Quadratic-weighted kappa using normalized category positions."""
     rows = [[v for v in row.values() if v is not None] for row in table.values()]
     rows = [r for r in rows if len(r) >= 2]
     if len(rows) < 2:
@@ -250,22 +206,11 @@ def weighted_kappa(table: dict, categories=None) -> float | None:
 
 
 def consensus_label(table: dict, tie_break=None) -> dict:
-    """Dawid-Skene style consensus: estimate each item's latent grade by
-    iteratively reweighting each judge's vote by their agreement with the other
-    judges.
+    """Estimate descriptive consensus by reweighting agreement with other judges.
 
-    This is the substitute for a perfect oracle. A judge that votes 5 on
-    everything drifts away from consensus and is downweighted; a judge that
-    tracks the panel dominates. No ground truth is used or required, so this
-    works in exactly the situation the project is in.
-
-    Weighting detail that matters: a judge is scored on agreement with the OTHER
-    judges, never with the item's own current estimate. The earlier version
-    tested `estimate in other_votes`, which lets a judge agree with itself via a
-    tie and gave every judge weight 1.0 on random data - the weight carried no
-    information, so the "consensus" was just plurality voting with extra steps.
-    Pairwise agreement with the other raters is what actually distinguishes a
-    reliable rater from a noisy one.
+    Weights come from pairwise agreement with the other raters. The resulting
+    consensus describes the panel; validity needs reference-based assessment
+    and independent review.
     """
     items = [
         i
@@ -346,8 +291,8 @@ def compare_to_reference(
 ) -> dict:
     """Score one judge (or a panel consensus) against a reference label.
 
-    reference: item_id -> grade in 1..5. Coverage is reported beside every
-    metric, because a 0.90 accuracy computed over 15% of items is not a 0.90.
+    reference: item_id -> grade in 1..5. Report coverage beside each metric so
+    readers can identify the subset supporting the estimate.
     """
     pairs = []
     for r in judgments:
@@ -460,12 +405,9 @@ def rater_coverage(table: dict) -> dict:
     """How many raters each item actually received, and how often 2-rater items
     were unanimous.
 
-    This is the gate on interpreting any agreement number. Fleiss' kappa in
-    particular saturates when many items have only two raters that agree: with
-    2 raters P_i is either 0 or 1, so a handful of unanimous pairs drags the
-    statistic to 1.0 regardless of how the 3-rater items look. Measured on the
-    first real panel, 13/30 items had 2 raters and 12 of those were unanimous,
-    which put Fleiss at exactly 1.00 beside an alpha of 0.63.
+    Report coverage with every agreement statistic. Two-rater items have binary
+    observed agreement, while larger panels allow intermediate values. Their
+    relative frequency affects the interpretation of aggregate agreement.
     """
     sizes = Counter()
     unanimous_two = 0

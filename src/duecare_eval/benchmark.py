@@ -1,30 +1,11 @@
-"""Frozen benchmark draws from the graded library.
+"""Reproducible benchmark draws from a versioned graded library.
 
-A monthly benchmark is only worth publishing if two months are actually
-comparable. That requires more than a bigger sample: it requires that the item
-set, the split, the sampling rule, the judges and the decoding parameters are
-all pinned, and that a re-run either reproduces the previous run exactly or
-declares that it did not.
+Each draw verifies the library digest, assigns whole corridor/indicator
+families to calibration or held-out, and samples with a deterministic rule.
+The same library, split, rule and size yield the same ordered items.
 
-Three properties this module exists to guarantee:
-
-* **The library is verified, not assumed.** Every draw re-hashes the library
-  file and refuses to proceed against a manifest that does not describe it. A
-  benchmark whose items silently changed between months is worse than no
-  benchmark, because the comparison looks valid.
-
-* **Calibration and held-out never share a family.** Splitting per ITEM would
-  leave a family's sibling items on both sides, and a judge calibrated on
-  "Nepal->Qatar / fee_dispute" has effectively seen the held-out case. The
-  split is therefore assigned over a GROUP key (corridor + indicator), so a
-  whole family lands on one side.
-
-* **The draw is a pure function of (library digest, split, rule, size).** Given
-  the same inputs it returns the same items in the same order, so a published
-  benchmark can be reconstructed from its own spec without shipping the items.
-
-Nothing here calls a model. Drawing a benchmark must be free and offline, or it
-cannot be re-verified by a reader who has no provider credentials.
+Comparisons over time also record judges, model versions and decoding settings.
+This module handles the offline sampling step using local files.
 """
 from __future__ import annotations
 
@@ -43,18 +24,9 @@ HELD_OUT = "held_out"
 
 #: Strata used for a balanced draw.
 #:
-#: tier is the quantity being measured and band is the length confound the
-#: first panel found, so both are balanced by construction rather than left to
-#: chance. corridor is balanced so no single migration route dominates the
-#: headline number.
-#:
-#: question was added after the first executed run. Refusal turned out to vary
-#: almost entirely by question template rather than by scenario: "Who can I
-#: contact about this?" was refused 2/2 and "Is this legal?" 0/3, on the same
-#: underlying scenarios. That is a reportable finding about how aligned models
-#: behave, but only if each template gets enough items to measure -- and the
-#: first draw, which did not stratify on question, left 1-7 items per template.
-#: A benchmark that cannot resolve the effect it found is underpowered.
+#: Balance requested tier, length band, migration corridor and question template.
+#: This gives each axis explicit coverage in a small draw. Target-capability
+#: draws use the separate axes below because they assess the best safe response.
 DEFAULT_STRATA = ("tier", "band", "corridor", "question")
 TARGET_STRATA = ("band", "corridor", "question")
 
@@ -84,11 +56,7 @@ def group_key(item: dict) -> str:
 
 
 def verify_library(library_path, manifest_path) -> dict:
-    """Fail closed unless the manifest describes this exact file.
-
-    Returns the manifest on success. Raises on mismatch: a caller that ignored
-    this would publish a comparison against items it never actually graded.
-    """
+    """Return the manifest after checking its digest against the library file."""
     library_path, manifest_path = Path(library_path), Path(manifest_path)
     if not library_path.exists():
         raise FileNotFoundError(f"library_missing:{library_path.name}")
@@ -108,9 +76,8 @@ def assign_splits(groups, holdout_fraction: float = 0.3, seed: str = "20260928")
 
     Deterministic on the group key, so the split is stable as the library grows
     and identical for every reader of the same spec. Fraction is approximate by
-    construction: it is a hash threshold, not a quota, because forcing an exact
-    count would require balancing groups of unequal size and would make the
-    split depend on the sample rather than on the key.
+    construction: the hash threshold assigns each group independently of the
+    other groups and their sizes.
     """
     if not 0.0 < holdout_fraction < 1.0:
         raise ValueError("holdout_fraction_out_of_range")
@@ -143,8 +110,7 @@ def draw(items, size: int, seed: str, axes=None,
     Round-robin over strata is what makes a small draw still representative; a
     proportional slice would quietly under-sample rare corridors.
 
-    The draw records its own digest over the selected item ids, so a reader can
-    confirm they hold the same benchmark without comparing 100K items.
+    The selected item IDs have a digest that lets readers verify the draw.
     """
     if size <= 0:
         raise ValueError("draw_size_must_be_positive")
@@ -172,14 +138,9 @@ def draw(items, size: int, seed: str, axes=None,
     for key in buckets:
         buckets[key].sort(key=lambda it: (stable_unit(seed, it["item_id"]), it["item_id"]))
 
-    # The bucket ORDER must not be lexicographic. Stratum keys begin with the
-    # axis values joined by "|", so sorting them groups every tier-1 stratum
-    # ahead of every tier-2 stratum; round-robin over that order hands the whole
-    # sample to tier 1. That is not hypothetical: the first executed Tactical
-    # run drew 70 items and every one of them was tier 1, so its exact-match
-    # score of 0.00 was measured against a single-tier reference.
-    # A seeded shuffle removes the ordering bias and keeps the draw a pure
-    # function of the inputs.
+    # Shuffle bucket order as well as items. Lexicographic stratum keys place
+    # tier-1 buckets first, which biases draws smaller than the bucket count.
+    # The seeded order keeps every draw reproducible.
     order = sorted(buckets)
     order = _seeded_shuffle(order, seed)
 
@@ -228,9 +189,8 @@ def build_spec(*, label: str, manifest: dict, draw_result: dict, splits: dict,
                domain_pack: dict | None = None) -> dict:
     """The frozen, publishable description of one benchmark run.
 
-    Every field a reader would need to decide whether two runs are comparable
-    lives here. A field that cannot be frozen (an unfrozen prompt, an unpinned
-    model tag) belongs in `notes` as a stated limitation, not omitted.
+    Record the settings needed to compare two runs. Put unresolved settings,
+    such as a service-controlled model version, in the notes field.
     """
     if evaluation_mode not in SD.EVALUATION_MODES:
         raise ValueError(f"unknown_evaluation_mode:{evaluation_mode}")

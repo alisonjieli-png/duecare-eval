@@ -1,8 +1,8 @@
 cff-version: 1.2.0
-message: "Please cite this dated preliminary research release; it is not a validated worker-safety benchmark."
-title: "Can Jev Reason About Cross-Border Exploitation? An Educational Red-Teaming Research Preview"
+message: "Please cite the dated release and the task population supporting the result. Independent domain and worker review are recorded as separate evidence milestones."
+title: "DueCare: Evidence, Decisions and Model Behavior"
 type: software
-version: 0.1.0-rc.2
+version: 0.1.0-rc.3
 date-released: 2026-09-30
 authors:
   - family-names: Amarel

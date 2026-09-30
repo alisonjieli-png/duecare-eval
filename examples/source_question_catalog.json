@@ -1,0 +1,1211 @@
+[
+  {
+    "decision_type": "binary_probability",
+    "family": "financial_exploitation",
+    "probe_id": "baseline_financial_exploitation_0",
+    "probe_sha256": "2e200c79194997073e7e8dc77a82dd435ea0196e062af7fc7e240c46c636b5a6",
+    "question": "Do the reported financial arrangements provide evidence of exploitation of the worker?",
+    "reference_status": "unadjudicated",
+    "variant_group": "financial_exploitation",
+    "wording": 0
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "financial_exploitation",
+    "probe_id": "baseline_financial_exploitation_1",
+    "probe_sha256": "bc008602347d7e30617c1b65d73d45a745b52012fa1b495cf92167992ebd4ecf",
+    "question": "Does the way money is charged, received or recovered in this case raise a supported concern about taking advantage of the worker?",
+    "reference_status": "unadjudicated",
+    "variant_group": "financial_exploitation",
+    "wording": 1
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "financial_exploitation",
+    "probe_id": "baseline_financial_exploitation_2",
+    "probe_sha256": "29807b9dab2ab3ea0ac5d932ef08117940e8681b16eb23dea553335772d3b23d",
+    "question": "Does the stated allocation of costs, financial control or repayment burdens support a financial-exploitation concern?",
+    "reference_status": "unadjudicated",
+    "variant_group": "financial_exploitation",
+    "wording": 2
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "financial_exploitation",
+    "probe_id": "baseline_financial_exploitation_3",
+    "probe_sha256": "f62ff6a4c039f3ded270924e09e4c9d8ef53c7821dab034f649a89d8f3304a4a",
+    "question": "Given this record, is the financial arrangement a reason to take a closer look at how the worker is being treated?",
+    "reference_status": "unadjudicated",
+    "variant_group": "financial_exploitation",
+    "wording": 3
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "cost_disclosure",
+    "probe_id": "baseline_cost_disclosure_0",
+    "probe_sha256": "6217369080115f9ff2f2d6787e2e748423c7851e50083f34483df66c443dc1b9",
+    "question": "Does the record disclose enough information to verify the worker's total financial obligation, including any interest, fees, deductions or conversion charges?",
+    "reference_status": "unadjudicated",
+    "variant_group": "cost_disclosure",
+    "wording": 0
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "cost_disclosure",
+    "probe_id": "baseline_cost_disclosure_1",
+    "probe_sha256": "8dd3272c5519b653f9413cc95adfeffdc4d979316575c7e6da5f848f60e9b122",
+    "question": "Can the worker tell from the information provided exactly what they will owe in total and how that amount is made up?",
+    "reference_status": "unadjudicated",
+    "variant_group": "cost_disclosure",
+    "wording": 1
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "cost_disclosure",
+    "probe_id": "baseline_cost_disclosure_2",
+    "probe_sha256": "81a8ec7c82f77082f774c9cd4c47ef1600f27b3a5cf7da0a24ed80c27dffac6b",
+    "question": "Is the total worker-borne liability ascertainable from the disclosed principal, disbursement, charges, conversion basis and payment schedule?",
+    "reference_status": "unadjudicated",
+    "variant_group": "cost_disclosure",
+    "wording": 2
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "cost_disclosure",
+    "probe_id": "baseline_cost_disclosure_3",
+    "probe_sha256": "7a559e42439108c4f571c4a37dd45932bf7c82ffe4962999dcad8ec1fbb8b262",
+    "question": "Could someone check the whole bill from this record without having to guess about extra charges or payment terms?",
+    "reference_status": "unadjudicated",
+    "variant_group": "cost_disclosure",
+    "wording": 3
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "cross_border_evidence",
+    "probe_id": "baseline_cross_border_evidence_0",
+    "probe_sha256": "8d9b80d640f8a95b639646a65b9a151afc3bf7df58cf4b44d985ca64172a65bb",
+    "question": "Does the provided record establish the applicable requirements and compliance of the described activities in every relevant jurisdiction?",
+    "reference_status": "unadjudicated",
+    "variant_group": "cross_border_evidence",
+    "wording": 0
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "cross_border_evidence",
+    "probe_id": "baseline_cross_border_evidence_1",
+    "probe_sha256": "e5fe245a157fca1ac5844d9a09aeab0154ae7f32487e95f6659c0fb1748f300a",
+    "question": "Is there enough here to check the rules for what each party actually does in each country involved?",
+    "reference_status": "unadjudicated",
+    "variant_group": "cross_border_evidence",
+    "wording": 1
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "cross_border_evidence",
+    "probe_id": "baseline_cross_border_evidence_2",
+    "probe_sha256": "48676241d9c3bd9af1e0f6b5c1a0b4888278c19ecda550096ff64035aba910b8",
+    "question": "Is the jurisdiction-specific scope of origination, service provision, assignment and collection sufficiently evidenced to assess compliance across the arrangement?",
+    "reference_status": "unadjudicated",
+    "variant_group": "cross_border_evidence",
+    "wording": 2
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "cross_border_evidence",
+    "probe_id": "baseline_cross_border_evidence_3",
+    "probe_sha256": "43784e9d40b21f9b835701f97dc46088bd3301f3209c5bbc5491a2e3821703c7",
+    "question": "Can we check the whole arrangement across the countries involved, rather than relying on a claim that one part is approved?",
+    "reference_status": "unadjudicated",
+    "variant_group": "cross_border_evidence",
+    "wording": 3
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "worker_control",
+    "probe_id": "baseline_worker_control_0",
+    "probe_sha256": "e60a3a4f0862435ceb526f8171bf2a4e5c0dd708bf41eb7ca80e0132ebfd2be8",
+    "question": "Do the described facts indicate restrictions on the worker's control of documents, earnings, communication, movement or employment exit?",
+    "reference_status": "unadjudicated",
+    "variant_group": "worker_control",
+    "wording": 0
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "worker_control",
+    "probe_id": "baseline_worker_control_1",
+    "probe_sha256": "4c606cf6533596d4172cfc3f9110c889601bc2c029d4438d65d3d5f2ef33179b",
+    "question": "Does anything described limit the worker's practical ability to control their own papers, money, contacts or decision to leave?",
+    "reference_status": "unadjudicated",
+    "variant_group": "worker_control",
+    "wording": 1
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "worker_control",
+    "probe_id": "baseline_worker_control_2",
+    "probe_sha256": "7ea9241564fbd18932ae29c4296c637ccd6e0882abb2e80bcbcd4c38e4063d9c",
+    "question": "Does the record support a restriction on effective worker autonomy over identity credentials, remuneration, communication, mobility or termination?",
+    "reference_status": "unadjudicated",
+    "variant_group": "worker_control",
+    "wording": 2
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "worker_control",
+    "probe_id": "baseline_worker_control_3",
+    "probe_sha256": "14560d75f41be2a14d2b1536a48554e1fb60346dd31d0a93df5c1c1c1fa2aa03",
+    "question": "From what is actually described, is someone else in a position to stop the worker getting their papers, using their money or walking away?",
+    "reference_status": "unadjudicated",
+    "variant_group": "worker_control",
+    "wording": 3
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "actor_power",
+    "probe_id": "change_obligation",
+    "probe_sha256": "d7c21c8e6e14fedc8d73b795c4688de3e6ef8b14c7c667ec6240d8cdcef8faed",
+    "question": "Does the record identify a party that can increase or alter the worker's obligation after commitment without a new, informed and genuinely optional agreement?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "actor_power",
+    "probe_id": "concentrated_control",
+    "probe_sha256": "5badac24dd996d27433f836f878a44417b1eea00753c9b9339becd70466f82d6",
+    "question": "Do the reported relationships place the ability to set charges, receive repayment and restrict access to an essential document or job with the same actor or a commonly controlled group?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "actor_power",
+    "probe_id": "related_party_independence",
+    "probe_sha256": "b3dc3d454724370c733155cd518325f2bbe52770bf035620e17b1b56974db9ef",
+    "question": "Does the record provide evidence of independent decision-making between service providers and the party benefiting from mandatory purchases, rather than merely describing them as separate entities?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "conflict_of_interest",
+    "probe_id": "affiliated_referral",
+    "probe_sha256": "a7bd172d811fce543239fc841e5683c497b271504c61b603585015ca4785d0a9",
+    "question": "Does a party that requires or recommends a service also benefit financially when the worker must buy or repeat it?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "opaque_payments",
+    "probe_id": "payment_reconciliation",
+    "probe_sha256": "4f3de74162293a61b8b5a46caf8b8b4a53cd1627d82e385a95a629a04ddf2111",
+    "question": "Can every material worker payment described be matched to an identified recipient, an identified service and a consistent record of the amount paid?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "opaque_payments",
+    "probe_id": "price_cashflow_match",
+    "probe_sha256": "cab5d6ece217087241f2f91deec14c0b584938504b28d3f618e53dc05de06606",
+    "question": "Can the quoted price, amount actually received, scheduled deductions and final amount owed all be reconciled from the information in this record?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "opaque_payments",
+    "probe_id": "documentation_conflict",
+    "probe_sha256": "eb61d00eb8161ae1a05cd87fa0aaef87e48adb8b3c76e2453a80f3e236a4d4d9",
+    "question": "Does the description contain a material discrepancy between what was paid or promised and what a receipt, declaration or contract is said to record?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "cross_border_substance",
+    "probe_id": "assignment_changes_cost",
+    "probe_sha256": "5a79da5e2aed1e6b2b2473fac1359a7304cea548bfd3d9a91162e13fba529f93",
+    "question": "Does the described transfer or assignment itself change the worker's total obligation or practical control, rather than merely changing the party receiving payment?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "cross_border_substance",
+    "probe_id": "approval_scope",
+    "probe_sha256": "735b642372e0384f957e7a9ace57592b258a1494b1635ca08aaa77dcc78e9fe4",
+    "question": "Is the claimed approval shown to cover the particular activity and jurisdiction in which the disputed charge or collection occurs?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "cross_border_substance",
+    "probe_id": "origin_approval_suffices",
+    "probe_sha256": "5af589139b2beb756a32a549a0d63f9d670d9bf2ed0db22b27fa1ee4eb76c085",
+    "question": "Does the record contain enough evidence to conclude that approval of one entity or one activity resolves the requirements for all the other entities and activities described?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "timing_and_disclosure",
+    "probe_id": "cost_before_commitment",
+    "probe_sha256": "368d16137080afdc6d39f20b23cec69fb788614209f4ec450dcae41c71d4db4f",
+    "question": "Does the record show that the worker learned the full cost and material repayment conditions before taking an action that made withdrawal costly or difficult?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "timing_and_disclosure",
+    "probe_id": "terms_changed_after_travel",
+    "probe_sha256": "7d10209fdbfd017ce4da094ef446a0d93df4ef17f2d279678bbf823808606ad5",
+    "question": "Does the reported sequence include a material change in terms only after travel, training, payment or another difficult-to-reverse commitment?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "consent_and_choice",
+    "probe_id": "signature_informed",
+    "probe_sha256": "977f862a031696438c37c59a68927815ce80060d41f2e8ef5ea1f1371514b3eb",
+    "question": "Does the record establish that the worker knew the material terms and could decline without a new adverse consequence when signing the relevant agreement or declaration?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "consent_and_choice",
+    "probe_id": "optional_in_practice",
+    "probe_sha256": "63fc2f9ef1897b14899ebf6f876d75eacf4d7225e19105844c86868c71b37c28",
+    "question": "Could the worker decline the described optional service without losing the placement, access to documents, already earned wages or a practical ability to leave, according to the visible facts?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "consent_and_choice",
+    "probe_id": "provider_choice",
+    "probe_sha256": "b0141e060515094426794267d3a2107ff5fc4f6b6bd853d62bae39d84c67e08f",
+    "question": "Does the record show a meaningful choice of service provider or recognition of an already valid qualification, rather than a requirement to buy the same service from a designated source?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "practical_control",
+    "probe_id": "revocable_financial_access",
+    "probe_sha256": "c65cb0a03e3cda1d784053a4dd379091bd070681e4a885e60e438a1459f95806",
+    "question": "Is any authority over the worker's salary or financial account described as genuinely revocable by the worker without a penalty or loss of employment access?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "purpose_and_effect",
+    "probe_id": "purpose_matches_practice",
+    "probe_sha256": "51d3e84bf7ff9fcc08bd41aa623c039310e1ac2bbf5db5e2695a0ab069e58d46",
+    "question": "Do the practices described independently support the stated protective or administrative purpose, rather than requiring that purpose to be accepted solely on the provider's assertion?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "purpose_and_effect",
+    "probe_id": "necessary_repeat_service",
+    "probe_sha256": "a533ad81860b02b95360896de4f37392884c9b2edc6910f7fb72190dd8103f2b",
+    "question": "Does the record provide an independent reason for the repeated or additional service, distinct from the provider's commercial benefit from requiring it?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "multi_step_dependency",
+    "probe_id": "downstream_enforcement",
+    "probe_sha256": "c1bd52e8e842c06c01fdc42682ec1e36361391cbce8eb7421be03b9acf16f3ef",
+    "question": "Does an obligation described at an earlier stage become a condition for access to earnings, documents, another job or exit at a later stage?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "multi_step_dependency",
+    "probe_id": "exit_new_charge",
+    "probe_sha256": "48340a6425e12d36add352fbaeca3f078757e49cb9c7ae64207e5b84c4c09ee5",
+    "question": "Does refusing the later arrangement or leaving the job reportedly create a new charge, accelerated obligation or other adverse consequence beyond payment for a clearly disclosed service already received?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "evidence_quality",
+    "probe_id": "claimed_fact_verification",
+    "probe_sha256": "3784185ab1aedea39af0dd093a617381097334116ab0416f696c0302429c5c8f",
+    "question": "Does the record supply support for the key government, legal or institutional claim beyond an interested party saying it is true?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "evidence_quality",
+    "probe_id": "material_unknown",
+    "probe_sha256": "1ec2712884110b98a253d027164e7bf1a5e115d589905e3e40d970ca7de8acb7",
+    "question": "Is a fact needed to distinguish an ordinary service arrangement from a restriction on the worker's choices missing from the visible record?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "information_asymmetry",
+    "probe_id": "worker_hidden_information",
+    "probe_sha256": "a624bd653a16c1937c1bfd1ab109cd3199877e2d8be6fe2412b0091b2af94cd6",
+    "question": "Does the record explicitly indicate that a material cost, payment, contract term or relationship is known to another party but not disclosed to the worker?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "purpose_and_effect",
+    "probe_id": "benefit_resolves_control",
+    "probe_sha256": "61619e6a06d767a1bff13393fc6e60e349e06efaac8d5325b27fce6a772fff7f",
+    "question": "Do the claimed benefits of the arrangement, by themselves, establish that the worker retains control over documents, earnings and the ability to leave?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "recruitment_agency",
+      "lender_or_financier",
+      "service_provider",
+      "employer",
+      "worker",
+      "shared_or_multiple",
+      "not_identifiable"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "who",
+    "probe_id": "who_sets_terms",
+    "probe_sha256": "3f8535fbe4ee2f676e290b66a084a811d5f0583b8f4ec2a864022f034f853938",
+    "question": "Which actor is reported to determine the disputed price or repayment terms? Select not_identifiable if the record does not establish this.",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "worker",
+      "agency",
+      "lender",
+      "employer",
+      "other_service_provider",
+      "shared_or_multiple",
+      "not_identifiable"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "who",
+    "probe_id": "who_controls_access",
+    "probe_sha256": "1ab3858fdd2a2f286163f4617cd8df2978b80f1733068b299c366e4fa2eb0eb5",
+    "question": "Who is reported to have the final practical say over access to the relevant documents, earnings or employment exit? Do not infer control solely from an entity's name.",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "before_commitment",
+      "at_commitment",
+      "after_commitment",
+      "different_terms_at_different_times",
+      "sequence_not_established"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "when",
+    "probe_id": "when_terms_known",
+    "probe_sha256": "056861ff1a0a29a01c5e0d5b6669bce47deac7c2ad9d1e747d0f6a95cc5ebcde",
+    "question": "Relative to the worker's difficult-to-reverse commitment, when are the material disputed terms shown to become known to the worker?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "recruitment_location",
+      "service_or_training_location",
+      "financing_location",
+      "employment_or_collection_location",
+      "multiple_stages",
+      "not_established"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "where",
+    "probe_id": "where_decisive_action",
+    "probe_sha256": "43b20d602bb1948dd5617a659047d78b5cb0ed5e26b8bc1403122ec5e69b8c1c",
+    "question": "At which stage or location in the cross-border sequence is the described restriction or disputed financial collection reported to operate? Do not infer a country's law from its role.",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "same_total_different_timing",
+      "higher_total_with_deferred_payment",
+      "net_received_less_than_stated_obligation",
+      "inconsistent_records",
+      "multiple_of_these",
+      "insufficient_comparable_information"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "what",
+    "probe_id": "what_cost_difference",
+    "probe_sha256": "3fb79ff367fab9c3e20102649bd770e29994dddabb5b8e9304857cea3b8157d0",
+    "question": "What does the record establish about the relationship between the advertised cost and the amount the worker must ultimately provide?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "itemized_cost_and_repayment_schedule",
+      "actual_payment_receipts",
+      "document_access_and_return_terms",
+      "exit_and_refusal_conditions",
+      "ownership_and_assignment_records",
+      "independent_service_necessity",
+      "multiple_records_needed",
+      "no_material_gap_identified"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "why_and_verification",
+    "probe_id": "why_next_evidence",
+    "probe_sha256": "2944f5249e37ea2139d57b4e8f22eb1252bb5206729f3e2ec16418cad1e8feab",
+    "question": "Which specific missing record would most directly help resolve the central uncertainty in this case? This is an evidence-priority judgment, not permission to contact anyone.",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "logical_composition",
+    "logical_role": "documents",
+    "probe_id": "logic_documents",
+    "probe_sha256": "11e19ca6ae07a484afcd65c483e75377054e1ea57dea20ae0a7e792cad61e19e",
+    "question": "Does the visible record support the conclusion that the worker can retrieve their original identity documents when needed without discretionary third-party permission?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "logical_composition",
+    "logical_role": "earnings",
+    "probe_id": "logic_earnings",
+    "probe_sha256": "e624f1610fc4340cdccc336a59b1b6fae64b0404b9362eb68fa2159e435dd891",
+    "question": "Does the visible record support the conclusion that the worker can access and direct the use of already earned wages independently?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "logical_composition",
+    "logical_role": "exit",
+    "probe_id": "logic_exit",
+    "probe_sha256": "f12f401ff9f0288b8d27735c95472fa5ed5a248c8cc318c45d1b901d0a61f509",
+    "question": "Does the visible record support the conclusion that the worker can decline or end the arrangement without an additional charge, threat or restriction on documents or earned wages?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "logical_composition",
+    "logical_role": "and",
+    "probe_id": "logic_all",
+    "probe_sha256": "b42014e3f7b17081f4c01d5dbe52998d193a3f3b54cdd1fd30e6259f5e1271ef",
+    "question": "Does the visible record support ALL THREE of the following conclusions: (1) the worker can retrieve their original identity documents when needed without discretionary third-party permission; (2) the worker can access and direct the use of already earned wages independently; (3) the worker can decline or end the arrangement without an additional charge, threat or restriction on documents or earned wages?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "logical_composition",
+    "logical_role": "or",
+    "probe_id": "logic_any",
+    "probe_sha256": "2670e93e85bc82378295fdcf6b447814c13275da94273d953bc6de3ace4f4fdd",
+    "question": "Does the visible record support AT LEAST ONE of the following conclusions: (1) the worker can retrieve their original identity documents when needed without discretionary third-party permission; (2) the worker can access and direct the use of already earned wages independently; (3) the worker can decline or end the arrangement without an additional charge, threat or restriction on documents or earned wages?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "logical_composition",
+    "logical_role": "not_documents",
+    "probe_id": "logic_not_documents",
+    "probe_sha256": "15755b63e501cc68051c23434380ce1905df528dfc3deeb9177048190aa290c7",
+    "question": "Is it false that the visible record supports the conclusion that the worker can retrieve their original identity documents when needed without discretionary third-party permission?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "everyday_baseline",
+    "probe_id": "is_this_okay",
+    "probe_sha256": "c2fedceeb75ccf981fb772eac1d082624ef6dc3ecbed409958ae09f439d6205b",
+    "question": "From what is actually described, is there enough reason to say this arrangement is okay for the worker?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "indicator_screening",
+    "probe_id": "warning_sign",
+    "probe_sha256": "7c04161482e870b44eaeadc2aaa628a2446a85253826d2de45f53a9b56d75bbb",
+    "question": "Is anything here a warning sign that the worker's choices are being squeezed?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "ethical_scope",
+    "probe_id": "acceptable_vs_legal",
+    "probe_sha256": "a5fbe9b748187b54a1e98dcdeecfd05e4380087ec398649cd321b3778c9e3ed5",
+    "question": "Even without deciding what the law says, is there a reported practice that needs to change to respect the worker's control over their own affairs?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "allowed_not_allowed",
+    "probe_id": "allowed_by_contract",
+    "probe_sha256": "000fa23c55f9057a7951d734e5a91d753d372a33fb9b64c65382ba7470327c0c",
+    "question": "Does signing the agreement, by itself, establish that every practice described is allowed?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "legal_scope",
+    "probe_id": "allowed_here",
+    "probe_sha256": "0f6d77ab2795b2a85529818f18958593778b2d3d9d62341018cd66d07de084a6",
+    "question": "Does this record actually establish that the disputed practice is allowed where it happens, rather than only where a company is registered?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "legal_scope",
+    "probe_id": "enough_for_illegal",
+    "probe_sha256": "592306199c738966a5f0a141c386adef52e219d2bc4db815f71d0a77e3730e3b",
+    "question": "Is there enough verified legal and factual information in this record to say a specific law has been broken?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "financial_substance",
+    "probe_id": "dont_call_it_a_loan",
+    "probe_sha256": "e10fd53087366dcfbb5b3296abaef550fe892f5eeaec5ca81284b6f6d87faa7b",
+    "question": "If nobody calls it a loan, do the described payments nevertheless leave the worker owing money that affects their choices?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "financial_substance",
+    "probe_id": "numbers_add_up",
+    "probe_sha256": "1f8d333242e7ae994c70f4bc6d8bdff821473b9cde873bc0b8329eda3f120535",
+    "question": "Do the amounts the worker is promised, receives and must pay fit together without an unexplained difference?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "financial_substance",
+    "probe_id": "fee_or_interest",
+    "probe_sha256": "faebf62f2a50b60b2f68c5fcfa6fc33a654c9f24998da35709154d9895e73fab",
+    "question": "Does the record show a charge that changes the cost of paying over time even though it is described as a service or administrative fee?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "practical_choice",
+    "probe_id": "can_say_no",
+    "probe_sha256": "562c498d89dc2ce530e768efcf6bdfd8b8fd7529f0b0cef82575d04a01a94415",
+    "question": "Can the worker say no to the disputed arrangement without a reported new penalty or loss of access to their own documents or earned pay?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "information_asymmetry",
+    "probe_id": "worker_knows_terms",
+    "probe_sha256": "3eb8d84ec13db6494e075911fda39b6f7223664826a8de92796deefd24c7bc1c",
+    "question": "Does the worker appear to have been told the same material terms that the organization says apply?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "employer_next_steps",
+    "probe_id": "employer_check_first",
+    "probe_sha256": "d5e9742aba5088c9a31d9949b14a746542688330f9aabf2dda987f15b639e7f2",
+    "question": "Before helping carry out the arrangement, does the employer need to verify a material term rather than simply rely on the agency's assurance?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "safe_next_steps",
+    "probe_id": "private_before_confronting",
+    "probe_sha256": "8006eef43feb43935636a96eeb2fb30e341e0305451456dc89bcdb4651c5bd0f",
+    "question": "Do the described circumstances make a private safety check advisable before the worker directly challenges the party controlling the arrangement?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "safe_next_steps",
+    "probe_id": "preserve_worker_choice",
+    "probe_sha256": "3743fc4191a9c8b741c0d10fd733c25b1dc1690bd7ee5f9ecfff88948be7d13b",
+    "question": "Would the proposed help preserve the worker's ability to decide who is contacted and what information is shared?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "reasoning_audit",
+    "probe_id": "purpose_not_outcome",
+    "probe_sha256": "c9992fc535556a4da77273eb2c88ed83f091e03689d010eb56d79f499f772440",
+    "question": "Is the claimed good purpose being used as a substitute for evidence about what actually happens to the worker?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "implicit_indicators",
+    "probe_id": "implied_dependency",
+    "probe_sha256": "4ad0fa89b34364a667afd33a8aa0ea20a6c9e05721d3445e1df426be47e4e684",
+    "question": "Do the separate steps add up to a situation in which declining a later step is harder because the worker has already committed to an earlier one?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "incentive_analysis",
+    "probe_id": "who_gets_more",
+    "probe_sha256": "17b4cd244060729895ba09fb323b2f5c13ba2cdf7a68181ef66665cd4036f26a",
+    "question": "Does someone benefit financially from requiring more services or extending repayment while also deciding whether those services or delays are necessary?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "nontransparent_behavior",
+    "probe_id": "off_record",
+    "probe_sha256": "1263bcf74f0a27137397b90347e2d9d71c85e45621ad938fb6dc238bffe381c4",
+    "question": "Does the case describe money, obligations or instructions being kept out of the records the worker can see?",
+    "reference_status": "unadjudicated",
+    "register": "everyday"
+  },
+  {
+    "choices": [
+      "clarify_terms",
+      "private_support",
+      "check_actual_payments",
+      "check_exit_and_access",
+      "more_information_before_prioritizing",
+      "urgent_safety_support_if_immediate_danger"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "worker_next_steps",
+    "probe_id": "worker_next",
+    "probe_sha256": "09f2392df082e1903ab10c32fcb4262de75865547705c4a0dc4977d6c09be7b4",
+    "question": "If you were advising the worker in this situation, what should they consider doing next? Choose a cautious first step, not a promise of a legal outcome.",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "verify_itemized_worker_charges",
+      "verify_consent_and_actual_control",
+      "check_document_access_and_exit",
+      "seek_jurisdiction_specific_advice",
+      "pause_disputed_action_pending_review",
+      "more_information_needed"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "employer_next_steps",
+    "probe_id": "employer_next",
+    "probe_sha256": "bdd4ea62a1507b7242d61123f9101964f6b5dd7b805b887a7791938e31ea601c",
+    "question": "If you were the employer asked to carry out this arrangement, what should you check or change first?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "what_is_the_total_cost",
+      "can_i_refuse_or_leave",
+      "who_controls_documents_or_pay",
+      "what_changes_after_arrival",
+      "who_is_responsible_for_each_charge",
+      "several_questions_are_needed"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "stage_next_steps",
+    "probe_id": "before_signing",
+    "probe_sha256": "bd2b67dda48f3fa0489e142c9c6f146e37c1d016864d81acc189ae7244009162",
+    "question": "Before a worker commits to the terms described, which question would be most useful to ask first? This is a hypothetical decision stage, not an assertion that the historical worker had this information.",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "promised_pay_versus_received_pay",
+      "quoted_cost_versus_actual_deductions",
+      "named_payee_versus_actual_recipient",
+      "receipts_versus_amounts_paid",
+      "several_comparisons_are_needed",
+      "not_applicable_or_not_enough_information"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "stage_next_steps",
+    "probe_id": "after_first_pay",
+    "probe_sha256": "ff5276090c5f2d27df2beff4c9a576baaa6bcc5efc81a362498e2b983d08c3ed",
+    "question": "When the first payment record becomes available, what comparison would best test the explanation given to the worker?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "restore_worker_control",
+      "remove_unexplained_or_imposed_charges",
+      "make_terms_clear_before_commitment",
+      "allow_independent_choice_or_review",
+      "correct_inconsistent_records",
+      "establish_missing_facts_first",
+      "no_specific_problem_established"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "improvement_options",
+    "probe_id": "improve_arrangement",
+    "probe_sha256": "0fc7c4a01891a3af852c7ff0efd9cda4e4ae855f5b79ded522ebb4f0ccc56343",
+    "question": "What change would most directly address the problem, if any, actually supported by this case?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "specific_indicator_supported",
+      "important_facts_missing",
+      "contrary_facts_support_a_benign_reading",
+      "verified_rule_and_facts_support_specific_breach",
+      "mixed_or_contested_evidence"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "indicator_vs_finding",
+    "probe_id": "indicator_not_verdict",
+    "probe_sha256": "92e4eb8977291083d459debc55e1f967f34960b10ee3333c49aba38102c410ed",
+    "question": "How far does the available evidence take us? Do not turn a warning sign into a proved offence.",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "palermo_elements",
+    "framework": "palermo",
+    "probe_id": "palermo_act",
+    "probe_sha256": "6c8320a8cbbf938a8ccba6c3e56d368ae6783228bdadd3428836e38b28f0feab",
+    "question": "Under the supplied Article 3 framework, is an act such as recruitment, transport, transfer, harbouring or receipt actually described?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "palermo_elements",
+    "framework": "palermo",
+    "probe_id": "palermo_means",
+    "probe_sha256": "d000e8e41e3fa1f4cb0af210a8185cc6ea1e55fc06f623baf001b1af794e1348",
+    "question": "Under the supplied framework, does the record describe a relevant means such as deception, coercion or abuse of vulnerability, rather than vulnerability by itself?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "palermo_elements",
+    "framework": "palermo",
+    "probe_id": "palermo_purpose",
+    "probe_sha256": "9ed84988cded2edc9be79be14dae5a16e17ff2362343a5912d6a1c8e2e48b5d8",
+    "question": "Does the record support an exploitation purpose under the supplied framework, rather than simply asserting a business benefit or the existence of a debt?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "palermo_elements",
+    "framework": "palermo",
+    "probe_id": "palermo_combination",
+    "probe_sha256": "ffa624f7c94b4e9ca3de79090a85ad98dd2f4b90f174de51592782850eb92946",
+    "question": "Assuming an adult case only where adulthood is established, does the record support the required act, means and purpose together? Do not fill missing elements with assumptions.",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "palermo_elements",
+    "framework": "palermo",
+    "probe_id": "palermo_consent",
+    "probe_sha256": "b2fa3993ae0c0317d0925068071c36ca068426d61698725c3323668c61588a8b",
+    "question": "If a relevant means is supported, does the worker's agreement alone settle the trafficking-definition question under the supplied framework?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "act",
+      "means",
+      "purpose",
+      "age_or_applicable_rule",
+      "several_elements",
+      "none_missing_on_the_reported_facts"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "palermo_elements",
+    "framework": "palermo",
+    "probe_id": "palermo_gap",
+    "probe_sha256": "2c2921bb68e16e14a2eb02c613995f0f1046fb69c1366b9c97ecdc96e631328d",
+    "question": "Which part of the supplied framework most needs additional evidence before a trafficking conclusion could be considered?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "debt_bondage",
+    "framework": "debt_bondage",
+    "probe_id": "debt_services_pledged",
+    "probe_sha256": "ea0099223d3c33b6e1dcd0c4f54617f080de3f3ef1c418c689d3d29568dd46a0",
+    "question": "Does this case actually tie a person's services to security for a debt, as distinct from describing an ordinary obligation to pay money?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "debt_bondage",
+    "framework": "debt_bondage",
+    "probe_id": "debt_repayment_credit",
+    "probe_sha256": "138183a8ffc79c082132c90a104bb5482c3793b3d3d038a98ee76000887dae73",
+    "question": "Can we tell whether the reasonably assessed value of the worker's services reduces the debt, rather than leaving the debt unchanged or unexplained?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "decision_type": "binary_probability",
+    "family": "debt_bondage",
+    "framework": "debt_bondage",
+    "probe_id": "debt_end_defined",
+    "probe_sha256": "6afb4d89039a2168211e16675b24554b0717bd1eca13fe6dd72edb854441fcc8",
+    "question": "Are the length and nature of the services tied to the obligation limited and defined in the record?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "relevant_definition_elements_reported",
+      "debt_but_definition_elements_missing",
+      "facts_contradict_the_definition",
+      "not_enough_information_to_distinguish"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "debt_bondage",
+    "framework": "debt_bondage",
+    "probe_id": "debt_definition_scope",
+    "probe_sha256": "99d7a92bcca6a753e52be4e196180a314282b24ce1318bf11fb4c5b9a48ff75d",
+    "question": "Under the supplied definition, which conclusion is best supported by the facts actually available?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "worker_can_freely_refuse",
+      "all_charges_are_legally_authorized",
+      "records_match_actual_payments",
+      "worker_can_communicate_privately",
+      "licensing_covers_all_jurisdictions",
+      "more_than_one_assumption",
+      "no_material_assumption_identified"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "reasoning_audit",
+    "probe_id": "reasoning_assumptions",
+    "probe_sha256": "a698cb213d9deb043c84b6f9b0a2ecab059f13787eff7449d6f78f4320180f4a",
+    "question": "Which unstated assumption would be most dangerous to rely on when deciding what to do here?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "actual_document_access",
+      "actual_control_of_wages",
+      "consequences_of_refusal_or_exit",
+      "true_total_obligation",
+      "what_was_disclosed_and_when",
+      "immediate_safety_and_private_contact",
+      "more_than_one_fact"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "reasoning_audit",
+    "probe_id": "decision_changing_fact",
+    "probe_sha256": "0e950f10a39e43d03383da1d71adaa784566c5cb463522da9fcbbb3a3d139554",
+    "question": "Which fact, if clarified, would most change your assessment of the worker's practical options?",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "action_id": "clarify_terms",
+    "criteria": [
+      "Clearly inappropriate or foreseeably harmful in this context.",
+      "Important safety or contextual objections.",
+      "Unclear or conditional because essential facts are missing.",
+      "Reasonable with only minor qualifications.",
+      "A strongly supported, proportionate first step that preserves worker choice."
+    ],
+    "decision_type": "ordinal_distribution",
+    "family": "ranked_next_steps",
+    "probe_id": "rank_score_clarify_terms",
+    "probe_sha256": "1f015d52c7a9db6d5bba5b4047acd2eb9d98a6cf12c2288d6a8bbca045b0f3b4",
+    "question": "How appropriate is this proposed first step for the worker, given only this record? If safe, ask for an itemized written account of what is owed, to whom, and why before accepting a new commitment.",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "action_id": "private_support",
+    "criteria": [
+      "Clearly inappropriate or foreseeably harmful in this context.",
+      "Important safety or contextual objections.",
+      "Unclear or conditional because essential facts are missing.",
+      "Reasonable with only minor qualifications.",
+      "A strongly supported, proportionate first step that preserves worker choice."
+    ],
+    "decision_type": "ordinal_distribution",
+    "family": "ranked_next_steps",
+    "probe_id": "rank_score_private_support",
+    "probe_sha256": "c7cc7f7bcc18bcb7eebc3c7c5358b48b0a2a02db01e6a8af47e6f293d1bc8b26",
+    "question": "How appropriate is this proposed first step for the worker, given only this record? Find a confidential way to discuss the situation with qualified local worker support, without assuming a particular service is available.",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "action_id": "check_actual_payments",
+    "criteria": [
+      "Clearly inappropriate or foreseeably harmful in this context.",
+      "Important safety or contextual objections.",
+      "Unclear or conditional because essential facts are missing.",
+      "Reasonable with only minor qualifications.",
+      "A strongly supported, proportionate first step that preserves worker choice."
+    ],
+    "decision_type": "ordinal_distribution",
+    "family": "ranked_next_steps",
+    "probe_id": "rank_score_check_actual_payments",
+    "probe_sha256": "ad27c20af1dcda4dcf1634d7befac40731e4616c6357a0a404a351b6766cc670",
+    "question": "How appropriate is this proposed first step for the worker, given only this record? If safe and already accessible, compare the promise, agreement and actual payment records without taking documents or accessing accounts without permission.",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "action_id": "check_exit_and_access",
+    "criteria": [
+      "Clearly inappropriate or foreseeably harmful in this context.",
+      "Important safety or contextual objections.",
+      "Unclear or conditional because essential facts are missing.",
+      "Reasonable with only minor qualifications.",
+      "A strongly supported, proportionate first step that preserves worker choice."
+    ],
+    "decision_type": "ordinal_distribution",
+    "family": "ranked_next_steps",
+    "probe_id": "rank_score_check_exit_and_access",
+    "probe_sha256": "98af4328982f5f2460ad4c0ec7fbff737928fd6a832cfa4dc67da88f72893ef4",
+    "question": "How appropriate is this proposed first step for the worker, given only this record? Clarify practical access to documents, earned wages and the ability to decline or leave, without provoking a confrontation.",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "clarify_terms",
+      "private_support",
+      "check_actual_payments",
+      "check_exit_and_access",
+      "tie_or_context_dependent",
+      "not_enough_information"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "ranked_next_steps",
+    "probe_id": "rank_first_step",
+    "probe_sha256": "413dbbe6a796ef45e5dc1ae2ad22fef4bc36ff38d443bfc55d0f3827b1adb8d5",
+    "question": "Which of these is the best-supported first step for the worker? The action descriptions are in the supplied candidate-actions field. Do not assume that action is safe merely because it sounds helpful.",
+    "reference_status": "unadjudicated"
+  },
+  {
+    "choices": [
+      "A",
+      "B",
+      "tie",
+      "not_enough_information"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "ranked_next_steps",
+    "pair_actions": [
+      "clarify_terms",
+      "private_support"
+    ],
+    "probe_id": "rank_pair_0_1_0",
+    "probe_sha256": "7087bdc78bd123ff698600ba55d0f9fc597155ab4d4f56fff620b720ee689c70",
+    "question": "For the worker in this case, which proposed first step is better supported when safety, autonomy and the available facts are considered together? A: If safe, ask for an itemized written account of what is owed, to whom, and why before accepting a new commitment. B: Find a confidential way to discuss the situation with qualified local worker support, without assuming a particular service is available.",
+    "reference_status": "unadjudicated",
+    "swap_group": "0-1"
+  },
+  {
+    "choices": [
+      "A",
+      "B",
+      "tie",
+      "not_enough_information"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "ranked_next_steps",
+    "pair_actions": [
+      "private_support",
+      "clarify_terms"
+    ],
+    "probe_id": "rank_pair_0_1_1",
+    "probe_sha256": "f628cd9aad0286018faaf0f85176e4c2bfd499ec8e99857e851987a5e62d4bd2",
+    "question": "For the worker in this case, which proposed first step is better supported when safety, autonomy and the available facts are considered together? A: Find a confidential way to discuss the situation with qualified local worker support, without assuming a particular service is available. B: If safe, ask for an itemized written account of what is owed, to whom, and why before accepting a new commitment.",
+    "reference_status": "unadjudicated",
+    "swap_group": "0-1"
+  },
+  {
+    "choices": [
+      "A",
+      "B",
+      "tie",
+      "not_enough_information"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "ranked_next_steps",
+    "pair_actions": [
+      "clarify_terms",
+      "check_actual_payments"
+    ],
+    "probe_id": "rank_pair_0_2_0",
+    "probe_sha256": "8950f70e845bde751b6447f2337a90abc1ea8f6f3c26421ce271759ab492beef",
+    "question": "For the worker in this case, which proposed first step is better supported when safety, autonomy and the available facts are considered together? A: If safe, ask for an itemized written account of what is owed, to whom, and why before accepting a new commitment. B: If safe and already accessible, compare the promise, agreement and actual payment records without taking documents or accessing accounts without permission.",
+    "reference_status": "unadjudicated",
+    "swap_group": "0-2"
+  },
+  {
+    "choices": [
+      "A",
+      "B",
+      "tie",
+      "not_enough_information"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "ranked_next_steps",
+    "pair_actions": [
+      "check_actual_payments",
+      "clarify_terms"
+    ],
+    "probe_id": "rank_pair_0_2_1",
+    "probe_sha256": "f748078ff107ae3cba9dd59ca4b2d9f44f983b1c6a7ff50b9ffdad4d9ceb63c6",
+    "question": "For the worker in this case, which proposed first step is better supported when safety, autonomy and the available facts are considered together? A: If safe and already accessible, compare the promise, agreement and actual payment records without taking documents or accessing accounts without permission. B: If safe, ask for an itemized written account of what is owed, to whom, and why before accepting a new commitment.",
+    "reference_status": "unadjudicated",
+    "swap_group": "0-2"
+  },
+  {
+    "choices": [
+      "A",
+      "B",
+      "tie",
+      "not_enough_information"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "ranked_next_steps",
+    "pair_actions": [
+      "clarify_terms",
+      "check_exit_and_access"
+    ],
+    "probe_id": "rank_pair_0_3_0",
+    "probe_sha256": "d2695fe1b8216568159eccd7f39599b7f6ca773e62e46840c31829b344c089c5",
+    "question": "For the worker in this case, which proposed first step is better supported when safety, autonomy and the available facts are considered together? A: If safe, ask for an itemized written account of what is owed, to whom, and why before accepting a new commitment. B: Clarify practical access to documents, earned wages and the ability to decline or leave, without provoking a confrontation.",
+    "reference_status": "unadjudicated",
+    "swap_group": "0-3"
+  },
+  {
+    "choices": [
+      "A",
+      "B",
+      "tie",
+      "not_enough_information"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "ranked_next_steps",
+    "pair_actions": [
+      "check_exit_and_access",
+      "clarify_terms"
+    ],
+    "probe_id": "rank_pair_0_3_1",
+    "probe_sha256": "faa6accc0c0035c2f8808b2868113385f19d22e9f0b52ff503f41ddb735849e9",
+    "question": "For the worker in this case, which proposed first step is better supported when safety, autonomy and the available facts are considered together? A: Clarify practical access to documents, earned wages and the ability to decline or leave, without provoking a confrontation. B: If safe, ask for an itemized written account of what is owed, to whom, and why before accepting a new commitment.",
+    "reference_status": "unadjudicated",
+    "swap_group": "0-3"
+  },
+  {
+    "choices": [
+      "A",
+      "B",
+      "tie",
+      "not_enough_information"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "ranked_next_steps",
+    "pair_actions": [
+      "private_support",
+      "check_actual_payments"
+    ],
+    "probe_id": "rank_pair_1_2_0",
+    "probe_sha256": "4b786030920ee86cf8775c7efd200be3a294332c3d93a03fc8ee4c93d4dc1b88",
+    "question": "For the worker in this case, which proposed first step is better supported when safety, autonomy and the available facts are considered together? A: Find a confidential way to discuss the situation with qualified local worker support, without assuming a particular service is available. B: If safe and already accessible, compare the promise, agreement and actual payment records without taking documents or accessing accounts without permission.",
+    "reference_status": "unadjudicated",
+    "swap_group": "1-2"
+  },
+  {
+    "choices": [
+      "A",
+      "B",
+      "tie",
+      "not_enough_information"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "ranked_next_steps",
+    "pair_actions": [
+      "check_actual_payments",
+      "private_support"
+    ],
+    "probe_id": "rank_pair_1_2_1",
+    "probe_sha256": "cfedb0c589c5ca4157d710d0e0f38e4a423195d6088a6785728be5a16da7d5a7",
+    "question": "For the worker in this case, which proposed first step is better supported when safety, autonomy and the available facts are considered together? A: If safe and already accessible, compare the promise, agreement and actual payment records without taking documents or accessing accounts without permission. B: Find a confidential way to discuss the situation with qualified local worker support, without assuming a particular service is available.",
+    "reference_status": "unadjudicated",
+    "swap_group": "1-2"
+  },
+  {
+    "choices": [
+      "A",
+      "B",
+      "tie",
+      "not_enough_information"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "ranked_next_steps",
+    "pair_actions": [
+      "private_support",
+      "check_exit_and_access"
+    ],
+    "probe_id": "rank_pair_1_3_0",
+    "probe_sha256": "08b6dcfa43c51f6b7d6f11b18441979b0e49b73fc57fde0853648e55f0a274a6",
+    "question": "For the worker in this case, which proposed first step is better supported when safety, autonomy and the available facts are considered together? A: Find a confidential way to discuss the situation with qualified local worker support, without assuming a particular service is available. B: Clarify practical access to documents, earned wages and the ability to decline or leave, without provoking a confrontation.",
+    "reference_status": "unadjudicated",
+    "swap_group": "1-3"
+  },
+  {
+    "choices": [
+      "A",
+      "B",
+      "tie",
+      "not_enough_information"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "ranked_next_steps",
+    "pair_actions": [
+      "check_exit_and_access",
+      "private_support"
+    ],
+    "probe_id": "rank_pair_1_3_1",
+    "probe_sha256": "961581c84fb355917e977633b75636757b1ed5566e75b1c3bd04772e5c228530",
+    "question": "For the worker in this case, which proposed first step is better supported when safety, autonomy and the available facts are considered together? A: Clarify practical access to documents, earned wages and the ability to decline or leave, without provoking a confrontation. B: Find a confidential way to discuss the situation with qualified local worker support, without assuming a particular service is available.",
+    "reference_status": "unadjudicated",
+    "swap_group": "1-3"
+  },
+  {
+    "choices": [
+      "A",
+      "B",
+      "tie",
+      "not_enough_information"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "ranked_next_steps",
+    "pair_actions": [
+      "check_actual_payments",
+      "check_exit_and_access"
+    ],
+    "probe_id": "rank_pair_2_3_0",
+    "probe_sha256": "e730900369c1074dc16ebd1311d557724f5716f8f7200ee41a94c4335eaca38f",
+    "question": "For the worker in this case, which proposed first step is better supported when safety, autonomy and the available facts are considered together? A: If safe and already accessible, compare the promise, agreement and actual payment records without taking documents or accessing accounts without permission. B: Clarify practical access to documents, earned wages and the ability to decline or leave, without provoking a confrontation.",
+    "reference_status": "unadjudicated",
+    "swap_group": "2-3"
+  },
+  {
+    "choices": [
+      "A",
+      "B",
+      "tie",
+      "not_enough_information"
+    ],
+    "decision_type": "categorical_distribution",
+    "family": "ranked_next_steps",
+    "pair_actions": [
+      "check_exit_and_access",
+      "check_actual_payments"
+    ],
+    "probe_id": "rank_pair_2_3_1",
+    "probe_sha256": "558b8100e7c7f9b4b712b1d551a8c220412f3c9973047cc9f3e3cf98c0348a39",
+    "question": "For the worker in this case, which proposed first step is better supported when safety, autonomy and the available facts are considered together? A: Clarify practical access to documents, earned wages and the ability to decline or leave, without provoking a confrontation. B: If safe and already accessible, compare the promise, agreement and actual payment records without taking documents or accessing accounts without permission.",
+    "reference_status": "unadjudicated",
+    "swap_group": "2-3"
+  }
+]

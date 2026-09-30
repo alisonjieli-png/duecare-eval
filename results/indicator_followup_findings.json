@@ -1,0 +1,148 @@
+{
+  "assessment": {
+    "by_label": {
+      "document_retention": {
+        "f1": 1.0,
+        "false_negatives": 0,
+        "false_positives": 0,
+        "true_negatives": 192,
+        "true_positives": 192
+      },
+      "earned_wage_withholding": {
+        "f1": 1.0,
+        "false_negatives": 0,
+        "false_positives": 0,
+        "true_negatives": 192,
+        "true_positives": 192
+      },
+      "movement_restriction": {
+        "f1": 1.0,
+        "false_negatives": 0,
+        "false_positives": 0,
+        "true_negatives": 192,
+        "true_positives": 192
+      },
+      "recruitment_deception": {
+        "f1": 1.0,
+        "false_negatives": 0,
+        "false_positives": 0,
+        "true_negatives": 192,
+        "true_positives": 192
+      },
+      "retaliatory_threat": {
+        "f1": 1.0,
+        "false_negatives": 0,
+        "false_positives": 0,
+        "true_negatives": 192,
+        "true_positives": 192
+      },
+      "undisclosed_exit_charge": {
+        "f1": 1.0,
+        "false_negatives": 0,
+        "false_positives": 0,
+        "true_negatives": 192,
+        "true_positives": 192
+      }
+    },
+    "by_role": {
+      "employer": {
+        "coverage": 1.0,
+        "exact_set_accuracy": 1,
+        "exact_sets": 192,
+        "false_negatives": 0,
+        "false_positives": 0,
+        "hamming_loss": 0.0,
+        "labelwise_brier": 0.0010393229166666676,
+        "micro_f1": 1.0,
+        "micro_precision": 1.0,
+        "micro_recall": 1.0,
+        "requested": 192,
+        "true_negatives": 576,
+        "true_positives": 576,
+        "usable": 192
+      },
+      "worker": {
+        "coverage": 1.0,
+        "exact_set_accuracy": 1,
+        "exact_sets": 192,
+        "false_negatives": 0,
+        "false_positives": 0,
+        "hamming_loss": 0.0,
+        "labelwise_brier": 0.0008925347222222231,
+        "micro_f1": 1.0,
+        "micro_precision": 1.0,
+        "micro_recall": 1.0,
+        "requested": 192,
+        "true_negatives": 576,
+        "true_positives": 576,
+        "usable": 192
+      }
+    },
+    "by_split": {
+      "calibration": {
+        "coverage": 1.0,
+        "exact_set_accuracy": 1,
+        "exact_sets": 96,
+        "false_negatives": 0,
+        "false_positives": 0,
+        "hamming_loss": 0.0,
+        "labelwise_brier": 0.0008402777777777785,
+        "micro_f1": 1.0,
+        "micro_precision": 1.0,
+        "micro_recall": 1.0,
+        "requested": 96,
+        "true_negatives": 288,
+        "true_positives": 288,
+        "usable": 96
+      },
+      "held_out": {
+        "coverage": 1.0,
+        "exact_set_accuracy": 1,
+        "exact_sets": 288,
+        "false_negatives": 0,
+        "false_positives": 0,
+        "hamming_loss": 0.0,
+        "labelwise_brier": 0.001007812500000001,
+        "micro_f1": 1.0,
+        "micro_precision": 1.0,
+        "micro_recall": 1.0,
+        "requested": 288,
+        "true_negatives": 864,
+        "true_positives": 864,
+        "usable": 288
+      }
+    },
+    "coverage": 1.0,
+    "exact_set_accuracy": 1,
+    "exact_sets": 384,
+    "false_negatives": 0,
+    "false_positives": 0,
+    "hamming_loss": 0.0,
+    "invalid": 0,
+    "invalid_task_ids": [],
+    "invariance": {
+      "complete_fact_groups": 64,
+      "stable_predicted_sets": 64
+    },
+    "labelwise_brier": 0.0009659288194444453,
+    "micro_f1": 1.0,
+    "micro_precision": 1.0,
+    "micro_recall": 1.0,
+    "missing": 0,
+    "protocol": "duecare-composite-indicators/1.0.0",
+    "reference_basis": "Explicit analyst-authored conditions; domain review pending.",
+    "requested": 384,
+    "true_negatives": 1152,
+    "true_positives": 1152,
+    "usable": 384
+  },
+  "coverage": 1.0,
+  "model": "jev-1.13.0",
+  "outcomes": {
+    "completed": 384
+  },
+  "protocol": "duecare-composite-indicators/1.0.0",
+  "recorded": 384,
+  "requested": 384,
+  "snapshot_at": "2026-09-30T20:29:56.297007+00:00"
+}

@@ -1,18 +1,18 @@
-# Full text without public disclosure
+# Exact text and controlled access
 
-Benchmark fidelity and public disclosure are different decisions. The original source texts remain intact in the private archive. The released bounded fixtures and newly generated variants are separately versioned derivatives, not verbatim replications. Scores from those protocols must not be merged silently.
+DueCare preserves original source texts in the private archive and versions each adapted task separately. Evaluations use the exact text associated with their protocol. Reports identify which version produced each score and document any analysis that combines versions.
 
-The optional `duecare_eval.vault` module supports authenticated encryption at rest and exact-byte decryption for a trusted local comparison. Install the `vault` extra. Supply a 32-byte key from an approved secret manager; never commit, log, embed or transmit that key with the encrypted fixture. `seal` generates a fresh nonce for each envelope. `open_in_memory` authenticates before exposing plaintext. `compare_locally` permits only a small fixed set of finite numeric metrics in its receipt and uses a keyed source fingerprint.
+The optional `duecare_eval.vault` module supplies authenticated encryption at rest and exact-byte decryption for a trusted local comparison. Install the `vault` extra. Supply a 32-byte key from an approved secret manager and keep it separate from the encrypted fixture, source tree and logs. `seal` generates a fresh nonce for each envelope. `open_in_memory` authenticates before exposing plaintext. `compare_locally` accepts a fixed set of finite numeric metrics in its receipt and uses a keyed source fingerprint.
 
-This follows the [cryptography AES-GCM API](https://cryptography.io/en/latest/hazmat/primitives/aead/). Encryption is not encoding, and neither changes whether a disclosure or an evaluation is authorized. No encrypted historical dataset or decryption key is distributed in this release.
+The helper uses the [cryptography AES-GCM API](https://cryptography.io/en/latest/hazmat/primitives/aead/). Dataset access and evaluation still require the appropriate authorization. This release distributes the helper and its tests; historical datasets and keys remain in their authorized private storage.
 
-Important boundaries:
+Responsibilities around the helper:
 
-- The helper itself performs no file or network I/O. The evaluator is trusted application code, not sandboxed by this API.
-- Ordinary Python cannot guarantee zeroization of all plaintext copies, exclusion from swap, core dumps, diagnostics, or malicious callback logging. A stronger memory-only threat model needs OS/process isolation and review.
-- Calling a remote model sends plaintext to that provider. Encryption at rest cannot establish provider non-retention or override the dataset's approved-recipient policy.
-- Existing campaign journals may retain plaintext. Do not reuse them for a new full-text in-memory protocol and describe the result as metadata-only.
-- Existing private plaintext archives have not been deleted or retroactively encrypted. Production key management and a protected-runtime deployment remain separate work.
-- Full-text fidelity does not validate a source's legal claims or original quality ratings. Labels still require independent assessment.
+- The calling application controls file and network I/O. It also selects and trusts the evaluator callback. Process isolation requires an additional runtime boundary.
+- Python may leave plaintext copies in memory, swap, core dumps or diagnostics. A memory-only threat model needs operating-system controls, callback review and retention testing.
+- A remote model receives plaintext. Choose a provider and retention policy approved for that dataset and recipient.
+- Existing campaign journals may retain plaintext. A metadata-only protocol needs its own reviewed logging path.
+- Existing private plaintext archives remain in place. Production key management and deployment of a protected runtime are continuing work.
+- Legal claims and original quality ratings require independent assessment alongside exact-text verification.
 
-The tests verify exact-byte round trips, fresh ciphertext, authentication failure for wrong keys or tampering, and rejection of textual receipts. They do not claim secure-enclave isolation or remote-provider privacy guarantees.
+The tests verify exact-byte round trips, fresh ciphertext, authentication failure for wrong keys or tampering, and rejection of textual receipts. Secure-enclave isolation and provider-retention guarantees require separate evidence from those systems.

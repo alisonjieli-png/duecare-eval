@@ -1,8 +1,8 @@
 {
-  "checks": "path allowlist, symlinks, common credentials/private paths, typed-output whitelist",
-  "files_checked": 55,
+  "checks": "path allowlist, symlinks, common credentials/private paths, numeric-output schemas, exact source and comparison reproduction",
+  "files_checked": 118,
   "findings": [],
-  "limitation": "Automated checks and content review do not establish independent human/domain validity.",
   "passed": true,
-  "scope": "allowlisted_public_export_only"
+  "scope": "allowlisted_public_export_only",
+  "validation_scope": "Export integrity and software verification; independent domain and worker review are additional evidence milestones."
 }

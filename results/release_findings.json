@@ -1,0 +1,201 @@
+{
+  "schema": "duecare-public-findings/1.0.0",
+  "snapshot_at": "2026-09-30T17:21:59.689170+00:00",
+  "source_studies": {
+    "referral_control": {
+      "by_track": {
+        "relevant_source": {
+          "complete_binary_repeat_pairs": 4064,
+          "complete_distribution_repeat_pairs": 1008,
+          "completed": 10152,
+          "mean_absolute_repeat_change": 0.01016486220472441,
+          "mean_total_variation_distance": 0.03267857142857143,
+          "source_texts": 127,
+          "threshold_flips_at_0_5": 60
+        },
+        "unrelated_context_control": {
+          "complete_binary_repeat_pairs": 448,
+          "complete_distribution_repeat_pairs": 111,
+          "completed": 1119,
+          "mean_absolute_repeat_change": 0.009665178571428571,
+          "mean_total_variation_distance": 0.03009009009009009,
+          "source_texts": 14,
+          "threshold_flips_at_0_5": 1
+        }
+      },
+      "completed": 11271,
+      "coverage": 0.6708928571428572,
+      "interpretation": "Descriptive behavior on observed source texts. No accuracy, legal finding or calibrated real-world risk claim.",
+      "matched_question_groups": {
+        "by_concept": {},
+        "complete_groups": 0,
+        "distinct_source_texts": 0,
+        "mean_absolute_repeat_change": null,
+        "mean_within_repeat_wording_span": null
+      },
+      "next_step_order": {
+        "ambiguous_top_probability_pairs": 0,
+        "complete_swapped_pairs": 0,
+        "resolved_pairs": 0,
+        "stable_unique_winner_pairs": 0
+      },
+      "requested": 16800,
+      "source_texts_observed": 141
+    },
+    "source_questions": {
+      "by_track": {
+        "source_context": {
+          "complete_binary_repeat_pairs": 5657,
+          "complete_distribution_repeat_pairs": 2580,
+          "completed": 16637,
+          "mean_absolute_repeat_change": 0.008508043132402334,
+          "mean_total_variation_distance": 0.02986821705426357,
+          "source_texts": 80,
+          "threshold_flips_at_0_5": 52
+        }
+      },
+      "completed": 16637,
+      "coverage": 0.29520210085524684,
+      "interpretation": "Descriptive behavior on observed source texts. No accuracy, legal finding or calibrated real-world risk claim.",
+      "matched_question_groups": {
+        "by_concept": {
+          "cost_disclosure": {
+            "complete_source_groups": 78,
+            "mean_absolute_repeat_change": 0.008173076923076924,
+            "mean_within_repeat_wording_span": 0.21275641025641026,
+            "repeat_groups_with_mixed_threshold_decisions": 30,
+            "wording_repeat_groups": 156
+          },
+          "cross_border_evidence": {
+            "complete_source_groups": 78,
+            "mean_absolute_repeat_change": 0.006730769230769231,
+            "mean_within_repeat_wording_span": 0.6702564102564103,
+            "repeat_groups_with_mixed_threshold_decisions": 156,
+            "wording_repeat_groups": 156
+          },
+          "financial_exploitation": {
+            "complete_source_groups": 78,
+            "mean_absolute_repeat_change": 0.006346153846153847,
+            "mean_within_repeat_wording_span": 0.1351923076923077,
+            "repeat_groups_with_mixed_threshold_decisions": 6,
+            "wording_repeat_groups": 156
+          },
+          "worker_control": {
+            "complete_source_groups": 78,
+            "mean_absolute_repeat_change": 0.012083333333333331,
+            "mean_within_repeat_wording_span": 0.23769230769230767,
+            "repeat_groups_with_mixed_threshold_decisions": 65,
+            "wording_repeat_groups": 156
+          }
+        },
+        "complete_groups": 312,
+        "distinct_source_texts": 78,
+        "mean_absolute_repeat_change": 0.008333333333333333,
+        "mean_within_repeat_wording_span": 0.313974358974359
+      },
+      "next_step_order": {
+        "ambiguous_top_probability_pairs": 6,
+        "complete_swapped_pairs": 949,
+        "resolved_pairs": 943,
+        "stable_unique_winner_pairs": 815
+      },
+      "requested": 56358,
+      "source_texts_observed": 80
+    }
+  },
+  "style_judges": {
+    "deepseek-v4.1-flash": {
+      "by_condition": {
+        "altered_conclusion": {
+          "accuracy": 0.9386574074074074,
+          "completed": 864,
+          "correct": 811
+        },
+        "equivalent": {
+          "accuracy": 0.5706018518518519,
+          "completed": 864,
+          "correct": 493
+        }
+      },
+      "complete_swapped_pairs": 864,
+      "completed": 1728,
+      "conditional_accuracy": 0.7546296296296297,
+      "correct": 1304,
+      "coverage": 1.0,
+      "interpretation": "Agreement with a constructed screening policy, not validated domain expertise.",
+      "requested": 1728,
+      "stable_swapped_pairs": 645
+    },
+    "kimi-k3": {
+      "by_condition": {
+        "altered_conclusion": {
+          "accuracy": 0.9837962962962963,
+          "completed": 864,
+          "correct": 850
+        },
+        "equivalent": {
+          "accuracy": 0.6157407407407407,
+          "completed": 864,
+          "correct": 532
+        }
+      },
+      "complete_swapped_pairs": 864,
+      "completed": 1728,
+      "conditional_accuracy": 0.7997685185185185,
+      "correct": 1382,
+      "coverage": 1.0,
+      "interpretation": "Agreement with a constructed screening policy, not validated domain expertise.",
+      "requested": 1728,
+      "stable_swapped_pairs": 706
+    }
+  },
+  "style_matched_intersection": {
+    "judges": {
+      "deepseek-v4.1-flash": {
+        "by_condition": {
+          "altered_conclusion": {
+            "accuracy": 0.9386574074074074,
+            "completed": 864,
+            "correct": 811
+          },
+          "equivalent": {
+            "accuracy": 0.5706018518518519,
+            "completed": 864,
+            "correct": 493
+          }
+        },
+        "complete_swapped_pairs": 864,
+        "completed": 1728,
+        "conditional_accuracy": 0.7546296296296297,
+        "correct": 1304,
+        "coverage": 1.0,
+        "interpretation": "Agreement with a constructed screening policy, not validated domain expertise.",
+        "requested": 1728,
+        "stable_swapped_pairs": 645
+      },
+      "kimi-k3": {
+        "by_condition": {
+          "altered_conclusion": {
+            "accuracy": 0.9837962962962963,
+            "completed": 864,
+            "correct": 850
+          },
+          "equivalent": {
+            "accuracy": 0.6157407407407407,
+            "completed": 864,
+            "correct": 532
+          }
+        },
+        "complete_swapped_pairs": 864,
+        "completed": 1728,
+        "conditional_accuracy": 0.7997685185185185,
+        "correct": 1382,
+        "coverage": 1.0,
+        "interpretation": "Agreement with a constructed screening policy, not validated domain expertise.",
+        "requested": 1728,
+        "stable_swapped_pairs": 706
+      }
+    },
+    "requests": 1728
+  }
+}

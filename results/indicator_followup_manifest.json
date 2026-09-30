@@ -1,0 +1,47 @@
+{
+  "concurrency": 1,
+  "files": {
+    "../examples/indicator_followup_references.jsonl": "aa6e076bde5fa7ec1e2d95aad5925bf50123b8ab40938930de7c366a1481e8b1",
+    "indicator_followup_observations.jsonl": "cbf7a11bd6504cc63d73f79ac98bf4b8394a9e565dd9d37a4c420c9f9d8b0203"
+  },
+  "maximum_calls": 768,
+  "model": "jev-1.13.0",
+  "protocol": "duecare-composite-indicators/1.0.0",
+  "requested": 384,
+  "snapshot_at": "2026-09-30T20:29:56.297007+00:00",
+  "source_design": {
+    "calibration_tasks": 96,
+    "domain_review": "pending",
+    "fact_groups": 64,
+    "files": {
+      "indicator_followup_blind_inputs.jsonl": "59905386a9d180ff1434fba7b8539d7eb6817f96e9e098eb47f1d179dc0bcca7",
+      "indicator_followup_references.jsonl": "aa6e076bde5fa7ec1e2d95aad5925bf50123b8ab40938930de7c366a1481e8b1"
+    },
+    "held_out_tasks": 288,
+    "labels": [
+      "document_retention",
+      "earned_wage_withholding",
+      "movement_restriction",
+      "recruitment_deception",
+      "retaliatory_threat",
+      "undisclosed_exit_charge"
+    ],
+    "presentations": [
+      "forward",
+      "reversed",
+      "benign_context"
+    ],
+    "protocol": "duecare-composite-indicators/1.0.0",
+    "reference_basis": "Explicit fact composition",
+    "roles": [
+      "worker",
+      "employer"
+    ],
+    "tasks": 384
+  },
+  "source_journal": {
+    "bytes": 223436,
+    "path": "runs/composite-indicators-v1/jev-1.13.0/measurements/responses.jsonl",
+    "sha256": "81097e0e53b07708093a85cdc724312eacc574ed01e2f3ab554da0373ca4caba"
+  }
+}

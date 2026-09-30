@@ -1,10 +1,30 @@
 {
-  "duration_seconds": 370.57,
+  "duration_seconds": 333.355,
   "errors": 0,
   "failures": 0,
-  "full_run_final": true,
+  "full_run_final": false,
   "network": "disabled_by_test_fixture",
-  "scope": "public exported core, not the omitted private provider runners",
+  "scope": "public exported code and evidence; private provider execution has separate receipts",
   "skipped": 0,
-  "tests": 110
+  "tests": 210,
+  "verification_runs": [
+    {
+      "counts": {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "tests": 203
+      },
+      "scope": "full public suite at collection"
+    },
+    {
+      "counts": {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "tests": 7
+      },
+      "scope": "subsequently added recovery-analysis test file"
+    }
+  ]
 }

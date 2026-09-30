@@ -1,0 +1,684 @@
+{
+  "bulk": {
+    "generation_summaries": {
+      "generate-gemma4": {
+        "coverage": 0.21912350597609562,
+        "dispatch_eligible": 867,
+        "distinct_responses": 880,
+        "length_adherent": 861,
+        "requested": 4016,
+        "source_prefix_index": 47,
+        "statuses": {
+          "completed": 880
+        },
+        "usable": 880
+      },
+      "generate-gpt-oss": {
+        "coverage": 0.21912350597609562,
+        "dispatch_eligible": 877,
+        "distinct_responses": 880,
+        "length_adherent": 201,
+        "requested": 4016,
+        "source_prefix_index": 43,
+        "statuses": {
+          "completed": 880
+        },
+        "usable": 880
+      },
+      "generate-tactical": {
+        "coverage": 0.3107569721115538,
+        "dispatch_eligible": 6196,
+        "distinct_responses": 6240,
+        "length_adherent": 5908,
+        "requested": 20080,
+        "source_prefix_index": 38,
+        "statuses": {
+          "completed": 6240
+        },
+        "usable": 6240
+      }
+    },
+    "jobs": {
+      "compare-deepseek": {
+        "coverage": 0.7291666666666666,
+        "requested": 1152,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:53:28.231011+00:00",
+        "usable": 840
+      },
+      "compare-kimi": {
+        "coverage": 0.7291666666666666,
+        "requested": 1152,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:55:08.997136+00:00",
+        "usable": 840
+      },
+      "generate-gemma4": {
+        "coverage": 0.21912350597609562,
+        "requested": 4016,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:57:19.669449+00:00",
+        "usable": 880
+      },
+      "generate-gpt-oss": {
+        "coverage": 0.21912350597609562,
+        "requested": 4016,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:59:48.921312+00:00",
+        "usable": 880
+      },
+      "generate-tactical": {
+        "coverage": 0.3107569721115538,
+        "requested": 20080,
+        "state": "running",
+        "updated_at": "2026-09-30T20:04:51.683609+00:00",
+        "usable": 6240
+      },
+      "grade-generate-gemma4-deepseek": {
+        "coverage": 0.21264940239043825,
+        "requested": 4016,
+        "state": "partial",
+        "updated_at": "2026-09-30T20:01:36.880458+00:00",
+        "usable": 854
+      },
+      "grade-generate-gemma4-glm": {
+        "coverage": 0.2056772908366534,
+        "requested": 4016,
+        "state": "running",
+        "updated_at": "2026-09-30T20:01:39.982854+00:00",
+        "usable": 826
+      },
+      "grade-generate-gemma4-jev": {
+        "coverage": 0.21588645418326693,
+        "requested": 4016,
+        "state": "waiting_generation",
+        "updated_at": "2026-09-30T20:05:13.170364+00:00",
+        "usable": 867
+      },
+      "grade-generate-gpt-oss-deepseek": {
+        "coverage": 0.21090637450199204,
+        "requested": 4016,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:58:55.295374+00:00",
+        "usable": 847
+      },
+      "grade-generate-gpt-oss-glm": {
+        "coverage": 0.20268924302788843,
+        "requested": 4016,
+        "state": "running",
+        "updated_at": "2026-09-30T19:58:58.321892+00:00",
+        "usable": 814
+      },
+      "grade-generate-gpt-oss-jev": {
+        "coverage": 0.21837649402390438,
+        "requested": 4016,
+        "state": "waiting_generation",
+        "updated_at": "2026-09-30T20:05:27.410443+00:00",
+        "usable": 877
+      },
+      "grade-generate-tactical-deepseek": {
+        "coverage": 0.04183266932270916,
+        "requested": 20080,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:56:43.640872+00:00",
+        "usable": 840
+      },
+      "grade-generate-tactical-glm": {
+        "coverage": 0.03989043824701195,
+        "requested": 20080,
+        "state": "running",
+        "updated_at": "2026-09-30T19:56:49.655958+00:00",
+        "usable": 801
+      },
+      "grade-generate-tactical-jev": {
+        "coverage": 0.3089143426294821,
+        "requested": 20080,
+        "state": "partial",
+        "updated_at": "2026-09-30T20:05:22.391706+00:00",
+        "usable": 6203
+      }
+    },
+    "source_prefix_index": 31,
+    "state": "running",
+    "updated_at": null
+  },
+  "crossborder": {
+    "jobs": {
+      "calibration-glm": {
+        "coverage": 0.2916666666666667,
+        "requested": 408,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:17:20.474588+00:00",
+        "usable": 119
+      },
+      "calibration-jev": {
+        "coverage": 1.0,
+        "requested": 408,
+        "state": "completed",
+        "updated_at": "2026-09-30T14:07:51.040098+00:00",
+        "usable": 408
+      },
+      "decisions-deepseek": {
+        "coverage": 0.128068303094984,
+        "requested": 937,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:01:10.266487+00:00",
+        "usable": 120
+      },
+      "decisions-gemma4-31b": {
+        "coverage": 0.128068303094984,
+        "requested": 937,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:09:01.667702+00:00",
+        "usable": 120
+      },
+      "decisions-gpt-oss-20b": {
+        "coverage": 0.128068303094984,
+        "requested": 937,
+        "state": "partial",
+        "updated_at": "2026-09-30T18:58:13.992115+00:00",
+        "usable": 120
+      },
+      "decisions-jev": {
+        "coverage": 1.0,
+        "requested": 937,
+        "state": "completed",
+        "updated_at": "2026-09-30T14:07:50.538795+00:00",
+        "usable": 937
+      },
+      "decisions-kimi": {
+        "coverage": 0.128068303094984,
+        "requested": 937,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:04:59.670930+00:00",
+        "usable": 120
+      },
+      "decisions-tactical": {
+        "coverage": 1.0,
+        "requested": 937,
+        "state": "completed",
+        "updated_at": "2026-09-30T14:23:00.281893+00:00",
+        "usable": 937
+      },
+      "grade-ladders-tactical-glm": {
+        "coverage": 0.5,
+        "requested": 240,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:37:45.739418+00:00",
+        "usable": 120
+      },
+      "grade-ladders-tactical-jev": {
+        "coverage": 1.0,
+        "requested": 240,
+        "state": "completed",
+        "updated_at": "2026-09-30T14:07:51.502418+00:00",
+        "usable": 240
+      },
+      "grade-prose-deepseek-glm": {
+        "coverage": 0.6180555555555556,
+        "requested": 144,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:58:09.238135+00:00",
+        "usable": 89
+      },
+      "grade-prose-deepseek-jev": {
+        "coverage": 0.6666666666666666,
+        "requested": 144,
+        "state": "partial",
+        "updated_at": "2026-09-30T20:05:22.976966+00:00",
+        "usable": 96
+      },
+      "grade-prose-gemma4-31b-glm": {
+        "state": "running",
+        "updated_at": "2026-09-30T20:04:37.395526+00:00"
+      },
+      "grade-prose-gemma4-31b-jev": {
+        "coverage": 0.6597222222222222,
+        "requested": 144,
+        "state": "partial",
+        "updated_at": "2026-09-30T20:05:31.568698+00:00",
+        "usable": 95
+      },
+      "grade-prose-gpt-oss-20b-glm": {
+        "coverage": 0.5972222222222222,
+        "requested": 144,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:49:04.530057+00:00",
+        "usable": 86
+      },
+      "grade-prose-gpt-oss-20b-jev": {
+        "coverage": 0.6597222222222222,
+        "requested": 144,
+        "state": "partial",
+        "updated_at": "2026-09-30T20:05:18.115608+00:00",
+        "usable": 95
+      },
+      "grade-prose-kimi-glm": {
+        "coverage": 0.5972222222222222,
+        "requested": 144,
+        "state": "partial",
+        "updated_at": "2026-09-30T20:04:34.805428+00:00",
+        "usable": 86
+      },
+      "grade-prose-kimi-jev": {
+        "error_type": "JSONDecodeError",
+        "state": "failed",
+        "updated_at": "2026-09-30T17:40:33.331240+00:00"
+      },
+      "grade-prose-tactical-glm": {
+        "coverage": 0.4375,
+        "requested": 144,
+        "state": "partial",
+        "updated_at": "2026-09-30T18:54:22.512625+00:00",
+        "usable": 63
+      },
+      "grade-prose-tactical-jev": {
+        "coverage": 1.0,
+        "requested": 144,
+        "state": "completed",
+        "updated_at": "2026-09-30T14:15:05.005800+00:00",
+        "usable": 144
+      },
+      "ladders-tactical": {
+        "coverage": 1.0,
+        "requested": 240,
+        "state": "completed",
+        "updated_at": "2026-09-30T14:07:50.515219+00:00",
+        "usable": 240
+      },
+      "prose-deepseek": {
+        "coverage": 0.6666666666666666,
+        "requested": 144,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:26:45.815850+00:00",
+        "usable": 96
+      },
+      "prose-gemma4-31b": {
+        "coverage": 0.6666666666666666,
+        "requested": 144,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:31:31.666094+00:00",
+        "usable": 96
+      },
+      "prose-gpt-oss-20b": {
+        "coverage": 0.6666666666666666,
+        "requested": 144,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:24:27.895813+00:00",
+        "usable": 96
+      },
+      "prose-kimi": {
+        "coverage": 0.6666666666666666,
+        "requested": 144,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:29:19.384645+00:00",
+        "usable": 96
+      },
+      "prose-tactical": {
+        "coverage": 1.0,
+        "requested": 144,
+        "state": "completed",
+        "updated_at": "2026-09-30T14:14:52.983570+00:00",
+        "usable": 144
+      }
+    },
+    "source_prefix_index": 30,
+    "state": "running",
+    "updated_at": null
+  },
+  "main": {
+    "jobs": {
+      "decision-attacks-deepseek-flash": {
+        "coverage": 0.05541666666666667,
+        "measured": 399,
+        "state": "partial",
+        "updated_at": "2026-09-30T15:31:41.435774+00:00"
+      },
+      "decision-attacks-gemma-abliterated": {
+        "state": "running",
+        "updated_at": "2026-09-30T20:02:19.420741+00:00"
+      },
+      "decision-attacks-gemma4-31b": {
+        "coverage": 0.05555555555555555,
+        "measured": 400,
+        "state": "partial",
+        "updated_at": "2026-09-30T15:42:37.721203+00:00"
+      },
+      "decision-attacks-gpt-oss-20b": {
+        "coverage": 0.06875,
+        "measured": 495,
+        "state": "partial",
+        "updated_at": "2026-09-30T15:27:21.413554+00:00"
+      },
+      "decision-attacks-jev": {
+        "coverage": 0.9998611111111111,
+        "measured": 7199,
+        "state": "completed",
+        "updated_at": "2026-09-30T05:57:11.268067+00:00"
+      },
+      "decision-attacks-kimi-k3": {
+        "coverage": 0.05555555555555555,
+        "measured": 400,
+        "state": "partial",
+        "updated_at": "2026-09-30T15:38:16.933470+00:00"
+      },
+      "decision-core-deepseek-flash": {
+        "coverage": 0.03333333333333333,
+        "measured": 400,
+        "state": "partial",
+        "updated_at": "2026-09-30T15:29:29.740388+00:00"
+      },
+      "decision-core-gemma-abliterated": {
+        "coverage": 0.40725,
+        "measured": 4887,
+        "state": "partial",
+        "updated_at": "2026-09-30T20:02:15.122207+00:00"
+      },
+      "decision-core-gemma4-31b": {
+        "coverage": 0.03333333333333333,
+        "measured": 400,
+        "state": "partial",
+        "updated_at": "2026-09-30T15:40:23.540549+00:00"
+      },
+      "decision-core-gpt-oss-20b": {
+        "coverage": 0.05,
+        "measured": 600,
+        "state": "partial",
+        "updated_at": "2026-09-30T15:21:46.099229+00:00"
+      },
+      "decision-core-jev": {
+        "coverage": 0.9999166666666667,
+        "measured": 11999,
+        "state": "completed",
+        "updated_at": "2026-09-30T06:13:01.326630+00:00"
+      },
+      "decision-core-kimi-k3": {
+        "coverage": 0.03333333333333333,
+        "measured": 400,
+        "state": "partial",
+        "updated_at": "2026-09-30T15:34:35.686173+00:00"
+      },
+      "decision-reference_decisions-deepseek-flash": {
+        "coverage": 1.0,
+        "measured": 201,
+        "state": "completed",
+        "updated_at": "2026-09-30T15:31:42.265170+00:00"
+      },
+      "decision-reference_decisions-gemma-abliterated": {
+        "coverage": 1.0,
+        "measured": 201,
+        "state": "completed",
+        "updated_at": "2026-09-30T06:08:43.037915+00:00"
+      },
+      "decision-reference_decisions-gemma4-31b": {
+        "coverage": 1.0,
+        "measured": 201,
+        "state": "completed",
+        "updated_at": "2026-09-30T15:42:38.663765+00:00"
+      },
+      "decision-reference_decisions-gpt-oss-20b": {
+        "coverage": 1.0,
+        "measured": 201,
+        "state": "completed",
+        "updated_at": "2026-09-30T15:27:23.192695+00:00"
+      },
+      "decision-reference_decisions-jev": {
+        "coverage": 1.0,
+        "measured": 201,
+        "state": "completed",
+        "updated_at": "2026-09-30T05:02:59.907688+00:00"
+      },
+      "decision-reference_decisions-kimi-k3": {
+        "coverage": 1.0,
+        "measured": 201,
+        "state": "completed",
+        "updated_at": "2026-09-30T15:38:18.565100+00:00"
+      },
+      "judge-claude-judge": {
+        "coverage": 0.0,
+        "measured": 0,
+        "state": "waiting_provider_quota",
+        "updated_at": "2026-09-30T05:01:06.151018+00:00"
+      },
+      "judge-glm-judge": {
+        "coverage": 0.13010752688172042,
+        "measured": 363,
+        "state": "partial",
+        "updated_at": "2026-09-30T16:54:58.333779+00:00"
+      },
+      "judge-jev": {
+        "coverage": 0.9982078853046595,
+        "measured": 2785,
+        "state": "completed",
+        "updated_at": "2026-09-30T05:28:37.972330+00:00"
+      },
+      "prose-deepseek-flash": {
+        "state": "running",
+        "updated_at": "2026-09-30T19:47:46.485554+00:00"
+      },
+      "prose-gemma-abliterated": {
+        "coverage": null,
+        "measured": 428,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:47:05.656661+00:00"
+      },
+      "prose-gemma4-31b": {
+        "coverage": null,
+        "measured": 83,
+        "state": "partial",
+        "updated_at": "2026-09-30T15:17:14.024202+00:00"
+      },
+      "prose-gpt-oss-20b": {
+        "coverage": null,
+        "measured": 221,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:47:46.254466+00:00"
+      },
+      "prose-kimi-k3": {
+        "coverage": null,
+        "measured": 80,
+        "state": "partial",
+        "updated_at": "2026-09-30T13:06:13.147436+00:00"
+      }
+    },
+    "source_prefix_index": 29,
+    "state": "running",
+    "updated_at": "2026-09-30T20:02:19.420772+00:00"
+  },
+  "referral": {
+    "by_track": {
+      "relevant_source": 15431,
+      "unrelated_context_control": 1359
+    },
+    "completed": 16790,
+    "coverage": 0.9994047619047619,
+    "requested": 16800,
+    "source_prefix_index": 35,
+    "state": "completed",
+    "statuses": {
+      "completed": 16790,
+      "provider_error": 10
+    },
+    "updated_at": "2026-09-30T18:02:30.865469+00:00"
+  },
+  "source": {
+    "by_track": {
+      "perspective_expansion": 0,
+      "source_context": 37098
+    },
+    "completed": 37098,
+    "coverage": 0.6582561481954647,
+    "requested": 56358,
+    "source_prefix_index": 34,
+    "state": "running",
+    "statuses": {
+      "completed": 37098,
+      "provider_error": 22
+    },
+    "updated_at": "2026-09-30T20:04:47.197662+00:00"
+  },
+  "style": {
+    "jobs": {
+      "compare-deepseek": {
+        "coverage": 1.0,
+        "requested": 1728,
+        "state": "completed",
+        "updated_at": "2026-09-30T17:11:24.040935+00:00",
+        "usable": 1728
+      },
+      "compare-kimi": {
+        "coverage": 1.0,
+        "requested": 1728,
+        "state": "completed",
+        "updated_at": "2026-09-30T17:11:31.294624+00:00",
+        "usable": 1728
+      }
+    },
+    "source_prefix_index": 33,
+    "state": "execution_finished",
+    "updated_at": "2026-09-30T17:11:33.492924+00:00"
+  },
+  "variation": {
+    "generation_summaries": {
+      "generate-gemma4": {
+        "coverage": 0.20833333333333334,
+        "dispatch_eligible": 180,
+        "distinct_responses": 180,
+        "length_adherent": 175,
+        "requested": 864,
+        "source_prefix_index": 62,
+        "statuses": {
+          "completed": 180
+        },
+        "usable": 180
+      },
+      "generate-gpt-oss": {
+        "coverage": 0.20833333333333334,
+        "dispatch_eligible": 180,
+        "distinct_responses": 180,
+        "length_adherent": 98,
+        "requested": 864,
+        "source_prefix_index": 58,
+        "statuses": {
+          "completed": 180
+        },
+        "usable": 180
+      },
+      "generate-tactical": {
+        "coverage": 0.5888888888888889,
+        "dispatch_eligible": 2540,
+        "distinct_responses": 2544,
+        "length_adherent": 2379,
+        "requested": 4320,
+        "source_prefix_index": 53,
+        "statuses": {
+          "completed": 2544
+        },
+        "usable": 2544
+      }
+    },
+    "jobs": {
+      "compare-deepseek": {
+        "coverage": 0.20833333333333334,
+        "requested": 864,
+        "state": "partial",
+        "updated_at": "2026-09-30T20:04:41.923533+00:00",
+        "usable": 180
+      },
+      "compare-kimi": {
+        "coverage": 0.20833333333333334,
+        "requested": 864,
+        "state": "partial",
+        "updated_at": "2026-09-30T20:05:24.377451+00:00",
+        "usable": 180
+      },
+      "generate-gemma4": {
+        "coverage": 0.20833333333333334,
+        "requested": 864,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:50:59.540083+00:00",
+        "usable": 180
+      },
+      "generate-gpt-oss": {
+        "coverage": 0.20833333333333334,
+        "requested": 864,
+        "state": "running",
+        "updated_at": "2026-09-30T20:05:28.974789+00:00",
+        "usable": 180
+      },
+      "generate-tactical": {
+        "coverage": 0.5888888888888889,
+        "requested": 4320,
+        "state": "running",
+        "updated_at": "2026-09-30T20:04:58.314814+00:00",
+        "usable": 2544
+      },
+      "grade-generate-gemma4-deepseek": {
+        "coverage": 0.20717592592592593,
+        "requested": 864,
+        "state": "partial",
+        "updated_at": "2026-09-30T20:01:10.663340+00:00",
+        "usable": 179
+      },
+      "grade-generate-gemma4-glm": {
+        "coverage": 0.20601851851851852,
+        "requested": 864,
+        "state": "partial",
+        "updated_at": "2026-09-30T20:04:17.981758+00:00",
+        "usable": 178
+      },
+      "grade-generate-gemma4-jev": {
+        "coverage": 0.20833333333333334,
+        "requested": 864,
+        "state": "waiting_generation",
+        "updated_at": "2026-09-30T20:05:21.272924+00:00",
+        "usable": 180
+      },
+      "grade-generate-gpt-oss-deepseek": {
+        "coverage": 0.20717592592592593,
+        "requested": 864,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:55:46.931963+00:00",
+        "usable": 179
+      },
+      "grade-generate-gpt-oss-glm": {
+        "coverage": 0.2048611111111111,
+        "requested": 864,
+        "state": "partial",
+        "updated_at": "2026-09-30T20:00:40.196512+00:00",
+        "usable": 177
+      },
+      "grade-generate-gpt-oss-jev": {
+        "coverage": 0.20833333333333334,
+        "requested": 864,
+        "state": "waiting_generation",
+        "updated_at": "2026-09-30T20:05:16.851548+00:00",
+        "usable": 180
+      },
+      "grade-generate-tactical-deepseek": {
+        "coverage": 0.04097222222222222,
+        "requested": 4320,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:51:30.605527+00:00",
+        "usable": 177
+      },
+      "grade-generate-tactical-glm": {
+        "coverage": 0.0412037037037037,
+        "requested": 4320,
+        "state": "partial",
+        "updated_at": "2026-09-30T19:55:14.416582+00:00",
+        "usable": 178
+      },
+      "grade-generate-tactical-jev": {
+        "coverage": 0.5881944444444445,
+        "requested": 4320,
+        "state": "running",
+        "updated_at": "2026-09-30T20:05:30.060969+00:00",
+        "usable": 2541
+      }
+    },
+    "source_prefix_index": 32,
+    "state": "running",
+    "updated_at": null
+  }
+}

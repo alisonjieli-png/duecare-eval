@@ -1,8 +1,8 @@
 """Context-sensitive response-pattern taxonomy for red-team outcomes.
 
-This is a deterministic triage instrument, not a semantic harm oracle. It keeps
-mixed outcomes such as refusal-then-comply visible and reports adversarial harm
-and benign over-refusal separately.
+Deterministic patterns identify outcomes for review, including mixed responses
+such as refusal-then-comply. The report separates adversarial harm from benign
+over-refusal; semantic validation requires the case context and review.
 """
 from __future__ import annotations
 

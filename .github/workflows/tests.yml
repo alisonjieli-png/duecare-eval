@@ -16,4 +16,11 @@ jobs:
       - run: python -m pip install -e '.[test,vault]'
       - run: duecare-eval verify
       - run: duecare-eval self-check
+      - run: python tools/reproduce_findings.py --check
+      - run: python tools/reproduce_comparisons.py --check
+      - run: python tools/reproduce_indicator_followup.py --check
+      - run: python tools/reproduce_jev_recovery.py --check
+      - run: python tools/check_grading_rubrics.py
+      - run: duecare-eval doctor --json
+      - run: sha256sum --check SHA256SUMS
       - run: pytest -q

@@ -1,0 +1,35 @@
+{
+  "schema": "duecare-version-targets/1.0.0",
+  "targets": [
+    {
+      "target_id": "jev-1.13.0-baseline",
+      "provider": "Jev",
+      "family": "Jev",
+      "requested_name": "Jev 1.13.0",
+      "model_id": "jev-1.13.0",
+      "exact_version": "1.13.0",
+      "status": "recorded_baseline",
+      "documentation_url": "https://github.com/alisonjieli-png/duecare-eval/blob/main/results/jev_crossborder_responses.jsonl"
+    },
+    {
+      "target_id": "jev-next-version",
+      "provider": "Jev",
+      "family": "Jev",
+      "requested_name": "Next Jev version",
+      "model_id": null,
+      "exact_version": null,
+      "status": "exact_version_required",
+      "documentation_url": "https://github.com/alisonjieli-png/duecare-eval/blob/main/docs/VERSION_BENCHMARKS.md"
+    },
+    {
+      "target_id": "gemini4-planned",
+      "provider": "Google",
+      "family": "Gemini",
+      "requested_name": "Gemini4",
+      "model_id": null,
+      "exact_version": null,
+      "status": "exact_version_required",
+      "documentation_url": "https://ai.google.dev/gemini-api/docs/models"
+    }
+  ]
+}

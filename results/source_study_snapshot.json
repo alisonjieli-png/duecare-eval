@@ -1,0 +1,77 @@
+{
+  "as_of": "2026-09-30T16:42:01.351903+00:00",
+  "historical_archive": {
+    "exact_prompt_texts": 94,
+    "grading": "Archived embedding-similarity ensemble; not human gold and not a fresh rerun.",
+    "models": {
+      "gpt-oss:20b": 300
+    },
+    "observations": 300,
+    "seed_note": "Notebook seed hashes are bookkeeping identifiers; the inspected generation call does not pass them to the model.",
+    "source_test_ids": 100,
+    "usage_note": "The inspected notebook computes reported token counts from whitespace word counts; do not treat those fields as metered API token usage."
+  },
+  "interpretation": "Actual new Jev responses on original source contexts, with no correctness labels invented.",
+  "selected_observations": 27,
+  "selected_source_cases": 3,
+  "studies": {
+    "referral_control": {
+      "complete_source_texts": 58,
+      "completed": 4995,
+      "coverage": 0.29732142857142857,
+      "logical_coherence": {
+        "complete_groups": 0,
+        "groups_requiring_review": 0
+      },
+      "protocol": "duecare-referral-control/1.0.0",
+      "ranking": {
+        "case_view_repeats_with_scores": 0,
+        "complete_swapped_pairs": 0,
+        "stable_swapped_pairs": 0
+      },
+      "repeat_stability": {
+        "complete_binary_pairs": 1984,
+        "complete_distribution_pairs": 492,
+        "mean_absolute_probability_change": 0.01048891129032258,
+        "mean_total_variation_distance": 0.03347560975609756,
+        "threshold_flips_at_0_5": 26
+      },
+      "requested": 16800,
+      "source_texts_observed": 63,
+      "wording_sensitivity": {
+        "complete_groups": 0,
+        "max_span": null,
+        "mean_span": null
+      }
+    },
+    "source_questioning": {
+      "complete_source_texts": 38,
+      "completed": 8322,
+      "coverage": 0.14766315341211542,
+      "logical_coherence": {
+        "complete_groups": 79,
+        "groups_requiring_review": 59
+      },
+      "protocol": "duecare-source-questioning/1.0.0",
+      "ranking": {
+        "case_view_repeats_with_scores": 79,
+        "complete_swapped_pairs": 474,
+        "stable_swapped_pairs": 411
+      },
+      "repeat_stability": {
+        "complete_binary_pairs": 2827,
+        "complete_distribution_pairs": 1295,
+        "mean_absolute_probability_change": 0.008238415281216837,
+        "mean_total_variation_distance": 0.030362934362934364,
+        "threshold_flips_at_0_5": 29
+      },
+      "requested": 56358,
+      "source_texts_observed": 40,
+      "wording_sensitivity": {
+        "complete_groups": 316,
+        "max_span": 0.74,
+        "mean_span": 0.2993987341772152
+      }
+    }
+  }
+}

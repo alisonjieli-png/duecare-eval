@@ -1,0 +1,7 @@
+{
+  "adapter_protocol": "external-typed-json/1.0.0",
+  "input_schema": "duecare-blind-decision-task/1.0.0",
+  "decoding": {"temperature": 0},
+  "tools": [],
+  "configuration_role": "example; record the actual adapter and serving settings for each run"
+}

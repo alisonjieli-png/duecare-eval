@@ -1,9 +1,8 @@
 """Defensive handling classification for red-team artifacts.
 
-The project may retain realistic harmful examples for controlled research, but
-retention is not the same as permission to publish or use them as few-shot
-material.  This small, deliberately conservative classifier creates that
-boundary.  It is a routing control, not a content-safety oracle.
+The classifier routes research examples by handling requirements. Publication
+and use as model context each require their own privacy, provenance and rights
+review. Its labels support that review as an initial triage step.
 """
 from __future__ import annotations
 

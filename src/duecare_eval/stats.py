@@ -1,44 +1,15 @@
-"""Exact and clustered interval estimation.
+"""Frequentist intervals, power calculations and clustered comparisons.
 
-Why this file exists
---------------------
-Every number reported so far in this project was a bare proportion. `PILOT_2026-09-28_FINDINGS.md`,
-`FABRICATION_FINDINGS_2026-09-28.md` and `ANSWERABILITY_FINDINGS_2026-09-28.md` all quote
-rates like "0.9559" and "100%" with no interval, at n = 3, 10, 20 and 68. A
-proportion with no interval is a claim, not a measurement, and at these sample
-sizes the interval is frequently wider than the effect being reported.
+Exact binomial bounds describe uncertainty for independent binary observations.
+For example, zero failures in 60 independent cases gives a one-sided exact 95%
+upper bound near 4.87%; 300 independent cases gives a bound near 0.99%.
 
-Three things here, in increasing order of how much they change a conclusion.
+Related variants share a source cluster. Cluster bootstrap resamples those
+groups with their members together, while design-effect helpers estimate the
+effective sample size under an explicit intracluster-correlation assumption.
+Callers choose the sampling unit and report that assumption with the result.
 
-**Exact binomial bounds.** The recovered research (RESEARCH/2026-09-27-duecare,
-section 7) states the fact this project most needs and had been ignoring:
-
-    "zero observed failures in 60 independent cases leaves a one-sided exact 95%
-     upper failure bound of about 4.87%. With 300 independent cases it is about
-     0.99%. Repeated variants of the same case do not earn those independent-sample
-     bounds."
-
-That is the entire argument against reporting n=5,000 from 5,000 paraphrases of
-100 situations, and it is a quantitative statement this module now enforces.
-`clopper_pearson` is computed in pure Python so the project keeps its two
-declared dependencies rather than acquiring scipy for one function.
-
-**Clustered intervals.** A corpus of 50,000 items generated from 1,000 core
-situations is 1,000 observations, each replicated 50 times. An ordinary binomial
-interval over the 50,000 treats the replication as independent evidence and is
-roughly sqrt(50)=7x too narrow. `cluster_bootstrap` resamples CORE CASES with
-replacement and carries all their items along, which is the only resampling
-scheme that respects the actual dependence structure.
-
-**Design effect.** `design_effect` and `effective_sample_size` (Kish) quantify
-how much a non-uniform replication pattern costs, so a report can say "50,000
-items, 1,000 clusters, effective n = 998" rather than leaving the reader to
-notice that n_items and n_clusters disagree.
-
-Deliberate non-goal: no Bayesian posterior. There is no prior here that a failure
-rate should shrink toward, and a prior would quietly import an assumption about
-how good the system is. The question asked is "what is consistent with what was
-observed", which is what an interval answers.
+The numerical routines use Python's standard library.
 """
 from __future__ import annotations
 
@@ -151,15 +122,9 @@ def binomial_cdf(k: int, n: int, p: float) -> float:
 def clopper_pearson(k: int, n: int, alpha: float = 0.05) -> dict:
     """Exact (Clopper-Pearson) two-sided interval for a binomial proportion.
 
-    Conservative by construction: it never under-covers, so it is the right
-    default for a safety claim where the cost of being too confident is the whole
-    problem. For k = 0 the lower bound is exactly 0, which is honest -- zero
-    observed failures is not evidence of zero rate, only of a rate below the
-    upper bound.
-
-    Returns the two-sided interval plus the one-sided upper bound, because "we
-    saw zero failures" is a one-sided claim and the one-sided bound is roughly
-    half the width, which matters at these sample sizes.
+    Coverage is at least the nominal level under the binomial assumptions.
+    Returns two-sided bounds and both one-sided bounds. For k = 0 the lower
+    bound is zero and the upper bound expresses uncertainty in the failure rate.
     """
     if n <= 0:
         raise ValueError("n_must_be_positive")
@@ -169,16 +134,9 @@ def clopper_pearson(k: int, n: int, alpha: float = 0.05) -> dict:
         raise ValueError("alpha_out_of_range")
     lo = 0.0 if k == 0 else _beta_ppf(alpha / 2.0, k, n - k + 1.0)
     hi = 1.0 if k == n else _beta_ppf(1.0 - alpha / 2.0, k + 1.0, n - k)
-    # The one-sided upper is Beta(k+1, n-k) at 1-alpha, which is well defined for
-    # k = 0 (a = 1) and gives 1 - alpha**(1/n) -- the rule of three. An earlier
-    # version special-cased k == 0 to 1.0, which is the TWO-SIDED upper and made
-    # every zero-failure campaign read as 100% failure rate. That is the single
-    # most consequential number in a safety report, and it was wrong.
+    # At k = 0, the one-sided upper bound is 1 - alpha**(1/n).
     one_sided_hi = 1.0 if k == n else _beta_ppf(1.0 - alpha, k + 1.0, n - k)
-    # k == 0 gives a Beta(0, n+1) shape and k == n a Beta(n+1, 0) one; both have an
-    # lgamma(0) = -inf, and their quantiles are exactly 0 and alpha**(1/n). Guard
-    # the special function rather than letting it raise, because "zero failures"
-    # and "zero successes" are both ordinary cases in a safety campaign.
+    # Handle zero-shape boundary cases directly before calling the beta quantile.
     one_sided_lo = (0.0 if k == 0 else
                     alpha ** (1.0 / n) if k == n else
                     _beta_ppf(alpha, k, n - k + 1.0))
@@ -192,40 +150,11 @@ def clopper_pearson(k: int, n: int, alpha: float = 0.05) -> dict:
 
 def required_n(p0: float, delta: float, alpha: float = 0.05,
                power: float = 0.80, direction: str = "below") -> int:
-    """How many independent cases a decision needs, given the effect worth detecting.
+    """Return an approximate planning size for a difference from baseline p0.
 
-    The question that settles "how big should this corpus be". A corpus size is a
-    decision, and a decision needs a sample size behind it: the number of
-    independent cases required to detect a proportion `delta` away from a
-    baseline `p0`, at significance `alpha` and `power`.
-
-    `direction` is the whole point of the function, and getting it wrong produces
-    a sample size that looks rigorous and is meaningless.
-
-        "below"  -- the decision is "is the rate under p0?". You reject when the
-                    exact UPPER bound falls below p0. This is what a release
-                    decision is, and it is the setting every safety margin in this
-                    project needs.
-        "above"  -- the decision is "is the rate over p0?". You reject when the
-                    exact LOWER bound exceeds p0.
-        "either" -- a two-sided difference from p0.
-
-    A first version implemented this as `one_sided` and, with a one-sided test,
-    returned the UPPER-side critical value while the accompanying power check
-    rejected on the LOWER bound. Those are opposite tails. Against a 0.95
-    baseline, the LOWER bound of a 95%-accurate system sits near 0.92 and no
-    sample size can push it past 0.95 -- so the rejection region was empty and
-    the exact power was 0.004 at the "required" n of 334. The number was not
-    merely wrong, it was the wrong tail of the wrong test, and the normal
-    approximation hid it because the approximation never looks at the bound.
-
-    Verified here by `achieved_power`, which computes the EXACT power of the
-    stated decision rule by enumerating the binomial. It is checked against
-    `required_n` in the tests, so a sample size that does not deliver its power
-    fails rather than being reported.
-
-    Normal approximation with a continuity correction, for planning only. The
-    reported intervals are always exact.
+    The alternative is p0-delta for "below" and p0+delta for "above" or "either".
+    Alpha and power set the normal-quantile terms. Check the returned size with
+    achieved_power, or use required_n_exact for a grid search with exact bounds.
     """
     if not 0.0 < p0 < 1.0:
         raise ValueError("p0_out_of_range")
@@ -250,19 +179,8 @@ def required_n(p0: float, delta: float, alpha: float = 0.05,
 def _binomial_pmf_vector(n: int, p: float) -> list:
     """Every binomial pmf value for n trials at probability p.
 
-    Anchor on the MODE rather than on k=0, then walk outward in both directions
-    from it. Anchoring at k=0 was the second bug in this function's history and
-    it is worth being explicit about why: at p = 0.94 and n = 2,000 the pmf at
-    k = 0 is (0.06)^2000, which underflows to exactly 0.0, and every subsequent
-    value is that 0.0 multiplied by a finite ratio, so the whole vector is zero.
-    `achieved_power` then summed an all-zero distribution, reported 0.000 power
-    at every n, and `required_n_exact` dutifully returned its `max_n` cap. Three
-    functions agreed with each other and were all wrong, which is the most
-    dangerous shape a bug takes here: no exception, plausible output, and every
-    other component confirming it.
-
-    The mode of Binomial(n, p) is floor((n+1)p), so seeding there keeps every
-    value representable and the ratios well away from overflow.
+    Seed at the mode, floor((n+1)p), then walk outward using adjacent probability
+    ratios. This keeps the initial probability large enough for stable arithmetic.
     """
     if p >= 1.0:
         out = [0.0] * n + [1.0]
@@ -295,40 +213,20 @@ def _reject(k: int, n: int, p0: float, alpha: float, direction: str) -> bool:
 
 
 def _reject_either(k: int, n: int, p0: float, alpha: float) -> bool:
-    """Two-sided rejection, on two-sided bounds.
-
-    Kept as its own function because `_rejection_limit("either")` has to walk
-    with exactly the predicate `_reject(..., "either")` applies. It originally
-    borrowed the "below" and "above" helpers, which test ONE-sided bounds, so the
-    limit it returned disagreed with the predicate it was supposed to describe
-    at the boundary: the prefix ran one count too far, the suffix one count too
-    short, and the mismatch only ever cost a few counts of probability mass --
-    which is why it read as a small numerical wobble rather than a wrong
-    region.
-    """
+    """Reject when the two-sided interval lies wholly above or below p0."""
     ci = clopper_pearson(k, n, alpha=alpha)
     return ci["lower"] > p0 or ci["upper"] < p0
 
 
 def _rejection_limit(n: int, p0: float, alpha: float, direction: str):
-    """The k boundary of the rejection region, found by bisection.
+    """Return inclusive rejection boundaries for integer count k.
 
-    For "below" the exact upper bound increases in k, so the rejection region is
-    a PREFIX, k <= K. For "above" the lower bound increases in k, so the region is
-    a SUFFIX, k >= K. Bisection finds K in O(log n) exact-bound evaluations
-    instead of O(n), which is the difference between a power check that takes
-    half a second and one that takes seven minutes.
-
-    Exploiting this monotonicity is also what makes the two-sided case tractable:
-    "either" is a prefix union a suffix, and both are monotone in k.
+    One-sided bounds increase with k. Bisection finds the last count in the
+    lower tail or the first in the upper tail. The two-sided path scans all
+    counts to represent separate or overlapping tails exactly.
     """
-    # Linear walks rather than bisection, and the reason is the same as below:
-    # every bisection written against these predicates eventually carried an
-    # off-by-one, and a mis-set endpoint in a rejection region is invisible -- it
-    # shifts the power figure slightly rather than raising. An exhaustive walk is
-    # exact by construction and the cost is a Beta quantile per step, which at
-    # planning sizes is milliseconds. Correctness over cleverness, in a function
-    # whose whole job is to be trusted.
+    # Each one-sided predicate is monotone. Keep a satisfying endpoint in the
+    # bracket and return its inclusive index; tests compare it with a full scan.
     if direction == "below":
         if not _reject(0, n, p0, alpha, direction):
             return -1
@@ -351,52 +249,8 @@ def _rejection_limit(n: int, p0: float, alpha: float, direction: str):
             else:
                 lo = mid
         return hi
-    # "either" is a UNION of a prefix and a suffix, and each half must be bisected
-    # on its own monotone predicate. Bisecting the union directly is wrong: the
-    # union is not monotone in k, so the search returned a "suffix" starting at
-    # k=0 -- every count rejected -- and reported power 1.000 at n=78, a claim
-    # that 78 cases detect a one-point difference. Splitting the union fixed a
-    # function that had been quietly reporting certainty.
-    #
-    # The half-open interval is the subtlety that made the first split wrong too.
-    # `_reject(k, "below")` is upper < p0 and is monotone increasing, so the
-    # prefix is the LAST k that still satisfies it, found by bisecting for the
-    # largest true. The first version returned k_low = 70 at n = 78, where
-    # upper(70) = 0.9547 and the test is FALSE -- one past the end of the prefix,
-    # because the bisection kept the last index it had tested rather than the last
-    # true one. `_prefix_max` is now written as an explicit last-true search and
-    # the exclusive end is stored, so summing `pmf[:k_low]` cannot include the
-    # boundary k that failed.
-    # Both halves use the same discipline: keep an index KNOWN TO SATISFY the
-    # predicate and move the other end, and return a half-open bound. Getting the
-    # endpoint convention wrong here is invisible -- the power number stays in
-    # range and only one k is miscounted -- so `_rejection_limit` is verified
-    # against an exhaustive scan in the tests, for all three directions.
-    # scan_forward/ scan_backward are LINEAR scans, not bisection, and that is
-    # deliberate. The "below" and "above" halves really are monotone in k, so
-    # bisection is valid for them. The UNION is not what is being searched, and
-    # two bisections were written against the union predicate directly -- which
-    # produced an off-by-one at the prefix end, then a suffix that started one
-    # step late, and a power figure that was wrong in the 5th significant place
-    # while looking entirely reasonable. Bisecting a non-monotone predicate
-    # converges on nothing; it does not fail loudly.
-    #
-    # These scans are O(n) but each step is a Beta quantile, and the cost that
-    # actually matters is bounded by the region: the walk stops at the first
-    # satisfying k, and the prefix from 0 is a real interval of counts. That is
-    # a few hundred quantile evaluations at the sizes this project plans, which
-    # is nothing next to the O(n^2) of scoring a corpus.
-    # Both one-sided components are MONOTONE in k, so each is bisected rather than
-    # walked: the walk is O(n) Beta quantiles and a single `achieved_power` call
-    # took 300 seconds on a 64-point grid, which is not a planning tool.
-    #
-    # Bracketing discipline, after five wrong versions of this function:
-    #   prefix  = {k : two-sided upper <  p0}  -- monotone, so keep `lo` KNOWN
-    #            TRUE and move `hi` down; the return value is INCLUSIVE.
-    #   suffix  = {k : two-sided lower >  p0}  -- monotone, so keep `hi` KNOWN
-    #            TRUE and move `lo` up; the return value is INCLUSIVE.
-    # `exhaustive_rejection_region` recomputes both by linear scan and is what the
-    # tests compare against, so the bisection is verified rather than trusted.
+    # The two-sided result below uses the complete rejection region, including
+    # the possibility that its lower and upper tails meet.
     def _prefix_last_true():
         if not _reject_either(0, n, p0, alpha):
             return -1
@@ -421,30 +275,11 @@ def _rejection_limit(n: int, p0: float, alpha: float, direction: str):
                 lo = mid
         return hi
 
-    # Two-sided is the one case that is NOT bisected.
-    #
-    # A two-sided rejection region is a prefix UNION a suffix, and the two can
-    # MEET, in which case it is a single contiguous block and summing the parts
-    # counts it twice. Detecting that is easy; getting the endpoints right across
-    # five rewrites was not, and each version produced a plausible power figure
-    # rather than an error. Meanwhile every safety decision this project makes is
-    # one-sided -- "is the rate below this threshold" -- so the two-sided path is
-    # used for reporting comparisons and nothing load-bearing.
-    #
-    # So it is computed by exhaustive scan, which is correct by construction and
-    # costs a few hundred Beta quantiles at planning sizes. The one-sided paths
-    # above stay bisected because they are both monotone and on the critical
-    # path, and both are verified against the same scan by
-    # `exhaustive_rejection_region`.
+    # Exhaustive evaluation handles overlapping tails once per count.
     region = exhaustive_rejection_region(n, p0, alpha, "either")
     if not region:
         return ("either", -1, n + 1)
-    # Split the region at its gap. A contiguous region is one inclusive span; a
-    # region with a gap is a prefix and a suffix, and the endpoints that matter
-    # are the two ends of the GAP, not the two ends of the range. Returning the
-    # outer endpoints here described the region as {0} U {n}, which counted
-    # almost nothing and produced power figures that were wildly wrong while
-    # remaining in range.
+    # Return inclusive tail boundaries at the gap, or one contiguous span.
     gap_at = None
     for i in range(1, len(region)):
         if region[i] != region[i - 1] + 1:
@@ -458,10 +293,8 @@ def _rejection_limit(n: int, p0: float, alpha: float, direction: str):
 def exhaustive_rejection_region(n: int, p0: float, alpha: float, direction: str) -> list:
     """Every k in 0..n satisfying the rejection rule, by linear scan.
 
-    The reference implementation `_rejection_limit` is bisected and therefore
-    could be wrong at a boundary without raising; the power figure it feeds would
-    still land in a plausible range. This function is the ground truth the tests
-    compare it against, for all three directions and several (n, p0, alpha).
+    Tests compare the optimized one-sided search with this direct evaluation
+    across directions and parameter combinations.
     """
     if direction == "either":
         return [k for k in range(n + 1) if _reject_either(k, n, p0, alpha)]
@@ -470,18 +303,10 @@ def exhaustive_rejection_region(n: int, p0: float, alpha: float, direction: str)
 
 def achieved_power(n: int, p0: float, delta: float, alpha: float = 0.05,
                    direction: str = "below") -> float:
-    """EXACT power of the decision rule `required_n` plans for.
+    """Sum alternative-distribution mass over the exact rejection region.
 
-    The rejection region is located by bisection on k, exploiting the fact that
-    the exact bound is monotone in k, and the power is the binomial mass of that
-    region under the alternative. Exact, and O(log n) bound evaluations.
-
-    This is the check that makes `required_n` honest. It caught the first version
-    being wrong in the wrong direction entirely -- a one-sided test scored
-    against the LOWER bound when the question was "is the rate below p0", which
-    has an empty rejection region at a 0.95 baseline and so zero power at any n
-    -- and then caught a second version whose pmf was anchored at k=0, where
-    (1-p)^n underflows to zero at p=0.94, zeroing the whole distribution.
+    One-sided boundaries use bisection; two-sided boundaries use a full scan.
+    The probability vector is seeded at its mode for numerical stability.
     """
     if direction not in ("below", "above", "either"):
         raise ValueError("direction_must_be_below_above_or_either")
@@ -503,27 +328,11 @@ def achieved_power(n: int, p0: float, delta: float, alpha: float = 0.05,
 def required_n_exact(p0: float, delta: float, alpha: float = 0.05,
                      power: float = 0.80, direction: str = "below",
                      max_n: int = 200_000, grid: int = 64) -> int:
-    """Smallest n ON A GRID whose EXACT power reaches `power`.
+    """Return the first grid size reaching the target exact power, or max_n.
 
-    Returns a grid value, not the true minimum, and says so. Three things forced
-    that shape, each found by being wrong:
-
-    * Bisection on n is invalid. Exact power is not monotone in n -- a two-sided
-      test at a 0.95 baseline runs 0.0935 at n=78 and 0.0478 at n=100, falling as
-      n grows, because the rejection region is a set of integer counts and its
-      boundary steps. A bisection converges on a crossing and returns a size whose
-      power is still under target.
-    * "First n to cross" is not the minimum either, for the same reason: 78 cases
-      already reach 0.09 on the two-sided test, so a naive first-crossing search
-      reported 863 and nobody could tell from the output.
-    * A true minimum search is a walk of unit steps to n, and each step costs a
-      Beta quantile per k, so it is O(n^2). At n = 3,285 that is millions of
-      quantile evaluations, which is not a planning call, it is an outage.
-
-    So this scans a fixed grid and reports the first grid point that reaches the
-    target, with the grid size returned alongside. A designer using this needs to
-    know the resolution they are getting, and `plan_corpus` carries it in the
-    output rather than leaving it implicit.
+    Integer rejection boundaries make exact power uneven as n grows. Scan in
+    steps of grid and report that resolution alongside the achieved power.
+    Reaching max_n requires checking whether the target was attained there.
     """
     if not 0.0 < power < 1.0:
         raise ValueError("power_out_of_range")
@@ -540,21 +349,10 @@ def required_n_exact(p0: float, delta: float, alpha: float = 0.05,
 def plan_corpus(effects=((0.01, 0.95), (0.02, 0.95), (0.05, 0.90)),
                 *, alpha: float = 0.05, power: float = 0.80,
                 direction: str = "below") -> dict:
-    """A corpus sizing table, with the EXACT power of each planned size.
+    """Report planning sizes alongside their achieved power and interval bounds.
 
-    Every row pairs three things: the sample size a decision needs, the exact
-    power that size actually delivers, and the failure rate it can rule out.
-    Reporting the first without the second is what a normal-approximation
-    formula invites, and at a 0.95 baseline the two can differ enormously.
-
-    The default effects are the ones that matter for this domain. A 1-point
-    difference at a 95% baseline is the smallest anyone would act on; 2 points is
-    a plausible real difference; 5 points at a 90% baseline is gross enough that
-    a modest corpus will find it.
-
-    `direction` decides the decision being made. "below" is the release question
-    -- is the failure rate under this threshold -- and is the default, because
-    every safety margin in this project is of that form.
+    Each row records its baseline, effect and direction. Callers choose those
+    values for their research question; defaults provide example planning cases.
     """
     rows = []
     for delta, p0 in effects:
@@ -647,11 +445,8 @@ def _normal_ppf(p: float) -> float:
 def rule_of_three_bound(failures: int, n: int) -> float:
     """One-sided 95% upper bound on the failure rate: ~3/n when failures are zero.
 
-    Named for the standard approximation, but computed exactly via
-    Clopper-Pearson so it is correct for non-zero counts too. The research report
-    quotes 4.87% for n=60 and 0.99% for n=300; `tests/test_stats.py` asserts both,
-    which pins the implementation against the recovered source rather than
-    against my own arithmetic.
+    Computed through Clopper-Pearson for both zero and positive failure counts.
+    Tests check the zero-failure bounds near 4.87% for n=60 and 0.99% for n=300.
     """
     return clopper_pearson(failures, n, alpha=0.05)["one_sided_upper"]
 
@@ -660,16 +455,11 @@ def rule_of_three_bound(failures: int, n: int) -> float:
 
 def cluster_bootstrap(clusters: dict, statistic, *, n_resamples: int = 2000,
                       alpha: float = 0.05, seed: str = "duecare") -> dict:
-    """Percentile bootstrap resampling CLUSTERS with replacement, not items.
+    """Percentile bootstrap that resamples whole clusters with replacement.
 
-    `clusters` maps cluster key -> list of per-item records. Resampling clusters
-    and carrying every item of a drawn cluster with it is what makes the interval
-    reflect the design. The naive alternative -- resampling the 50,000 items --
-    would report an interval about sqrt(mean cluster size) times too narrow, and
-    would do so silently, because the arithmetic is correct for a different
-    design than the one actually run.
-
-    Seeded by default so a reported interval is reproducible from the code.
+    Each sampled group brings all its per-item records. The caller supplies the
+    statistic and grouping appropriate to the study. A fixed seed makes the
+    resulting interval reproducible.
     """
     keys = sorted(clusters)
     if not keys:
@@ -694,10 +484,9 @@ def clustered_proportion(records: list, success, cluster_key="core_id", *,
     """Interval for a proportion where records are grouped into dependent clusters.
 
     `records` are dicts, `success` maps a record to bool, `cluster_key` names the
-    grouping field. Returns the clustered interval alongside the naive binomial
-    one, because the RATIO of the two widths is the finding: it says how much the
-    headline n overstated the evidence. A ratio near 1 means the clusters are
-    nearly independent and n_items was honest; a large ratio means it was not.
+    grouping field. Returns clustered and naive binomial intervals with their
+    width ratio. Interpret that ratio alongside the study's dependence structure
+    and the sampling assumptions of each interval method.
     """
     clusters: dict = defaultdict(list)
     for r in records:
@@ -728,12 +517,10 @@ def clustered_proportion(records: list, success, cluster_key="core_id", *,
 # ------------------------------------------------------------------ design effect
 
 def design_effect(sizes: list) -> float:
-    """Kish design effect for unequal cluster sizes: 1 + (mbar - 1) * rho, estimated.
+    """Return mean cluster size under a working correlation assumption of one.
 
-    With only cluster sizes and no outcome, the equal-size special case is
-    1 + (mbar - 1). That is the load-bearing case here: generated corpora are
-    built to be balanced, so cluster sizes are near-equal and this is close to
-    exact, and it is an upper bound on the general case for the same mean size.
+    This computes 1 + (mbar - 1). Outcome-based correlation estimation and
+    unequal-size corrections require additional data and a separate estimator.
     """
     if not sizes:
         raise ValueError("no_clusters")
@@ -742,11 +529,10 @@ def design_effect(sizes: list) -> float:
 
 
 def effective_sample_size(sizes: list) -> float:
-    """How many independent observations `sizes`-worth of replication is worth.
+    """Divide item count by the working design effect from mean cluster size.
 
-    Kish's n_eff = n / (1 + (mbar - 1)) for the equal-size case. A 50,000-item
-    corpus spread over 1,000 cores of 50 items each has n_eff ~= 1,016, so
-    reporting n = 50,000 overstates the evidence by roughly fifty-fold.
+    Under this assumption, 50,000 items in 1,000 groups of 50 yield 1,000.
+    The returned count is conditional on the assumption in design_effect.
     """
     n = sum(sizes)
     return n / design_effect(sizes) if n else 0.0
@@ -788,8 +574,8 @@ def paired_binary_comparison(a: dict, b: dict, *, alpha: float = 0.05,
 
     The point estimate is mean(A_correct - B_correct) over shared item ids.  A
     deterministic paired bootstrap gives an interval, and the exact McNemar test
-    uses only discordant pairs. Missing ids are reported rather than silently
-    changing the denominator.
+    uses discordant pairs. The report records shared and missing item IDs
+    alongside the paired denominator.
     """
     if not 0 < alpha < 1:
         raise ValueError("alpha_out_of_range")

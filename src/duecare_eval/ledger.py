@@ -18,21 +18,14 @@ class BudgetRefusal(RuntimeError):
 class Journal:
     """Cross-process reservations with immutable policy and append-only events.
 
-    Durability: the on-disk file stays append-only, every write is flushed to
-    the OS, and an inter-process flock guards concurrent writers. The explicit
-    device-level fsync is throttled to a checkpoint interval because it costs
-    ~115 ms per call on the external exFAT volume (400x the write itself) and
-    previously dominated wall-clock time on large campaigns. A crash between
-    checkpoints can therefore lose at most the un-fsynced tail; the journal is
-    append-only and resumable, so a lost tail only means a re-run, never a
-    silently corrupted or replayed call. Pass ``fsync="never"`` for throwaway
-    scratch journals, or the default interval otherwise.
+    Each write flushes to the OS while an inter-process flock guards concurrent
+    writers. Device-level fsync occurs at checkpoints. A crash may lose the
+    un-fsynced tail, so recovery should reconcile journal state with provider
+    receipts before dispatch. ``fsync="never"`` is available for scratch data.
 
-    Performance: an in-process lock serialises threads without contending on
-    slow fsync, and parsed rows are cached in memory, re-read from disk only
-    when another process has appended (tracked via size/mtime). This turns the
-    previous O(n^2) full-file re-read on every reserve/complete into O(1)
-    amortised.
+    An in-process lock serializes threads. Parsed rows stay in a memory cache;
+    size and modification-time checks trigger a reread after another process
+    changes the file. This avoids repeated full-file parsing on every call.
     """
     def __init__(self, directory: Path, policy: dict, fsync: str | int = "checkpoint"):
         self.directory = directory
@@ -103,15 +96,13 @@ class Journal:
             os.fsync(stream.fileno())
             self._appends_since_fsync = 0
             self._fsynced = True
-        # Keep the in-memory cache authoritative: we hold the exclusive lock,
-        # so no other process can have appended past what we just wrote.
+        # The exclusive lock keeps this append and the cache update together.
         if self._rows is not None:
             self._rows.append(value)
         self._stat = self._current_stat()
 
     def checkpoint(self):
-        """Force a durable flush of everything appended so far. No-op when the
-        tail is already durable, so callers can invoke it freely."""
+        """Flush every pending append to durable storage."""
         if self._appends_since_fsync == 0 and self._fsynced:
             return
         with self.locked() as stream:
@@ -169,9 +160,7 @@ class Journal:
         completed = [x for x in rows if x["event"] == "completed"]
         results = [x["result"] for x in completed]
         usages = [r.get("usage") for r in results]
-        # Some transports (the CLI judges) report real cash cost; others
-        # (tactical, ollama) do not. Report the known partial sum honestly and
-        # keep the count of calls whose cash cost is genuinely unknown.
+        # Sum reported cash cost and retain a count of calls awaiting cost data.
         known_costs = [r.get("cash_cost_usd") for r in results if isinstance(r.get("cash_cost_usd"), (int, float))]
         return {"reserved_calls": len(attempts), "completed_calls": len(completed),
                 "unknown_outcomes": len(attempts) - len(completed),

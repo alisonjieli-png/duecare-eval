@@ -1,6 +1,6 @@
 {
   "checks": "path allowlist, symlinks, common credentials/private paths, typed-output whitelist",
-  "files_checked": 53,
+  "files_checked": 54,
   "findings": [],
   "limitation": "Automated checks and content review do not establish independent human/domain validity.",
   "passed": true,

@@ -1,5 +1,7 @@
 # Preliminary research preview
 
+Revision rc.2 adds a crucial interpretation: true arithmetic claims scored above false claims (AUROC 1.00 on 13 cases), but every probability exceeded 0.5. The observed failure is therefore at the declared decision threshold, not evidence of absent discrimination. No post-hoc threshold is presented as a validated fix. The underlying observations are unchanged from rc.1.
+
 This educational red-teaming release publishes the reviewed offline evaluation core, 937 constructed decision fixtures, 1,728 style comparisons with non-tie controls, Jev's numeric outputs for the 937-task fixture, aggregate campaign results, and a rebuilt PDF.
 
 The aggregate snapshot is dated 2026-09-30 15:02 UTC. Background campaigns continued after that time; this release does not update itself or claim that queued work completed. The requested Tactical volumes are 20,080 plus a separate 4,320-register-variation supplement.

@@ -48,6 +48,10 @@ def test_arithmetic_labels_and_reported_acceptance_are_recomputable():
         assert expected is r['expected']
         assert observed[r['task_id']]['probability']>=0.5
     assert sum(r['expected'] for r in cases)==6
+    metrics=score_decisions(cases,observed)['binary']
+    assert metrics['auroc']==1.0 and metrics['balanced_accuracy']==0.5
+    assert min(observed[r['task_id']]['probability'] for r in cases if r['expected']) > max(
+        observed[r['task_id']]['probability'] for r in cases if not r['expected'])
 
 
 def test_style_comparisons_mix_ties_and_real_controls_without_answer_cue():

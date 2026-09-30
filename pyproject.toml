@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "duecare-eval-public"
-version = "0.1.0rc1"
+version = "0.1.0rc2"
 description = "Offline evaluation core and preliminary synthetic benchmark results"
 requires-python = ">=3.11"
 dependencies = []

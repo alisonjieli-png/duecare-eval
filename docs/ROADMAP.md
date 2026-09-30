@@ -10,7 +10,7 @@ The headline finding is narrow and testable: at the declared 0.5 threshold, Jev 
 
 | Priority | Improvement | Required evidence before claiming success |
 |---|---|---|
-| 1 | Replicate and expand arithmetic checks | Predeclare balanced true/false claims, varied numbers, question polarity and context layouts. Recompute references independently. Retain every attempt. |
+| 1 | Replicate arithmetic and test calibration | Predeclare balanced claims, varied numbers, question polarity and context layouts. Separate ranking from decision thresholds. Fit calibration only on a distinct development set, then test held-out cases. |
 | 2 | Complete matched cross-model comparisons | Run the same frozen tasks under declared interfaces; report full coverage and matched intersections, not rankings of different partial subsets. |
 | 3 | Assess the larger answer arrays | Finish the 20,080-candidate run and 4,320-candidate supplement. Measure requested-versus-assessed tier, refusal, distinctness, length and format adherence. |
 | 4 | Validate the judges | Use corrected mixed style controls, swapped positions and multiple model families. Exclude earlier label-cued diagnostics from validity claims. Obtain independent human judgments. |

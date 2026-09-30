@@ -6,6 +6,8 @@ DueCare tests evidence use, screening decisions, uncertainty, worker control and
 
 The first answer is mixed: **266/288 screening decisions correct, 576/576 explicit action-boundary decisions correct, but only 6/13 financial-arithmetic checks correct** in the released Jev fixture. At the declared 0.5 threshold, it accepted all 13 arithmetic claims, including seven deliberately incorrect ones. This is a small synthetic diagnostic, not a broad estimate of financial reasoning. What does Jev recognize, what does it miss, and when should it withhold a conclusion?
 
+**The revealing distinction: ranking versus decisions.** True claims received probabilities of 0.86-0.95; false claims received 0.51-0.80. Thus AUROC was 1.00 on this tiny set, while the declared threshold still accepted every false claim. The finding motivates calibration and threshold testing, not a claim of absent discrimination. Choosing a better cutoff on these same 13 examples would be post-hoc fitting, not validated improvement. [Recompute the finding](docs/ARITHMETIC_FINDING.md).
+
 Read the [preliminary PDF](output/pdf/duecare_preliminary_report.pdf), [dated result snapshot](results/snapshot.json), [roadmap](docs/ROADMAP.md), [variation protocol](docs/VARIATION.md), and [release boundaries](DATA_GOVERNANCE.md).
 
 ![Execution coverage in the frozen snapshot](docs/figures/core_coverage.png)

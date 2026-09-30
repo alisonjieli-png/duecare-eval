@@ -1,0 +1,13 @@
+{
+  "expected_counts": {
+    "A": 432,
+    "B": 432,
+    "tie": 864
+  },
+  "generated_response_protocol_unchanged": true,
+  "old_results_used_as_validity_evidence": false,
+  "protocol": "duecare-style-comparisons/2.0.0",
+  "requests": 1728,
+  "source_manifest_sha256": "ce943cf58ae75b61ece215e131ce0a44bee8e4ab9465ab53ef28fecc1c8481d5",
+  "supersedes": "label-cued variation-v1 comparison fixture"
+}

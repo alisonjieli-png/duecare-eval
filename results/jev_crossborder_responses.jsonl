@@ -1,0 +1,937 @@
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-00092647802f0a16fd06b796"}
+{"decision": {"probabilities": {"clarify_facts": 0.04, "ordinary_information": 0.95, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-00095f38a3deb72bb7be3358"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-0026ba0f387f83e49cf8ae42"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-00609a3646283a00a562c95d"}
+{"decision": {"probability": 0.82}, "model": "jev-1.13.0", "task_id": "XBD-00b0a02a94b8a155aea54e26"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.0, "safeguarding_review": 0.99}}, "model": "jev-1.13.0", "task_id": "XBD-0100b1d4ebf26071be95adcc"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-0106ba8d2b5c9407e69f674a"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-0173959143a7c4e23d783315"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-01ee7a88c943c1191cbd39e0"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-01fe177edb481c1802a5072f"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-022aa1284257a939fbb7f0dd"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-02ce2eddcec1ea602579aafa"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-02d3284dc45883724cda5200"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-02e06efa79716bcc44b42676"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-02ea30be3f2f3c8c267ca5d0"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-0371304b7770ea2313a66579"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-037c0c665948829d261b52b0"}
+{"decision": {"probabilities": {"clarify_facts": 0.89, "ordinary_information": 0.0, "safeguarding_review": 0.11}}, "model": "jev-1.13.0", "task_id": "XBD-038d5a0d4181347493ca68d7"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-03a21838a78f3370767983f3"}
+{"decision": {"probabilities": {"clarify_facts": 0.05, "ordinary_information": 0.91, "safeguarding_review": 0.04}}, "model": "jev-1.13.0", "task_id": "XBD-03ea90decb70c8ab162e7f2b"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-03f88c5fa457973ff281965c"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.97, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-041f1d1d3d7e948cbee174d2"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-04394aebda9a784205f1b634"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-043b41c8083af0c06d71edab"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-0524de361da9d8211ec84d4d"}
+{"decision": {"probability": 0.02}, "model": "jev-1.13.0", "task_id": "XBD-0554d9913de22ca571374f0f"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-056450960045157420c65bd0"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-0593759348f0356a9dca6a6d"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-05d692aa069cef01b667135f"}
+{"decision": {"probabilities": {"clarify_facts": 0.02, "ordinary_information": 0.97, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-0658a48c76960ce2b093a142"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-069921d5f6bfb440ca3d0b59"}
+{"decision": {"probability": 0.95}, "model": "jev-1.13.0", "task_id": "XBD-06f30522acf3be6cddec768c"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-081b2eac636bbebe845801d2"}
+{"decision": {"probabilities": {"clarify_facts": 0.43, "ordinary_information": 0.56, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-08265f44a3a8534dd8fde995"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-082e0fa9d4a85fe27352b81d"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-08bddf2756f2e73aea09688c"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-0924ab9b0dab1ba1ed422939"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-098d8fedc284c8400b20518a"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-09d59402fdd062b29ef4d2be"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-0a177308db5155418472998a"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-0a8e1a68720c4c931a3ba349"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-0ae3b5a793e5ddb0bdbfac10"}
+{"decision": {"probability": 0.82}, "model": "jev-1.13.0", "task_id": "XBD-0b023889bf8f226e1908bb4c"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-0b89bd029f2d08d203f33ad5"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-0c009ba0b1df34d22ed489c8"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-0c4cb6569e37ef30ccc776df"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-0c92146d35760c068c785e90"}
+{"decision": {"probability": 0.8}, "model": "jev-1.13.0", "task_id": "XBD-0ca03ae3514f206effcb126c"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-0cf2ecff198e6b7c9b03b617"}
+{"decision": {"probability": 0.84}, "model": "jev-1.13.0", "task_id": "XBD-0d4c895b2ffc96c86b626c51"}
+{"decision": {"probabilities": {"clarify_facts": 0.3, "ordinary_information": 0.0, "safeguarding_review": 0.7}}, "model": "jev-1.13.0", "task_id": "XBD-0d7bed0cfb1a5fb927e68c93"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-0d979167dcaa1e0e29ff2cc9"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-0e8abb81b16ed8993325e0a2"}
+{"decision": {"probabilities": {"clarify_facts": 0.03, "ordinary_information": 0.94, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-0e966fbee431b203479868b1"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-0eb566eb068cc12c4ddd6dab"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-0edb905633c8e1a9f1ded9ba"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-0ef070d4ebae99f80358f5c2"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-0f11e333ac4f8e41b4bb53f0"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-0f714c38cdd41b9e34b405fe"}
+{"decision": {"probability": 0.97}, "model": "jev-1.13.0", "task_id": "XBD-0f7d10921db44ec03303744f"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-0fb39bd983dd8a3277e765ba"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-1053ccf87fb82209ddd167b8"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-10a19c3bfb41bd870a7d55a4"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-10e462a444fc72a8e293aa45"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-11444f4fcf7457a5b1144e6c"}
+{"decision": {"probability": 0.84}, "model": "jev-1.13.0", "task_id": "XBD-11960da4950cff72815b0d35"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-123a5582a1930c550abc9ead"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-1270de7a23bcbb52de9f81d6"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-1281ec94c7852cfb350cae94"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.99, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-12987e3c3fd2492f39d3501b"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-129f6acb857f2b783a0e3d4a"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-12e9e2766b96cbdb05846648"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-12ea44b7fdeac111e983cf9f"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-132344b9d5ffecbd6e292ce7"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-13341aa78b553f762fc0bb7b"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-13d5aebcb0f5d3eb497b0c91"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-13ebb9b927a83b963f80ac03"}
+{"decision": {"probability": 0.94}, "model": "jev-1.13.0", "task_id": "XBD-142cdb1c94bc2bd5da33ee0a"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-143f76a3d24a217e2f05fd50"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-14960c4994a67cd514a0bd2f"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-14a9f750b0ccba97f8746ece"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-14e031a717a4bc2b9430dba7"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-155b9b938bac6b7d317d1314"}
+{"decision": {"probabilities": {"clarify_facts": 0.05, "ordinary_information": 0.93, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-15aa5b99ba837fac0c43a50c"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-15d16892367956f701b1ccc5"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-15fa8f218ed4f87b0383ac11"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-1688e144be2db485e9bdbf96"}
+{"decision": {"probabilities": {"clarify_facts": 0.54, "ordinary_information": 0.37, "safeguarding_review": 0.09}}, "model": "jev-1.13.0", "task_id": "XBD-173636d2bbb7a48c49a7b061"}
+{"decision": {"probabilities": {"clarify_facts": 0.16, "ordinary_information": 0.75, "safeguarding_review": 0.09}}, "model": "jev-1.13.0", "task_id": "XBD-174e29ad1a993efaf1c819c0"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-17c0d2c42cf9d81877df3273"}
+{"decision": {"probabilities": {"clarify_facts": 0.37, "ordinary_information": 0.6, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-17d9c8d6af2fbd865b02d8f2"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-17f284844f4fdcdd4f7ed6ad"}
+{"decision": {"probabilities": {"clarify_facts": 0.02, "ordinary_information": 0.96, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-189afc9a5d7833253f0c9026"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-1927c9c5c292b3688eb155ae"}
+{"decision": {"probability": 0.84}, "model": "jev-1.13.0", "task_id": "XBD-197994dd8f50ab65ac6445fd"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-197a1504cae1cb859c8fe2f8"}
+{"decision": {"probability": 0.74}, "model": "jev-1.13.0", "task_id": "XBD-19886d2341fd980445ce6c04"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-198c30e14ce540865017c23f"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-1a38f3c174cab13892bb7a8b"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-1a5ca030a0aed8cd4accb0f1"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-1a5fe7f375ddc086ab6a4afb"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-1aa0cb2f1bc9f299846826cc"}
+{"decision": {"probabilities": {"clarify_facts": 0.03, "ordinary_information": 0.88, "safeguarding_review": 0.09}}, "model": "jev-1.13.0", "task_id": "XBD-1ad3e8e3581325232111a519"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-1adde094792544fdb97fbd2c"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-1b0133f57097236a003f406a"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-1b33dfd5f99dfdd06c9cfb93"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-1b7acf73bc98670fe7e3fa52"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-1b7bcfa73accfe684c45f72d"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-1b8d2a82540dc0b50efd6ec8"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-1b9914ab0f16eacd7aef6ef0"}
+{"decision": {"probability": 0.85}, "model": "jev-1.13.0", "task_id": "XBD-1bd19648ca634dddd8dea1c4"}
+{"decision": {"probability": 0.02}, "model": "jev-1.13.0", "task_id": "XBD-1c6d8db524bd7760481e64ad"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-1cc668bc1733204fb3662896"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-1ce8204ca2881fb4e5b01dc2"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-1d4e73755eae7c38f2192bf5"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-1d6af65ad4d3d00fc471aff5"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-1dd9f2d322058e69254084ef"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-1e4ff214c44325b0df8fb0c4"}
+{"decision": {"probabilities": {"clarify_facts": 0.06, "ordinary_information": 0.9299999999999999, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-1f3317739c8d51a5fda83e7c"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-1f62ddd30453323d44ae2e50"}
+{"decision": {"probabilities": {"clarify_facts": 0.2, "ordinary_information": 0.73, "safeguarding_review": 0.07}}, "model": "jev-1.13.0", "task_id": "XBD-1ffbfaa348208191a5c126a2"}
+{"decision": {"probabilities": {"clarify_facts": 0.04, "ordinary_information": 0.03, "safeguarding_review": 0.9299999999999999}}, "model": "jev-1.13.0", "task_id": "XBD-2035a21db9cb36b8a7fcdb43"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-203b6d25998eff9bb804d755"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.0, "safeguarding_review": 0.99}}, "model": "jev-1.13.0", "task_id": "XBD-2063c3747f87c48c5d225968"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-20996610234e5fdadda2e6f7"}
+{"decision": {"probabilities": {"clarify_facts": 0.45, "ordinary_information": 0.42, "safeguarding_review": 0.13}}, "model": "jev-1.13.0", "task_id": "XBD-20a5fdecd883bbfa4c494a2e"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-20dba7bf784fe4d658690694"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-210171b2b736c3b463c0d30a"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-211c0ef2ecbbd3d8ac788c80"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-21daa80a55e1ced0382e8aa3"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-225ed5abadd902e432aadde7"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-2287c4480b500d7a2677945a"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-22f2a55f076d46742451bcf8"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-23a91635368ec5891b7aec6f"}
+{"decision": {"probability": 0.82}, "model": "jev-1.13.0", "task_id": "XBD-23f3d78d8cd2eb8584cf53e7"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-2443be836a6f6a757716c3b3"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-2458fcb452d73396489ec3f1"}
+{"decision": {"probabilities": {"clarify_facts": 0.02, "ordinary_information": 0.97, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-24a27dc8a595faea219c57e5"}
+{"decision": {"probability": 0.02}, "model": "jev-1.13.0", "task_id": "XBD-24e025d78bb91cda5e04038d"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-24ee35ea9e9b1c9aa7e32975"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-25d4e0e6eff9d6003767950b"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-263e0f5763142f4313b6ba56"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-263f6fadd345dd08a9f6b070"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-26e6bab346a59872dbd1d3e8"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-27077a29989a942d2be64c57"}
+{"decision": {"probability": 0.83}, "model": "jev-1.13.0", "task_id": "XBD-2757301c57ea6e068661d06e"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-2779e8f9447005fee0da838c"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-2810a6a512d6383f8286f3a9"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.0, "safeguarding_review": 0.99}}, "model": "jev-1.13.0", "task_id": "XBD-282ea6180cfb5aafc813a5be"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-28964342cf72c1ca305c06a1"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-289b42af9a79dbd326dd9ca4"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-28bc2c93ee79f6c1aa176ec8"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-28e7a92002d2de5857808eda"}
+{"decision": {"probabilities": {"clarify_facts": 0.04, "ordinary_information": 0.91, "safeguarding_review": 0.05}}, "model": "jev-1.13.0", "task_id": "XBD-295b5139554ed9a5aa47fadf"}
+{"decision": {"probabilities": {"clarify_facts": 0.33, "ordinary_information": 0.62, "safeguarding_review": 0.05}}, "model": "jev-1.13.0", "task_id": "XBD-2a68ae43a6f99614a8e270d5"}
+{"decision": {"probability": 0.81}, "model": "jev-1.13.0", "task_id": "XBD-2a7b1c32d1d83a812c5439f8"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-2a7fb2b3f96dcaf5e6458de9"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-2b0414ee9599e7c425c2d255"}
+{"decision": {"probability": 0.84}, "model": "jev-1.13.0", "task_id": "XBD-2bb0c6c649ad9cc95421188f"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-2c2c90e31fbffe1678e7f6a2"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-2c6dbe2613f1b2d53e59a955"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-2ca1644af07aa892d6d55162"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-2cba751242941e8f57881f92"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-2ccf4ca42c5aba207dbad578"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-2cd9bc02f49914198b4a972b"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-2d35de26365bab0976725b4f"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-2d798ea1b4c4f1e29ee640d1"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-2db7d5fed8123864c3abf2d1"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-2db95183cfb89bbfc81f32c9"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-2dc83e85b13564275e6725e6"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 1.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-2e3a1f7e97e083a4c1172e77"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-2e9eaba92d4f8e6158382ca7"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-2eb86d0ae8b610b78cf6b5fd"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-2f071b41e4315cf9048e53ac"}
+{"decision": {"probabilities": {"clarify_facts": 0.96, "ordinary_information": 0.0, "safeguarding_review": 0.04}}, "model": "jev-1.13.0", "task_id": "XBD-2f3cd74d6328bdcb79f1d83f"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-2fa89d4ee78ca7a865cf5cd9"}
+{"decision": {"probability": 0.94}, "model": "jev-1.13.0", "task_id": "XBD-2fd8c52f85e157ab6e9dd63c"}
+{"decision": {"probability": 0.84}, "model": "jev-1.13.0", "task_id": "XBD-2ff4af09a60660bd87c3743f"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-304685c836b710f20160910f"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-30759b095e635e6248f432ef"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-307b22a06ba5af7efd8d8f30"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.0, "safeguarding_review": 0.99}}, "model": "jev-1.13.0", "task_id": "XBD-30d6c0f94017bb3f941d0d5c"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-3181bda5785f631ba53fa804"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-318dc27e33e954357d18266a"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-31a1b8695a5a9ccc9859cd11"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-31f4daf0b52fd42ed1dd0877"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-31fd1433b579c35e61741355"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-32249d7b369e73c6d076f133"}
+{"decision": {"probability": 0.94}, "model": "jev-1.13.0", "task_id": "XBD-3236648cd30248936acdc766"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-32499a77ab28451f34f118e4"}
+{"decision": {"probabilities": {"clarify_facts": 0.04, "ordinary_information": 0.96, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-3249ea29ee487d18b2f09a7c"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-32b786cba906f6af0ca73302"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-32b895cfe102baf867d35d40"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-32de949d14b354285cb237a4"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-32e2c53ad605ed4051382e9d"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-3312c9192ed5ebfc7fcea953"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-33ae1531d5b3cbdcb7b8bf4b"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-33b614d1f0407c350a21c411"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-340485eb7f3af7564ce7935a"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-340d76580fef013d7143b4bd"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-346a350d55021f508fa295b9"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-3488aaf95261c813be9938cd"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-34ec7a1caf3c94ca3d5c6c71"}
+{"decision": {"probabilities": {"clarify_facts": 0.49, "ordinary_information": 0.33, "safeguarding_review": 0.18}}, "model": "jev-1.13.0", "task_id": "XBD-3518dda9094652fbff2af9b7"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-352a1259a1dd75dfe0504c3b"}
+{"decision": {"probability": 0.57}, "model": "jev-1.13.0", "task_id": "XBD-352bc3a1f9e2144b6f757578"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-35d2a2a067aac35a7888ea82"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-36cd5bab69cde3cab960b048"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-36e2df8d39c4c406da8a350c"}
+{"decision": {"probability": 0.81}, "model": "jev-1.13.0", "task_id": "XBD-37036c32e1cd33b3945db7ce"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-375ae1b7eb2c115bb2497d8d"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-38303ca0f0813188a1b3743b"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-3865c3665fc95818edbccb0a"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-3866a4c4ac44d5d2b66e3f62"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-38bbde2b4feb360d82572d57"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-38e414e16b20b8ca1dcc9287"}
+{"decision": {"probability": 0.85}, "model": "jev-1.13.0", "task_id": "XBD-38f5a868030f42dbf250c56a"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-393843afed57d28b102b32c5"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-395e0927ed987ddcb9d6a060"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-396ce8ea84105f4fb7a4679e"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-39b0c03ec045286491fa8a42"}
+{"decision": {"probabilities": {"clarify_facts": 0.02, "ordinary_information": 0.98, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-39fb41e45638d840d0125b2d"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-3aa2349590d4db27026e49ed"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-3b809b32fac8316f6cb43a5b"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-3bc69cc0817a841d7bd09500"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-3bcf2700c36a58e22ff49edb"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-3bde1a5967cb441e582190a9"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-3c4a28a0d15d7bea24455e8f"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-3c5c0af50e0ed2be01b2176b"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-3c8bef4a3feef74e0bfc1065"}
+{"decision": {"probability": 0.85}, "model": "jev-1.13.0", "task_id": "XBD-3cb123c454eccdb08c66eba3"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-3cb4443f0e10e63272bd564d"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-3cdbf18875be97611cf57767"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-3cfeee33987a86c9df29849e"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-3d06996afa51c29cdcfbf2a0"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-3d5d29542125d9704d5ab967"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-3d7c8b757760ee0ac745637c"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-3dcc304784ed2e4c320dc3de"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-3dfbee38ddd2097b22f87e67"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-3e26f4ad68c0764dc3f846f0"}
+{"decision": {"probability": 0.02}, "model": "jev-1.13.0", "task_id": "XBD-3e494c4cb255fb82b00d9914"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-3e909bcea62cc3187539a942"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-3eba2790438c897ba79bf573"}
+{"decision": {"probability": 0.02}, "model": "jev-1.13.0", "task_id": "XBD-3fc8569ed8da04d3a2977a4b"}
+{"decision": {"probability": 0.83}, "model": "jev-1.13.0", "task_id": "XBD-410c42fe67a990ff1922e131"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-412a403ce84a6c63d321d6c4"}
+{"decision": {"probabilities": {"clarify_facts": 0.94, "ordinary_information": 0.03, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-4145c623ce5f48ec0d751d55"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-41f5b6e9304843aeaab3b94a"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-422598bb41c1e4a223b41654"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-42283773c09ba846cecf9321"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.0, "safeguarding_review": 0.99}}, "model": "jev-1.13.0", "task_id": "XBD-424316e3d853d3b08ebda003"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-4256f4fd0a7363a17ab97cff"}
+{"decision": {"probabilities": {"clarify_facts": 0.04, "ordinary_information": 0.78, "safeguarding_review": 0.18}}, "model": "jev-1.13.0", "task_id": "XBD-42593fd304b496d9012357e2"}
+{"decision": {"probability": 0.83}, "model": "jev-1.13.0", "task_id": "XBD-42da6ddfa72251b84d1bcc12"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-42de7b96ac1a5b7c562d7046"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-43136fa7c193ed9df87afdfa"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-431931d1f29a5434b5b7095e"}
+{"decision": {"probabilities": {"clarify_facts": 0.02, "ordinary_information": 0.92, "safeguarding_review": 0.06}}, "model": "jev-1.13.0", "task_id": "XBD-435016fd97eb8162bd353a30"}
+{"decision": {"probabilities": {"clarify_facts": 0.03, "ordinary_information": 0.96, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-435d5b08d25470d98bae7c87"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-447eeccc6c2d7c0fd225ea45"}
+{"decision": {"probability": 0.94}, "model": "jev-1.13.0", "task_id": "XBD-454788ce0408b796da0669d5"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.98, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-457f0ff68a1d1fde47392d75"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-4585e785a0ebf173a837eefd"}
+{"decision": {"probabilities": {"clarify_facts": 0.04, "ordinary_information": 0.93, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-460ed893a1adedcf9b8a8951"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-461e5c82b841df0de8350317"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-466d25165be99d6b5e4d870f"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 1.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-46fc2e4a70f299190c0d9b1d"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-4742998551d6674cd0bab6c0"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-47ccfcc25e58f8b80162f433"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-47f40c6f5d3de21c487f021f"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-4813e68bc2ab53239c64dd13"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-48193fe1cd593f11ce099b0a"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-481d2a0088b50e85a5dbb115"}
+{"decision": {"probabilities": {"clarify_facts": 0.18, "ordinary_information": 0.81, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-485a0aa0240755a6a29f43f1"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-49038b3394528f7306396c41"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-492189f33ad40697e1cb4a60"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-49601143fbb17c29cbff33bc"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-498d15155054b2036b511afa"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-49cb2261a10b054418447149"}
+{"decision": {"probabilities": {"clarify_facts": 0.54, "ordinary_information": 0.35, "safeguarding_review": 0.11}}, "model": "jev-1.13.0", "task_id": "XBD-4a5c2369cd024c0ac20769e9"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-4a63fcfac02d567f4f32bbab"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-4a6b89cff06088747b3eac86"}
+{"decision": {"probabilities": {"clarify_facts": 0.08, "ordinary_information": 0.88, "safeguarding_review": 0.04}}, "model": "jev-1.13.0", "task_id": "XBD-4ac46f42720b9eccedb033c3"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-4b28075960166a0132a67020"}
+{"decision": {"probabilities": {"clarify_facts": 0.06, "ordinary_information": 0.87, "safeguarding_review": 0.07}}, "model": "jev-1.13.0", "task_id": "XBD-4b6a9e236c41b5ab1c893c35"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-4b7003859955513166edcdf3"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-4bcde7148597417ada5a8f6a"}
+{"decision": {"probabilities": {"clarify_facts": 0.65, "ordinary_information": 0.09, "safeguarding_review": 0.26}}, "model": "jev-1.13.0", "task_id": "XBD-4c247dbb1cfc69ed41ad5fc7"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-4c4b6765a33b111c2ee5627b"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-4ca79c8a494867f6a5d3bd79"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-4cde0376083eed1193fb8d62"}
+{"decision": {"probabilities": {"clarify_facts": 0.42, "ordinary_information": 0.44, "safeguarding_review": 0.14}}, "model": "jev-1.13.0", "task_id": "XBD-4ceb34166fcd8acf9ed20e4d"}
+{"decision": {"probabilities": {"clarify_facts": 0.08, "ordinary_information": 0.0, "safeguarding_review": 0.92}}, "model": "jev-1.13.0", "task_id": "XBD-4d3b0e4e3823aa9a751f7d94"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-4d923ac724ced5f0862ace7a"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-4de84a7ab66e21232601d47f"}
+{"decision": {"probabilities": {"clarify_facts": 0.03, "ordinary_information": 0.97, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-4e40040d79601f4e7500d0a9"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-4e4cc3f27943354a21dbbf24"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-4e6c11ee95b6704d50e3c81c"}
+{"decision": {"probability": 0.85}, "model": "jev-1.13.0", "task_id": "XBD-4e9e04bf14d4a50f41bc2d4e"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-4ebdae829adee00985160fb8"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-4fa8e3bab7e41b2321acd40d"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-4fc8368b709b703ab59e6203"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-4fdbaaff4df664b01fee1797"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-4ff7175aa01fd8494218ab27"}
+{"decision": {"probability": 0.96}, "model": "jev-1.13.0", "task_id": "XBD-50427b2c8bb9698f5f4dc1ed"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-510d6a6141dab72c99d4d3a2"}
+{"decision": {"probabilities": {"clarify_facts": 0.14, "ordinary_information": 0.82, "safeguarding_review": 0.04}}, "model": "jev-1.13.0", "task_id": "XBD-51208c93726774d7f135bf53"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-515bdd388ce1408d6876f7dc"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-5170f802ac2ba8490986a851"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-5192c3ad5f1bcadb4a71763d"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-51b7fcbc46a7eae86c434a16"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-51d9610d94f2f2db183d6c31"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-52258373d753d24f255eb33b"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-5261f827c77d9915f15d790b"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-527e64af9cb0b16d67e7de70"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-52982fad925c38e0e80766f0"}
+{"decision": {"probabilities": {"clarify_facts": 0.97, "ordinary_information": 0.0, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-532e018eb622d773e7586cb9"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-545fa77f8700c77012c16b13"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-54714a93308c9677ac3850e8"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-548f6ba2614fecd7d93a218a"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-54ebbc9c5fdb433c47b4cc7b"}
+{"decision": {"probability": 0.85}, "model": "jev-1.13.0", "task_id": "XBD-550e8a01e6ed88e815db3167"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-55449016d0e9a85b2a2264bf"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-556aec49debc88fb9e63b79c"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-56060af2d49a044bf83d7baa"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-5679bd6992238d3343a1347d"}
+{"decision": {"probabilities": {"clarify_facts": 0.09, "ordinary_information": 0.0, "safeguarding_review": 0.91}}, "model": "jev-1.13.0", "task_id": "XBD-56b48b0870578cd9f9f39f2c"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-56e80d51b5e38660da3f2cf8"}
+{"decision": {"probabilities": {"clarify_facts": 0.91, "ordinary_information": 0.0, "safeguarding_review": 0.09}}, "model": "jev-1.13.0", "task_id": "XBD-56f061c8d7684c756d1c86d1"}
+{"decision": {"probabilities": {"clarify_facts": 0.96, "ordinary_information": 0.0, "safeguarding_review": 0.04}}, "model": "jev-1.13.0", "task_id": "XBD-571f59f28e2fe69108ca2996"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-57f27a25ee3ac47091b5b10a"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-582b45da8e1caaa439aa981d"}
+{"decision": {"probabilities": {"clarify_facts": 0.92, "ordinary_information": 0.01, "safeguarding_review": 0.07}}, "model": "jev-1.13.0", "task_id": "XBD-5850bf1ff5d009964ab9bf4b"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-58aba4e1bbd4da3fb09d174d"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 1.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-5912909734ebcf1d4ba058ab"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-5914b0445662ca91623134e2"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-5930c57073cbc0f267c91ff4"}
+{"decision": {"probability": 0.83}, "model": "jev-1.13.0", "task_id": "XBD-59562a8fdea73dd495ea3df2"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-5994906db4781fb68eb15842"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-59aee365f3bf6e61718d38cf"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-59d4c21e996aacde7c2b16d2"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-59e2c9fcaa8eedb83438bd12"}
+{"decision": {"probabilities": {"clarify_facts": 0.22, "ordinary_information": 0.72, "safeguarding_review": 0.06}}, "model": "jev-1.13.0", "task_id": "XBD-5a117dbb75281b4f82669756"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-5a6a5c22af644ff261ae5277"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-5b28fce3ec8b5eabe8f03c53"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-5c103101942679d6cbdee7b2"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-5c2b0ef07f362070d3e234d5"}
+{"decision": {"probabilities": {"clarify_facts": 0.27, "ordinary_information": 0.64, "safeguarding_review": 0.09}}, "model": "jev-1.13.0", "task_id": "XBD-5c2bc0919fa2ab4f16ea6d2b"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-5c61d7a62a8b5b25a1e3555f"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-5c637c5cf21a6aea77d14ed7"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-5c96a33b8720e136d6671de3"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-5ca4764192ad7b688318373c"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-5cbe1da206173ba5b5cc13c3"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-5cc2dbdef72d082d7a2c4b99"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-5d704fdff89e35999a2fd282"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-5d98e40b8464b4deb67374d7"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-5dd079e6c316f360ce5b992d"}
+{"decision": {"probability": 0.84}, "model": "jev-1.13.0", "task_id": "XBD-5de33534611b428e0e47dfdf"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-5deeadfea73514518066937c"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-5e01057a080d470721a6120a"}
+{"decision": {"probabilities": {"clarify_facts": 0.28, "ordinary_information": 0.0, "safeguarding_review": 0.72}}, "model": "jev-1.13.0", "task_id": "XBD-5e18f0d5a1a2780b960a53a3"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-5e802fbc3587f32f74222e3a"}
+{"decision": {"probabilities": {"clarify_facts": 0.39, "ordinary_information": 0.6, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-5e8e868a236795291b7d4a2a"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-5ec53dbe3e7af8cc35df90d8"}
+{"decision": {"probability": 0.83}, "model": "jev-1.13.0", "task_id": "XBD-5ee5de3f11ca590b3520c71c"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-5fc29a855e8746cff1dd79a1"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-5ff073796ccaa4413795ef6e"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-602994bbd06cd20e9cdc25ea"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-603a95e596d6ddeef2cdcdbf"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-6186809ca1636a7a25fb30f7"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-61e64ba2e58ed9a35e4dd435"}
+{"decision": {"probabilities": {"clarify_facts": 0.74, "ordinary_information": 0.21, "safeguarding_review": 0.05}}, "model": "jev-1.13.0", "task_id": "XBD-6282883a1a4e1fa83ce610bc"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-62897aa4d49428160e7c0562"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-62b56e72759b2a5df9e2fbac"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-62d984f5dd5a7474b53cd2e0"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-6344c12efb6c6b1ace4d1036"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-634fb97cee89bfd7dcea78ca"}
+{"decision": {"probability": 0.85}, "model": "jev-1.13.0", "task_id": "XBD-63bae38377586513d9658709"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-63c784cfda97509742ebe63e"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-63cdfff3a2d0a8725d0a6609"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-63ed8c62c8855e02140f5257"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-642eaedea0ebdcf018ba0c0a"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.0, "safeguarding_review": 0.99}}, "model": "jev-1.13.0", "task_id": "XBD-64441e736262772d750d67ec"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-64e1a4251425011837e160a0"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-653f0aa1b2c98eccd75bbc62"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-6541659d5cfe0432e2b59cc9"}
+{"decision": {"probability": 0.02}, "model": "jev-1.13.0", "task_id": "XBD-656983c2b66094007e617e86"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-65d64eb260ab381bc4c3cab8"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-66cc2c237f7c0ce788294d94"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-671e2b47449e25a2c6df34ba"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-678621686ff5aad3561a5a2b"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-680aecdc5f2138e64faed370"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-680c502c96c045e3a82f5e4e"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-688dbfb31f3015e44073856b"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-6922e7693c946ac458d05615"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-697b9239239207d13315e046"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-69ced4e0c325b756eec0aa49"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-6a090aa25bd7a5d53fe690d3"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.0, "safeguarding_review": 0.99}}, "model": "jev-1.13.0", "task_id": "XBD-6b8dbf12aba5f9166f468c96"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-6b95ce713e787e8ceff1cb66"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-6bb533fb618cf71a2026a1d9"}
+{"decision": {"probability": 0.85}, "model": "jev-1.13.0", "task_id": "XBD-6bf7bcba58fafe13491fa867"}
+{"decision": {"probabilities": {"clarify_facts": 0.37, "ordinary_information": 0.59, "safeguarding_review": 0.04}}, "model": "jev-1.13.0", "task_id": "XBD-6c2f138a600826a362acd77d"}
+{"decision": {"probabilities": {"clarify_facts": 0.07, "ordinary_information": 0.0, "safeguarding_review": 0.93}}, "model": "jev-1.13.0", "task_id": "XBD-6c4c4d048eda366778582585"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-6c52369973bbfc121e9cb5d8"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-6c541e4d2c1458229089021c"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-6c775943e2f4d7585e87b67e"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-6cee0a2807c75acad4e6faa3"}
+{"decision": {"probabilities": {"clarify_facts": 0.52, "ordinary_information": 0.32, "safeguarding_review": 0.16}}, "model": "jev-1.13.0", "task_id": "XBD-6d7e6a171e9c37974bd6183d"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-6e494b5fcadb717588243a3b"}
+{"decision": {"probabilities": {"clarify_facts": 0.03, "ordinary_information": 0.0, "safeguarding_review": 0.97}}, "model": "jev-1.13.0", "task_id": "XBD-6e9a504023a6b6008b9007a4"}
+{"decision": {"probability": 0.83}, "model": "jev-1.13.0", "task_id": "XBD-6eafca96cf96bc29d02a0e27"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-6ed47da5ca0238c3fbabb989"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-6f47c8b18a1f209d0afb4025"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-6f69e09dfa9d019490d40c90"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-6f996df7ed16366852e35b02"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-702f298a4b6f6d51afc90e2f"}
+{"decision": {"probabilities": {"clarify_facts": 0.05, "ordinary_information": 0.92, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-70988a4abf024e5097974ac5"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-709ff7353d19367d703963eb"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-70a0a9c416eddbe026285a28"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-71223cc8be32128123c5c834"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-7138c5915d6c2fe06e83e3d6"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-71483d7faa149132a8d29de3"}
+{"decision": {"probabilities": {"clarify_facts": 0.48, "ordinary_information": 0.45, "safeguarding_review": 0.07}}, "model": "jev-1.13.0", "task_id": "XBD-714d6035eab05876f3352d54"}
+{"decision": {"probabilities": {"clarify_facts": 0.28, "ordinary_information": 0.64, "safeguarding_review": 0.08}}, "model": "jev-1.13.0", "task_id": "XBD-718a366379c3ea31328bcead"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-71a6d38c78c58616523df322"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-71b6948c16bcc9d448ac1128"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-71fa7f8477965d5498ff4994"}
+{"decision": {"probabilities": {"clarify_facts": 0.05, "ordinary_information": 0.94, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-721eb60c3160625b461e8e97"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-722b665b94fe64067e805f5a"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-7260c84b2940b8905310560d"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-72ca94bd4018ebf676dce19b"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-72ed7bc0fee473021fa5aa05"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-7384fbe4f2a696b48c57b23a"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-738ed376b670510d25efcba8"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-74072449a8ed9cc77327b1e4"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-74f55d05ed3e95d6f95ef196"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-753f71ede7ace4b1f0d77983"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-755638f886ee737301ae7fc4"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 1.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-758dbe5ada802dda3c6001b3"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-75a2851c49e420e64223a88f"}
+{"decision": {"probability": 0.79}, "model": "jev-1.13.0", "task_id": "XBD-75c786458bc8617a80e2886f"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-75fee652703a06a2eef40399"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-763e7c01f96df23082f91a97"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-76892d693e06c46e8ce2990e"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-769e1417dc017de2626f7116"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-76a5755541cae24b8f6e5db9"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-76d5393a2ad37002a201e47f"}
+{"decision": {"probability": 0.83}, "model": "jev-1.13.0", "task_id": "XBD-7750ae58c05657e7cd624d34"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-77704a6ffc644433360f7bca"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-777ca45ff4d8e836bebde5c5"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-77910f020cf402f1d8c7fc0f"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-77ca039d34c0cf9f408320ce"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-77dd67cd48b49da9be677573"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.0, "safeguarding_review": 0.99}}, "model": "jev-1.13.0", "task_id": "XBD-77ed689e31b68bf40275edd2"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-78529b5f8b864a57f684f6bd"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-78a659a6da69248f8b62c49d"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-78ca92cef32242cbaec9e927"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-78e212fef94638de9ead0ea2"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-79207debaad8e6d2e47a7efd"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-7928e279a21f3cd1b3d5c1ea"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-79da59f97ea341df662d8c4a"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-7a3ad8ad4b0c6d04db89be84"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.98, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-7ab00ef5ec2cabc9259fa306"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-7b32ede8baf6ec791642f3a0"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-7b73e34858bf6532a04e61e4"}
+{"decision": {"probabilities": {"clarify_facts": 0.33, "ordinary_information": 0.0, "safeguarding_review": 0.67}}, "model": "jev-1.13.0", "task_id": "XBD-7b8a67acfa6da29b875e2474"}
+{"decision": {"probabilities": {"clarify_facts": 0.05, "ordinary_information": 0.94, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-7bd3353731ae9aa5028d33a2"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-7c4309f699459f0b48412bed"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-7c5c746d73fc40c53337ebc9"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-7cc52bf2d6337df816e47077"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-7d869fd62c732617c3a41849"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-7dd364710eb254af542b2d20"}
+{"decision": {"probabilities": {"clarify_facts": 0.24, "ordinary_information": 0.69, "safeguarding_review": 0.07}}, "model": "jev-1.13.0", "task_id": "XBD-7de86feb5744f482481590f9"}
+{"decision": {"probabilities": {"clarify_facts": 0.05, "ordinary_information": 0.91, "safeguarding_review": 0.04}}, "model": "jev-1.13.0", "task_id": "XBD-7e45e87e0eafe8ec00a23439"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-7f12c4f5ed5ac55d6c944b8a"}
+{"decision": {"probabilities": {"clarify_facts": 0.05, "ordinary_information": 0.03, "safeguarding_review": 0.92}}, "model": "jev-1.13.0", "task_id": "XBD-7f6af104af373d17113fc3d3"}
+{"decision": {"probabilities": {"clarify_facts": 0.03, "ordinary_information": 0.96, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-7fe100d44402a6e93dc03e57"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-7ff6b1a0b5a50ebfa07ef635"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-804253c8138af39e8ff4801a"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-8053aff6bb6d36d497772eab"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-80a901811900bd964b05c686"}
+{"decision": {"probabilities": {"clarify_facts": 0.17, "ordinary_information": 0.8, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-813497808b595eb7a01354cb"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-817779776d58158fecdf9ac5"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-81f333a422dae53025dd8459"}
+{"decision": {"probability": 0.79}, "model": "jev-1.13.0", "task_id": "XBD-8256caf8f9813bec747b2589"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-826c38030abb4ac4ba29c595"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-82bd9889e3d8e00cfd24ea50"}
+{"decision": {"probabilities": {"clarify_facts": 0.54, "ordinary_information": 0.43, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-833b4bb1e6f9b3e26aa66870"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-836b8c8fc7c6a6b88df23343"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-8408a1c1581e30765fb5a14c"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-8410f5cf1bfbae3afe9dc531"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-84300c1f2c2f3fa2684dfd24"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-8436efb4365aad4988c76ea8"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-847d8d51e31fbee8f35cb6d1"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-8491305f771364e4d6bc2885"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-84d51b1425deccb5febe76a6"}
+{"decision": {"probabilities": {"clarify_facts": 0.02, "ordinary_information": 0.97, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-84e60879576b77673497c50e"}
+{"decision": {"probabilities": {"clarify_facts": 0.96, "ordinary_information": 0.0, "safeguarding_review": 0.04}}, "model": "jev-1.13.0", "task_id": "XBD-84fc2c83020e48422b75ceca"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-852f1aec3d1dc096a703191c"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-85b9ec9e6cbc4a69e9ecfd09"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.99, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-85f8660f9dfc9fc82ff5fc29"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-86052e12be0b0dcde6ab542f"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-8608fe80d161106eb5ceb7a5"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-868e712e6074d815017dfaa7"}
+{"decision": {"probability": 0.78}, "model": "jev-1.13.0", "task_id": "XBD-86d00fe72ede09b9120e6b1d"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-86e9c634bdb199e6a22415ec"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-86ee39ad1fcb7bd3ec3cb72c"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-8712d7698ce844992f182c8f"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-8739df17cf63c990ae3fcd7f"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-876badf216eb8bc422798fc2"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-87d7fbbf26a56bed34cb4735"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-87ebbd0204bdf0dca2a9f426"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-87f8184466552c9d48651c6f"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.01, "safeguarding_review": 0.98}}, "model": "jev-1.13.0", "task_id": "XBD-88238977601cd13ac8482577"}
+{"decision": {"probabilities": {"clarify_facts": 0.06, "ordinary_information": 0.73, "safeguarding_review": 0.21}}, "model": "jev-1.13.0", "task_id": "XBD-88413fcd4dac6a5668e8360a"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-884b5a792967c88b46ffe351"}
+{"decision": {"probability": 0.62}, "model": "jev-1.13.0", "task_id": "XBD-88ae61260766eb24be3c745c"}
+{"decision": {"probability": 0.79}, "model": "jev-1.13.0", "task_id": "XBD-88bba5a42a8eddf62a6fb8b3"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-88c6dadd0a030b4025f6ef2a"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-88f74cacd5f2d6122ffb68f1"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-893a1716a8e71925ab006af4"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-894cd1ed9e639fdb9f125505"}
+{"decision": {"probability": 0.82}, "model": "jev-1.13.0", "task_id": "XBD-898300947e9079fae1a6fb21"}
+{"decision": {"probabilities": {"clarify_facts": 0.23, "ordinary_information": 0.0, "safeguarding_review": 0.77}}, "model": "jev-1.13.0", "task_id": "XBD-898b6a9e17794dbb5246723f"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-8a61e774f778dbb6bad7c33b"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-8ad6c1180cd0377faaaffed9"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-8b055caf4cd3ed1771f4a073"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-8b2e1d87ecb694856bfa16e9"}
+{"decision": {"probabilities": {"clarify_facts": 0.36, "ordinary_information": 0.31, "safeguarding_review": 0.33}}, "model": "jev-1.13.0", "task_id": "XBD-8b536fca78c68ecb0117989d"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-8b6c6dd6c6eadf2e33f32957"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-8c39c108b4cce60a7af7a5e4"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-8c42ea3039aed8e59c00e911"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-8c6cac0e4f93aa67bf8ec45c"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-8c8faf79c7d77b93ffdcda54"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-8cd87f9bd33c9dcfdc9db9a6"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-8d22b08d246082e2300a8ca2"}
+{"decision": {"probability": 0.8}, "model": "jev-1.13.0", "task_id": "XBD-8d3b6d48557a732e22fbe0b2"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-8d8573bab06ed158d8933bdc"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-8ddf5af4e5dbdc6c8517674a"}
+{"decision": {"probabilities": {"clarify_facts": 0.61, "ordinary_information": 0.21, "safeguarding_review": 0.18}}, "model": "jev-1.13.0", "task_id": "XBD-8dee1975f6165e81656c32b6"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-8e7420fbf9ff1af9d312a013"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-8e8b7d7772dc7010acdcc7ba"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-8e9b6011f62e45520d64deda"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-8ec7273e3439a7f2ffdf2533"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-8f2317851e6d878cdff1c086"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-8f5f1a2cf3e770a07756d4ff"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-90166708f8f792c7c25ef2cf"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-90582e9195eb46f7b38d74bd"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-906c2cc447958aad990bd1af"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-90a0e8e6d267a52dbd8670ae"}
+{"decision": {"probabilities": {"clarify_facts": 0.31, "ordinary_information": 0.67, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-90c5fb42aff3fbe66fd47c80"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-911f223ea00ca423b7c3bf52"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-916068182de39986906ea3f2"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-91866cb5234e867e1413b500"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-91daa41d31791bee0e2ca69d"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-92c12776098aae86c917a2ff"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-92c51615c24dc2a9d0b83010"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-92d9c28f9dbf200d50c431db"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-92dfb657c30e163709a63f34"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-931db48da5a37be2e745120c"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-931dc39b43b14760be496c6c"}
+{"decision": {"probabilities": {"clarify_facts": 0.24, "ordinary_information": 0.75, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-931dfb3a090154c8546525cd"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-9358d1db3d96aba829610fa6"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-93c051e7b255f647447645ea"}
+{"decision": {"probabilities": {"clarify_facts": 0.28, "ordinary_information": 0.0, "safeguarding_review": 0.72}}, "model": "jev-1.13.0", "task_id": "XBD-93c93572a36e7a0f953f0bd0"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-9460a1740b12dd59a97bc2e8"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-947488431077ebfcfed98c74"}
+{"decision": {"probabilities": {"clarify_facts": 0.03, "ordinary_information": 0.96, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-949d24446eb8821a6bdcfcdd"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-9524e99953aed851fa1a6633"}
+{"decision": {"probabilities": {"clarify_facts": 0.38, "ordinary_information": 0.61, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-958d2a15920a78a9ec26b259"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-95d19c238b9b44c58d2fb139"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.0, "safeguarding_review": 0.99}}, "model": "jev-1.13.0", "task_id": "XBD-96142fb3e1ba160363f7ca7d"}
+{"decision": {"probabilities": {"clarify_facts": 0.52, "ordinary_information": 0.45, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-962fa21d7055fca46fa3c09e"}
+{"decision": {"probability": 0.82}, "model": "jev-1.13.0", "task_id": "XBD-9633c423835998841cbca7eb"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-976c9d243f84b7eed0b37d98"}
+{"decision": {"probabilities": {"clarify_facts": 0.15, "ordinary_information": 0.84, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-97ee3ddf2ca941349c0f3c67"}
+{"decision": {"probabilities": {"clarify_facts": 0.54, "ordinary_information": 0.43, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-97fc8eb6122610ecbdc653c7"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-9828a10cba45ecc809c0c16b"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-984af9e35efe4799a5761366"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-98b34179a5588c601161ffd1"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-99530306f08ac7929f2304ff"}
+{"decision": {"probabilities": {"clarify_facts": 0.97, "ordinary_information": 0.0, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-99fc8731195f96964606ca36"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-9a0c575e3ba9d76fa71c8e5a"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-9a44688baeb9bd7b3cce1e97"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-9a914594cd31b529e015485c"}
+{"decision": {"probabilities": {"clarify_facts": 0.07, "ordinary_information": 0.92, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-9aab620fd85741f036c883d1"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-9ae54d6bfbb245add3cc8edb"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-9ae7e6527f3344cfea0b61d2"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-9afc4a98d178720b4942ee0c"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-9b7075f7c6296559bef67bc2"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-9b9e0f89c5fd034b24a3bdcc"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-9bcff99bfb3599e90f1aff9c"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-9c27d0c5653d8690bcce185b"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-9ca32055ff4dedd6886912c1"}
+{"decision": {"probabilities": {"clarify_facts": 0.06, "ordinary_information": 0.68, "safeguarding_review": 0.26}}, "model": "jev-1.13.0", "task_id": "XBD-9cb577c97a7f6448caf2867b"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-9ced133d0eb3e00d55a2002f"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-9cf198acc2940c15f4a96dc6"}
+{"decision": {"probabilities": {"clarify_facts": 0.03, "ordinary_information": 0.94, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-9d04e97e68f3aca611ba102d"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-9d685e16eb4b73ab0606e81a"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-9da93dd54b0ad94a68e1bcbd"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-9e935a862b8b3a75cc34ef9a"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-9eff472699ab39385f5f0734"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-9fa45a518d2ac9b9a453f2bc"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-9face5aae54d0c5aecc05aca"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-a022884b3dc4b692b9d19b87"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-a0478b004d2ecd7c9fb5f617"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-a075670591002757ed404f91"}
+{"decision": {"probabilities": {"clarify_facts": 0.19, "ordinary_information": 0.79, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-a0ab9e96f0947830d1f6c3da"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-a19a513023e97b3639a464a6"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-a1afcbbb3c07238762ca69cb"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-a1dfa093bdaf822a92f1f4b7"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-a2d3ff1a916866534d3c0718"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-a2e06be684f5cde549af77b5"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-a33cd04ec62e7dcbab5beae6"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-a35202a581fb57f6ae87df6a"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-a36600c2499c9528a15c2afc"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-a386c3d24107e2b8d17af23a"}
+{"decision": {"probability": 0.8}, "model": "jev-1.13.0", "task_id": "XBD-a49e73e6a3e1a4d6e6433a62"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-a4e33a906a68dd2188fe509a"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-a506dd11af1e2bd5aef1bbd8"}
+{"decision": {"probability": 0.02}, "model": "jev-1.13.0", "task_id": "XBD-a585c8e9a14196eb5a6802f4"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-a59a860cc7b20d9bc4e822af"}
+{"decision": {"probability": 0.83}, "model": "jev-1.13.0", "task_id": "XBD-a59aae2e5612d7ad0bd2867f"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-a5e1557165d6189f5d3a23ad"}
+{"decision": {"probabilities": {"clarify_facts": 0.04, "ordinary_information": 0.95, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-a5f58703c0ad2fa463934e3a"}
+{"decision": {"probabilities": {"clarify_facts": 0.3, "ordinary_information": 0.65, "safeguarding_review": 0.05}}, "model": "jev-1.13.0", "task_id": "XBD-a60b1f6b0db867977f36e046"}
+{"decision": {"probabilities": {"clarify_facts": 0.92, "ordinary_information": 0.03, "safeguarding_review": 0.05}}, "model": "jev-1.13.0", "task_id": "XBD-a63cb700f57a0bd2515035f7"}
+{"decision": {"probabilities": {"clarify_facts": 0.04, "ordinary_information": 0.93, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-a659131fb5e450044dc78eaa"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-a690034b52328a41a1a2548b"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-a6915b66d761bf9820cc8af5"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.99, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-a6924cbb8e7b1e9ad716e55d"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-a6c6e364acc56f55602860e6"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-a6ea2ff84a9bc396d97be08f"}
+{"decision": {"probabilities": {"clarify_facts": 0.12, "ordinary_information": 0.87, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-a715ca64db8d58c9db59f28c"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-a73f61ef8addb2f94d180b13"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-a75182f37d91a08710877ad0"}
+{"decision": {"probabilities": {"clarify_facts": 0.07, "ordinary_information": 0.92, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-a7aa35ab87c245eaa602e69c"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-a7ca492f68ec708a5867f8d5"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-a81798dd9a510194b3724747"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-a87ef79c2a77452e9bc39af5"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-a8b88b2045f7ab3eb1e2df9f"}
+{"decision": {"probabilities": {"clarify_facts": 0.03, "ordinary_information": 0.94, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-a8cba1c78b460871d2909952"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-a8e8b12b47c5175ddc83b0a8"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-a90e3fea415d1307ab68827f"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-a966e89c04b9ee8f3f525de1"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-a9bd546d938e5ad2e0499bda"}
+{"decision": {"probability": 0.84}, "model": "jev-1.13.0", "task_id": "XBD-aa1ff0b2e80d0ca9f2686d2e"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-ab246a32bfd27cd22c15df5d"}
+{"decision": {"probability": 0.84}, "model": "jev-1.13.0", "task_id": "XBD-ab454cffd291317037d944e5"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-ab4efca9a81c84ab56030110"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-ab78e11253db0ea9cdf9410c"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-ab8cfe994cf18e8ca9e4d355"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-ab94d631a6f0a82168ba1d15"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-aba77e2a423f1450c1d8155c"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-abc8e100f235384d03fdb8c8"}
+{"decision": {"probability": 0.84}, "model": "jev-1.13.0", "task_id": "XBD-abece6afb04d4af3583f3e0d"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-ac3c71aa719a0f3badf10a71"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.98, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-ac53f40ff84b50d18330aa83"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-ac7b552c50f167cbe17ae62f"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-aca2603e9ae5cf096d6466ce"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.0, "safeguarding_review": 0.99}}, "model": "jev-1.13.0", "task_id": "XBD-aca869fb8ddb17b41963b880"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-acdf16c715fefc72d6116155"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-ad0dd134d3e4005b01e7aac0"}
+{"decision": {"probability": 0.85}, "model": "jev-1.13.0", "task_id": "XBD-ad4d666122f9193a11039cf0"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-ade62198e9e19057cc031bbb"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-adf8ecd02ba7968dc3766b6d"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-ae8ed910da69a7eef9ad3868"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-ae994098c9694407ee73dc93"}
+{"decision": {"probabilities": {"clarify_facts": 0.92, "ordinary_information": 0.02, "safeguarding_review": 0.06}}, "model": "jev-1.13.0", "task_id": "XBD-af06fefac5a01f008619d7d1"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-af25fbd5f432428630865856"}
+{"decision": {"probabilities": {"clarify_facts": 0.42, "ordinary_information": 0.56, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-af2f9c502e0e8f3f5c3d3c5d"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-af4eac8388005af8e2496475"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-af5511bc68522118458fd452"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-af866cbeb4207d6cefe32ead"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-afbcbce59984c24e76af40bd"}
+{"decision": {"probabilities": {"clarify_facts": 0.97, "ordinary_information": 0.0, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-aff7ba5c0bd491150b7ad212"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-b075ed9c01dba69e921aa4ae"}
+{"decision": {"probabilities": {"clarify_facts": 0.04, "ordinary_information": 0.95, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-b0c4c4ad1101943065fad8a1"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-b0f528644177c09f1538c658"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-b13f1e1484983ad96fe37c5e"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-b1432a3f4ec5fd6f8a687047"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-b14a7a8940b9037adaa274a9"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-b154752bf43bf9ec06b483d8"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-b154878cd9e734906e94795f"}
+{"decision": {"probabilities": {"clarify_facts": 0.12, "ordinary_information": 0.25, "safeguarding_review": 0.63}}, "model": "jev-1.13.0", "task_id": "XBD-b178b579700ef2bf650aa83a"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-b204b62dfffc574ba63b0069"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-b23fb53be16cf935f7cac59f"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-b2b77d40de0213927d20255a"}
+{"decision": {"probabilities": {"clarify_facts": 0.08, "ordinary_information": 0.09, "safeguarding_review": 0.83}}, "model": "jev-1.13.0", "task_id": "XBD-b2ccaee8740b583ad08f4452"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-b2e144df2da1cb19841b96de"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-b2edaacd17a1e79b451b059b"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-b3220fc4ffff5a10cb087c49"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-b35db1fb247a7f183e08596e"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-b3883409a0b3639ff9ed87f0"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-b38ff11151d8004645478cc7"}
+{"decision": {"probability": 0.84}, "model": "jev-1.13.0", "task_id": "XBD-b3ab05476a5bc57e7c7f4ca5"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.97, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-b3b249e15ce9176fcb3293e3"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-b3d1ed8bb3e17b4456c03512"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-b4608c85eadcb0bef641d5b2"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-b4631705b76e7a50fb277a41"}
+{"decision": {"probabilities": {"clarify_facts": 0.22, "ordinary_information": 0.1, "safeguarding_review": 0.68}}, "model": "jev-1.13.0", "task_id": "XBD-b5085656b33b6ca7b0c6347c"}
+{"decision": {"probability": 0.83}, "model": "jev-1.13.0", "task_id": "XBD-b5126a47753585bb8e352336"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-b58fcde4825a3a1346a786f7"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-b5e9e6c30ddf8a4d36b05041"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-b66cda004062e914c3243fc4"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-b6770764100ce11ea23b23ec"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-b6c97576fa1802875e9b0c09"}
+{"decision": {"probabilities": {"clarify_facts": 0.07, "ordinary_information": 0.92, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-b709ad5e15e8f7ca7dd30dc8"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-b71f113c45cc985e93947322"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-b731f731fa26e5a1d35c2bc4"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-b77984ffc3787e21004b85ff"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-b7815108f7b19a00ca4e8683"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-b7cae9fd0077e7f9925e5121"}
+{"decision": {"probability": 0.83}, "model": "jev-1.13.0", "task_id": "XBD-b85d77fe809181bb6ab9b559"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-b873c5bbf3b9aaea058f9abf"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-b8fa123f50d6e6154ae4589f"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-b96247618c46cc038875432e"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.0, "safeguarding_review": 0.99}}, "model": "jev-1.13.0", "task_id": "XBD-b9bbf262a5d119ef1381d193"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-b9e603682cd11cf7c29c891c"}
+{"decision": {"probabilities": {"clarify_facts": 0.04, "ordinary_information": 0.9299999999999999, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-ba3d7aab58876402e1478ee2"}
+{"decision": {"probabilities": {"clarify_facts": 0.97, "ordinary_information": 0.0, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-ba45aef975ed355701ebb2f6"}
+{"decision": {"probability": 0.83}, "model": "jev-1.13.0", "task_id": "XBD-ba82a691cc1b749d891c08e5"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-baebffa18bf19c1b3863f953"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-bafec764ce640bf193aaacc8"}
+{"decision": {"probability": 0.78}, "model": "jev-1.13.0", "task_id": "XBD-bb266142d5276236919b2bf4"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-bb2b5f8d520acc8acf789024"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-bba039084066ce78ca7bfda1"}
+{"decision": {"probabilities": {"clarify_facts": 0.62, "ordinary_information": 0.15, "safeguarding_review": 0.23}}, "model": "jev-1.13.0", "task_id": "XBD-bc1562213af277c783738240"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-bc5f70669dd291461686295d"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-bcae05e78723cc7d958ded60"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-bcba92bd4c4dc1e697ba719b"}
+{"decision": {"probability": 0.81}, "model": "jev-1.13.0", "task_id": "XBD-bccc7f4e6261127f05d3d0ce"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-bcf58efae4c26cd9799bf6f7"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-bd97ba5d38a14bca295dcbfe"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-bda7bab425052d57a1bc7b62"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-bdacffdbc87cc581a8b36556"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-bdb74cb9ad5b18543d703065"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-be286e42bf4eb5ce380e1506"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-be55248eaffdf59157c54030"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-bed9e66a4c1ab2ff4240b4c8"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-bf2e6f104766774fb81db037"}
+{"decision": {"probabilities": {"clarify_facts": 0.1, "ordinary_information": 0.89, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-bf9a2dfc98dfd8e7d4cfcbce"}
+{"decision": {"probabilities": {"clarify_facts": 0.31, "ordinary_information": 0.2, "safeguarding_review": 0.49}}, "model": "jev-1.13.0", "task_id": "XBD-c055175a65c7d636320fc80e"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-c05c54c91ed286fec8c9be50"}
+{"decision": {"probabilities": {"clarify_facts": 0.44, "ordinary_information": 0.51, "safeguarding_review": 0.05}}, "model": "jev-1.13.0", "task_id": "XBD-c0d59bb40c2b0b95a14e5a4e"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.98, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-c1327366cdb61120c250ed53"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-c1a2c5492d4c60d2720a8459"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-c1a6c264e16b0babb2c7e136"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-c1d50478a1489b31ccd4e949"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-c250070785b9b2a2866c64a5"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-c25c40b7beef7223e1434733"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-c2de8def7bec52703e528840"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-c34893809d564c86d0ed6028"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-c3814a49c9fd7bf6416b6c60"}
+{"decision": {"probability": 0.78}, "model": "jev-1.13.0", "task_id": "XBD-c41bf54819fc91244251eca3"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-c47fc620fbf679db49aa3897"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-c4b59f8678853e6dc89f9de7"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-c569a256631a8517315e0673"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-c5d03e84f1489ef8cc60af70"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 1.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-c5dd4b8790c1d9deb5d3b33b"}
+{"decision": {"probability": 0.66}, "model": "jev-1.13.0", "task_id": "XBD-c606c104d459da3864606bfb"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-c6215f53d8e68ed04dc66fc6"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-c66c64bd0dce68f492017426"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-c6708c54c53297ae89e9f60a"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-c67ef60fdf2e38ecd052f3c1"}
+{"decision": {"probability": 0.83}, "model": "jev-1.13.0", "task_id": "XBD-c6ab0d4fcb72b79af8fe3155"}
+{"decision": {"probabilities": {"clarify_facts": 0.17, "ordinary_information": 0.78, "safeguarding_review": 0.05}}, "model": "jev-1.13.0", "task_id": "XBD-c6b7c8397c72cbdddac9f18a"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-c6c56270827755e5ee6720e9"}
+{"decision": {"probabilities": {"clarify_facts": 0.03, "ordinary_information": 0.95, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-c6cf66888ae22a7f6084a92c"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-c7478dfe105f3fcde6d88f31"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-c7cd7801c240ab7b5ccd0a91"}
+{"decision": {"probability": 0.02}, "model": "jev-1.13.0", "task_id": "XBD-c7dcf5c04870f140113a83e2"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.99, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-c80f0a0cdbceac8b7fa8c3c1"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-c8869686b6c4c17e9be4edd8"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-c8985cecb8b4b9494f299670"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-c8c50a857c83e303d4ec9030"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-c8ca8b6c7ac36ae7cd554106"}
+{"decision": {"probabilities": {"clarify_facts": 0.2, "ordinary_information": 0.77, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-c8e92c408259e3c83a857a96"}
+{"decision": {"probabilities": {"clarify_facts": 0.06, "ordinary_information": 0.89, "safeguarding_review": 0.05}}, "model": "jev-1.13.0", "task_id": "XBD-c9c69ddf2718b285e502788f"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-ca25ed8bf534989d547de46e"}
+{"decision": {"probabilities": {"clarify_facts": 0.17, "ordinary_information": 0.82, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-ca25f29f1b84ef64a8741234"}
+{"decision": {"probabilities": {"clarify_facts": 0.03, "ordinary_information": 0.0, "safeguarding_review": 0.97}}, "model": "jev-1.13.0", "task_id": "XBD-ca4792f3b0de2c7084c8c30d"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-caf3e48ce57cd756b01906aa"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-cb8312deb0e5058d2b8ad794"}
+{"decision": {"probabilities": {"clarify_facts": 0.03, "ordinary_information": 0.96, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-cbcc12501bf59e26b90162d5"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-cbe1a5bd50fb5ac4fee01ff6"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.97, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-cbe4053b597d1fd55ae2c69f"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-cc150b1f71773541b447d758"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-cc5255a2fea5a53d4adb9542"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-ccbb1d27303e5efd4e052199"}
+{"decision": {"probabilities": {"clarify_facts": 0.04, "ordinary_information": 0.96, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-cd802cfde60e4b77d893c37b"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-cd97843c2b655265ced71a89"}
+{"decision": {"probability": 0.02}, "model": "jev-1.13.0", "task_id": "XBD-cda94be64538ba4efcd00307"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-cdbb95241dbb9ccba7ab0017"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-ce4e8a10c541758cde9776bd"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-ceb6264394e3ff22b564d21f"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-cfa2fdba072ea7fb51b5d16c"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-d06e06fb9af94cefe80f79c7"}
+{"decision": {"probability": 0.85}, "model": "jev-1.13.0", "task_id": "XBD-d09e82f6a814001fea9ce6c6"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-d14c6d2d876044ca54c15e42"}
+{"decision": {"probability": 0.01}, "model": "jev-1.13.0", "task_id": "XBD-d1eb546de8153987b7cbef90"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-d2d72016a3c740aec8574ef9"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-d34a8a984677ccd7ec99d5bf"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-d34ed6c03a5f35eebf03d6e2"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-d4467c5e9ec27405efb1c628"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-d46ba83e30a505d23889c6b0"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-d5156ef3b3bb0dd5fb3abd14"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-d54df2509aa418fc7dc9b031"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-d5e13379daf7fa06ab464a9c"}
+{"decision": {"probabilities": {"clarify_facts": 0.36, "ordinary_information": 0.6, "safeguarding_review": 0.04}}, "model": "jev-1.13.0", "task_id": "XBD-d6058ed68b94a00c7ee7e0fd"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-d6bbb8d87bc15d32e1f0eb87"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-d6e889f17d8bfcfc92f7f2bf"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-d7560b36c8c50ccbab677dc4"}
+{"decision": {"probability": 0.85}, "model": "jev-1.13.0", "task_id": "XBD-d7e5fb017ae9bb9acf475b7d"}
+{"decision": {"probability": 0.82}, "model": "jev-1.13.0", "task_id": "XBD-d821e155b0787ef4db2f4a8d"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-d8cfc9e7f2770acc77a29c78"}
+{"decision": {"probability": 0.93}, "model": "jev-1.13.0", "task_id": "XBD-d8eace93a35974b2dccbf98d"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-d91163d082dbab1426d17c8d"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-d913495f1252dac4632cf46a"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-d93275b331d4883635d1d15b"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.95, "safeguarding_review": 0.04}}, "model": "jev-1.13.0", "task_id": "XBD-d941f2a3364700595c085408"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-d962f4ab780695af9ffb376e"}
+{"decision": {"probabilities": {"clarify_facts": 0.36, "ordinary_information": 0.59, "safeguarding_review": 0.05}}, "model": "jev-1.13.0", "task_id": "XBD-d9d8ae1bf5851be45838b56f"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.0, "safeguarding_review": 0.99}}, "model": "jev-1.13.0", "task_id": "XBD-da8b45a421b13681ec30fdd7"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-daa1869f681e0cc25811dc43"}
+{"decision": {"probability": 0.84}, "model": "jev-1.13.0", "task_id": "XBD-db123331b8d13bd45b8b5ff1"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-dbcd4d098fcd847b5d0480e3"}
+{"decision": {"probabilities": {"clarify_facts": 0.04, "ordinary_information": 0.0, "safeguarding_review": 0.96}}, "model": "jev-1.13.0", "task_id": "XBD-dbd047c2d26900f6ee901352"}
+{"decision": {"probability": 0.85}, "model": "jev-1.13.0", "task_id": "XBD-dbe3e10c33c1875483605174"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-dc1349a4962328da53634cc5"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-dc36fec32a2eae7f23330a29"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-dc68e28e3b928f9c2f90d33c"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-dc80c2a787651b05e363acc2"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-dcf705084ab82226650ca2ab"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-dd723f2c0e8c8bfebcb2ffb4"}
+{"decision": {"probability": 0.84}, "model": "jev-1.13.0", "task_id": "XBD-ddf01b7fb4404235da9c69d2"}
+{"decision": {"probability": 0.94}, "model": "jev-1.13.0", "task_id": "XBD-de11a5e853ee36d01b331329"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-de26d9ce14e6e87e807b4336"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-de3d3d826c029fc41451d57e"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-de4dcac1c68f283260d43473"}
+{"decision": {"probabilities": {"clarify_facts": 0.55, "ordinary_information": 0.34, "safeguarding_review": 0.11}}, "model": "jev-1.13.0", "task_id": "XBD-dea74732e8b21262e8db69c4"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-df77e81c52d00bf772d85f94"}
+{"decision": {"probabilities": {"clarify_facts": 0.05, "ordinary_information": 0.83, "safeguarding_review": 0.12}}, "model": "jev-1.13.0", "task_id": "XBD-dfcdec32b79579eafa8a0219"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-dfeef17859ceb3cad3e3c1b1"}
+{"decision": {"probability": 0.84}, "model": "jev-1.13.0", "task_id": "XBD-e05c40be020b3371584cc687"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-e11030007e266f9938cc7e35"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-e12938bebe509bc54a284721"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-e1591d2cfd7a81e784ee89a5"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-e193af58da41268f67c19ec5"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-e2022b6d2f195b97adfcd387"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-e25719cd3c887debb6968cdd"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-e276c8360d298ec51c067cfa"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-e2af86674dd17d7923891c2a"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-e3b39b5eceba304b479a50b2"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-e401d41c8e79888e2a8c7c37"}
+{"decision": {"probabilities": {"clarify_facts": 0.98, "ordinary_information": 0.0, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-e4255dfe442611bbe844aae5"}
+{"decision": {"probabilities": {"clarify_facts": 0.12, "ordinary_information": 0.85, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-e43fe702ae43b964dbc6300b"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-e458cd7c591208a4df6826ba"}
+{"decision": {"probability": 0.85}, "model": "jev-1.13.0", "task_id": "XBD-e48257f8e291b036cb33cc9b"}
+{"decision": {"probabilities": {"clarify_facts": 0.59, "ordinary_information": 0.12, "safeguarding_review": 0.29}}, "model": "jev-1.13.0", "task_id": "XBD-e4ad6cfd655cee493a8a422b"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-e4b6c7a4a9f0c58626b350fb"}
+{"decision": {"probability": 0.87}, "model": "jev-1.13.0", "task_id": "XBD-e4c3312a1b6fd8b7f5174dbe"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-e519c832a8b3b555167343eb"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-e52a700111ebb05e42c1782c"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-e54af5930e9cc0eda6605081"}
+{"decision": {"probability": 0.02}, "model": "jev-1.13.0", "task_id": "XBD-e567c6c399f6490c23a71f6e"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-e5e0ba56d36658dcfdc690fb"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-e603214d502a717d161d55a9"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-e63ad0bdf4da44dfbc5544ad"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-e69ed43fdf2f4942dee57845"}
+{"decision": {"probabilities": {"clarify_facts": 0.97, "ordinary_information": 0.0, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-e6a11eef0deb2e5cf61b9de1"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-e7054aa45f7fb94a7acaaf74"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-e70664a41591140a13156e15"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-e7148bd204be1c21648a65e3"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-e7378358e1f1de0c79af5848"}
+{"decision": {"probabilities": {"clarify_facts": 0.31, "ordinary_information": 0.0, "safeguarding_review": 0.69}}, "model": "jev-1.13.0", "task_id": "XBD-e759871cba2df2d07834f246"}
+{"decision": {"probability": 0.51}, "model": "jev-1.13.0", "task_id": "XBD-e7858c7e0a849d5d01b1390e"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-e7dea24ba718296ddecd2569"}
+{"decision": {"probability": 0.88}, "model": "jev-1.13.0", "task_id": "XBD-e826479281b268f94fadaf0f"}
+{"decision": {"probabilities": {"clarify_facts": 0.16, "ordinary_information": 0.83, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-e83f72723f3b1f9f963f514f"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.01, "safeguarding_review": 0.98}}, "model": "jev-1.13.0", "task_id": "XBD-e8c0c9725c32079bdcf38f9c"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-eaa768a661d1955f41205909"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-eadbde7adc1e15e915ff64b9"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-eae08fee7413d206ee3d6127"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-eb1577cce2d6dcdb4b35ba44"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-eb1ce95103429970e5b9aab6"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-eb1ef03bf332d31b654811f6"}
+{"decision": {"probability": 0.85}, "model": "jev-1.13.0", "task_id": "XBD-eb4f0ac9f14d60ff77141fc5"}
+{"decision": {"probabilities": {"clarify_facts": 0.25, "ordinary_information": 0.73, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-ebe85d78070d9e79b2a7bc21"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-ebfbea8c99cc3da8ba4eb72f"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.0, "safeguarding_review": 0.99}}, "model": "jev-1.13.0", "task_id": "XBD-ec5e0729be8350fd38978bf6"}
+{"decision": {"probabilities": {"clarify_facts": 0.45, "ordinary_information": 0.52, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-ed49e736d250162b0a6ff311"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-eda974cca603a3344e96e1e2"}
+{"decision": {"probability": 0.94}, "model": "jev-1.13.0", "task_id": "XBD-edfbd61d24b1bee6f430108a"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-ee69eabb7e509dc133a5f867"}
+{"decision": {"probability": 0.83}, "model": "jev-1.13.0", "task_id": "XBD-ee6a048e128e12320f7fa1db"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-ee88a94a2e1a17f3ae237e01"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.0, "safeguarding_review": 0.99}}, "model": "jev-1.13.0", "task_id": "XBD-ee9daa9269cf24ac73e55c91"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-eebd3366c371183a5ca0e07a"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-ef79e27a56e46f31c718809a"}
+{"decision": {"probability": 0.89}, "model": "jev-1.13.0", "task_id": "XBD-f08e17bce65995a8d730f947"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-f0a14275f7795f7b34612944"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-f20e82d9677268ae22b2ee99"}
+{"decision": {"probabilities": {"clarify_facts": 0.93, "ordinary_information": 0.01, "safeguarding_review": 0.06}}, "model": "jev-1.13.0", "task_id": "XBD-f221353fc5c0c127c92f565c"}
+{"decision": {"probabilities": {"clarify_facts": 0.34, "ordinary_information": 0.65, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-f334812c1fe10ced7963aff6"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-f346f4852ed50cbc099c1521"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-f3601fcb38901ac55881c317"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-f3915ef00a1ba39c55460d9b"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-f40e982c5a6a0fa8ea3291d5"}
+{"decision": {"probabilities": {"clarify_facts": 0.01, "ordinary_information": 0.97, "safeguarding_review": 0.02}}, "model": "jev-1.13.0", "task_id": "XBD-f42e248eb4d15e80438f151e"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-f45cae96fc1438854100b018"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-f47e7cbc4174bf7c4aae5d87"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-f58ac956e3191a9548228976"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-f649fb0863d88ca197bb1da9"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-f683fcf3ef06534f1424996b"}
+{"decision": {"probability": 0.9}, "model": "jev-1.13.0", "task_id": "XBD-f6b07df640685a2e0e91c99c"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-f774aed20d51c038d2b04273"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-f789f598ddcbeba8dd6d0bd8"}
+{"decision": {"probabilities": {"clarify_facts": 0.03, "ordinary_information": 0.94, "safeguarding_review": 0.03}}, "model": "jev-1.13.0", "task_id": "XBD-f8079bcc2578542549bba18a"}
+{"decision": {"probabilities": {"clarify_facts": 0.25, "ordinary_information": 0.38, "safeguarding_review": 0.37}}, "model": "jev-1.13.0", "task_id": "XBD-f80de3b67a90e6481301feaf"}
+{"decision": {"probabilities": {"clarify_facts": 1.0, "ordinary_information": 0.0, "safeguarding_review": 0.0}}, "model": "jev-1.13.0", "task_id": "XBD-f81cd227e7c1615a00173c1a"}
+{"decision": {"probabilities": {"clarify_facts": 0.99, "ordinary_information": 0.0, "safeguarding_review": 0.01}}, "model": "jev-1.13.0", "task_id": "XBD-f8a9c9a080eed3987302415c"}
+{"decision": {"probability": 0.85}, "model": "jev-1.13.0", "task_id": "XBD-f9e78642c8e8fe4d13348ec9"}
+{"decision": {"probability": 0.92}, "model": "jev-1.13.0", "task_id": "XBD-f9ecd9762d3e39d3a7d55a98"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-fb48e493c361b975244fc014"}
+{"decision": {"probability": 0.91}, "model": "jev-1.13.0", "task_id": "XBD-fb9d197cb9461c5bfe1abf6b"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-fbd3485457ac1e37af6e4ad2"}
+{"decision": {"probabilities": {"clarify_facts": 0.09, "ordinary_information": 0.01, "safeguarding_review": 0.9}}, "model": "jev-1.13.0", "task_id": "XBD-fc6b74602143e359fda018d1"}
+{"decision": {"probability": 0.73}, "model": "jev-1.13.0", "task_id": "XBD-fe114b21dc29dc66d2aa8fe1"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-fe5d359e69a57ce9290e2d99"}
+{"decision": {"probabilities": {"clarify_facts": 0.0, "ordinary_information": 0.0, "safeguarding_review": 1.0}}, "model": "jev-1.13.0", "task_id": "XBD-fe74b6aed0b11c3a4a45b1be"}
+{"decision": {"probabilities": {"clarify_facts": 0.44, "ordinary_information": 0.48, "safeguarding_review": 0.08}}, "model": "jev-1.13.0", "task_id": "XBD-fe891559b93a3b566d931cc3"}
+{"decision": {"probability": 0.86}, "model": "jev-1.13.0", "task_id": "XBD-ff3f5fc35a2ec2927b1c0f67"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-ff78431ae11719783b769516"}
+{"decision": {"probability": 0.03}, "model": "jev-1.13.0", "task_id": "XBD-ff9217a830e7b713680cb398"}
+{"decision": {"probability": 0.83}, "model": "jev-1.13.0", "task_id": "XBD-fff6e5ecc839e14fa48de05d"}

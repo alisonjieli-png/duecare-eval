@@ -1,0 +1,10 @@
+{
+  "duration_seconds": 370.57,
+  "errors": 0,
+  "failures": 0,
+  "full_run_final": true,
+  "network": "disabled_by_test_fixture",
+  "scope": "public exported core, not the omitted private provider runners",
+  "skipped": 0,
+  "tests": 110
+}

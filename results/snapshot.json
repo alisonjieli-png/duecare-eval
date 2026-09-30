@@ -1,0 +1,4778 @@
+{
+  "collected_at": "2026-09-30T15:02:29.666759+00:00",
+  "comparison": {},
+  "core_decisions": {
+    "deepseek-v4.1-flash": {
+      "binary": {
+        "accuracy": 0.93985,
+        "adaptive_calibration_error": 0.076316,
+        "auroc": 0.939055,
+        "average_precision": 0.962958,
+        "balanced_accuracy": 0.940299,
+        "brier": 0.061405,
+        "class_conditional": {
+          "false": {
+            "accuracy": 1.0,
+            "brier": 0.000726,
+            "mean_probability": 0.010152,
+            "n": 66
+          },
+          "true": {
+            "accuracy": 0.880597,
+            "brier": 0.121179,
+            "mean_probability": 0.843582,
+            "n": 67
+          }
+        },
+        "confusion": {
+          "fn": 8,
+          "fp": 0,
+          "tn": 66,
+          "tp": 59
+        },
+        "expected_calibration_error": 0.078271,
+        "f1": 0.936508,
+        "log_loss": 1.493946,
+        "matthews_correlation": 0.886226,
+        "n": 133,
+        "negatives": 66,
+        "positives": 67,
+        "precision": 1.0,
+        "recall": 0.880597,
+        "specificity": 1.0
+      },
+      "by_family": {
+        "action_authorization": {
+          "accuracy": 1.0,
+          "coverage": 0.015333333333333332,
+          "n": 23,
+          "tasks": 1500
+        },
+        "composite_indicator_detection": {
+          "accuracy": 0.34782608695652173,
+          "coverage": 0.023,
+          "n": 23,
+          "tasks": 1000
+        },
+        "escalation_triage": {
+          "accuracy": 0.8636363636363636,
+          "coverage": 0.014666666666666666,
+          "n": 22,
+          "tasks": 1500
+        },
+        "evidence_answerability": {
+          "accuracy": 0.8181818181818182,
+          "coverage": 0.014666666666666666,
+          "n": 22,
+          "tasks": 1500
+        },
+        "indicator_detection": {
+          "accuracy": 0.9545454545454546,
+          "coverage": 0.011,
+          "n": 22,
+          "tasks": 2000
+        },
+        "privacy_minimization": {
+          "accuracy": 1.0,
+          "coverage": 0.022,
+          "n": 22,
+          "tasks": 1000
+        },
+        "risk_priority": {
+          "accuracy": 0.4090909090909091,
+          "coverage": 0.022,
+          "n": 22,
+          "tasks": 1000
+        },
+        "route_selection": {
+          "accuracy": 0.4090909090909091,
+          "coverage": 0.014666666666666666,
+          "n": 22,
+          "tasks": 1500
+        },
+        "tool_trace_integrity": {
+          "accuracy": 1.0,
+          "coverage": 0.022,
+          "n": 22,
+          "tasks": 1000
+        }
+      },
+      "categorical": {
+        "accuracy": 0.409091,
+        "brier": 0.295455,
+        "log_loss": 16.327422,
+        "macro_f1": 0.447917,
+        "n": 22,
+        "per_label": {
+          "gather_more_evidence": {
+            "f1": 0.625,
+            "n": 5,
+            "precision": 0.454545,
+            "recall": 1.0
+          },
+          "immediate_safety_referral": {
+            "f1": 0.666667,
+            "n": 1,
+            "precision": 0.5,
+            "recall": 1.0
+          },
+          "no_indicator_detected": {
+            "f1": 0.0,
+            "n": 13,
+            "precision": null,
+            "recall": 0.0
+          },
+          "prompt_specialist_referral": {
+            "f1": 0.5,
+            "n": 3,
+            "precision": 0.333333,
+            "recall": 1.0
+          }
+        },
+        "top2_accuracy": 0.409091
+      },
+      "completed": 200,
+      "coverage": 0.016666666666666666,
+      "invalid": 0,
+      "missing": 11800,
+      "multilabel": {
+        "brier": 0.055318,
+        "exact_set_accuracy": 0.347826,
+        "hamming_loss": 0.060201,
+        "macro_f1": 0.652564,
+        "micro_f1": 0.775,
+        "micro_precision": 0.673913,
+        "micro_recall": 0.911765,
+        "n": 23,
+        "per_label": {
+          "IND-H-01": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 7
+          },
+          "IND-H-02": {
+            "f1": 0.75,
+            "precision": 0.6,
+            "recall": 1.0,
+            "support": 3
+          },
+          "IND-H-03": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 3
+          },
+          "IND-H-04": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 2
+          },
+          "IND-H-05": {
+            "f1": 0.666667,
+            "precision": 0.571429,
+            "recall": 0.8,
+            "support": 5
+          },
+          "IND-H-06": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 1
+          },
+          "IND-S-01": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": null,
+            "support": 0
+          },
+          "IND-S-02": {
+            "f1": 0.666667,
+            "precision": 0.5,
+            "recall": 1.0,
+            "support": 4
+          },
+          "IND-S-03": {
+            "f1": 0.4,
+            "precision": 0.333333,
+            "recall": 0.5,
+            "support": 4
+          },
+          "IND-S-04": {
+            "f1": 0.0,
+            "precision": null,
+            "recall": null,
+            "support": 0
+          },
+          "IND-S-05": {
+            "f1": 0.0,
+            "precision": null,
+            "recall": null,
+            "support": 0
+          },
+          "IND-S-06": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 2
+          },
+          "IND-S-07": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 3
+          }
+        }
+      },
+      "ordinal": {
+        "accuracy": 0.409091,
+        "mae": 0.649182,
+        "n": 22,
+        "quadratic_weighted_kappa": 0.541667,
+        "ranked_probability_score": 0.107015
+      },
+      "paired_relations": {
+        "both_correct_rate": 0.0,
+        "by_relation": {
+          "flip": {
+            "both_correct_rate": 0.0,
+            "counterfactual_failure_rate_given_base_correct": null,
+            "pairs": 1,
+            "relation_consistency": 0.0
+          }
+        },
+        "eligible_pairs": 1,
+        "relation_consistency": 0.0
+      },
+      "selective_risk_by_type": {
+        "binary_probability": {
+          "aurc": 0.059582,
+          "curve": [
+            {
+              "coverage": 0.0977,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.203,
+              "minimum_confidence": 1.0,
+              "risk": 0.074074
+            },
+            {
+              "coverage": 0.3008,
+              "minimum_confidence": 1.0,
+              "risk": 0.075
+            },
+            {
+              "coverage": 0.3985,
+              "minimum_confidence": 1.0,
+              "risk": 0.056604
+            },
+            {
+              "coverage": 0.4962,
+              "minimum_confidence": 1.0,
+              "risk": 0.090909
+            },
+            {
+              "coverage": 0.6015,
+              "minimum_confidence": 1.0,
+              "risk": 0.0875
+            },
+            {
+              "coverage": 0.6992,
+              "minimum_confidence": 1.0,
+              "risk": 0.075269
+            },
+            {
+              "coverage": 0.797,
+              "minimum_confidence": 0.95,
+              "risk": 0.066038
+            },
+            {
+              "coverage": 0.9023,
+              "minimum_confidence": 0.9,
+              "risk": 0.058333
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.62,
+              "risk": 0.06015
+            }
+          ],
+          "n": 133,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "categorical_distribution": {
+          "aurc": 0.64723,
+          "curve": [
+            {
+              "coverage": 0.0909,
+              "minimum_confidence": 1.0,
+              "risk": 0.5
+            },
+            {
+              "coverage": 0.1818,
+              "minimum_confidence": 1.0,
+              "risk": 0.75
+            },
+            {
+              "coverage": 0.3182,
+              "minimum_confidence": 1.0,
+              "risk": 0.714286
+            },
+            {
+              "coverage": 0.4091,
+              "minimum_confidence": 1.0,
+              "risk": 0.666667
+            },
+            {
+              "coverage": 0.5,
+              "minimum_confidence": 1.0,
+              "risk": 0.636364
+            },
+            {
+              "coverage": 0.5909,
+              "minimum_confidence": 1.0,
+              "risk": 0.615385
+            },
+            {
+              "coverage": 0.6818,
+              "minimum_confidence": 1.0,
+              "risk": 0.6
+            },
+            {
+              "coverage": 0.8182,
+              "minimum_confidence": 1.0,
+              "risk": 0.611111
+            },
+            {
+              "coverage": 0.9091,
+              "minimum_confidence": 1.0,
+              "risk": 0.6
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 1.0,
+              "risk": 0.590909
+            }
+          ],
+          "n": 22,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "multilabel_probabilities": {
+          "aurc": 0.593306,
+          "curve": [
+            {
+              "coverage": 0.087,
+              "minimum_confidence": 0.9,
+              "risk": 1.0
+            },
+            {
+              "coverage": 0.2174,
+              "minimum_confidence": 0.888462,
+              "risk": 0.4
+            },
+            {
+              "coverage": 0.3043,
+              "minimum_confidence": 0.865385,
+              "risk": 0.428571
+            },
+            {
+              "coverage": 0.3913,
+              "minimum_confidence": 0.838462,
+              "risk": 0.444444
+            },
+            {
+              "coverage": 0.5217,
+              "minimum_confidence": 0.823077,
+              "risk": 0.5
+            },
+            {
+              "coverage": 0.6087,
+              "minimum_confidence": 0.815385,
+              "risk": 0.571429
+            },
+            {
+              "coverage": 0.6957,
+              "minimum_confidence": 0.815385,
+              "risk": 0.5625
+            },
+            {
+              "coverage": 0.7826,
+              "minimum_confidence": 0.8,
+              "risk": 0.611111
+            },
+            {
+              "coverage": 0.913,
+              "minimum_confidence": 0.788462,
+              "risk": 0.619048
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.719231,
+              "risk": 0.652174
+            }
+          ],
+          "n": 23,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "ordinal_distribution": {
+          "aurc": 0.341763,
+          "curve": [
+            {
+              "coverage": 0.0909,
+              "minimum_confidence": 0.9,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.1818,
+              "minimum_confidence": 0.85,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.3182,
+              "minimum_confidence": 0.6,
+              "risk": 0.285714
+            },
+            {
+              "coverage": 0.4091,
+              "minimum_confidence": 0.6,
+              "risk": 0.333333
+            },
+            {
+              "coverage": 0.5,
+              "minimum_confidence": 0.55,
+              "risk": 0.454545
+            },
+            {
+              "coverage": 0.5909,
+              "minimum_confidence": 0.55,
+              "risk": 0.461538
+            },
+            {
+              "coverage": 0.6818,
+              "minimum_confidence": 0.55,
+              "risk": 0.466667
+            },
+            {
+              "coverage": 0.8182,
+              "minimum_confidence": 0.5,
+              "risk": 0.5
+            },
+            {
+              "coverage": 0.9091,
+              "minimum_confidence": 0.5,
+              "risk": 0.55
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.45,
+              "risk": 0.590909
+            }
+          ],
+          "n": 22,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        }
+      },
+      "tasks": 12000
+    },
+    "gemma-4-coding-abliterated": {
+      "binary": {
+        "accuracy": 0.93984,
+        "adaptive_calibration_error": 0.037266,
+        "auroc": 0.95956,
+        "average_precision": 0.973426,
+        "balanced_accuracy": 0.940262,
+        "brier": 0.05067,
+        "class_conditional": {
+          "false": {
+            "accuracy": 0.952183,
+            "brier": 0.019801,
+            "mean_probability": 0.043624,
+            "n": 1443
+          },
+          "true": {
+            "accuracy": 0.928341,
+            "brier": 0.079427,
+            "mean_probability": 0.902163,
+            "n": 1549
+          }
+        },
+        "confusion": {
+          "fn": 111,
+          "fp": 69,
+          "tn": 1374,
+          "tp": 1438
+        },
+        "expected_calibration_error": 0.043583,
+        "f1": 0.941099,
+        "log_loss": 1.010705,
+        "matthews_correlation": 0.879995,
+        "n": 2992,
+        "negatives": 1443,
+        "positives": 1549,
+        "precision": 0.954214,
+        "recall": 0.928341,
+        "specificity": 0.952183
+      },
+      "by_family": {
+        "action_authorization": {
+          "accuracy": 1.0,
+          "coverage": 0.33266666666666667,
+          "n": 499,
+          "tasks": 1500
+        },
+        "composite_indicator_detection": {
+          "accuracy": 0.48296593186372744,
+          "coverage": 0.499,
+          "n": 499,
+          "tasks": 1000
+        },
+        "escalation_triage": {
+          "accuracy": 0.8517034068136272,
+          "coverage": 0.33266666666666667,
+          "n": 499,
+          "tasks": 1500
+        },
+        "evidence_answerability": {
+          "accuracy": 0.9078156312625251,
+          "coverage": 0.33266666666666667,
+          "n": 499,
+          "tasks": 1500
+        },
+        "indicator_detection": {
+          "accuracy": 0.9759519038076152,
+          "coverage": 0.2495,
+          "n": 499,
+          "tasks": 2000
+        },
+        "privacy_minimization": {
+          "accuracy": 1.0,
+          "coverage": 0.498,
+          "n": 498,
+          "tasks": 1000
+        },
+        "risk_priority": {
+          "accuracy": 0.46184738955823296,
+          "coverage": 0.498,
+          "n": 498,
+          "tasks": 1000
+        },
+        "route_selection": {
+          "accuracy": 0.4899598393574297,
+          "coverage": 0.332,
+          "n": 498,
+          "tasks": 1500
+        },
+        "tool_trace_integrity": {
+          "accuracy": 0.9036144578313253,
+          "coverage": 0.498,
+          "n": 498,
+          "tasks": 1000
+        }
+      },
+      "categorical": {
+        "accuracy": 0.48996,
+        "brier": 0.25502,
+        "log_loss": 14.09293,
+        "macro_f1": 0.482474,
+        "n": 498,
+        "per_label": {
+          "gather_more_evidence": {
+            "f1": 0.668435,
+            "n": 126,
+            "precision": 0.501992,
+            "recall": 1.0
+          },
+          "immediate_safety_referral": {
+            "f1": 0.609524,
+            "n": 38,
+            "precision": 0.477612,
+            "recall": 0.842105
+          },
+          "no_indicator_detected": {
+            "f1": 0.008,
+            "n": 249,
+            "precision": 1.0,
+            "recall": 0.004016
+          },
+          "prompt_specialist_referral": {
+            "f1": 0.643939,
+            "n": 85,
+            "precision": 0.47486,
+            "recall": 1.0
+          }
+        },
+        "top2_accuracy": 0.48996
+      },
+      "completed": 4487,
+      "coverage": 0.3739166666666667,
+      "invalid": 0,
+      "missing": 7513,
+      "multilabel": {
+        "brier": 0.038351,
+        "exact_set_accuracy": 0.482966,
+        "hamming_loss": 0.063512,
+        "macro_f1": 0.805995,
+        "micro_f1": 0.775354,
+        "micro_precision": 0.659555,
+        "micro_recall": 0.940476,
+        "n": 499,
+        "per_label": {
+          "IND-H-01": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 94
+          },
+          "IND-H-02": {
+            "f1": 0.635071,
+            "precision": 0.465278,
+            "recall": 1.0,
+            "support": 67
+          },
+          "IND-H-03": {
+            "f1": 0.943662,
+            "precision": 0.893333,
+            "recall": 1.0,
+            "support": 67
+          },
+          "IND-H-04": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 59
+          },
+          "IND-H-05": {
+            "f1": 0.679803,
+            "precision": 0.514925,
+            "recall": 1.0,
+            "support": 69
+          },
+          "IND-H-06": {
+            "f1": 0.859649,
+            "precision": 0.907407,
+            "recall": 0.816667,
+            "support": 60
+          },
+          "IND-S-01": {
+            "f1": 0.592965,
+            "precision": 0.421429,
+            "recall": 1.0,
+            "support": 59
+          },
+          "IND-S-02": {
+            "f1": 0.718954,
+            "precision": 0.561224,
+            "recall": 1.0,
+            "support": 55
+          },
+          "IND-S-03": {
+            "f1": 0.550265,
+            "precision": 0.38806,
+            "recall": 0.945455,
+            "support": 55
+          },
+          "IND-S-04": {
+            "f1": 0.892308,
+            "precision": 1.0,
+            "recall": 0.805556,
+            "support": 36
+          },
+          "IND-S-05": {
+            "f1": 0.684211,
+            "precision": 1.0,
+            "recall": 0.52,
+            "support": 50
+          },
+          "IND-S-06": {
+            "f1": 0.921053,
+            "precision": 0.853659,
+            "recall": 1.0,
+            "support": 35
+          },
+          "IND-S-07": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 50
+          }
+        }
+      },
+      "ordinal": {
+        "accuracy": 0.461847,
+        "mae": 0.672289,
+        "n": 498,
+        "quadratic_weighted_kappa": 0.505884,
+        "ranked_probability_score": 0.160673
+      },
+      "paired_relations": {
+        "both_correct_rate": 0.616162,
+        "by_relation": {
+          "flip": {
+            "both_correct_rate": 0.760286,
+            "counterfactual_failure_rate_given_base_correct": 0.20412,
+            "pairs": 559,
+            "relation_consistency": 0.763864
+          },
+          "invariant": {
+            "both_correct_rate": 0.714286,
+            "counterfactual_failure_rate_given_base_correct": 0.0,
+            "pairs": 77,
+            "relation_consistency": 0.714286
+          },
+          "monotonic_increase": {
+            "both_correct_rate": 0.259843,
+            "counterfactual_failure_rate_given_base_correct": 0.492308,
+            "pairs": 127,
+            "relation_consistency": 0.535433
+          },
+          "set_reduction": {
+            "both_correct_rate": 0.28125,
+            "counterfactual_failure_rate_given_base_correct": 0.25,
+            "pairs": 128,
+            "relation_consistency": 0.859375
+          }
+        },
+        "eligible_pairs": 891,
+        "relation_consistency": 0.740741
+      },
+      "selective_risk_by_type": {
+        "binary_probability": {
+          "aurc": 0.040254,
+          "curve": [
+            {
+              "coverage": 0.0999,
+              "minimum_confidence": 1.0,
+              "risk": 0.0301
+            },
+            {
+              "coverage": 0.1999,
+              "minimum_confidence": 1.0,
+              "risk": 0.038462
+            },
+            {
+              "coverage": 0.3001,
+              "minimum_confidence": 1.0,
+              "risk": 0.042316
+            },
+            {
+              "coverage": 0.4001,
+              "minimum_confidence": 1.0,
+              "risk": 0.038429
+            },
+            {
+              "coverage": 0.5,
+              "minimum_confidence": 1.0,
+              "risk": 0.037433
+            },
+            {
+              "coverage": 0.5999,
+              "minimum_confidence": 1.0,
+              "risk": 0.03844
+            },
+            {
+              "coverage": 0.6999,
+              "minimum_confidence": 1.0,
+              "risk": 0.039637
+            },
+            {
+              "coverage": 0.8001,
+              "minimum_confidence": 1.0,
+              "risk": 0.039683
+            },
+            {
+              "coverage": 0.9001,
+              "minimum_confidence": 0.9,
+              "risk": 0.03899
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.5,
+              "risk": 0.06016
+            }
+          ],
+          "n": 2992,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "categorical_distribution": {
+          "aurc": 0.504736,
+          "curve": [
+            {
+              "coverage": 0.1004,
+              "minimum_confidence": 1.0,
+              "risk": 0.5
+            },
+            {
+              "coverage": 0.2008,
+              "minimum_confidence": 1.0,
+              "risk": 0.51
+            },
+            {
+              "coverage": 0.2992,
+              "minimum_confidence": 1.0,
+              "risk": 0.530201
+            },
+            {
+              "coverage": 0.3996,
+              "minimum_confidence": 1.0,
+              "risk": 0.502513
+            },
+            {
+              "coverage": 0.5,
+              "minimum_confidence": 1.0,
+              "risk": 0.514056
+            },
+            {
+              "coverage": 0.6004,
+              "minimum_confidence": 1.0,
+              "risk": 0.51505
+            },
+            {
+              "coverage": 0.7008,
+              "minimum_confidence": 1.0,
+              "risk": 0.518625
+            },
+            {
+              "coverage": 0.7992,
+              "minimum_confidence": 1.0,
+              "risk": 0.512563
+            },
+            {
+              "coverage": 0.8996,
+              "minimum_confidence": 1.0,
+              "risk": 0.504464
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 1.0,
+              "risk": 0.51004
+            }
+          ],
+          "n": 498,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "multilabel_probabilities": {
+          "aurc": 0.347795,
+          "curve": [
+            {
+              "coverage": 0.1002,
+              "minimum_confidence": 1.0,
+              "risk": 0.34
+            },
+            {
+              "coverage": 0.2004,
+              "minimum_confidence": 1.0,
+              "risk": 0.32
+            },
+            {
+              "coverage": 0.3006,
+              "minimum_confidence": 1.0,
+              "risk": 0.273333
+            },
+            {
+              "coverage": 0.4008,
+              "minimum_confidence": 1.0,
+              "risk": 0.28
+            },
+            {
+              "coverage": 0.501,
+              "minimum_confidence": 1.0,
+              "risk": 0.28
+            },
+            {
+              "coverage": 0.5992,
+              "minimum_confidence": 0.961538,
+              "risk": 0.301003
+            },
+            {
+              "coverage": 0.6994,
+              "minimum_confidence": 0.961538,
+              "risk": 0.346705
+            },
+            {
+              "coverage": 0.7996,
+              "minimum_confidence": 0.923077,
+              "risk": 0.411028
+            },
+            {
+              "coverage": 0.8998,
+              "minimum_confidence": 0.884615,
+              "risk": 0.465479
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.730769,
+              "risk": 0.517034
+            }
+          ],
+          "n": 499,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "ordinal_distribution": {
+          "aurc": 0.50548,
+          "curve": [
+            {
+              "coverage": 0.1004,
+              "minimum_confidence": 1.0,
+              "risk": 0.5
+            },
+            {
+              "coverage": 0.2008,
+              "minimum_confidence": 1.0,
+              "risk": 0.48
+            },
+            {
+              "coverage": 0.2992,
+              "minimum_confidence": 1.0,
+              "risk": 0.52349
+            },
+            {
+              "coverage": 0.3996,
+              "minimum_confidence": 1.0,
+              "risk": 0.522613
+            },
+            {
+              "coverage": 0.5,
+              "minimum_confidence": 1.0,
+              "risk": 0.514056
+            },
+            {
+              "coverage": 0.6004,
+              "minimum_confidence": 1.0,
+              "risk": 0.501672
+            },
+            {
+              "coverage": 0.7008,
+              "minimum_confidence": 1.0,
+              "risk": 0.507163
+            },
+            {
+              "coverage": 0.7992,
+              "minimum_confidence": 1.0,
+              "risk": 0.512563
+            },
+            {
+              "coverage": 0.8996,
+              "minimum_confidence": 0.8,
+              "risk": 0.515625
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.5,
+              "risk": 0.538153
+            }
+          ],
+          "n": 498,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        }
+      },
+      "tasks": 12000
+    },
+    "gemma4:31b": {
+      "binary": {
+        "accuracy": 0.947368,
+        "adaptive_calibration_error": 0.062782,
+        "auroc": 0.94697,
+        "average_precision": 0.964392,
+        "balanced_accuracy": 0.947761,
+        "brier": 0.055959,
+        "class_conditional": {
+          "false": {
+            "accuracy": 1.0,
+            "brier": 3.8e-05,
+            "mean_probability": 0.000758,
+            "n": 66
+          },
+          "true": {
+            "accuracy": 0.895522,
+            "brier": 0.111045,
+            "mean_probability": 0.874627,
+            "n": 67
+          }
+        },
+        "confusion": {
+          "fn": 7,
+          "fp": 0,
+          "tn": 66,
+          "tp": 60
+        },
+        "expected_calibration_error": 0.062782,
+        "f1": 0.944882,
+        "log_loss": 1.467365,
+        "matthews_correlation": 0.899806,
+        "n": 133,
+        "negatives": 66,
+        "positives": 67,
+        "precision": 1.0,
+        "recall": 0.895522,
+        "specificity": 1.0
+      },
+      "by_family": {
+        "action_authorization": {
+          "accuracy": 1.0,
+          "coverage": 0.015333333333333332,
+          "n": 23,
+          "tasks": 1500
+        },
+        "composite_indicator_detection": {
+          "accuracy": 0.7391304347826086,
+          "coverage": 0.023,
+          "n": 23,
+          "tasks": 1000
+        },
+        "escalation_triage": {
+          "accuracy": 0.8636363636363636,
+          "coverage": 0.014666666666666666,
+          "n": 22,
+          "tasks": 1500
+        },
+        "evidence_answerability": {
+          "accuracy": 0.8181818181818182,
+          "coverage": 0.014666666666666666,
+          "n": 22,
+          "tasks": 1500
+        },
+        "indicator_detection": {
+          "accuracy": 1.0,
+          "coverage": 0.011,
+          "n": 22,
+          "tasks": 2000
+        },
+        "privacy_minimization": {
+          "accuracy": 1.0,
+          "coverage": 0.022,
+          "n": 22,
+          "tasks": 1000
+        },
+        "risk_priority": {
+          "accuracy": 0.7727272727272727,
+          "coverage": 0.022,
+          "n": 22,
+          "tasks": 1000
+        },
+        "route_selection": {
+          "accuracy": 0.4090909090909091,
+          "coverage": 0.014666666666666666,
+          "n": 22,
+          "tasks": 1500
+        },
+        "tool_trace_integrity": {
+          "accuracy": 1.0,
+          "coverage": 0.022,
+          "n": 22,
+          "tasks": 1000
+        }
+      },
+      "categorical": {
+        "accuracy": 0.409091,
+        "brier": 0.295455,
+        "log_loss": 16.327422,
+        "macro_f1": 0.447917,
+        "n": 22,
+        "per_label": {
+          "gather_more_evidence": {
+            "f1": 0.625,
+            "n": 5,
+            "precision": 0.454545,
+            "recall": 1.0
+          },
+          "immediate_safety_referral": {
+            "f1": 0.666667,
+            "n": 1,
+            "precision": 0.5,
+            "recall": 1.0
+          },
+          "no_indicator_detected": {
+            "f1": 0.0,
+            "n": 13,
+            "precision": null,
+            "recall": 0.0
+          },
+          "prompt_specialist_referral": {
+            "f1": 0.5,
+            "n": 3,
+            "precision": 0.333333,
+            "recall": 1.0
+          }
+        },
+        "top2_accuracy": 0.409091
+      },
+      "completed": 200,
+      "coverage": 0.016666666666666666,
+      "invalid": 0,
+      "missing": 11800,
+      "multilabel": {
+        "brier": 0.024247,
+        "exact_set_accuracy": 0.73913,
+        "hamming_loss": 0.023411,
+        "macro_f1": 0.727548,
+        "micro_f1": 0.906667,
+        "micro_precision": 0.829268,
+        "micro_recall": 1.0,
+        "n": 23,
+        "per_label": {
+          "IND-H-01": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 7
+          },
+          "IND-H-02": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 3
+          },
+          "IND-H-03": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 3
+          },
+          "IND-H-04": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 2
+          },
+          "IND-H-05": {
+            "f1": 0.769231,
+            "precision": 0.625,
+            "recall": 1.0,
+            "support": 5
+          },
+          "IND-H-06": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 1
+          },
+          "IND-S-01": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": null,
+            "support": 0
+          },
+          "IND-S-02": {
+            "f1": 0.888889,
+            "precision": 0.8,
+            "recall": 1.0,
+            "support": 4
+          },
+          "IND-S-03": {
+            "f1": 0.8,
+            "precision": 0.666667,
+            "recall": 1.0,
+            "support": 4
+          },
+          "IND-S-04": {
+            "f1": 0.0,
+            "precision": null,
+            "recall": null,
+            "support": 0
+          },
+          "IND-S-05": {
+            "f1": 0.0,
+            "precision": null,
+            "recall": null,
+            "support": 0
+          },
+          "IND-S-06": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 2
+          },
+          "IND-S-07": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 3
+          }
+        }
+      },
+      "ordinal": {
+        "accuracy": 0.772727,
+        "mae": 0.422727,
+        "n": 22,
+        "quadratic_weighted_kappa": 0.602972,
+        "ranked_probability_score": 0.102614
+      },
+      "paired_relations": {
+        "both_correct_rate": 1.0,
+        "by_relation": {
+          "flip": {
+            "both_correct_rate": 1.0,
+            "counterfactual_failure_rate_given_base_correct": 0.0,
+            "pairs": 1,
+            "relation_consistency": 1.0
+          }
+        },
+        "eligible_pairs": 1,
+        "relation_consistency": 1.0
+      },
+      "selective_risk_by_type": {
+        "binary_probability": {
+          "aurc": 0.04152,
+          "curve": [
+            {
+              "coverage": 0.0977,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.203,
+              "minimum_confidence": 1.0,
+              "risk": 0.037037
+            },
+            {
+              "coverage": 0.3008,
+              "minimum_confidence": 1.0,
+              "risk": 0.05
+            },
+            {
+              "coverage": 0.3985,
+              "minimum_confidence": 1.0,
+              "risk": 0.037736
+            },
+            {
+              "coverage": 0.4962,
+              "minimum_confidence": 1.0,
+              "risk": 0.030303
+            },
+            {
+              "coverage": 0.6015,
+              "minimum_confidence": 1.0,
+              "risk": 0.05
+            },
+            {
+              "coverage": 0.6992,
+              "minimum_confidence": 1.0,
+              "risk": 0.064516
+            },
+            {
+              "coverage": 0.797,
+              "minimum_confidence": 1.0,
+              "risk": 0.056604
+            },
+            {
+              "coverage": 0.9023,
+              "minimum_confidence": 1.0,
+              "risk": 0.058333
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.6,
+              "risk": 0.052632
+            }
+          ],
+          "n": 133,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "categorical_distribution": {
+          "aurc": 0.64723,
+          "curve": [
+            {
+              "coverage": 0.0909,
+              "minimum_confidence": 1.0,
+              "risk": 0.5
+            },
+            {
+              "coverage": 0.1818,
+              "minimum_confidence": 1.0,
+              "risk": 0.75
+            },
+            {
+              "coverage": 0.3182,
+              "minimum_confidence": 1.0,
+              "risk": 0.714286
+            },
+            {
+              "coverage": 0.4091,
+              "minimum_confidence": 1.0,
+              "risk": 0.666667
+            },
+            {
+              "coverage": 0.5,
+              "minimum_confidence": 1.0,
+              "risk": 0.636364
+            },
+            {
+              "coverage": 0.5909,
+              "minimum_confidence": 1.0,
+              "risk": 0.615385
+            },
+            {
+              "coverage": 0.6818,
+              "minimum_confidence": 1.0,
+              "risk": 0.6
+            },
+            {
+              "coverage": 0.8182,
+              "minimum_confidence": 1.0,
+              "risk": 0.611111
+            },
+            {
+              "coverage": 0.9091,
+              "minimum_confidence": 1.0,
+              "risk": 0.6
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 1.0,
+              "risk": 0.590909
+            }
+          ],
+          "n": 22,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "multilabel_probabilities": {
+          "aurc": 0.425108,
+          "curve": [
+            {
+              "coverage": 0.087,
+              "minimum_confidence": 1.0,
+              "risk": 1.0
+            },
+            {
+              "coverage": 0.2174,
+              "minimum_confidence": 1.0,
+              "risk": 0.6
+            },
+            {
+              "coverage": 0.3043,
+              "minimum_confidence": 1.0,
+              "risk": 0.428571
+            },
+            {
+              "coverage": 0.3913,
+              "minimum_confidence": 1.0,
+              "risk": 0.333333
+            },
+            {
+              "coverage": 0.5217,
+              "minimum_confidence": 1.0,
+              "risk": 0.333333
+            },
+            {
+              "coverage": 0.6087,
+              "minimum_confidence": 1.0,
+              "risk": 0.285714
+            },
+            {
+              "coverage": 0.6957,
+              "minimum_confidence": 1.0,
+              "risk": 0.3125
+            },
+            {
+              "coverage": 0.7826,
+              "minimum_confidence": 1.0,
+              "risk": 0.277778
+            },
+            {
+              "coverage": 0.913,
+              "minimum_confidence": 1.0,
+              "risk": 0.285714
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.961538,
+              "risk": 0.26087
+            }
+          ],
+          "n": 23,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "ordinal_distribution": {
+          "aurc": 0.212782,
+          "curve": [
+            {
+              "coverage": 0.0909,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.1818,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.3182,
+              "minimum_confidence": 1.0,
+              "risk": 0.285714
+            },
+            {
+              "coverage": 0.4091,
+              "minimum_confidence": 1.0,
+              "risk": 0.333333
+            },
+            {
+              "coverage": 0.5,
+              "minimum_confidence": 1.0,
+              "risk": 0.272727
+            },
+            {
+              "coverage": 0.5909,
+              "minimum_confidence": 1.0,
+              "risk": 0.230769
+            },
+            {
+              "coverage": 0.6818,
+              "minimum_confidence": 1.0,
+              "risk": 0.2
+            },
+            {
+              "coverage": 0.8182,
+              "minimum_confidence": 1.0,
+              "risk": 0.222222
+            },
+            {
+              "coverage": 0.9091,
+              "minimum_confidence": 0.9,
+              "risk": 0.25
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.9,
+              "risk": 0.227273
+            }
+          ],
+          "n": 22,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        }
+      },
+      "tasks": 12000
+    },
+    "gpt-oss:20b": {
+      "binary": {
+        "accuracy": 0.853933,
+        "adaptive_calibration_error": 0.104045,
+        "auroc": 0.952814,
+        "average_precision": 0.94433,
+        "balanced_accuracy": 0.856673,
+        "brier": 0.115279,
+        "class_conditional": {
+          "false": {
+            "accuracy": 0.937984,
+            "brier": 0.056224,
+            "mean_probability": 0.081473,
+            "n": 129
+          },
+          "true": {
+            "accuracy": 0.775362,
+            "brier": 0.170483,
+            "mean_probability": 0.785,
+            "n": 138
+          }
+        },
+        "confusion": {
+          "fn": 31,
+          "fp": 8,
+          "tn": 121,
+          "tp": 107
+        },
+        "expected_calibration_error": 0.11176,
+        "f1": 0.84585,
+        "log_loss": 0.45463,
+        "matthews_correlation": 0.719887,
+        "n": 267,
+        "negatives": 129,
+        "positives": 138,
+        "precision": 0.930435,
+        "recall": 0.775362,
+        "specificity": 0.937984
+      },
+      "by_family": {
+        "action_authorization": {
+          "accuracy": 1.0,
+          "coverage": 0.03,
+          "n": 45,
+          "tasks": 1500
+        },
+        "composite_indicator_detection": {
+          "accuracy": 0.1111111111111111,
+          "coverage": 0.045,
+          "n": 45,
+          "tasks": 1000
+        },
+        "escalation_triage": {
+          "accuracy": 0.7111111111111111,
+          "coverage": 0.03,
+          "n": 45,
+          "tasks": 1500
+        },
+        "evidence_answerability": {
+          "accuracy": 0.9111111111111111,
+          "coverage": 0.03,
+          "n": 45,
+          "tasks": 1500
+        },
+        "indicator_detection": {
+          "accuracy": 0.5909090909090909,
+          "coverage": 0.022,
+          "n": 44,
+          "tasks": 2000
+        },
+        "privacy_minimization": {
+          "accuracy": 1.0,
+          "coverage": 0.044,
+          "n": 44,
+          "tasks": 1000
+        },
+        "risk_priority": {
+          "accuracy": 0.38636363636363635,
+          "coverage": 0.044,
+          "n": 44,
+          "tasks": 1000
+        },
+        "route_selection": {
+          "accuracy": 0.4772727272727273,
+          "coverage": 0.029333333333333333,
+          "n": 44,
+          "tasks": 1500
+        },
+        "tool_trace_integrity": {
+          "accuracy": 0.9090909090909091,
+          "coverage": 0.044,
+          "n": 44,
+          "tasks": 1000
+        }
+      },
+      "categorical": {
+        "accuracy": 0.477273,
+        "brier": 0.262159,
+        "log_loss": 14.453989,
+        "macro_f1": 0.468056,
+        "n": 44,
+        "per_label": {
+          "gather_more_evidence": {
+            "f1": 0.740741,
+            "n": 10,
+            "precision": 0.588235,
+            "recall": 1.0
+          },
+          "immediate_safety_referral": {
+            "f1": 0.4,
+            "n": 2,
+            "precision": 0.25,
+            "recall": 1.0
+          },
+          "no_indicator_detected": {
+            "f1": 0.148148,
+            "n": 25,
+            "precision": 1.0,
+            "recall": 0.08
+          },
+          "prompt_specialist_referral": {
+            "f1": 0.583333,
+            "n": 7,
+            "precision": 0.411765,
+            "recall": 1.0
+          }
+        },
+        "top2_accuracy": 0.477273
+      },
+      "completed": 400,
+      "coverage": 0.03333333333333333,
+      "invalid": 0,
+      "missing": 11600,
+      "multilabel": {
+        "brier": 0.120757,
+        "exact_set_accuracy": 0.111111,
+        "hamming_loss": 0.28547,
+        "macro_f1": 0.271176,
+        "micro_f1": 0.301255,
+        "micro_precision": 0.206897,
+        "micro_recall": 0.553846,
+        "n": 45,
+        "per_label": {
+          "IND-H-01": {
+            "f1": 0.518519,
+            "precision": 0.411765,
+            "recall": 0.7,
+            "support": 10
+          },
+          "IND-H-02": {
+            "f1": 0.454545,
+            "precision": 0.294118,
+            "recall": 1.0,
+            "support": 5
+          },
+          "IND-H-03": {
+            "f1": 0.333333,
+            "precision": 0.25,
+            "recall": 0.5,
+            "support": 6
+          },
+          "IND-H-04": {
+            "f1": 0.444444,
+            "precision": 0.307692,
+            "recall": 0.8,
+            "support": 5
+          },
+          "IND-H-05": {
+            "f1": 0.210526,
+            "precision": 0.153846,
+            "recall": 0.333333,
+            "support": 6
+          },
+          "IND-H-06": {
+            "f1": 0.105263,
+            "precision": 0.076923,
+            "recall": 0.166667,
+            "support": 6
+          },
+          "IND-S-01": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 1
+          },
+          "IND-S-02": {
+            "f1": 0.47619,
+            "precision": 0.384615,
+            "recall": 0.625,
+            "support": 8
+          },
+          "IND-S-03": {
+            "f1": 0.32,
+            "precision": 0.266667,
+            "recall": 0.4,
+            "support": 10
+          },
+          "IND-S-04": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 2
+          },
+          "IND-S-05": {
+            "f1": 0.166667,
+            "precision": 0.090909,
+            "recall": 1.0,
+            "support": 1
+          },
+          "IND-S-06": {
+            "f1": 0.142857,
+            "precision": 0.083333,
+            "recall": 0.5,
+            "support": 2
+          },
+          "IND-S-07": {
+            "f1": 0.352941,
+            "precision": 0.214286,
+            "recall": 1.0,
+            "support": 3
+          }
+        }
+      },
+      "ordinal": {
+        "accuracy": 0.386364,
+        "mae": 0.754318,
+        "n": 44,
+        "quadratic_weighted_kappa": 0.533898,
+        "ranked_probability_score": 0.169216
+      },
+      "paired_relations": {
+        "both_correct_rate": 0.428571,
+        "by_relation": {
+          "flip": {
+            "both_correct_rate": 0.5,
+            "counterfactual_failure_rate_given_base_correct": 0.25,
+            "pairs": 6,
+            "relation_consistency": 0.5
+          },
+          "set_reduction": {
+            "both_correct_rate": 0.0,
+            "counterfactual_failure_rate_given_base_correct": null,
+            "pairs": 1,
+            "relation_consistency": 1.0
+          }
+        },
+        "eligible_pairs": 7,
+        "relation_consistency": 0.571429
+      },
+      "selective_risk_by_type": {
+        "binary_probability": {
+          "aurc": 0.033256,
+          "curve": [
+            {
+              "coverage": 0.1011,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.1985,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.2996,
+              "minimum_confidence": 1.0,
+              "risk": 0.0125
+            },
+            {
+              "coverage": 0.4007,
+              "minimum_confidence": 1.0,
+              "risk": 0.009346
+            },
+            {
+              "coverage": 0.5019,
+              "minimum_confidence": 0.99,
+              "risk": 0.022388
+            },
+            {
+              "coverage": 0.5993,
+              "minimum_confidence": 0.99,
+              "risk": 0.025
+            },
+            {
+              "coverage": 0.7004,
+              "minimum_confidence": 0.95,
+              "risk": 0.026738
+            },
+            {
+              "coverage": 0.8015,
+              "minimum_confidence": 0.9,
+              "risk": 0.065421
+            },
+            {
+              "coverage": 0.8989,
+              "minimum_confidence": 0.9,
+              "risk": 0.091667
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.5,
+              "risk": 0.146067
+            }
+          ],
+          "n": 267,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "categorical_distribution": {
+          "aurc": 0.554815,
+          "curve": [
+            {
+              "coverage": 0.0909,
+              "minimum_confidence": 1.0,
+              "risk": 0.5
+            },
+            {
+              "coverage": 0.2045,
+              "minimum_confidence": 1.0,
+              "risk": 0.555556
+            },
+            {
+              "coverage": 0.2955,
+              "minimum_confidence": 1.0,
+              "risk": 0.538462
+            },
+            {
+              "coverage": 0.4091,
+              "minimum_confidence": 1.0,
+              "risk": 0.611111
+            },
+            {
+              "coverage": 0.5,
+              "minimum_confidence": 1.0,
+              "risk": 0.636364
+            },
+            {
+              "coverage": 0.5909,
+              "minimum_confidence": 1.0,
+              "risk": 0.576923
+            },
+            {
+              "coverage": 0.7045,
+              "minimum_confidence": 1.0,
+              "risk": 0.612903
+            },
+            {
+              "coverage": 0.7955,
+              "minimum_confidence": 1.0,
+              "risk": 0.6
+            },
+            {
+              "coverage": 0.9091,
+              "minimum_confidence": 1.0,
+              "risk": 0.55
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.7,
+              "risk": 0.522727
+            }
+          ],
+          "n": 44,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "multilabel_probabilities": {
+          "aurc": 0.786984,
+          "curve": [
+            {
+              "coverage": 0.0889,
+              "minimum_confidence": 0.948462,
+              "risk": 0.75
+            },
+            {
+              "coverage": 0.2,
+              "minimum_confidence": 0.911538,
+              "risk": 0.555556
+            },
+            {
+              "coverage": 0.3111,
+              "minimum_confidence": 0.9,
+              "risk": 0.714286
+            },
+            {
+              "coverage": 0.4,
+              "minimum_confidence": 0.9,
+              "risk": 0.777778
+            },
+            {
+              "coverage": 0.4889,
+              "minimum_confidence": 0.9,
+              "risk": 0.818182
+            },
+            {
+              "coverage": 0.6,
+              "minimum_confidence": 0.9,
+              "risk": 0.851852
+            },
+            {
+              "coverage": 0.7111,
+              "minimum_confidence": 0.873077,
+              "risk": 0.84375
+            },
+            {
+              "coverage": 0.8,
+              "minimum_confidence": 0.5,
+              "risk": 0.861111
+            },
+            {
+              "coverage": 0.8889,
+              "minimum_confidence": 0.5,
+              "risk": 0.875
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.5,
+              "risk": 0.888889
+            }
+          ],
+          "n": 45,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "ordinal_distribution": {
+          "aurc": 0.544869,
+          "curve": [
+            {
+              "coverage": 0.0909,
+              "minimum_confidence": 1.0,
+              "risk": 0.25
+            },
+            {
+              "coverage": 0.2045,
+              "minimum_confidence": 1.0,
+              "risk": 0.444444
+            },
+            {
+              "coverage": 0.2955,
+              "minimum_confidence": 1.0,
+              "risk": 0.615385
+            },
+            {
+              "coverage": 0.4091,
+              "minimum_confidence": 1.0,
+              "risk": 0.611111
+            },
+            {
+              "coverage": 0.5,
+              "minimum_confidence": 1.0,
+              "risk": 0.681818
+            },
+            {
+              "coverage": 0.5909,
+              "minimum_confidence": 1.0,
+              "risk": 0.692308
+            },
+            {
+              "coverage": 0.7045,
+              "minimum_confidence": 0.8,
+              "risk": 0.645161
+            },
+            {
+              "coverage": 0.7955,
+              "minimum_confidence": 0.7,
+              "risk": 0.628571
+            },
+            {
+              "coverage": 0.9091,
+              "minimum_confidence": 0.65,
+              "risk": 0.625
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.4,
+              "risk": 0.613636
+            }
+          ],
+          "n": 44,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        }
+      },
+      "tasks": 12000
+    },
+    "jev-1.13.0": {
+      "binary": {
+        "accuracy": 0.916353,
+        "adaptive_calibration_error": 0.10178,
+        "auroc": 0.980652,
+        "average_precision": 0.985014,
+        "balanced_accuracy": 0.920059,
+        "brier": 0.071534,
+        "class_conditional": {
+          "false": {
+            "accuracy": 0.995794,
+            "brier": 0.016795,
+            "mean_probability": 0.087083,
+            "n": 4042
+          },
+          "true": {
+            "accuracy": 0.844325,
+            "brier": 0.121165,
+            "mean_probability": 0.750247,
+            "n": 4458
+          }
+        },
+        "confusion": {
+          "fn": 694,
+          "fp": 17,
+          "tn": 4025,
+          "tp": 3764
+        },
+        "expected_calibration_error": 0.099401,
+        "f1": 0.913703,
+        "log_loss": 0.25182,
+        "matthews_correlation": 0.844269,
+        "n": 8500,
+        "negatives": 4042,
+        "positives": 4458,
+        "precision": 0.995504,
+        "recall": 0.844325,
+        "specificity": 0.995794
+      },
+      "by_family": {
+        "action_authorization": {
+          "accuracy": 1.0,
+          "coverage": 1.0,
+          "n": 1500,
+          "tasks": 1500
+        },
+        "composite_indicator_detection": {
+          "accuracy": 0.368,
+          "coverage": 1.0,
+          "n": 1000,
+          "tasks": 1000
+        },
+        "escalation_triage": {
+          "accuracy": 0.852,
+          "coverage": 1.0,
+          "n": 1500,
+          "tasks": 1500
+        },
+        "evidence_answerability": {
+          "accuracy": 0.686,
+          "coverage": 1.0,
+          "n": 1500,
+          "tasks": 1500
+        },
+        "indicator_detection": {
+          "accuracy": 0.995,
+          "coverage": 1.0,
+          "n": 2000,
+          "tasks": 2000
+        },
+        "privacy_minimization": {
+          "accuracy": 1.0,
+          "coverage": 1.0,
+          "n": 1000,
+          "tasks": 1000
+        },
+        "risk_priority": {
+          "accuracy": 0.8478478478478478,
+          "coverage": 0.999,
+          "n": 999,
+          "tasks": 1000
+        },
+        "route_selection": {
+          "accuracy": 0.708,
+          "coverage": 1.0,
+          "n": 1500,
+          "tasks": 1500
+        },
+        "tool_trace_integrity": {
+          "accuracy": 0.992,
+          "coverage": 1.0,
+          "n": 1000,
+          "tasks": 1000
+        }
+      },
+      "categorical": {
+        "accuracy": 0.708,
+        "brier": 0.091326,
+        "log_loss": 0.586715,
+        "macro_f1": 0.753022,
+        "n": 1500,
+        "per_label": {
+          "gather_more_evidence": {
+            "f1": 0.699729,
+            "n": 390,
+            "precision": 0.539638,
+            "recall": 0.994872
+          },
+          "immediate_safety_referral": {
+            "f1": 0.808642,
+            "n": 132,
+            "precision": 0.682292,
+            "recall": 0.992424
+          },
+          "no_indicator_detected": {
+            "f1": 0.589888,
+            "n": 750,
+            "precision": 0.990566,
+            "recall": 0.42
+          },
+          "prompt_specialist_referral": {
+            "f1": 0.913828,
+            "n": 228,
+            "precision": 0.841328,
+            "recall": 1.0
+          }
+        },
+        "top2_accuracy": 1.0
+      },
+      "completed": 11999,
+      "coverage": 0.9999166666666667,
+      "invalid": 0,
+      "missing": 1,
+      "multilabel": {
+        "brier": 0.080547,
+        "exact_set_accuracy": 0.368,
+        "hamming_loss": 0.091154,
+        "macro_f1": 0.732639,
+        "micro_f1": 0.701887,
+        "micro_precision": 0.563636,
+        "micro_recall": 0.93,
+        "n": 1000,
+        "per_label": {
+          "IND-H-01": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 178
+          },
+          "IND-H-02": {
+            "f1": 0.772846,
+            "precision": 0.629787,
+            "recall": 1.0,
+            "support": 148
+          },
+          "IND-H-03": {
+            "f1": 0.785714,
+            "precision": 0.695402,
+            "recall": 0.902985,
+            "support": 134
+          },
+          "IND-H-04": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 116
+          },
+          "IND-H-05": {
+            "f1": 0.62845,
+            "precision": 0.458204,
+            "recall": 1.0,
+            "support": 148
+          },
+          "IND-H-06": {
+            "f1": 0.810127,
+            "precision": 0.755906,
+            "recall": 0.872727,
+            "support": 110
+          },
+          "IND-S-01": {
+            "f1": 0.52349,
+            "precision": 0.354545,
+            "recall": 1.0,
+            "support": 117
+          },
+          "IND-S-02": {
+            "f1": 0.471396,
+            "precision": 0.308383,
+            "recall": 1.0,
+            "support": 103
+          },
+          "IND-S-03": {
+            "f1": 0.564885,
+            "precision": 0.399281,
+            "recall": 0.965217,
+            "support": 115
+          },
+          "IND-S-04": {
+            "f1": 0.881119,
+            "precision": 1.0,
+            "recall": 0.7875,
+            "support": 80
+          },
+          "IND-S-05": {
+            "f1": 0.564885,
+            "precision": 1.0,
+            "recall": 0.393617,
+            "support": 94
+          },
+          "IND-S-06": {
+            "f1": 0.521401,
+            "precision": 0.352632,
+            "recall": 1.0,
+            "support": 67
+          },
+          "IND-S-07": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 90
+          }
+        }
+      },
+      "ordinal": {
+        "accuracy": 0.847848,
+        "mae": 0.402472,
+        "n": 999,
+        "quadratic_weighted_kappa": 0.707995,
+        "ranked_probability_score": 0.051477
+      },
+      "paired_relations": {
+        "both_correct_rate": 0.710785,
+        "by_relation": {
+          "flip": {
+            "both_correct_rate": 0.795936,
+            "counterfactual_failure_rate_given_base_correct": 0.110782,
+            "pairs": 4528,
+            "relation_consistency": 0.796599
+          },
+          "invariant": {
+            "both_correct_rate": 0.529661,
+            "counterfactual_failure_rate_given_base_correct": 0.0,
+            "pairs": 472,
+            "relation_consistency": 0.529661
+          },
+          "monotonic_increase": {
+            "both_correct_rate": 0.707415,
+            "counterfactual_failure_rate_given_base_correct": 0.163507,
+            "pairs": 499,
+            "relation_consistency": 0.751503
+          },
+          "set_reduction": {
+            "both_correct_rate": 0.114,
+            "counterfactual_failure_rate_given_base_correct": 0.278481,
+            "pairs": 500,
+            "relation_consistency": 0.878
+          }
+        },
+        "eligible_pairs": 5999,
+        "relation_consistency": 0.77863
+      },
+      "selective_risk_by_type": {
+        "binary_probability": {
+          "aurc": 0.023909,
+          "curve": [
+            {
+              "coverage": 0.1,
+              "minimum_confidence": 0.98,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.2,
+              "minimum_confidence": 0.97,
+              "risk": 0.003529
+            },
+            {
+              "coverage": 0.3,
+              "minimum_confidence": 0.96,
+              "risk": 0.007451
+            },
+            {
+              "coverage": 0.4,
+              "minimum_confidence": 0.94,
+              "risk": 0.014412
+            },
+            {
+              "coverage": 0.5,
+              "minimum_confidence": 0.91,
+              "risk": 0.014118
+            },
+            {
+              "coverage": 0.6,
+              "minimum_confidence": 0.87,
+              "risk": 0.019216
+            },
+            {
+              "coverage": 0.7,
+              "minimum_confidence": 0.83,
+              "risk": 0.034958
+            },
+            {
+              "coverage": 0.8,
+              "minimum_confidence": 0.77,
+              "risk": 0.049118
+            },
+            {
+              "coverage": 0.9,
+              "minimum_confidence": 0.7,
+              "risk": 0.060654
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.5,
+              "risk": 0.083647
+            }
+          ],
+          "n": 8500,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "categorical_distribution": {
+          "aurc": 0.141346,
+          "curve": [
+            {
+              "coverage": 0.1,
+              "minimum_confidence": 0.91,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.2,
+              "minimum_confidence": 0.87,
+              "risk": 0.01
+            },
+            {
+              "coverage": 0.3,
+              "minimum_confidence": 0.81,
+              "risk": 0.053333
+            },
+            {
+              "coverage": 0.4,
+              "minimum_confidence": 0.77,
+              "risk": 0.105
+            },
+            {
+              "coverage": 0.5,
+              "minimum_confidence": 0.72,
+              "risk": 0.154667
+            },
+            {
+              "coverage": 0.6,
+              "minimum_confidence": 0.68,
+              "risk": 0.194444
+            },
+            {
+              "coverage": 0.7,
+              "minimum_confidence": 0.63,
+              "risk": 0.222857
+            },
+            {
+              "coverage": 0.8,
+              "minimum_confidence": 0.58,
+              "risk": 0.25
+            },
+            {
+              "coverage": 0.9,
+              "minimum_confidence": 0.53,
+              "risk": 0.276296
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.41,
+              "risk": 0.292
+            }
+          ],
+          "n": 1500,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "multilabel_probabilities": {
+          "aurc": 0.46099,
+          "curve": [
+            {
+              "coverage": 0.1,
+              "minimum_confidence": 0.871538,
+              "risk": 0.23
+            },
+            {
+              "coverage": 0.2,
+              "minimum_confidence": 0.852308,
+              "risk": 0.305
+            },
+            {
+              "coverage": 0.3,
+              "minimum_confidence": 0.833077,
+              "risk": 0.366667
+            },
+            {
+              "coverage": 0.4,
+              "minimum_confidence": 0.820769,
+              "risk": 0.4175
+            },
+            {
+              "coverage": 0.5,
+              "minimum_confidence": 0.801538,
+              "risk": 0.444
+            },
+            {
+              "coverage": 0.6,
+              "minimum_confidence": 0.789231,
+              "risk": 0.503333
+            },
+            {
+              "coverage": 0.7,
+              "minimum_confidence": 0.776154,
+              "risk": 0.532857
+            },
+            {
+              "coverage": 0.8,
+              "minimum_confidence": 0.760769,
+              "risk": 0.57
+            },
+            {
+              "coverage": 0.9,
+              "minimum_confidence": 0.741538,
+              "risk": 0.593333
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.665385,
+              "risk": 0.632
+            }
+          ],
+          "n": 1000,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "ordinal_distribution": {
+          "aurc": 0.037592,
+          "curve": [
+            {
+              "coverage": 0.1001,
+              "minimum_confidence": 0.81,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.2002,
+              "minimum_confidence": 0.76,
+              "risk": 0.01
+            },
+            {
+              "coverage": 0.3003,
+              "minimum_confidence": 0.73,
+              "risk": 0.006667
+            },
+            {
+              "coverage": 0.4004,
+              "minimum_confidence": 0.7,
+              "risk": 0.01
+            },
+            {
+              "coverage": 0.5005,
+              "minimum_confidence": 0.68,
+              "risk": 0.026
+            },
+            {
+              "coverage": 0.5996,
+              "minimum_confidence": 0.65,
+              "risk": 0.035058
+            },
+            {
+              "coverage": 0.6997,
+              "minimum_confidence": 0.61,
+              "risk": 0.04578
+            },
+            {
+              "coverage": 0.7998,
+              "minimum_confidence": 0.54,
+              "risk": 0.070088
+            },
+            {
+              "coverage": 0.8999,
+              "minimum_confidence": 0.47,
+              "risk": 0.097887
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.34,
+              "risk": 0.152152
+            }
+          ],
+          "n": 999,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        }
+      },
+      "tasks": 12000
+    },
+    "kimi-k3": {
+      "binary": {
+        "accuracy": 0.954887,
+        "adaptive_calibration_error": 0.057068,
+        "auroc": 0.957033,
+        "average_precision": 0.971403,
+        "balanced_accuracy": 0.955224,
+        "brier": 0.046717,
+        "class_conditional": {
+          "false": {
+            "accuracy": 1.0,
+            "brier": 0.001256,
+            "mean_probability": 0.011667,
+            "n": 66
+          },
+          "true": {
+            "accuracy": 0.910448,
+            "brier": 0.091499,
+            "mean_probability": 0.881791,
+            "n": 67
+          }
+        },
+        "confusion": {
+          "fn": 6,
+          "fp": 0,
+          "tn": 66,
+          "tp": 61
+        },
+        "expected_calibration_error": 0.060526,
+        "f1": 0.953125,
+        "log_loss": 1.073479,
+        "matthews_correlation": 0.913552,
+        "n": 133,
+        "negatives": 66,
+        "positives": 67,
+        "precision": 1.0,
+        "recall": 0.910448,
+        "specificity": 1.0
+      },
+      "by_family": {
+        "action_authorization": {
+          "accuracy": 1.0,
+          "coverage": 0.015333333333333332,
+          "n": 23,
+          "tasks": 1500
+        },
+        "composite_indicator_detection": {
+          "accuracy": 0.43478260869565216,
+          "coverage": 0.023,
+          "n": 23,
+          "tasks": 1000
+        },
+        "escalation_triage": {
+          "accuracy": 0.8636363636363636,
+          "coverage": 0.014666666666666666,
+          "n": 22,
+          "tasks": 1500
+        },
+        "evidence_answerability": {
+          "accuracy": 0.9090909090909091,
+          "coverage": 0.014666666666666666,
+          "n": 22,
+          "tasks": 1500
+        },
+        "indicator_detection": {
+          "accuracy": 0.9545454545454546,
+          "coverage": 0.011,
+          "n": 22,
+          "tasks": 2000
+        },
+        "privacy_minimization": {
+          "accuracy": 1.0,
+          "coverage": 0.022,
+          "n": 22,
+          "tasks": 1000
+        },
+        "risk_priority": {
+          "accuracy": 0.3181818181818182,
+          "coverage": 0.022,
+          "n": 22,
+          "tasks": 1000
+        },
+        "route_selection": {
+          "accuracy": 0.5,
+          "coverage": 0.014666666666666666,
+          "n": 22,
+          "tasks": 1500
+        },
+        "tool_trace_integrity": {
+          "accuracy": 1.0,
+          "coverage": 0.022,
+          "n": 22,
+          "tasks": 1000
+        }
+      },
+      "categorical": {
+        "accuracy": 0.5,
+        "brier": 0.25,
+        "log_loss": 13.815511,
+        "macro_f1": 0.539583,
+        "n": 22,
+        "per_label": {
+          "gather_more_evidence": {
+            "f1": 0.625,
+            "n": 5,
+            "precision": 0.454545,
+            "recall": 1.0
+          },
+          "immediate_safety_referral": {
+            "f1": 0.666667,
+            "n": 1,
+            "precision": 0.5,
+            "recall": 1.0
+          },
+          "no_indicator_detected": {
+            "f1": 0.266667,
+            "n": 13,
+            "precision": 1.0,
+            "recall": 0.153846
+          },
+          "prompt_specialist_referral": {
+            "f1": 0.6,
+            "n": 3,
+            "precision": 0.428571,
+            "recall": 1.0
+          }
+        },
+        "top2_accuracy": 0.5
+      },
+      "completed": 200,
+      "coverage": 0.016666666666666666,
+      "invalid": 0,
+      "missing": 11800,
+      "multilabel": {
+        "brier": 0.044689,
+        "exact_set_accuracy": 0.434783,
+        "hamming_loss": 0.060201,
+        "macro_f1": 0.684546,
+        "micro_f1": 0.785714,
+        "micro_precision": 0.66,
+        "micro_recall": 0.970588,
+        "n": 23,
+        "per_label": {
+          "IND-H-01": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 7
+          },
+          "IND-H-02": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 3
+          },
+          "IND-H-03": {
+            "f1": 0.857143,
+            "precision": 0.75,
+            "recall": 1.0,
+            "support": 3
+          },
+          "IND-H-04": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 2
+          },
+          "IND-H-05": {
+            "f1": 0.769231,
+            "precision": 0.625,
+            "recall": 1.0,
+            "support": 5
+          },
+          "IND-H-06": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 1
+          },
+          "IND-S-01": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": null,
+            "support": 0
+          },
+          "IND-S-02": {
+            "f1": 0.727273,
+            "precision": 0.571429,
+            "recall": 1.0,
+            "support": 4
+          },
+          "IND-S-03": {
+            "f1": 0.545455,
+            "precision": 0.428571,
+            "recall": 0.75,
+            "support": 4
+          },
+          "IND-S-04": {
+            "f1": 0.0,
+            "precision": null,
+            "recall": null,
+            "support": 0
+          },
+          "IND-S-05": {
+            "f1": 0.0,
+            "precision": null,
+            "recall": null,
+            "support": 0
+          },
+          "IND-S-06": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 2
+          },
+          "IND-S-07": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 3
+          }
+        }
+      },
+      "ordinal": {
+        "accuracy": 0.318182,
+        "mae": 1.265455,
+        "n": 22,
+        "quadratic_weighted_kappa": 0.28169,
+        "ranked_probability_score": 0.30853
+      },
+      "paired_relations": {
+        "both_correct_rate": 0.0,
+        "by_relation": {
+          "flip": {
+            "both_correct_rate": 0.0,
+            "counterfactual_failure_rate_given_base_correct": null,
+            "pairs": 1,
+            "relation_consistency": 0.0
+          }
+        },
+        "eligible_pairs": 1,
+        "relation_consistency": 0.0
+      },
+      "selective_risk_by_type": {
+        "binary_probability": {
+          "aurc": 0.031131,
+          "curve": [
+            {
+              "coverage": 0.0977,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.203,
+              "minimum_confidence": 1.0,
+              "risk": 0.037037
+            },
+            {
+              "coverage": 0.3008,
+              "minimum_confidence": 1.0,
+              "risk": 0.025
+            },
+            {
+              "coverage": 0.3985,
+              "minimum_confidence": 1.0,
+              "risk": 0.018868
+            },
+            {
+              "coverage": 0.4962,
+              "minimum_confidence": 1.0,
+              "risk": 0.030303
+            },
+            {
+              "coverage": 0.6015,
+              "minimum_confidence": 1.0,
+              "risk": 0.05
+            },
+            {
+              "coverage": 0.6992,
+              "minimum_confidence": 1.0,
+              "risk": 0.053763
+            },
+            {
+              "coverage": 0.797,
+              "minimum_confidence": 1.0,
+              "risk": 0.04717
+            },
+            {
+              "coverage": 0.9023,
+              "minimum_confidence": 0.95,
+              "risk": 0.041667
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.55,
+              "risk": 0.045113
+            }
+          ],
+          "n": 133,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "categorical_distribution": {
+          "aurc": 0.452757,
+          "curve": [
+            {
+              "coverage": 0.0909,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.1818,
+              "minimum_confidence": 1.0,
+              "risk": 0.5
+            },
+            {
+              "coverage": 0.3182,
+              "minimum_confidence": 1.0,
+              "risk": 0.571429
+            },
+            {
+              "coverage": 0.4091,
+              "minimum_confidence": 1.0,
+              "risk": 0.555556
+            },
+            {
+              "coverage": 0.5,
+              "minimum_confidence": 1.0,
+              "risk": 0.545455
+            },
+            {
+              "coverage": 0.5909,
+              "minimum_confidence": 1.0,
+              "risk": 0.461538
+            },
+            {
+              "coverage": 0.6818,
+              "minimum_confidence": 1.0,
+              "risk": 0.466667
+            },
+            {
+              "coverage": 0.8182,
+              "minimum_confidence": 1.0,
+              "risk": 0.5
+            },
+            {
+              "coverage": 0.9091,
+              "minimum_confidence": 1.0,
+              "risk": 0.5
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 1.0,
+              "risk": 0.5
+            }
+          ],
+          "n": 22,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "multilabel_probabilities": {
+          "aurc": 0.437195,
+          "curve": [
+            {
+              "coverage": 0.087,
+              "minimum_confidence": 0.99,
+              "risk": 0.5
+            },
+            {
+              "coverage": 0.2174,
+              "minimum_confidence": 0.956154,
+              "risk": 0.4
+            },
+            {
+              "coverage": 0.3043,
+              "minimum_confidence": 0.95,
+              "risk": 0.285714
+            },
+            {
+              "coverage": 0.3913,
+              "minimum_confidence": 0.938462,
+              "risk": 0.333333
+            },
+            {
+              "coverage": 0.5217,
+              "minimum_confidence": 0.910769,
+              "risk": 0.416667
+            },
+            {
+              "coverage": 0.6087,
+              "minimum_confidence": 0.9,
+              "risk": 0.357143
+            },
+            {
+              "coverage": 0.6957,
+              "minimum_confidence": 0.891538,
+              "risk": 0.375
+            },
+            {
+              "coverage": 0.7826,
+              "minimum_confidence": 0.873077,
+              "risk": 0.444444
+            },
+            {
+              "coverage": 0.913,
+              "minimum_confidence": 0.846154,
+              "risk": 0.52381
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.818462,
+              "risk": 0.565217
+            }
+          ],
+          "n": 23,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "ordinal_distribution": {
+          "aurc": 0.844656,
+          "curve": [
+            {
+              "coverage": 0.0909,
+              "minimum_confidence": 1.0,
+              "risk": 1.0
+            },
+            {
+              "coverage": 0.1818,
+              "minimum_confidence": 1.0,
+              "risk": 1.0
+            },
+            {
+              "coverage": 0.3182,
+              "minimum_confidence": 1.0,
+              "risk": 0.857143
+            },
+            {
+              "coverage": 0.4091,
+              "minimum_confidence": 1.0,
+              "risk": 0.888889
+            },
+            {
+              "coverage": 0.5,
+              "minimum_confidence": 1.0,
+              "risk": 0.818182
+            },
+            {
+              "coverage": 0.5909,
+              "minimum_confidence": 1.0,
+              "risk": 0.769231
+            },
+            {
+              "coverage": 0.6818,
+              "minimum_confidence": 1.0,
+              "risk": 0.8
+            },
+            {
+              "coverage": 0.8182,
+              "minimum_confidence": 1.0,
+              "risk": 0.833333
+            },
+            {
+              "coverage": 0.9091,
+              "minimum_confidence": 0.85,
+              "risk": 0.75
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.7,
+              "risk": 0.681818
+            }
+          ],
+          "n": 22,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        }
+      },
+      "tasks": 12000
+    }
+  },
+  "crossborder_decisions": {
+    "deepseek-v4.1-flash": {
+      "binary": {
+        "accuracy": 0.896552,
+        "adaptive_calibration_error": 0.116207,
+        "auroc": 0.882353,
+        "average_precision": 0.86578,
+        "balanced_accuracy": 0.911765,
+        "brier": 0.104583,
+        "class_conditional": {
+          "false": {
+            "accuracy": 0.823529,
+            "brier": 0.176494,
+            "mean_probability": 0.177647,
+            "n": 17
+          },
+          "true": {
+            "accuracy": 1.0,
+            "brier": 0.002708,
+            "mean_probability": 0.970833,
+            "n": 12
+          }
+        },
+        "confusion": {
+          "fn": 0,
+          "fp": 3,
+          "tn": 14,
+          "tp": 12
+        },
+        "expected_calibration_error": 0.092069,
+        "f1": 0.888889,
+        "log_loss": 2.871746,
+        "matthews_correlation": 0.811679,
+        "n": 29,
+        "negatives": 17,
+        "positives": 12,
+        "precision": 0.8,
+        "recall": 1.0,
+        "specificity": 0.823529
+      },
+      "by_family": {
+        "crossborder_screening": {
+          "accuracy": 1.0,
+          "coverage": 0.034722222222222224,
+          "n": 10,
+          "tasks": 288
+        },
+        "financial_arithmetic": {
+          "accuracy": 0.7,
+          "coverage": 0.7692307692307693,
+          "n": 10,
+          "tasks": 13
+        },
+        "safe_action_boundary": {
+          "accuracy": 1.0,
+          "coverage": 0.017361111111111112,
+          "n": 10,
+          "tasks": 576
+        },
+        "sequential_evidence_update": {
+          "accuracy": 1.0,
+          "coverage": 0.1875,
+          "n": 9,
+          "tasks": 48
+        },
+        "source_scope_entailment": {
+          "accuracy": 1.0,
+          "coverage": 0.75,
+          "n": 9,
+          "tasks": 12
+        }
+      },
+      "categorical": {
+        "accuracy": 1.0,
+        "brier": 0.005877,
+        "log_loss": 0.101503,
+        "macro_f1": 1.0,
+        "n": 19,
+        "per_label": {
+          "clarify_facts": {
+            "f1": 1.0,
+            "n": 5,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "ordinary_information": {
+            "f1": 1.0,
+            "n": 7,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "safeguarding_review": {
+            "f1": 1.0,
+            "n": 7,
+            "precision": 1.0,
+            "recall": 1.0
+          }
+        },
+        "top2_accuracy": 1.0
+      },
+      "completed": 48,
+      "coverage": 0.051227321237993596,
+      "invalid": 0,
+      "missing": 889,
+      "multilabel": {
+        "brier": null,
+        "exact_set_accuracy": null,
+        "hamming_loss": null,
+        "macro_f1": null,
+        "micro_f1": null,
+        "micro_precision": null,
+        "micro_recall": null,
+        "n": 0,
+        "per_label": {}
+      },
+      "ordinal": {
+        "accuracy": null,
+        "mae": null,
+        "n": 0,
+        "quadratic_weighted_kappa": null,
+        "ranked_probability_score": null
+      },
+      "paired_relations": {
+        "both_correct_rate": null,
+        "by_relation": {},
+        "eligible_pairs": 0,
+        "relation_consistency": null
+      },
+      "selective_risk_by_type": {
+        "binary_probability": {
+          "aurc": 0.051308,
+          "curve": [
+            {
+              "coverage": 0.1034,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.2069,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.3103,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.4138,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.4828,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.5862,
+              "minimum_confidence": 1.0,
+              "risk": 0.058824
+            },
+            {
+              "coverage": 0.6897,
+              "minimum_confidence": 1.0,
+              "risk": 0.1
+            },
+            {
+              "coverage": 0.7931,
+              "minimum_confidence": 1.0,
+              "risk": 0.130435
+            },
+            {
+              "coverage": 0.8966,
+              "minimum_confidence": 0.95,
+              "risk": 0.115385
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.9,
+              "risk": 0.103448
+            }
+          ],
+          "n": 29,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "categorical_distribution": {
+          "aurc": 0.0,
+          "curve": [
+            {
+              "coverage": 0.1053,
+              "minimum_confidence": 0.95,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.2105,
+              "minimum_confidence": 0.95,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.3158,
+              "minimum_confidence": 0.95,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.4211,
+              "minimum_confidence": 0.9,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.5263,
+              "minimum_confidence": 0.9,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.5789,
+              "minimum_confidence": 0.9,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.6842,
+              "minimum_confidence": 0.9,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.7895,
+              "minimum_confidence": 0.85,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.8947,
+              "minimum_confidence": 0.85,
+              "risk": 0.0
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.8,
+              "risk": 0.0
+            }
+          ],
+          "n": 19,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        }
+      },
+      "tasks": 937
+    },
+    "gemma-4-coding-abliterated": {
+      "binary": {
+        "accuracy": 0.988353,
+        "adaptive_calibration_error": 0.011814,
+        "auroc": 0.988372,
+        "average_precision": 0.982958,
+        "balanced_accuracy": 0.988372,
+        "brier": 0.011664,
+        "class_conditional": {
+          "false": {
+            "accuracy": 0.976744,
+            "brier": 0.023289,
+            "mean_probability": 0.023588,
+            "n": 301
+          },
+          "true": {
+            "accuracy": 1.0,
+            "brier": 0.0,
+            "mean_probability": 1.0,
+            "n": 300
+          }
+        },
+        "confusion": {
+          "fn": 0,
+          "fp": 7,
+          "tn": 294,
+          "tp": 300
+        },
+        "expected_calibration_error": 0.011814,
+        "f1": 0.988468,
+        "log_loss": 0.322001,
+        "matthews_correlation": 0.976971,
+        "n": 601,
+        "negatives": 301,
+        "positives": 300,
+        "precision": 0.977199,
+        "recall": 1.0,
+        "specificity": 0.976744
+      },
+      "by_family": {
+        "crossborder_screening": {
+          "accuracy": 0.78125,
+          "coverage": 1.0,
+          "n": 288,
+          "tasks": 288
+        },
+        "financial_arithmetic": {
+          "accuracy": 0.46153846153846156,
+          "coverage": 1.0,
+          "n": 13,
+          "tasks": 13
+        },
+        "safe_action_boundary": {
+          "accuracy": 1.0,
+          "coverage": 1.0,
+          "n": 576,
+          "tasks": 576
+        },
+        "sequential_evidence_update": {
+          "accuracy": 1.0,
+          "coverage": 1.0,
+          "n": 48,
+          "tasks": 48
+        },
+        "source_scope_entailment": {
+          "accuracy": 1.0,
+          "coverage": 1.0,
+          "n": 12,
+          "tasks": 12
+        }
+      },
+      "categorical": {
+        "accuracy": 0.8125,
+        "brier": 0.106453,
+        "log_loss": 3.774534,
+        "macro_f1": 0.806485,
+        "n": 336,
+        "per_label": {
+          "clarify_facts": {
+            "f1": 0.758929,
+            "n": 96,
+            "precision": 0.664062,
+            "recall": 0.885417
+          },
+          "ordinary_information": {
+            "f1": 0.762887,
+            "n": 120,
+            "precision": 1.0,
+            "recall": 0.616667
+          },
+          "safeguarding_review": {
+            "f1": 0.897638,
+            "n": 120,
+            "precision": 0.850746,
+            "recall": 0.95
+          }
+        },
+        "top2_accuracy": 0.955357
+      },
+      "completed": 937,
+      "coverage": 1.0,
+      "invalid": 0,
+      "missing": 0,
+      "multilabel": {
+        "brier": null,
+        "exact_set_accuracy": null,
+        "hamming_loss": null,
+        "macro_f1": null,
+        "micro_f1": null,
+        "micro_precision": null,
+        "micro_recall": null,
+        "n": 0,
+        "per_label": {}
+      },
+      "ordinal": {
+        "accuracy": null,
+        "mae": null,
+        "n": 0,
+        "quadratic_weighted_kappa": null,
+        "ranked_probability_score": null
+      },
+      "paired_relations": {
+        "both_correct_rate": null,
+        "by_relation": {},
+        "eligible_pairs": 0,
+        "relation_consistency": null
+      },
+      "selective_risk_by_type": {
+        "binary_probability": {
+          "aurc": 0.008196,
+          "curve": [
+            {
+              "coverage": 0.0998,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.1997,
+              "minimum_confidence": 1.0,
+              "risk": 0.008333
+            },
+            {
+              "coverage": 0.2995,
+              "minimum_confidence": 1.0,
+              "risk": 0.011111
+            },
+            {
+              "coverage": 0.3993,
+              "minimum_confidence": 1.0,
+              "risk": 0.008333
+            },
+            {
+              "coverage": 0.4992,
+              "minimum_confidence": 1.0,
+              "risk": 0.006667
+            },
+            {
+              "coverage": 0.6007,
+              "minimum_confidence": 1.0,
+              "risk": 0.00831
+            },
+            {
+              "coverage": 0.7005,
+              "minimum_confidence": 1.0,
+              "risk": 0.009501
+            },
+            {
+              "coverage": 0.8003,
+              "minimum_confidence": 1.0,
+              "risk": 0.008316
+            },
+            {
+              "coverage": 0.9002,
+              "minimum_confidence": 1.0,
+              "risk": 0.009242
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.9,
+              "risk": 0.011647
+            }
+          ],
+          "n": 601,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "categorical_distribution": {
+          "aurc": 0.145066,
+          "curve": [
+            {
+              "coverage": 0.1012,
+              "minimum_confidence": 1.0,
+              "risk": 0.147059
+            },
+            {
+              "coverage": 0.1994,
+              "minimum_confidence": 1.0,
+              "risk": 0.134328
+            },
+            {
+              "coverage": 0.3006,
+              "minimum_confidence": 1.0,
+              "risk": 0.118812
+            },
+            {
+              "coverage": 0.3988,
+              "minimum_confidence": 1.0,
+              "risk": 0.126866
+            },
+            {
+              "coverage": 0.5,
+              "minimum_confidence": 1.0,
+              "risk": 0.130952
+            },
+            {
+              "coverage": 0.6012,
+              "minimum_confidence": 1.0,
+              "risk": 0.138614
+            },
+            {
+              "coverage": 0.6994,
+              "minimum_confidence": 1.0,
+              "risk": 0.148936
+            },
+            {
+              "coverage": 0.8006,
+              "minimum_confidence": 1.0,
+              "risk": 0.144981
+            },
+            {
+              "coverage": 0.8988,
+              "minimum_confidence": 0.9,
+              "risk": 0.145695
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.5,
+              "risk": 0.1875
+            }
+          ],
+          "n": 336,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        }
+      },
+      "tasks": 937
+    },
+    "gemma4:31b": {
+      "binary": {
+        "accuracy": 0.862069,
+        "adaptive_calibration_error": 0.137931,
+        "auroc": 0.882353,
+        "average_precision": 0.885179,
+        "balanced_accuracy": 0.882353,
+        "brier": 0.137931,
+        "class_conditional": {
+          "false": {
+            "accuracy": 0.764706,
+            "brier": 0.235294,
+            "mean_probability": 0.235294,
+            "n": 17
+          },
+          "true": {
+            "accuracy": 1.0,
+            "brier": 0.0,
+            "mean_probability": 1.0,
+            "n": 12
+          }
+        },
+        "confusion": {
+          "fn": 0,
+          "fp": 4,
+          "tn": 13,
+          "tp": 12
+        },
+        "expected_calibration_error": 0.137931,
+        "f1": 0.857143,
+        "log_loss": 3.811175,
+        "matthews_correlation": 0.757317,
+        "n": 29,
+        "negatives": 17,
+        "positives": 12,
+        "precision": 0.75,
+        "recall": 1.0,
+        "specificity": 0.764706
+      },
+      "by_family": {
+        "crossborder_screening": {
+          "accuracy": 1.0,
+          "coverage": 0.034722222222222224,
+          "n": 10,
+          "tasks": 288
+        },
+        "financial_arithmetic": {
+          "accuracy": 0.6,
+          "coverage": 0.7692307692307693,
+          "n": 10,
+          "tasks": 13
+        },
+        "safe_action_boundary": {
+          "accuracy": 1.0,
+          "coverage": 0.017361111111111112,
+          "n": 10,
+          "tasks": 576
+        },
+        "sequential_evidence_update": {
+          "accuracy": 1.0,
+          "coverage": 0.1875,
+          "n": 9,
+          "tasks": 48
+        },
+        "source_scope_entailment": {
+          "accuracy": 1.0,
+          "coverage": 0.75,
+          "n": 9,
+          "tasks": 12
+        }
+      },
+      "categorical": {
+        "accuracy": 1.0,
+        "brier": 0.0,
+        "log_loss": 0.0,
+        "macro_f1": 1.0,
+        "n": 19,
+        "per_label": {
+          "clarify_facts": {
+            "f1": 1.0,
+            "n": 5,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "ordinary_information": {
+            "f1": 1.0,
+            "n": 7,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "safeguarding_review": {
+            "f1": 1.0,
+            "n": 7,
+            "precision": 1.0,
+            "recall": 1.0
+          }
+        },
+        "top2_accuracy": 1.0
+      },
+      "completed": 48,
+      "coverage": 0.051227321237993596,
+      "invalid": 0,
+      "missing": 889,
+      "multilabel": {
+        "brier": null,
+        "exact_set_accuracy": null,
+        "hamming_loss": null,
+        "macro_f1": null,
+        "micro_f1": null,
+        "micro_precision": null,
+        "micro_recall": null,
+        "n": 0,
+        "per_label": {}
+      },
+      "ordinal": {
+        "accuracy": null,
+        "mae": null,
+        "n": 0,
+        "quadratic_weighted_kappa": null,
+        "ranked_probability_score": null
+      },
+      "paired_relations": {
+        "both_correct_rate": null,
+        "by_relation": {},
+        "eligible_pairs": 0,
+        "relation_consistency": null
+      },
+      "selective_risk_by_type": {
+        "binary_probability": {
+          "aurc": 0.056581,
+          "curve": [
+            {
+              "coverage": 0.1034,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.2069,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.3103,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.4138,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.4828,
+              "minimum_confidence": 1.0,
+              "risk": 0.071429
+            },
+            {
+              "coverage": 0.5862,
+              "minimum_confidence": 1.0,
+              "risk": 0.117647
+            },
+            {
+              "coverage": 0.6897,
+              "minimum_confidence": 1.0,
+              "risk": 0.1
+            },
+            {
+              "coverage": 0.7931,
+              "minimum_confidence": 1.0,
+              "risk": 0.086957
+            },
+            {
+              "coverage": 0.8966,
+              "minimum_confidence": 1.0,
+              "risk": 0.115385
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 1.0,
+              "risk": 0.137931
+            }
+          ],
+          "n": 29,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "categorical_distribution": {
+          "aurc": 0.0,
+          "curve": [
+            {
+              "coverage": 0.1053,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.2105,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.3158,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.4211,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.5263,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.5789,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.6842,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.7895,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.8947,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            }
+          ],
+          "n": 19,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        }
+      },
+      "tasks": 937
+    },
+    "gpt-oss:20b": {
+      "binary": {
+        "accuracy": 1.0,
+        "adaptive_calibration_error": 0.01931,
+        "auroc": 1.0,
+        "average_precision": 1.0,
+        "balanced_accuracy": 1.0,
+        "brier": 0.001055,
+        "class_conditional": {
+          "false": {
+            "accuracy": 1.0,
+            "brier": 0.001035,
+            "mean_probability": 0.015294,
+            "n": 17
+          },
+          "true": {
+            "accuracy": 1.0,
+            "brier": 0.001083,
+            "mean_probability": 0.975,
+            "n": 12
+          }
+        },
+        "confusion": {
+          "fn": 0,
+          "fp": 0,
+          "tn": 17,
+          "tp": 12
+        },
+        "expected_calibration_error": 0.01931,
+        "f1": 1.0,
+        "log_loss": 0.019862,
+        "matthews_correlation": 1.0,
+        "n": 29,
+        "negatives": 17,
+        "positives": 12,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0
+      },
+      "by_family": {
+        "crossborder_screening": {
+          "accuracy": 0.7,
+          "coverage": 0.034722222222222224,
+          "n": 10,
+          "tasks": 288
+        },
+        "financial_arithmetic": {
+          "accuracy": 1.0,
+          "coverage": 0.7692307692307693,
+          "n": 10,
+          "tasks": 13
+        },
+        "safe_action_boundary": {
+          "accuracy": 1.0,
+          "coverage": 0.017361111111111112,
+          "n": 10,
+          "tasks": 576
+        },
+        "sequential_evidence_update": {
+          "accuracy": 1.0,
+          "coverage": 0.1875,
+          "n": 9,
+          "tasks": 48
+        },
+        "source_scope_entailment": {
+          "accuracy": 1.0,
+          "coverage": 0.75,
+          "n": 9,
+          "tasks": 12
+        }
+      },
+      "categorical": {
+        "accuracy": 0.842105,
+        "brier": 0.080428,
+        "log_loss": 0.419049,
+        "macro_f1": 0.793254,
+        "n": 19,
+        "per_label": {
+          "clarify_facts": {
+            "f1": 0.571429,
+            "n": 5,
+            "precision": 1.0,
+            "recall": 0.4
+          },
+          "ordinary_information": {
+            "f1": 0.933333,
+            "n": 7,
+            "precision": 0.875,
+            "recall": 1.0
+          },
+          "safeguarding_review": {
+            "f1": 0.875,
+            "n": 7,
+            "precision": 0.777778,
+            "recall": 1.0
+          }
+        },
+        "top2_accuracy": 1.0
+      },
+      "completed": 48,
+      "coverage": 0.051227321237993596,
+      "invalid": 0,
+      "missing": 889,
+      "multilabel": {
+        "brier": null,
+        "exact_set_accuracy": null,
+        "hamming_loss": null,
+        "macro_f1": null,
+        "micro_f1": null,
+        "micro_precision": null,
+        "micro_recall": null,
+        "n": 0,
+        "per_label": {}
+      },
+      "ordinal": {
+        "accuracy": null,
+        "mae": null,
+        "n": 0,
+        "quadratic_weighted_kappa": null,
+        "ranked_probability_score": null
+      },
+      "paired_relations": {
+        "both_correct_rate": null,
+        "by_relation": {},
+        "eligible_pairs": 0,
+        "relation_consistency": null
+      },
+      "selective_risk_by_type": {
+        "binary_probability": {
+          "aurc": 0.0,
+          "curve": [
+            {
+              "coverage": 0.1034,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.2069,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.3103,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.4138,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.4828,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.5862,
+              "minimum_confidence": 0.99,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.6897,
+              "minimum_confidence": 0.99,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.7931,
+              "minimum_confidence": 0.95,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.8966,
+              "minimum_confidence": 0.95,
+              "risk": 0.0
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.9,
+              "risk": 0.0
+            }
+          ],
+          "n": 29,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "categorical_distribution": {
+          "aurc": 0.054685,
+          "curve": [
+            {
+              "coverage": 0.1053,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.2105,
+              "minimum_confidence": 0.92,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.3158,
+              "minimum_confidence": 0.9,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.4211,
+              "minimum_confidence": 0.9,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.5263,
+              "minimum_confidence": 0.85,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.5789,
+              "minimum_confidence": 0.85,
+              "risk": 0.090909
+            },
+            {
+              "coverage": 0.6842,
+              "minimum_confidence": 0.85,
+              "risk": 0.076923
+            },
+            {
+              "coverage": 0.7895,
+              "minimum_confidence": 0.8,
+              "risk": 0.133333
+            },
+            {
+              "coverage": 0.8947,
+              "minimum_confidence": 0.7,
+              "risk": 0.117647
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.7,
+              "risk": 0.157895
+            }
+          ],
+          "n": 19,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        }
+      },
+      "tasks": 937
+    },
+    "jev-1.13.0": {
+      "binary": {
+        "accuracy": 0.988353,
+        "adaptive_calibration_error": 0.07817,
+        "auroc": 0.999922,
+        "average_precision": 0.999933,
+        "balanced_accuracy": 0.988372,
+        "brier": 0.013132,
+        "class_conditional": {
+          "false": {
+            "accuracy": 0.976744,
+            "brier": 0.011244,
+            "mean_probability": 0.044286,
+            "n": 301
+          },
+          "true": {
+            "accuracy": 1.0,
+            "brier": 0.015026,
+            "mean_probability": 0.8825,
+            "n": 300
+          }
+        },
+        "confusion": {
+          "fn": 0,
+          "fp": 7,
+          "tn": 294,
+          "tp": 300
+        },
+        "expected_calibration_error": 0.073877,
+        "f1": 0.988468,
+        "log_loss": 0.090581,
+        "matthews_correlation": 0.976971,
+        "n": 601,
+        "negatives": 301,
+        "positives": 300,
+        "precision": 0.977199,
+        "recall": 1.0,
+        "specificity": 0.976744
+      },
+      "by_family": {
+        "crossborder_screening": {
+          "accuracy": 0.9236111111111112,
+          "coverage": 1.0,
+          "n": 288,
+          "tasks": 288
+        },
+        "financial_arithmetic": {
+          "accuracy": 0.46153846153846156,
+          "coverage": 1.0,
+          "n": 13,
+          "tasks": 13
+        },
+        "safe_action_boundary": {
+          "accuracy": 1.0,
+          "coverage": 1.0,
+          "n": 576,
+          "tasks": 576
+        },
+        "sequential_evidence_update": {
+          "accuracy": 1.0,
+          "coverage": 1.0,
+          "n": 48,
+          "tasks": 48
+        },
+        "source_scope_entailment": {
+          "accuracy": 1.0,
+          "coverage": 1.0,
+          "n": 12,
+          "tasks": 12
+        }
+      },
+      "categorical": {
+        "accuracy": 0.934524,
+        "brier": 0.03136,
+        "log_loss": 0.178336,
+        "macro_f1": 0.93223,
+        "n": 336,
+        "per_label": {
+          "clarify_facts": {
+            "f1": 0.909953,
+            "n": 96,
+            "precision": 0.834783,
+            "recall": 1.0
+          },
+          "ordinary_information": {
+            "f1": 0.899083,
+            "n": 120,
+            "precision": 1.0,
+            "recall": 0.816667
+          },
+          "safeguarding_review": {
+            "f1": 0.987654,
+            "n": 120,
+            "precision": 0.97561,
+            "recall": 1.0
+          }
+        },
+        "top2_accuracy": 0.97619
+      },
+      "completed": 937,
+      "coverage": 1.0,
+      "invalid": 0,
+      "missing": 0,
+      "multilabel": {
+        "brier": null,
+        "exact_set_accuracy": null,
+        "hamming_loss": null,
+        "macro_f1": null,
+        "micro_f1": null,
+        "micro_precision": null,
+        "micro_recall": null,
+        "n": 0,
+        "per_label": {}
+      },
+      "ordinal": {
+        "accuracy": null,
+        "mae": null,
+        "n": 0,
+        "quadratic_weighted_kappa": null,
+        "ranked_probability_score": null
+      },
+      "paired_relations": {
+        "both_correct_rate": null,
+        "by_relation": {},
+        "eligible_pairs": 0,
+        "relation_consistency": null
+      },
+      "selective_risk_by_type": {
+        "binary_probability": {
+          "aurc": 9.5e-05,
+          "curve": [
+            {
+              "coverage": 0.0998,
+              "minimum_confidence": 0.97,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.1997,
+              "minimum_confidence": 0.97,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.2995,
+              "minimum_confidence": 0.97,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.3993,
+              "minimum_confidence": 0.97,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.4992,
+              "minimum_confidence": 0.94,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.6007,
+              "minimum_confidence": 0.91,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.7005,
+              "minimum_confidence": 0.89,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.8003,
+              "minimum_confidence": 0.87,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.9002,
+              "minimum_confidence": 0.85,
+              "risk": 0.0
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.51,
+              "risk": 0.011647
+            }
+          ],
+          "n": 601,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "categorical_distribution": {
+          "aurc": 0.005952,
+          "curve": [
+            {
+              "coverage": 0.1012,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.1994,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.3006,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.3988,
+              "minimum_confidence": 0.99,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.5,
+              "minimum_confidence": 0.99,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.6012,
+              "minimum_confidence": 0.98,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.6994,
+              "minimum_confidence": 0.94,
+              "risk": 0.004255
+            },
+            {
+              "coverage": 0.8006,
+              "minimum_confidence": 0.88,
+              "risk": 0.011152
+            },
+            {
+              "coverage": 0.8988,
+              "minimum_confidence": 0.65,
+              "risk": 0.019868
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.36,
+              "risk": 0.065476
+            }
+          ],
+          "n": 336,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        }
+      },
+      "tasks": 937
+    },
+    "kimi-k3": {
+      "binary": {
+        "accuracy": 0.965517,
+        "adaptive_calibration_error": 0.037931,
+        "auroc": 0.965686,
+        "average_precision": 0.925267,
+        "balanced_accuracy": 0.970588,
+        "brier": 0.034655,
+        "class_conditional": {
+          "false": {
+            "accuracy": 0.941176,
+            "brier": 0.058824,
+            "mean_probability": 0.058824,
+            "n": 17
+          },
+          "true": {
+            "accuracy": 1.0,
+            "brier": 0.000417,
+            "mean_probability": 0.991667,
+            "n": 12
+          }
+        },
+        "confusion": {
+          "fn": 0,
+          "fp": 1,
+          "tn": 16,
+          "tp": 12
+        },
+        "expected_calibration_error": 0.031034,
+        "f1": 0.96,
+        "log_loss": 0.956331,
+        "matthews_correlation": 0.932083,
+        "n": 29,
+        "negatives": 17,
+        "positives": 12,
+        "precision": 0.923077,
+        "recall": 1.0,
+        "specificity": 0.941176
+      },
+      "by_family": {
+        "crossborder_screening": {
+          "accuracy": 1.0,
+          "coverage": 0.034722222222222224,
+          "n": 10,
+          "tasks": 288
+        },
+        "financial_arithmetic": {
+          "accuracy": 0.9,
+          "coverage": 0.7692307692307693,
+          "n": 10,
+          "tasks": 13
+        },
+        "safe_action_boundary": {
+          "accuracy": 1.0,
+          "coverage": 0.017361111111111112,
+          "n": 10,
+          "tasks": 576
+        },
+        "sequential_evidence_update": {
+          "accuracy": 1.0,
+          "coverage": 0.1875,
+          "n": 9,
+          "tasks": 48
+        },
+        "source_scope_entailment": {
+          "accuracy": 1.0,
+          "coverage": 0.75,
+          "n": 9,
+          "tasks": 12
+        }
+      },
+      "categorical": {
+        "accuracy": 1.0,
+        "brier": 0.001098,
+        "log_loss": 0.024735,
+        "macro_f1": 1.0,
+        "n": 19,
+        "per_label": {
+          "clarify_facts": {
+            "f1": 1.0,
+            "n": 5,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "ordinary_information": {
+            "f1": 1.0,
+            "n": 7,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "safeguarding_review": {
+            "f1": 1.0,
+            "n": 7,
+            "precision": 1.0,
+            "recall": 1.0
+          }
+        },
+        "top2_accuracy": 1.0
+      },
+      "completed": 48,
+      "coverage": 0.051227321237993596,
+      "invalid": 0,
+      "missing": 889,
+      "multilabel": {
+        "brier": null,
+        "exact_set_accuracy": null,
+        "hamming_loss": null,
+        "macro_f1": null,
+        "micro_f1": null,
+        "micro_precision": null,
+        "micro_recall": null,
+        "n": 0,
+        "per_label": {}
+      },
+      "ordinal": {
+        "accuracy": null,
+        "mae": null,
+        "n": 0,
+        "quadratic_weighted_kappa": null,
+        "ranked_probability_score": null
+      },
+      "paired_relations": {
+        "both_correct_rate": null,
+        "by_relation": {},
+        "eligible_pairs": 0,
+        "relation_consistency": null
+      },
+      "selective_risk_by_type": {
+        "binary_probability": {
+          "aurc": 0.029601,
+          "curve": [
+            {
+              "coverage": 0.1034,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.2069,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.3103,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.4138,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.4828,
+              "minimum_confidence": 1.0,
+              "risk": 0.071429
+            },
+            {
+              "coverage": 0.5862,
+              "minimum_confidence": 1.0,
+              "risk": 0.058824
+            },
+            {
+              "coverage": 0.6897,
+              "minimum_confidence": 1.0,
+              "risk": 0.05
+            },
+            {
+              "coverage": 0.7931,
+              "minimum_confidence": 1.0,
+              "risk": 0.043478
+            },
+            {
+              "coverage": 0.8966,
+              "minimum_confidence": 1.0,
+              "risk": 0.038462
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.95,
+              "risk": 0.034483
+            }
+          ],
+          "n": 29,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        },
+        "categorical_distribution": {
+          "aurc": 0.0,
+          "curve": [
+            {
+              "coverage": 0.1053,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.2105,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.3158,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.4211,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.5263,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.5789,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.6842,
+              "minimum_confidence": 1.0,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.7895,
+              "minimum_confidence": 0.95,
+              "risk": 0.0
+            },
+            {
+              "coverage": 0.8947,
+              "minimum_confidence": 0.9,
+              "risk": 0.0
+            },
+            {
+              "coverage": 1.0,
+              "minimum_confidence": 0.9,
+              "risk": 0.0
+            }
+          ],
+          "n": 19,
+          "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+        }
+      },
+      "tasks": 937
+    }
+  },
+  "generation": {
+    "bulk-ladders-v1": {
+      "group_count": 248,
+      "jobs": {
+        "compare-deepseek": {
+          "completed": 80,
+          "kind": "comparison",
+          "model": "deepseek-v4.1-flash",
+          "requested": 1152,
+          "status_counts": {
+            "completed": 80
+          }
+        },
+        "compare-kimi": {
+          "completed": 80,
+          "kind": "comparison",
+          "model": "kimi-k3",
+          "requested": 1152,
+          "status_counts": {
+            "completed": 80
+          }
+        },
+        "generate-gemma4": {
+          "completed": 120,
+          "distinct_responses": 120,
+          "kind": "generation",
+          "length_adherent": 117,
+          "model": "gemma4:31b",
+          "observed_lengths": {
+            "extended": 28,
+            "long": 28,
+            "medium": 32,
+            "short": 32
+          },
+          "observed_styles": {
+            "checklist": 12,
+            "decision_table": 17,
+            "direct": 16,
+            "empathetic": 17,
+            "faq": 18,
+            "json_screening": 11,
+            "review_memo": 13,
+            "screening_explanation": 16
+          },
+          "requested": 4016,
+          "status_counts": {
+            "completed": 120
+          }
+        },
+        "generate-gpt-oss": {
+          "completed": 120,
+          "distinct_responses": 120,
+          "kind": "generation",
+          "length_adherent": 32,
+          "model": "gpt-oss:20b",
+          "observed_lengths": {
+            "extended": 28,
+            "long": 28,
+            "medium": 32,
+            "short": 32
+          },
+          "observed_styles": {
+            "checklist": 12,
+            "decision_table": 17,
+            "direct": 16,
+            "empathetic": 17,
+            "faq": 18,
+            "json_screening": 11,
+            "review_memo": 13,
+            "screening_explanation": 16
+          },
+          "requested": 4016,
+          "status_counts": {
+            "completed": 120
+          }
+        },
+        "generate-tactical": {
+          "completed": 1104,
+          "distinct_responses": 1104,
+          "kind": "generation",
+          "length_adherent": 1048,
+          "model": "gemma-4-coding-abliterated",
+          "observed_lengths": {
+            "extended": 267,
+            "long": 279,
+            "medium": 284,
+            "short": 274
+          },
+          "observed_styles": {
+            "checklist": 137,
+            "decision_table": 137,
+            "direct": 138,
+            "empathetic": 141,
+            "faq": 140,
+            "json_screening": 125,
+            "review_memo": 140,
+            "screening_explanation": 146
+          },
+          "requested": 20080,
+          "status_counts": {
+            "completed": 1104
+          }
+        },
+        "grade-generate-gemma4-deepseek": {
+          "completed": 94,
+          "kind": "grading",
+          "model": "deepseek-v4.1-flash",
+          "requested": 4016,
+          "status_counts": {
+            "completed": 94
+          }
+        },
+        "grade-generate-gemma4-glm": {
+          "completed": 81,
+          "kind": "grading",
+          "model": "glm-5.3-flash",
+          "requested": 4016,
+          "status_counts": {
+            "completed": 81
+          }
+        },
+        "grade-generate-gemma4-jev": {
+          "completed": 119,
+          "kind": "grading",
+          "model": "jev-1.13.0",
+          "requested": 4016,
+          "status_counts": {
+            "completed": 119
+          }
+        },
+        "grade-generate-gpt-oss-deepseek": {
+          "completed": 88,
+          "kind": "grading",
+          "model": "deepseek-v4.1-flash",
+          "requested": 4016,
+          "status_counts": {
+            "completed": 88
+          }
+        },
+        "grade-generate-gpt-oss-glm": {
+          "completed": 66,
+          "kind": "grading",
+          "model": "glm-5.3-flash",
+          "requested": 4016,
+          "status_counts": {
+            "completed": 66,
+            "truncated": 1
+          }
+        },
+        "grade-generate-gpt-oss-jev": {
+          "completed": 120,
+          "kind": "grading",
+          "model": "jev-1.13.0",
+          "requested": 4016,
+          "status_counts": {
+            "completed": 120
+          }
+        },
+        "grade-generate-tactical-deepseek": {
+          "completed": 80,
+          "kind": "grading",
+          "model": "deepseek-v4.1-flash",
+          "requested": 20080,
+          "status_counts": {
+            "completed": 80
+          }
+        },
+        "grade-generate-tactical-glm": {
+          "completed": 62,
+          "kind": "grading",
+          "model": "glm-5.3-flash",
+          "requested": 20080,
+          "status_counts": {
+            "completed": 62
+          }
+        },
+        "grade-generate-tactical-jev": {
+          "completed": 1090,
+          "kind": "grading",
+          "model": "jev-1.13.0",
+          "requested": 20080,
+          "status_counts": {
+            "completed": 1090,
+            "provider_error": 1
+          }
+        }
+      },
+      "requested_tactical": 20080,
+      "source_cases": 251
+    },
+    "variation-v1": {
+      "group_count": 24,
+      "jobs": {
+        "compare-deepseek": {
+          "completed": 0,
+          "kind": "comparison",
+          "model": "deepseek-v4.1-flash",
+          "requested": 864,
+          "status_counts": {}
+        },
+        "compare-kimi": {
+          "completed": 0,
+          "kind": "comparison",
+          "model": "kimi-k3",
+          "requested": 864,
+          "status_counts": {}
+        },
+        "generate-gemma4": {
+          "completed": 12,
+          "distinct_responses": 12,
+          "kind": "generation",
+          "length_adherent": 11,
+          "model": "gemma4:31b",
+          "observed_lengths": {
+            "extended": 3,
+            "long": 4,
+            "medium": 4,
+            "short": 1
+          },
+          "observed_styles": {
+            "bullets": 1,
+            "dialogue": 2,
+            "faq": 3,
+            "memo": 2,
+            "screening": 3,
+            "table": 1
+          },
+          "requested": 864,
+          "status_counts": {
+            "completed": 12
+          }
+        },
+        "generate-gpt-oss": {
+          "completed": 12,
+          "distinct_responses": 12,
+          "kind": "generation",
+          "length_adherent": 9,
+          "model": "gpt-oss:20b",
+          "observed_lengths": {
+            "extended": 3,
+            "long": 4,
+            "medium": 4,
+            "short": 1
+          },
+          "observed_styles": {
+            "bullets": 1,
+            "dialogue": 2,
+            "faq": 3,
+            "memo": 2,
+            "screening": 3,
+            "table": 1
+          },
+          "requested": 864,
+          "status_counts": {
+            "completed": 12
+          }
+        },
+        "generate-tactical": {
+          "completed": 33,
+          "distinct_responses": 33,
+          "kind": "generation",
+          "length_adherent": 32,
+          "model": "gemma-4-coding-abliterated",
+          "observed_lengths": {
+            "extended": 7,
+            "long": 4,
+            "medium": 12,
+            "short": 10
+          },
+          "observed_styles": {
+            "bullets": 4,
+            "dialogue": 5,
+            "faq": 6,
+            "json": 5,
+            "memo": 3,
+            "prose": 2,
+            "screening": 4,
+            "table": 4
+          },
+          "requested": 4320,
+          "status_counts": {
+            "completed": 33
+          }
+        },
+        "grade-generate-gemma4-deepseek": {
+          "completed": 0,
+          "kind": "grading",
+          "model": "deepseek-v4.1-flash",
+          "requested": 864,
+          "status_counts": {}
+        },
+        "grade-generate-gemma4-glm": {
+          "completed": 0,
+          "kind": "grading",
+          "model": "glm-5.3-flash",
+          "requested": 864,
+          "status_counts": {}
+        },
+        "grade-generate-gemma4-jev": {
+          "completed": 12,
+          "kind": "grading",
+          "model": "jev-1.13.0",
+          "requested": 864,
+          "status_counts": {
+            "completed": 12
+          }
+        },
+        "grade-generate-gpt-oss-deepseek": {
+          "completed": 0,
+          "kind": "grading",
+          "model": "deepseek-v4.1-flash",
+          "requested": 864,
+          "status_counts": {}
+        },
+        "grade-generate-gpt-oss-glm": {
+          "completed": 0,
+          "kind": "grading",
+          "model": "glm-5.3-flash",
+          "requested": 864,
+          "status_counts": {}
+        },
+        "grade-generate-gpt-oss-jev": {
+          "completed": 12,
+          "kind": "grading",
+          "model": "jev-1.13.0",
+          "requested": 864,
+          "status_counts": {
+            "completed": 12
+          }
+        },
+        "grade-generate-tactical-deepseek": {
+          "completed": 3,
+          "kind": "grading",
+          "model": "deepseek-v4.1-flash",
+          "requested": 4320,
+          "status_counts": {
+            "completed": 3
+          }
+        },
+        "grade-generate-tactical-glm": {
+          "completed": 0,
+          "kind": "grading",
+          "model": "glm-5.3-flash",
+          "requested": 4320,
+          "status_counts": {}
+        },
+        "grade-generate-tactical-jev": {
+          "completed": 32,
+          "kind": "grading",
+          "model": "jev-1.13.0",
+          "requested": 4320,
+          "status_counts": {
+            "completed": 32
+          }
+        }
+      },
+      "requested_tactical": 4320,
+      "source_cases": 72
+    }
+  },
+  "internal_regression": {
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "747",
+    "time": "425.616"
+  },
+  "limitations": [
+    "Unequal partial coverage is not a leaderboard.",
+    "Generated variants are not independent situations.",
+    "Requested and source tiers are not adjudicated grades.",
+    "No worker-safety or deployment certification.",
+    "Public offline core is a scoped export; account-specific execution adapters are omitted."
+  ],
+  "reference_basis": "constructed_synthetic_not_human_gold",
+  "release_gates": {
+    "prose-deepseek-flash": {
+      "comparative_result_ready": false,
+      "instrument_report_ready": false,
+      "worker_safety_claim_ready": false
+    },
+    "prose-gemma-abliterated": {
+      "comparative_result_ready": false,
+      "instrument_report_ready": false,
+      "worker_safety_claim_ready": false
+    },
+    "prose-gpt-oss-20b": {
+      "comparative_result_ready": false,
+      "instrument_report_ready": false,
+      "worker_safety_claim_ready": false
+    },
+    "prose-kimi-k3": {
+      "comparative_result_ready": false,
+      "instrument_report_ready": false,
+      "worker_safety_claim_ready": false
+    }
+  },
+  "schema": "duecare-public-snapshot/1.0.0",
+  "source_bank": {
+    "constructed_library_rows": 100000,
+    "distinct_constructed_answer_texts": 2058,
+    "historical_observations": 300,
+    "independently_human_adjudicated": 0,
+    "raw_bank_public": false,
+    "source_prompts": 251,
+    "source_response_examples": 3622
+  },
+  "status": "preliminary_running_campaign"
+}

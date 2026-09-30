@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this dated preliminary research release; it is not a validated worker-safety benchmark."
+title: "Can Jev Reason About Cross-Border Exploitation? An Educational Red-Teaming Research Preview"
+type: software
+version: 0.1.0-rc.1
+date-released: 2026-09-30
+authors:
+  - family-names: Amarel
+    given-names: Taylor S.
+repository-code: "https://github.com/alisonjieli-png/duecare-eval"
+references:
+  - type: web
+    title: "LLM Complicity in Modern Slavery"
+    url: "https://www.kaggle.com/competitions/openai-gpt-oss-20b-red-teaming/writeups/llm-complicity-in-modern-slavery-from-native-blind"
+    authors:
+      - family-names: Amarel
+        given-names: Taylor S.

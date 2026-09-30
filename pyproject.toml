@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "duecare-eval-public"
+version = "0.1.0rc1"
+description = "Offline evaluation core and preliminary synthetic benchmark results"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+report = ["reportlab>=4,<5", "matplotlib>=3.8,<4", "pypdf>=5,<7"]
+vault = ["cryptography>=46,<52"]
+
+[project.scripts]
+duecare-eval = "duecare_eval.public_cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,516 @@
+{
+  "binary": {
+    "accuracy": 0.988353,
+    "adaptive_calibration_error": 0.07817,
+    "auroc": 0.999922,
+    "average_precision": 0.999933,
+    "balanced_accuracy": 0.988372,
+    "brier": 0.013132,
+    "class_conditional": {
+      "false": {
+        "accuracy": 0.976744,
+        "brier": 0.011244,
+        "mean_probability": 0.044286,
+        "n": 301
+      },
+      "true": {
+        "accuracy": 1.0,
+        "brier": 0.015026,
+        "mean_probability": 0.8825,
+        "n": 300
+      }
+    },
+    "confusion": {
+      "fn": 0,
+      "fp": 7,
+      "tn": 294,
+      "tp": 300
+    },
+    "expected_calibration_error": 0.073877,
+    "f1": 0.988468,
+    "log_loss": 0.090581,
+    "matthews_correlation": 0.976971,
+    "n": 601,
+    "negatives": 301,
+    "positives": 300,
+    "precision": 0.977199,
+    "recall": 1.0,
+    "specificity": 0.976744
+  },
+  "by_family": {
+    "crossborder_screening": {
+      "accuracy": 0.9236111111111112,
+      "coverage": 1.0,
+      "n": 288,
+      "tasks": 288
+    },
+    "financial_arithmetic": {
+      "accuracy": 0.46153846153846156,
+      "coverage": 1.0,
+      "n": 13,
+      "tasks": 13
+    },
+    "safe_action_boundary": {
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "n": 576,
+      "tasks": 576
+    },
+    "sequential_evidence_update": {
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "n": 48,
+      "tasks": 48
+    },
+    "source_scope_entailment": {
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "n": 12,
+      "tasks": 12
+    }
+  },
+  "by_split": {
+    "calibration": {
+      "accuracy": 0.972669,
+      "completed": 622,
+      "coverage": 1.0,
+      "tasks": 622
+    },
+    "held_out": {
+      "accuracy": 0.961905,
+      "completed": 315,
+      "coverage": 1.0,
+      "tasks": 315
+    }
+  },
+  "categorical": {
+    "accuracy": 0.934524,
+    "brier": 0.03136,
+    "log_loss": 0.178336,
+    "macro_f1": 0.93223,
+    "n": 336,
+    "per_label": {
+      "clarify_facts": {
+        "f1": 0.909953,
+        "n": 96,
+        "precision": 0.834783,
+        "recall": 1.0
+      },
+      "ordinary_information": {
+        "f1": 0.899083,
+        "n": 120,
+        "precision": 1.0,
+        "recall": 0.816667
+      },
+      "safeguarding_review": {
+        "f1": 0.987654,
+        "n": 120,
+        "precision": 0.97561,
+        "recall": 1.0
+      }
+    },
+    "top2_accuracy": 0.97619
+  },
+  "completed": 937,
+  "coverage": 1.0,
+  "invalid": 0,
+  "missing": 0,
+  "multilabel": {
+    "brier": null,
+    "exact_set_accuracy": null,
+    "hamming_loss": null,
+    "macro_f1": null,
+    "micro_f1": null,
+    "micro_precision": null,
+    "micro_recall": null,
+    "n": 0,
+    "per_label": {}
+  },
+  "ordinal": {
+    "accuracy": null,
+    "mae": null,
+    "n": 0,
+    "quadratic_weighted_kappa": null,
+    "ranked_probability_score": null
+  },
+  "paired_relations": {
+    "both_correct_rate": null,
+    "by_relation": {},
+    "eligible_pairs": 0,
+    "relation_consistency": null
+  },
+  "prediction_sets": {
+    "average_set_size": 1.284952,
+    "empirical_coverage": 0.994664,
+    "n": 937,
+    "note": "Diagnostic top-mass sets only; no exchangeability or conformal coverage claim.",
+    "singleton_rate": 0.728922,
+    "target_mass": 0.9
+  },
+  "schema": "duecare-decision-score/2.0.0",
+  "selective_risk": {
+    "aurc": 0.002343,
+    "curve": [
+      {
+        "coverage": 0.1003,
+        "minimum_confidence": 1.0,
+        "risk": 0.0
+      },
+      {
+        "coverage": 0.1996,
+        "minimum_confidence": 0.98,
+        "risk": 0.0
+      },
+      {
+        "coverage": 0.2999,
+        "minimum_confidence": 0.97,
+        "risk": 0.0
+      },
+      {
+        "coverage": 0.4002,
+        "minimum_confidence": 0.97,
+        "risk": 0.0
+      },
+      {
+        "coverage": 0.4995,
+        "minimum_confidence": 0.97,
+        "risk": 0.0
+      },
+      {
+        "coverage": 0.5998,
+        "minimum_confidence": 0.93,
+        "risk": 0.001779
+      },
+      {
+        "coverage": 0.7001,
+        "minimum_confidence": 0.9,
+        "risk": 0.004573
+      },
+      {
+        "coverage": 0.8004,
+        "minimum_confidence": 0.87,
+        "risk": 0.004
+      },
+      {
+        "coverage": 0.8997,
+        "minimum_confidence": 0.83,
+        "risk": 0.003559
+      },
+      {
+        "coverage": 1.0,
+        "minimum_confidence": 0.36,
+        "risk": 0.03095
+      }
+    ],
+    "n": 937,
+    "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+  },
+  "selective_risk_by_type": {
+    "binary_probability": {
+      "aurc": 9.5e-05,
+      "curve": [
+        {
+          "coverage": 0.0998,
+          "minimum_confidence": 0.97,
+          "risk": 0.0
+        },
+        {
+          "coverage": 0.1997,
+          "minimum_confidence": 0.97,
+          "risk": 0.0
+        },
+        {
+          "coverage": 0.2995,
+          "minimum_confidence": 0.97,
+          "risk": 0.0
+        },
+        {
+          "coverage": 0.3993,
+          "minimum_confidence": 0.97,
+          "risk": 0.0
+        },
+        {
+          "coverage": 0.4992,
+          "minimum_confidence": 0.94,
+          "risk": 0.0
+        },
+        {
+          "coverage": 0.6007,
+          "minimum_confidence": 0.91,
+          "risk": 0.0
+        },
+        {
+          "coverage": 0.7005,
+          "minimum_confidence": 0.89,
+          "risk": 0.0
+        },
+        {
+          "coverage": 0.8003,
+          "minimum_confidence": 0.87,
+          "risk": 0.0
+        },
+        {
+          "coverage": 0.9002,
+          "minimum_confidence": 0.85,
+          "risk": 0.0
+        },
+        {
+          "coverage": 1.0,
+          "minimum_confidence": 0.51,
+          "risk": 0.011647
+        }
+      ],
+      "n": 601,
+      "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+    },
+    "categorical_distribution": {
+      "aurc": 0.005952,
+      "curve": [
+        {
+          "coverage": 0.1012,
+          "minimum_confidence": 1.0,
+          "risk": 0.0
+        },
+        {
+          "coverage": 0.1994,
+          "minimum_confidence": 1.0,
+          "risk": 0.0
+        },
+        {
+          "coverage": 0.3006,
+          "minimum_confidence": 1.0,
+          "risk": 0.0
+        },
+        {
+          "coverage": 0.3988,
+          "minimum_confidence": 0.99,
+          "risk": 0.0
+        },
+        {
+          "coverage": 0.5,
+          "minimum_confidence": 0.99,
+          "risk": 0.0
+        },
+        {
+          "coverage": 0.6012,
+          "minimum_confidence": 0.98,
+          "risk": 0.0
+        },
+        {
+          "coverage": 0.6994,
+          "minimum_confidence": 0.94,
+          "risk": 0.004255
+        },
+        {
+          "coverage": 0.8006,
+          "minimum_confidence": 0.88,
+          "risk": 0.011152
+        },
+        {
+          "coverage": 0.8988,
+          "minimum_confidence": 0.65,
+          "risk": 0.019868
+        },
+        {
+          "coverage": 1.0,
+          "minimum_confidence": 0.36,
+          "risk": 0.065476
+        }
+      ],
+      "n": 336,
+      "note": "Lower AURC is better; inspect class-conditional curves before using abstention."
+    }
+  },
+  "subgroups": {
+    "axes": {
+      "source_group": {
+        "groups": [
+          {
+            "accuracy": 1.0,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-00ea8b8c7a8de7b62be4"
+          },
+          {
+            "accuracy": 1.0,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-2bf53e1c676e925c0767"
+          },
+          {
+            "accuracy": 0.973684,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-47dcf07cbca793fea0d6"
+          },
+          {
+            "accuracy": 0.947368,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-4a01539e470eca10acd3"
+          },
+          {
+            "accuracy": 0.973684,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-5704d5070eca02b96da6"
+          },
+          {
+            "accuracy": 1.0,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-5ad6a51ea31d8037259d"
+          },
+          {
+            "accuracy": 0.947368,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-6aed274fbd764b01a60f"
+          },
+          {
+            "accuracy": 0.973684,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-6f4d80e6c1450119c57f"
+          },
+          {
+            "accuracy": 0.921053,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-7446e23bf709b839afc3"
+          },
+          {
+            "accuracy": 1.0,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-85ac4c705ec1da5281b8"
+          },
+          {
+            "accuracy": 0.921053,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-86e44164a68dae4bf474"
+          },
+          {
+            "accuracy": 1.0,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-9280972974a50311b393"
+          },
+          {
+            "accuracy": 1.0,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-9f99c5d8d0ff45c28c69"
+          },
+          {
+            "accuracy": 1.0,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-a2a3168d2b8ce98a85bb"
+          },
+          {
+            "accuracy": 0.894737,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-ad10b255faebeb28ee2e"
+          },
+          {
+            "accuracy": 1.0,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-ba9275294aa7ee0aa32e"
+          },
+          {
+            "accuracy": 1.0,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-c47323a0faf33949be05"
+          },
+          {
+            "accuracy": 1.0,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-d7c5c732e648eea6f240"
+          },
+          {
+            "accuracy": 1.0,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-d913e816f2451b1c7fd5"
+          },
+          {
+            "accuracy": 0.947368,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-dc29a972e0de2a63cd55"
+          },
+          {
+            "accuracy": 0.973684,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-eb30aef662aacf7bf1b3"
+          },
+          {
+            "accuracy": 1.0,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-ededce4c2b69bea5a7f4"
+          },
+          {
+            "accuracy": 1.0,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-ef69e1524a7638d1957c"
+          },
+          {
+            "accuracy": 0.947368,
+            "completed": 38,
+            "coverage": 1.0,
+            "tasks": 38,
+            "value": "XGROUP-ff3d1a0f9539867d9fc6"
+          }
+        ],
+        "worst_accuracy": {
+          "accuracy": 0.894737,
+          "completed": 38,
+          "coverage": 1.0,
+          "tasks": 38,
+          "value": "XGROUP-ad10b255faebeb28ee2e"
+        },
+        "worst_coverage": {
+          "accuracy": 1.0,
+          "completed": 38,
+          "coverage": 1.0,
+          "tasks": 38,
+          "value": "XGROUP-00ea8b8c7a8de7b62be4"
+        }
+      }
+    },
+    "minimum_group_size": 20
+  },
+  "tasks": 937
+}

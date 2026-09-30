@@ -1,0 +1,20 @@
+{
+  "bulk-ladders-v1": {
+    "errors": [],
+    "meaning_preservation_verified": false,
+    "original_text_exported": false,
+    "passed": true,
+    "protocol": "duecare-source-reuse-ladders/1.1.0",
+    "requests_checked": 24096,
+    "scope": "Exact generator/grader case identity and frozen input/source integrity; not semantic equivalence to original prompts."
+  },
+  "variation-v1": {
+    "errors": [],
+    "meaning_preservation_verified": false,
+    "original_text_exported": false,
+    "passed": true,
+    "protocol": "duecare-response-variation/1.0.0",
+    "requests_checked": 5184,
+    "scope": "Exact generator/grader case identity and frozen input/source integrity; not semantic equivalence to original prompts."
+  }
+}

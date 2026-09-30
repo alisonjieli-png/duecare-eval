@@ -1,0 +1,8 @@
+{
+  "checks": "path allowlist, symlinks, common credentials/private paths, typed-output whitelist",
+  "files_checked": 53,
+  "findings": [],
+  "limitation": "Automated checks and content review do not establish independent human/domain validity.",
+  "passed": true,
+  "scope": "allowlisted_public_export_only"
+}

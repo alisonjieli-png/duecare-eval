@@ -1,0 +1,12 @@
+{
+  "metrics": {
+    "errors": 0,
+    "items": 3622,
+    "matches": 3622
+  },
+  "original_archives_modified": false,
+  "plaintext_in_receipt": false,
+  "protocol": "duecare-local-full-text-comparison/1.0.0",
+  "scope": "Exact private source-string preservation check, not a model evaluation or deployed protected runtime.",
+  "vault_persisted": false
+}

@@ -23,6 +23,8 @@ The comparison snapshot is dated September 30, 2026 at 20:05:37 UTC. Source/styl
 
 The comparison projection explicitly checks nested task identities and numeric schemas. It retains 220 transport-completed records as invalid decisions in requested denominators. Earlier journals preserve the original transport outcomes, and the stricter projection has its own versioned analysis.
 
+The older composite-indicator suite supplies short label names and generator-selected reference sets. A targeted semantic review identified ambiguous facts and overlapping labels. `docs/REFERENCE_REVIEW.md` records concrete examples, observed probabilities and verified payload digests. Its 36.8% result measures reference agreement; the explicit-condition follow-up adds a separately defined comparison.
+
 Public evidence consists of reviewed research examples and allowlisted numeric records. Independent worker, domain, legal and native-language review are additional validation milestones. The research program retains live agents, Migrasia evidence integration, multilingual assessment and recurring model-version comparisons.
 
 ## Reproduce offline

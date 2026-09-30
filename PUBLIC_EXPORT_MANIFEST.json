@@ -65,7 +65,7 @@
     "src/duecare_eval/study_design.py": "1fec3c509f764e2b086a8224da4365052ae042961f9dc34873bffccdea22511a",
     "src/duecare_eval/vault.py": "7b236d4e068f9449433d85854be6d877f076b1394d901d79cd35bd112f03ab7b",
     "src/duecare_eval/version_benchmarks.py": "0c025c05491270686385befb76cb0a3b10df68d56250ec3e83459ad1be3d662a",
-    "tools/build_report.py": "f2ddb527ec3c050fb06baaf8caa5665530dc5650e627e42c16f291d0b48825bb",
+    "tools/build_report.py": "33e90562e1ad406d3d30bce583c42800e78c1253d8d2eddaf42e5b20772f679c",
     "tools/check_grading_rubrics.py": "eccd9b1a333666466437f39c10fa32aec82c33e3d1f6f5948574b1407b2d56e3",
     "tools/prepare_indicator_followup.py": "3b1f8bcd85faa4d668712ec731b399a8bec609104762ef0441340bac110c208a",
     "tools/report_layout.py": "bc3d652895d8b55117e459b7621f843f737b7d7690d268e47ec04d2868739aca",
@@ -100,5 +100,5 @@
     "tools/expanded_benchmark.py": "fbf494d0deda2718e85ceaf0ce3760d56001444d4fb1813deef85e51c321cb5e",
     "tools/response_variation.py": "3c98fdd2402dfe711a10a6449b8cfffc0962dd332aca34ef36caa8d20f76382b"
   },
-  "updated_at": "2026-09-30T20:49:57.828051+00:00"
+  "updated_at": "2026-09-30T21:10:21.960453+00:00"
 }

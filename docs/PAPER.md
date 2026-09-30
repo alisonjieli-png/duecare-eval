@@ -14,7 +14,7 @@ DueCare evaluates how intelligent systems use evidence, recognize concerns, expr
 
 This report compares six served configurations: Jev, GPT-OSS 20B, DeepSeek Flash, Kimi K3, Gemma 4 31B and the Tactical Gemma configuration. Each comparison uses the task IDs completed by every included model. Coverage tables also retain the full requested population and unsuccessful outcomes.
 
-On the shared core subset of 391 tasks, Gemma 4 31B answered 323/391 correctly (82.6%); Jev answered 320/391 correctly (81.8%); Kimi K3 answered 304/391 correctly (77.7%); Tactical Gemma answered 292/391 correctly (74.7%); DeepSeek Flash answered 288/391 correctly (73.7%); GPT-OSS 20B answered 263/391 correctly (67.3%). These results describe the captured tasks and their declared references.
+On the shared core subset of 391 tasks, Gemma 4 31B matched 323/391 references (82.6%); Jev matched 320/391 references (81.8%); Kimi K3 matched 304/391 references (77.7%); Tactical Gemma matched 292/391 references (74.7%); DeepSeek Flash matched 288/391 references (73.7%); GPT-OSS 20B matched 263/391 references (67.3%). These results describe the captured tasks and their declared references.
 
 The source study adds 312 complete case-by-concept groups from 78 original prompts. Mean repeat change is 0.008; mean range across four questions is 0.314. Some variants change scope, making semantic review part of the interpretation.
 
@@ -68,7 +68,7 @@ Collection follows recorded campaign order. Shared subsets can favor early task 
 
 ## Shared-task model comparisons
 
-![Figure 1. Correct decisions on each suite's exact six-model intersection. Each column has its own shared task population.](figures/matched_model_comparisons.png)
+![Figure 1. Reference agreement on each suite's exact six-model intersection. Each column has its own shared task population.](figures/matched_model_comparisons.png)
 
 | Suite | Shared tasks | Scenario groups |
 | --- | --- | --- |
@@ -97,6 +97,8 @@ Uncertainty uses 500 deterministic bootstrap draws of declared scenario groups a
 
 The single-indicator and combined-indicator tasks require different outputs. Single-indicator accuracy measures one declared proposition. Composite exact-set accuracy requires selecting every supported label and omitting every unsupported label. Component precision, recall and Hamming loss help locate the particular labels driving exact-set failures.
 
+The older composite suite supplies 13 short label names and generator-selected reference sets. Ambiguous facts and overlapping indicators require semantic review. The 36.8% result measures agreement with that reference construction; docs/REFERENCE_REVIEW.md records exact examples and payload digests.
+
 | Comparator | Shared N | Jev difference | 95% group interval |
 | --- | --- | --- | --- |
 | DeepSeek Flash | 400 | +8.0 pp | +4.0 to +12.1 pp |
@@ -106,6 +108,27 @@ The single-indicator and combined-indicator tasks require different outputs. Sin
 | Kimi K3 | 400 | +4.0 pp | +0.0 to +8.5 pp |
 
 Each row uses the two models' shared usable tasks. A positive difference favors Jev on that population. The intervals describe scenario-group resampling; shared templates and partial collection remain part of the interpretation.
+
+## Composite references and component agreement
+
+| Measurement against generator-assigned references | Observed result |
+| --- | --- |
+| Composite tasks | 1000 |
+| True positive / false positive labels | 1,395 / 1,080 |
+| False negative / true negative labels | 105 / 10,420 |
+| Micro precision / recall / F1 | 56.4% / 93.0% / 70.2% |
+| Hamming loss | 9.1% |
+
+The component counts show how exact-set agreement can obscure partial recognition. Jev selected most reference-positive labels while also selecting additional labels. The interpretation of those additions depends on the supplied wording and the reference policy.
+
+| Exact constructed situation excerpt | Reference / Jev observation |
+| --- | --- |
+| door monitored; additionally, an accommodation charge was itemised and deducted with a signed agreement, for a facility the worker chose to use. | Reference: restriction of movement or communication. Jev P(label) = 0.39. |
+| no contact with a migrant centre; additionally, the contract was provided in the worker's preferred language and an interpreter attended the signing. | Reference: isolation from support networks. Jev P(label) = 0.12. |
+
+Monitoring a door leaves freedom to leave unspecified. Contact with one centre leaves access to other support unspecified. The frozen generator derives expected sets from selected seed IDs and supplies their short names. Full definitions, explicit absence conditions and review of overlapping meanings would strengthen the reference contract.
+
+The separately executed 384-test suite supplies six explicit factual definitions and tests their combinations. Its complete reference agreement supports a narrower composition finding. Original observations and reference sets remain available so revised semantics can be evaluated as a new protocol.
 
 ## Jev completion supplement
 
@@ -373,7 +396,7 @@ Observed model: jev-1.13.0. Follow-up capture: 2026-09-30T20:29:56.297007+00:00.
 | Held-out usable / requested | 288 / 288 |
 | Held-out exact-set accuracy | 100.0% |
 
-Variants of a fact set stay in the same split. Held-out cases use new combinations of the same six definitions and fact sentences. This measures combinatorial generalization within the controlled suite. Every score uses the original 0.5 threshold; the calibration partition is reserved for future calibration experiments. The earlier core supplies a broader indicator taxonomy and context. Domain review remains a separate milestone.
+Variants of a fact set stay in the same split. Held-out cases use new combinations of the same six definitions and fact sentences. This measures combinatorial generalization within the controlled suite. Every score uses the original 0.5 threshold; the calibration partition is reserved for future calibration experiments. The earlier composite suite supplies short taxonomy names with broader, sometimes ambiguous context. Domain review remains a separate milestone.
 
 ## Future Jev versions and Gemini 4
 

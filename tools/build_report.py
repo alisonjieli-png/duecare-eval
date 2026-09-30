@@ -50,7 +50,7 @@ def figures(f, source):
             ax.text(j, i, f"{value:.1f}%", ha="center", va="center", color="white" if value > 64 else "#173749", fontsize=9)
     ax.set_yticks(range(len(models)), [name(m) for m in models])
     ax.set_xticks(range(len(suites)), [SUITES[s] + "\nN=" + str(f["suites"][s]["all_model_intersection"]["tasks"]) for s in suites], fontsize=8)
-    fig.colorbar(plot, ax=ax, shrink=.85, label="Correct on shared usable tasks (%)")
+    fig.colorbar(plot, ax=ax, shrink=.85, label="Reference matches on shared tasks (%)")
     fig.tight_layout(); fig.savefig(folder / "matched_model_comparisons.png", dpi=190); plt.close(fig)
     concepts = source["source_studies"]["source_questions"]["matched_question_groups"]["by_concept"]
     fig, ax = plt.subplots(figsize=(8.1, 3.2))
@@ -137,7 +137,7 @@ def build():
     r.text("This report compares six served configurations: Jev, GPT-OSS 20B, DeepSeek Flash, Kimi K3, Gemma 4 31B and the Tactical Gemma configuration. Each comparison uses the task IDs completed by every included model. Coverage tables also retain the full requested population and unsuccessful outcomes.")
     shared = f["suites"]["core"]["all_model_intersection"]
     ordered = sorted(shared["models"].items(), key=lambda pair: (-(pair[1]["accuracy_on_usable"] or 0), pair[0]))
-    r.text(f"On the shared core subset of {shared['tasks']:,} tasks, " + "; ".join(f"{name(m)} answered {v['correct']:,}/{v['usable']:,} correctly ({pct(v['accuracy_on_usable'])})" for m, v in ordered) + ". These results describe the captured tasks and their declared references.")
+    r.text(f"On the shared core subset of {shared['tasks']:,} tasks, " + "; ".join(f"{name(m)} matched {v['correct']:,}/{v['usable']:,} references ({pct(v['accuracy_on_usable'])})" for m, v in ordered) + ". These results describe the captured tasks and their declared references.")
     matched = source["source_studies"]["source_questions"]["matched_question_groups"]
     r.text(f"The source study adds {matched['complete_groups']:,} complete case-by-concept groups from {matched['distinct_source_texts']:,} original prompts. Mean repeat change is {matched['mean_absolute_repeat_change']:.3f}; mean range across four questions is {matched['mean_within_repeat_wording_span']:.3f}. Some variants change scope, making semantic review part of the interpretation.")
     r.text("Corrected judge controls show stronger recognition of changed conclusions than equivalent assessments. Response-array studies separately measure whether generated answers earn their requested tier. These analyses support a research loop: inspect disagreements, improve a versioned method and test the revision on held-out material.")
@@ -165,7 +165,7 @@ def build():
     r.text("Collection follows recorded campaign order. Shared subsets can favor early task families. Family tables show that composition, while further matched completion broadens the population represented by each comparison.")
 
     r.page("Shared-task model comparisons")
-    r.figure("matched_model_comparisons.png", "Figure 1. Correct decisions on each suite's exact six-model intersection. Each column has its own shared task population.", 231)
+    r.figure("matched_model_comparisons.png", "Figure 1. Reference agreement on each suite's exact six-model intersection. Each column has its own shared task population.", 231)
     r.table(["Suite", "Shared tasks", "Scenario groups"], [[SUITES[s], f["suites"][s]["all_model_intersection"]["tasks"], f["suites"][s]["all_model_intersection"]["models"][models[0]]["scenario_groups"]] for s in SUITES], [267, 102, 122])
     r.text("The numeric companion also provides every pairwise intersection. Those populations can be larger than the six-model intersection. Use the panel-wide columns for comparisons across all models and pairwise records for a specified pair.")
     r.text("Uncertainty uses 500 deterministic bootstrap draws of declared scenario groups and task-weighted accuracy differences. Intervals are available when at least ten groups are shared. Related templates and collection order constrain broader generalization.")
@@ -174,6 +174,7 @@ def build():
     jev = f["suites"]["core"]["models"]["jev"]
     r.table(["Core family", "Correct / usable", "Requested", "Accuracy"], [[label(k), f"{v['correct']:,}/{v['usable']:,}", f"{v['requested']:,}", pct(v["accuracy_on_usable"])] for k, v in jev["by_facet"]["family"].items()], [236, 105, 75, 75])
     r.text("The single-indicator and combined-indicator tasks require different outputs. Single-indicator accuracy measures one declared proposition. Composite exact-set accuracy requires selecting every supported label and omitting every unsupported label. Component precision, recall and Hamming loss help locate the particular labels driving exact-set failures.")
+    r.text("The older composite suite supplies 13 short label names and generator-selected reference sets. Ambiguous facts and overlapping indicators require semantic review. The 36.8% result measures agreement with that reference construction; docs/REFERENCE_REVIEW.md records exact examples and payload digests.")
     paired = []
     for pair in f["suites"]["core"]["pairwise"]:
         if "jev" not in {pair["left"], pair["right"]}:
@@ -185,6 +186,25 @@ def build():
         paired.append([name(other), pair["matched_tasks"], f"{sign*100*pair['accuracy_difference_left_minus_right']:+.1f} pp", "pending" if bounds is None else f"{bounds[0]:+.1f} to {bounds[1]:+.1f} pp"])
     r.table(["Comparator", "Shared N", "Jev difference", "95% group interval"], paired, [158, 80, 112, 141])
     r.text("Each row uses the two models' shared usable tasks. A positive difference favors Jev on that population. The intervals describe scenario-group resampling; shared templates and partial collection remain part of the interpretation.")
+
+    r.page("Composite references and component agreement")
+    task_rows = [json.loads(line) for line in (COMPARISON / "tasks.jsonl").read_text().splitlines()]
+    composite = {t["task_id"]: t for t in task_rows if t["suite"] == "core" and t["family"] == "composite_indicator_detection"}
+    tp = fp = fn = tn = observed = 0
+    for line in (COMPARISON / "observations.jsonl").read_text().splitlines():
+        row = json.loads(line)
+        if row["suite"] != "core" or row["model_id"] != "jev" or row["status"] != "completed" or row["task_id"] not in composite:
+            continue
+        t = composite[row["task_id"]]
+        wanted = set(t["expected"])
+        found = {k for k,v in row["decision"]["probabilities"].items() if v >= .5}
+        tp += len(wanted & found); fp += len(found-wanted); fn += len(wanted-found)
+        tn += len(t["labels"]) - len(wanted | found); observed += 1
+    r.table(["Measurement against generator-assigned references", "Observed result"], [["Composite tasks", observed], ["True positive / false positive labels", f"{tp:,} / {fp:,}"], ["False negative / true negative labels", f"{fn:,} / {tn:,}"], ["Micro precision / recall / F1", " / ".join(pct(v) for v in (tp/(tp+fp), tp/(tp+fn), 2*tp/(2*tp+fp+fn)))], ["Hamming loss", pct((fp+fn)/(tp+fp+fn+tn))]], [333, 158])
+    r.text("The component counts show how exact-set agreement can obscure partial recognition. Jev selected most reference-positive labels while also selecting additional labels. The interpretation of those additions depends on the supplied wording and the reference policy.")
+    r.table(["Exact constructed situation excerpt", "Reference / Jev observation"], [["door monitored; additionally, an accommodation charge was itemised and deducted with a signed agreement, for a facility the worker chose to use.", "Reference: restriction of movement or communication. Jev P(label) = 0.39."], ["no contact with a migrant centre; additionally, the contract was provided in the worker's preferred language and an interpreter attended the signing.", "Reference: isolation from support networks. Jev P(label) = 0.12."]], [320, 171])
+    r.text("Monitoring a door leaves freedom to leave unspecified. Contact with one centre leaves access to other support unspecified. The frozen generator derives expected sets from selected seed IDs and supplies their short names. Full definitions, explicit absence conditions and review of overlapping meanings would strengthen the reference contract.")
+    r.text("The separately executed 384-test suite supplies six explicit factual definitions and tests their combinations. Its complete reference agreement supports a narrower composition finding. Original observations and reference sets remain available so revised semantics can be evaluated as a new protocol.")
 
     r.page("Jev completion supplement")
     r.text("A separately recorded 17-call recovery run retried selected terminal failures using their exact original request payloads. It recovered 13 usable outcomes while preserving the original journals and the six-model comparison snapshot. The supplement is dated " + recovery["snapshot_at"] + ".")
@@ -282,7 +302,7 @@ def build():
         r.table(["Measurement", "Observed result"], [["Usable / requested", f"{result['usable']} / {result['requested']}"], ["Exact-set accuracy", pct(result["exact_set_accuracy"])], ["Micro precision / recall / F1", " / ".join(num(result[k]) for k in ("micro_precision", "micro_recall", "micro_f1"))], ["Hamming loss / labelwise Brier", num(result["hamming_loss"]) + " / " + num(result["labelwise_brier"])], ["Held-out usable / requested", f"{result['by_split']['held_out']['usable']} / {result['by_split']['held_out']['requested']}"], ["Held-out exact-set accuracy", pct(result["by_split"]["held_out"]["exact_set_accuracy"])]], [280, 211])
     else:
         r.text("The suite and offline scorer are prepared, and hosted execution is collecting a separate dated result. The design artifact and blind inputs support replay with future model versions.")
-    r.text("Variants of a fact set stay in the same split. Held-out cases use new combinations of the same six definitions and fact sentences. This measures combinatorial generalization within the controlled suite. Every score uses the original 0.5 threshold; the calibration partition is reserved for future calibration experiments. The earlier core supplies a broader indicator taxonomy and context. Domain review remains a separate milestone.")
+    r.text("Variants of a fact set stay in the same split. Held-out cases use new combinations of the same six definitions and fact sentences. This measures combinatorial generalization within the controlled suite. Every score uses the original 0.5 threshold; the calibration partition is reserved for future calibration experiments. The earlier composite suite supplies short taxonomy names with broader, sometimes ambiguous context. Domain review remains a separate milestone.")
 
     r.page("Future Jev versions and Gemini 4")
     r.text("The version workflow prepares blind task bundles, pins a provider/model/version configuration, validates stored receipts and compares exact shared task IDs. Each run records task, configuration, model and request digests alongside completed, invalid, failed and missing outcomes.")

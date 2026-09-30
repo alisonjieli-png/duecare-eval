@@ -25,7 +25,7 @@ The public package contains the offline scoring core, decision tasks, controlled
 
 Jev's core and attack suites have usable observations for every requested task after a separately recorded recovery supplement: **12,000/12,000 core tasks** and **7,200/7,200 attack tasks**. Reference agreement is 10,067/12,000 (83.9%) and 5,341/7,200 (74.2%), respectively. The [completion overlay](results/jev_recovery_2026-09-30.json) preserves original failures, supplemental observations and their timestamps.
 
-The model comparison uses six served configurations and the exact task IDs completed by all six within each suite. The table reports correct decisions on those shared populations.
+The model comparison uses six served configurations and the exact task IDs completed by all six within each suite. The table reports agreement with the declared references on those shared populations.
 
 | Configuration | Core /391 | Attacks /386 | Cross-border /117 | Reference tasks /186 |
 |---|---:|---:|---:|---:|
@@ -40,7 +40,7 @@ The model comparison uses six served configurations and the exact task IDs compl
 
 The [comparison evidence](results/comparison_2026-09-30/findings.json) includes full requested denominators, missing and invalid outcomes, per-role and per-indicator results, and pairwise scenario-group intervals. Shared subsets follow campaign collection order. Each column therefore describes its own captured task population and reference contract.
 
-Jev's full core shows a useful distinction: 1,990/2,000 single-indicator decisions match their references, while 368/1,000 composite-indicator outputs match the entire reference set. The [384-case follow-up](results/indicator_followup_design.json) tests six explicitly defined conditions across worker/employer perspectives and three presentations. Jev matched all 384 sets, including all 288 held-out cases, with zero added or missed labels. The [recorded follow-up](results/indicator_followup_findings.json) points toward the importance of definitions and task context when interpreting the broader indicator result.
+Jev's core shows a useful distinction: 1,990/2,000 single-indicator decisions match their references, while 368/1,000 composite outputs match the generator's selected labels exactly. The [reference review](docs/REFERENCE_REVIEW.md) found ambiguous facts in the older composite suite, which supplies short label names. The [384-test follow-up](results/indicator_followup_design.json) supplies six explicit conditions across worker/employer perspectives and three presentations. Jev matched all 384 sets, including 288 held-out tests spanning 48 fact combinations. These results direct attention to task wording and reference construction as well as model behavior.
 
 **Repeated answers can be stable while question variants produce different assessments.** Across 312 complete groups covering 78 original source prompts, Jev's mean absolute probability change on repeat calls was 0.008. The mean range across four question variants was 0.314. Both use the same complete groups. The statistics measure different forms of variation. Some variants change scope or emphasis, so classifying a difference as an error requires semantic review.
 

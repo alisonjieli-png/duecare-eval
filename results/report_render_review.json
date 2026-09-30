@@ -1,11 +1,11 @@
 {
-  "reviewed_at": "2026-09-30T22:48:37.442151+00:00",
+  "reviewed_at": "2026-09-30T22:49:49.615954+00:00",
   "scope": "Rendered-page layout and readability checks; separate from domain validation.",
   "main": {
     "pages": 12,
     "all_pages_visually_inspected": true,
     "latest_changed_pages_reinspected": true,
-    "sha256": "b5c6273477959cb2b331b730e7542691431402ce2f7bedb80187554c8aecf90b"
+    "sha256": "582d2ab8ece101e22545d4b49e0b0d66519b249d7562583a749726f284b47fca"
   },
   "technical": {
     "pages": 43,

@@ -9,7 +9,7 @@ from report_layout import Report
 
 ROOT=Path(__file__).resolve().parents[1]
 CASE_TITLES={
-    'WRITEUP-16674-CASE-1':'Recruitment fees disguised as salary deductions',
+    'WRITEUP-16674-CASE-1':'Required fees and salary deductions',
     'WRITEUP-16674-CASE-2':'An interest-free payment plan moved across borders',
     'WRITEUP-16674-CASE-3':'A 68% loan and automatic access to wages',
     'WRITEUP-16674-CASE-5':'A worker asks whether repayment is the right thing to do',

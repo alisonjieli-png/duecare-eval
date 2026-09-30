@@ -1,0 +1,171 @@
+{
+  "schema": "duecare-composite-component-agreement/1.0.0",
+  "observation_snapshot_at": "2026-09-30T20:05:37.337272+00:00",
+  "model": "jev-1.13.0",
+  "reference_basis": "original_generator_assigned_indicator_sets",
+  "threshold": 0.5,
+  "requested": 1000,
+  "usable": 1000,
+  "labels_per_task": 13,
+  "declared_pairs": 500,
+  "distinct_situation_strings": 156,
+  "exact_set_matches": 368,
+  "exact_set_agreement": 0.368,
+  "totals": {
+    "tp": 1395,
+    "fp": 1080,
+    "fn": 105,
+    "tn": 10420
+  },
+  "micro_precision": 0.5636363636363636,
+  "micro_recall": 0.93,
+  "micro_f1": 0.7018867924528301,
+  "macro_label_f1": 0.7326394917492824,
+  "hamming_disagreement": 0.09115384615384615,
+  "per_label": {
+    "IND-H-01": {
+      "tp": 178,
+      "fp": 0,
+      "fn": 0,
+      "tn": 822,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "hamming_disagreement": 0
+    },
+    "IND-H-02": {
+      "tp": 148,
+      "fp": 87,
+      "fn": 0,
+      "tn": 765,
+      "precision": 0.6297872340425532,
+      "recall": 1,
+      "f1": 0.7728459530026109,
+      "hamming_disagreement": 0.087
+    },
+    "IND-H-03": {
+      "tp": 121,
+      "fp": 53,
+      "fn": 13,
+      "tn": 813,
+      "precision": 0.6954022988505747,
+      "recall": 0.9029850746268657,
+      "f1": 0.7857142857142857,
+      "hamming_disagreement": 0.066
+    },
+    "IND-H-04": {
+      "tp": 116,
+      "fp": 0,
+      "fn": 0,
+      "tn": 884,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "hamming_disagreement": 0
+    },
+    "IND-H-05": {
+      "tp": 148,
+      "fp": 175,
+      "fn": 0,
+      "tn": 677,
+      "precision": 0.4582043343653251,
+      "recall": 1,
+      "f1": 0.6284501061571125,
+      "hamming_disagreement": 0.175
+    },
+    "IND-H-06": {
+      "tp": 96,
+      "fp": 31,
+      "fn": 14,
+      "tn": 859,
+      "precision": 0.7559055118110236,
+      "recall": 0.8727272727272727,
+      "f1": 0.810126582278481,
+      "hamming_disagreement": 0.045
+    },
+    "IND-S-01": {
+      "tp": 117,
+      "fp": 213,
+      "fn": 0,
+      "tn": 670,
+      "precision": 0.35454545454545455,
+      "recall": 1,
+      "f1": 0.5234899328859061,
+      "hamming_disagreement": 0.213
+    },
+    "IND-S-02": {
+      "tp": 103,
+      "fp": 231,
+      "fn": 0,
+      "tn": 666,
+      "precision": 0.3083832335329341,
+      "recall": 1,
+      "f1": 0.47139588100686497,
+      "hamming_disagreement": 0.231
+    },
+    "IND-S-03": {
+      "tp": 111,
+      "fp": 167,
+      "fn": 4,
+      "tn": 718,
+      "precision": 0.39928057553956836,
+      "recall": 0.9652173913043478,
+      "f1": 0.5648854961832062,
+      "hamming_disagreement": 0.171
+    },
+    "IND-S-04": {
+      "tp": 63,
+      "fp": 0,
+      "fn": 17,
+      "tn": 920,
+      "precision": 1,
+      "recall": 0.7875,
+      "f1": 0.8811188811188811,
+      "hamming_disagreement": 0.017
+    },
+    "IND-S-05": {
+      "tp": 37,
+      "fp": 0,
+      "fn": 57,
+      "tn": 906,
+      "precision": 1,
+      "recall": 0.39361702127659576,
+      "f1": 0.5648854961832062,
+      "hamming_disagreement": 0.057
+    },
+    "IND-S-07": {
+      "tp": 90,
+      "fp": 0,
+      "fn": 0,
+      "tn": 910,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "hamming_disagreement": 0
+    },
+    "IND-S-06": {
+      "tp": 67,
+      "fp": 123,
+      "fn": 0,
+      "tn": 810,
+      "precision": 0.3526315789473684,
+      "recall": 1,
+      "f1": 0.5214007782101168,
+      "hamming_disagreement": 0.123
+    }
+  },
+  "verified_structure": {
+    "provider_payload_digest_mismatches": 0,
+    "seed_reference_mismatches": 0,
+    "empty_evidence_arrays": 1000,
+    "identical_short_name_catalogs": 1000,
+    "tasks_with_control_axis": 0
+  },
+  "source_sha256": {
+    "core": "b66e44230b907effddb1376233342bddd390d6cdf47a6459742769e9b9e38f10",
+    "observations": "2417186a0d6279b73e8e05d7d8e3eb29bbcc5a5d2c4377c40abac5834c6f669e",
+    "factory": "7e72de9825755026dcd80b9e248d0f247ca981704fb5f1a224402684ecf8d14f",
+    "substrate": "9be41baa64718e051d39c2b4bb40fcac3fb142dbbf529f44829141092bba880a",
+    "provider": "98ebce0fe4048c79f87edb9e33eb431bdb3fa2e8291dce6c3f3a7b5797834609"
+  }
+}

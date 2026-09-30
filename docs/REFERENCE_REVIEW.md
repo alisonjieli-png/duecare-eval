@@ -56,6 +56,8 @@ Across 13,000 task-label comparisons, the existing references yield 1,395 true p
 | Micro F1 | 70.19% |
 | Hamming disagreement | 1,185/13,000 = 9.12% |
 
+[Label-level component counts](../results/composite_indicator_components_2026-09-30.json) preserve precision, recall, F1, Hamming disagreement and the source hashes for all 13 labels. The audit reconstructed all 1,000 provider payloads; every digest matches its recorded observation.
+
 Most label-level disagreements are additional selected labels: 1,080 of 1,185. This pattern deserves inspection of overlapping concepts, the specificity of the supplied names and the completeness of the assigned sets. It supports a narrower interpretation than treating every disagreement as an established detection error.
 
 ## Methodology to continue

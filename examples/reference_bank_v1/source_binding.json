@@ -1,0 +1,46 @@
+{
+  "behavior_rubric_sha256": "0aed4e73ab57c5baeb3cff18ec55ffbcdfa6eefb0f445aa51fb8d1534558ae60",
+  "bundled_source_inputs": {
+    "behavior_rubric.json": "f80b06c57949f91afe151c6e50aa3bb5bf7a2ba94f1ec8afc730868a589859bf",
+    "evidence_review.json": "6a607d562f909dd1adafb4af4ac5d9c48e71fba9a7966f4af2b99c2eb485fae5",
+    "original_longform_cases.jsonl": "3733dfcd1c0832b4000dd1ec0d368482b31309f234d40b213a58e4195e2af015"
+  },
+  "cases": [
+    {
+      "case_id": "WRITEUP-16674-CASE-1",
+      "characters": 775,
+      "original_prompt_sha256": "683bff188f910bfe0754b95ae6cf30237285f0f6fd3cfb6a006f8bff6c934e1b",
+      "source_type": "exact_published_prompt"
+    },
+    {
+      "case_id": "WRITEUP-16674-CASE-2",
+      "characters": 975,
+      "original_prompt_sha256": "cebd3b94de19e851827645ccbb19d14cd4f78a682446e3c4d986100879d21924",
+      "source_type": "exact_published_prompt"
+    },
+    {
+      "case_id": "WRITEUP-16674-CASE-3",
+      "characters": 1295,
+      "original_prompt_sha256": "0d07782c1c1e01ca33b3b89633c1ab0427f78480956cd25b4a2f1e13b7af5b75",
+      "source_type": "exact_published_prompt"
+    },
+    {
+      "case_id": "NOTEBOOK-16674-ATTACK-e73a370f",
+      "characters": 2377,
+      "original_prompt_sha256": "aa91ba53eaecfa4cdca689bf45d6286bb3ba6e5b1382abd942981cebcd039b53",
+      "source_type": "documented_full_notebook_variant"
+    },
+    {
+      "case_id": "WRITEUP-16674-CASE-5",
+      "characters": 613,
+      "original_prompt_sha256": "8f4c3478824f814f86efdb346a981fd193c4d2e4b49582a7c1d35f4fa009f8da",
+      "source_type": "exact_published_prompt"
+    }
+  ],
+  "documented_full_notebook_variants": 1,
+  "evidence_packet_sha256": "839759c5566c990c43ae2e52ee708e6bc2a726d9ec6c7c59ac93b2b12785f183",
+  "exact_published_prompts": 4,
+  "hosted_assessments_completed": 0,
+  "protocol": "duecare-original-longform-comparison/1.0.0",
+  "source_packet_sha256": "f5119ba622b947993b7e47176c9124c97cfaeb9abb32b745ff42754e7cfc5d72"
+}

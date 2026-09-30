@@ -1,0 +1,20 @@
+{
+  "purpose": "Additional checks after generation; these sources were not supplied in the executed grounded arm.",
+  "sources": [
+    {
+      "id": "ROOT_HK_WAGE_CHECK",
+      "url": "https://www.fdh.labour.gov.hk/en/faq.html",
+      "finding": "Foreign domestic helper Minimum Allowable Wage: HK$5,100 monthly for contracts signed on or after 30 September 2025."
+    },
+    {
+      "id": "ROOT_HK_HOURLY_WAGE",
+      "url": "https://www.labour.gov.hk/eng/faq/smw_basic_principles.htm",
+      "finding": "Statutory Minimum Wage: HK$43.1 per hour from 1 May 2026, subject to the Ordinance’s scope."
+    },
+    {
+      "id": "ROOT_RA10361_CHECK",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/51514",
+      "finding": "RA10361 is the Domestic Workers Act (Batas Kasambahay); a response calls it the Foreign Employment Act."
+    }
+  ]
+}

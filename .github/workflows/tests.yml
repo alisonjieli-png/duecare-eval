@@ -20,6 +20,12 @@ jobs:
       - run: python tools/reproduce_comparisons.py --check
       - run: python tools/reproduce_indicator_followup.py --check
       - run: python tools/reproduce_jev_recovery.py --check
+      - run: python tools/reproduce_longform.py --check
+      - run: python tools/reproduce_longform_annotations.py --check
+      - run: python tools/reproduce_source_completion.py --check
+      - run: python tools/check_reference_bank.py
+      - run: python tools/reproduce_longform_anchor_pilot.py --check
+      - run: duecare-eval report
       - run: python tools/check_grading_rubrics.py
       - run: duecare-eval doctor --json
       - run: sha256sum --check SHA256SUMS

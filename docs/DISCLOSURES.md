@@ -1,8 +1,10 @@
-# Educational red teaming and text fidelity
+# Research evidence, review scope and text fidelity
 
 DueCare is educational red-teaming research. It examines recorded model responses to source research questions, adapted safeguarding scenarios and controlled tasks. The public examples support study of model behavior, including deficient answers and failed decisions. Applying a result to a worker's situation requires qualified human review, current local evidence and a separate assessment of the proposed use. Public material contains reviewed research text and numeric observations; identifying personal data stays outside the release.
 
 ## Keep the comparison valid
+
+The main report evaluates 50 actual responses to complete source prompts across original-question and evidence-assisted conditions. All were read in full by automated assistant reviewers; the two arms used separate reviewers, followed by a shared criterion-independence review and selected cross-arm checks. A useful protective suggestion can coexist with facilitation or legal error. Independent human, worker-informed and legal adjudication of this cohort remains open. Jev's response grades are released separately from the main text reviews.
 
 Three representations must remain distinct:
 

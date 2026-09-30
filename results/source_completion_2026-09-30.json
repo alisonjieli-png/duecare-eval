@@ -1,0 +1,49 @@
+{
+  "by_track": {
+    "perspective_expansion": {
+      "combined_usable": 3643,
+      "primary_usable": 3643,
+      "requested": 3648
+    },
+    "source_context": {
+      "combined_usable": 52705,
+      "primary_usable": 52682,
+      "requested": 52710
+    }
+  },
+  "catalog": {
+    "file": "examples/source_question_catalog.json",
+    "sha256": "c50b7efab0cbf5034e39850354d39615e4b088e14939ed08ebe652debccc7127"
+  },
+  "combined_usable": 56348,
+  "data": {
+    "decompressed_bytes": 38106482,
+    "file": "source_completion_2026-09-30.jsonl.gz",
+    "rows": 56358,
+    "sha256": "f92ace3c3b14d37f5bd91bc9544a044a969ec12397b79751fc3f84ef2ca238fe"
+  },
+  "diagnostic_physical_calls": 6,
+  "execution_finished_at": "2026-09-30T21:47:46.274871+00:00",
+  "independent_domain_validation": "Pending; these counts describe automated recorded outcomes.",
+  "observation_sources": {
+    "mass_diagnostic_strictly_accepted": 5,
+    "primary": 56325,
+    "terminal_supplement": 18
+  },
+  "primary_errors": {
+    "completed": 56325,
+    "provider_error": 33
+  },
+  "primary_physical_calls": 56750,
+  "primary_usable": 56325,
+  "remaining_unusable": 10,
+  "requested": 56358,
+  "schema": "duecare-source-completion/1.0.0",
+  "source_prefix_bytes": 43143929,
+  "source_prefix_sha256": "38678a2ec7c2ae11267b3e00c4767eaba0c9d3a7f959ba1bdfc60c88bb21cb0d",
+  "supplement_physical_calls": 24,
+  "supplement_policy": "Successful later observations retain original failed outcomes and identical request-payload hashes. The one remaining diagnostic mass violation retains its original failure status.",
+  "supplemental_usable": 23,
+  "total_physical_calls": 56780,
+  "unknown_outcomes": 0
+}

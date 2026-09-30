@@ -1,6 +1,11 @@
 {
+  "additional_completion_receipts": {
+    "examples/reference_bank_v1/manifest.json": "b500e18ce34431f78eec663755ca3a606cde12794e45e87e9d056aaa5a028746",
+    "results/longform_anchor_pilot_2026-09-30.manifest.json": "8dca101dd41b74b5697657eecd4036deb1be524f4ef34bd5161fb0c366f43688",
+    "results/source_completion_2026-09-30.json": "9cc4301641c7f5a0ae278d139afb98364d54f2a4f01534138898cbb2c837b586"
+  },
   "created_at": "2026-09-30T15:02:29.666759+00:00",
-  "current_evidence": "results/comparison_2026-09-30/snapshot.json",
+  "current_evidence": "results/longform_readable_manifest_2026-09-30.json",
   "evidence_snapshots": {
     "results/comparison_2026-09-30/snapshot.json": {
       "sha256": "c9e4d9c2e5cb962c4b1a69be6b3f93b850ac9c91e5fbef615dc3105774d02dc4",
@@ -13,6 +18,10 @@
     "results/jev_recovery_2026-09-30.json": {
       "sha256": "88782459907eef8fd9d12168ccac1a4004e5b79890a4e2333ac37fb4976cdf23",
       "snapshot_at": "2026-09-30T20:30:13.999049+00:00"
+    },
+    "results/longform_readable_manifest_2026-09-30.json": {
+      "sha256": "e1018c1dffaa6bf1407d04da4b7641299f0a86ff816407d803565540f86cfa3b",
+      "snapshot_at": "2026-09-30T22:40:41.784499+00:00"
     },
     "results/release_snapshot.json": {
       "sha256": "7c69013b40371feb068bb41a2c52590fa8165eb1ad6a4b9d0dba88f632a8203c",
@@ -39,13 +48,19 @@
     "terminal_recovery_overlay",
     "analyst_authored_grading_examples",
     "blind_version_benchmark_workflow",
-    "reviewed_original_source_examples"
+    "reviewed_original_source_examples",
+    "fifty_original_longform_responses_reviewed",
+    "independent_behavior_axes",
+    "125_varied_reference_candidates",
+    "completed_source_request_population"
   ],
   "public_implementation_sha256": {
     "src/duecare_eval/__init__.py": "de8a7722c45c838f038204f3a5cb4862edd40e25fc6f6e2c0b74aaa1c0167c25",
+    "src/duecare_eval/anchor_pilot.py": "529cbc231737034a0d48d71802bc345fddb163c275385e7d75470306d5f7573d",
     "src/duecare_eval/artifact_safety.py": "57b7ac041e3dafae6b69af616ed2faa314f75b1e340008de4defe7d3e29a427e",
     "src/duecare_eval/benchmark.py": "c1896dfe659b85afb9c91b9113ff6f6f4e1b8973d8bc0d685a152c6c8b4a23ff",
     "src/duecare_eval/comparison_analysis.py": "149f75977a4b7ef60697b73941455ec673c1dd001a72c38e7a3a1c180fb9d9e2",
+    "src/duecare_eval/comparison_expansion.py": "c8b44d6d7517dd2670b4f5df0d96e4ddc1b567d1b412778026ded0b3495ee1b8",
     "src/duecare_eval/console.py": "fc83527a144fbd30dab039b03738a7fa232550574b3c5f2d077bedb75710bee6",
     "src/duecare_eval/contracts.py": "98293f67699b2f790bc0499f0d415c2c947a07cf390fd22949ab43e3e60abce4",
     "src/duecare_eval/decision_metrics.py": "fa9f8bc401b1a38fdfd7f6938b22b77f8ffe7597afb316ff3cc4191f715a4c55",
@@ -53,29 +68,39 @@
     "src/duecare_eval/expanded_benchmark.py": "c52fd6978e530d8b642727d0fbfce6892dde79408d31b8f8546030fd20af902e",
     "src/duecare_eval/indicator_followup.py": "65d7f2b869ce602bc640e02b27b34b43ae78e45164df714d73819a9e97ccb52c",
     "src/duecare_eval/ledger.py": "9723067b1fb5f6c75290a91eb3339e59488131183c00026b8e41f1b779872af6",
+    "src/duecare_eval/longform_annotations.py": "ec66c00523fc7f1e4fb396e6d07c5671100d7c796ebb815bc6154fc73b518d3f",
+    "src/duecare_eval/longform_report.py": "335f65f853b87e1bf8865336a6a58404b7e30d0b6b2f5095e5fce8aadadd708c",
     "src/duecare_eval/panel.py": "bae98cde2ac2aa7c796748ac7d15fb98b3e5e3396ec4dc6d8f1347f21e9abcb7",
-    "src/duecare_eval/public_cli.py": "8a1a13ed4e10c2839d26b414ccb7a730f257c9441f8c256ba9ba5a77f048be6b",
+    "src/duecare_eval/public_cli.py": "f4054c863f15693aaef8543efdd4bd3588a0deb08763e68b5ca925e94cb60f01",
     "src/duecare_eval/recovery_analysis.py": "042edd0c72cc02df2f8dc4f8da0bed21982609dfe355c9f7cc3b8ae159dd7a3f",
+    "src/duecare_eval/reference_bank.py": "e3e3fa1674b3e336f77b0ddd47f3bc90f78f969efba1debfa9bd7026e6b8c13a",
     "src/duecare_eval/response_extract.py": "55ab7879aa8a2a53fb0b543ec044096ebb4f967a85f4f522a086b0f266605647",
     "src/duecare_eval/response_taxonomy.py": "fa4b5eac0d91d20b310234d6cb4099c4d1b40338cf9f66b09bb51c6adb34bf6b",
     "src/duecare_eval/response_variation.py": "c3fd6fc4485630bfbabcbfd06a407da272cd1721682bde40f9d33f0a62687b5a",
     "src/duecare_eval/rubric_examples.py": "a9c280013adb1a8e5b0f245486fc842208965ffbca567cdb7a055c4b376516fd",
     "src/duecare_eval/source_analysis.py": "41a14dff451f5dca12c933a91af23a9500e5212aca6e35e8c23e7291859548aa",
+    "src/duecare_eval/source_completion.py": "b9d60dc8a43e1a2fa66c39350a196f7f8adeea8893719f728d433f363f32b1a3",
     "src/duecare_eval/stats.py": "fcff2c4cae8fe7e1970d01f1ba452a26fee2ca0fbf27cb2359185cb1109b3960",
     "src/duecare_eval/study_design.py": "1fec3c509f764e2b086a8224da4365052ae042961f9dc34873bffccdea22511a",
     "src/duecare_eval/vault.py": "7b236d4e068f9449433d85854be6d877f076b1394d901d79cd35bd112f03ab7b",
     "src/duecare_eval/version_benchmarks.py": "0c025c05491270686385befb76cb0a3b10df68d56250ec3e83459ad1be3d662a",
-    "tools/build_report.py": "33e90562e1ad406d3d30bce583c42800e78c1253d8d2eddaf42e5b20772f679c",
+    "tools/build_report.py": "54465c3dede20312185935700cde622bee7f380582a962e3f6c71a77a8a58b05",
+    "tools/build_technical_report.py": "b900238dc8803f9c823b30307483c3ad8a44d0c368c7b1e416837cd65bb28922",
     "tools/check_grading_rubrics.py": "eccd9b1a333666466437f39c10fa32aec82c33e3d1f6f5948574b1407b2d56e3",
+    "tools/check_reference_bank.py": "bb72966386b69522958c52e4b112157b46751009c63374535b146dec7aa312e2",
     "tools/prepare_indicator_followup.py": "3b1f8bcd85faa4d668712ec731b399a8bec609104762ef0441340bac110c208a",
-    "tools/report_layout.py": "bc3d652895d8b55117e459b7621f843f737b7d7690d268e47ec04d2868739aca",
+    "tools/report_layout.py": "24f9b0a50a45dbbac785a4c427aafdeb6a0a6cc6311ede7bf2d37bfd6c00a762",
     "tools/reproduce_comparisons.py": "176c6ead27f3812f458f372c6b43c7841d6be68973be1a892ca10666d5ec4cb9",
     "tools/reproduce_findings.py": "0ae025a18f12aa0e89512f6f0ac347105bff901cc3f463fe4903be8d96f91b39",
     "tools/reproduce_indicator_followup.py": "b45ad0bc1f94aadddf55e10b7b9b8731bd7a645944bf698dfa359583bc45a23e",
     "tools/reproduce_jev_recovery.py": "f08a4c1a96659307d3c43bc3d6d86a235ee1aa0a236743cb9825bc35baf40f53",
+    "tools/reproduce_longform.py": "43866a4d2fb40f75369aaa83917247db5fd9f5c99de9bb48f66016d2534c7852",
+    "tools/reproduce_longform_anchor_pilot.py": "70f335a17e5929372860e1dd21649a48ab04e9c5b0154535631e110b1753119d",
+    "tools/reproduce_longform_annotations.py": "c38a9c65bf33d7817efe881b95d2fd06b5317f27e799a50b83c248bb7d27d6c0",
+    "tools/reproduce_source_completion.py": "f1bd08ec0142ccc65de861e6f12b077fc74fa166be54a7a9a6001dbf55d73808",
     "tools/version_benchmarks.py": "8727d51d461b213452f3ed11d8880c4910e038f9679e8bdc18d2929130e5e821"
   },
-  "publication_title": "DueCare: evidence, decisions and model behavior",
+  "publication_title": "Do AI models recognize exploitation \u2014 and help?",
   "release": "v0.1.0-rc.3",
   "schema": "duecare-public-export/1.0.0",
   "source_campaign_hashes": {
@@ -100,5 +125,5 @@
     "tools/expanded_benchmark.py": "fbf494d0deda2718e85ceaf0ce3760d56001444d4fb1813deef85e51c321cb5e",
     "tools/response_variation.py": "3c98fdd2402dfe711a10a6449b8cfffc0962dd332aca34ef36caa8d20f76382b"
   },
-  "updated_at": "2026-09-30T21:10:21.960453+00:00"
+  "updated_at": "2026-09-30T22:48:37.428271+00:00"
 }

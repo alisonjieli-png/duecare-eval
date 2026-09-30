@@ -1,42 +1,36 @@
-# DueCare: evidence, decisions and model behavior
+# Do AI models recognize exploitation — and help?
 
-Release `v0.1.0-rc.3` brings together six served model configurations, role and scenario comparisons, indicator subgroups, action rankings, advanced source questions and graded response examples.
+Release `v0.1.0-rc.3` rebuilds DueCare around the original research question: whether models recognize human-trafficking and exploitation indicators and suggest useful protective action.
 
-## Recorded results
+## Read this first
 
-- Jev has usable observations for all 12,000 core tasks and all 7,200 attack tasks after a separately recorded recovery supplement. Agreement with the declared references is 10,067/12,000 (83.9%) and 5,341/7,200 (74.2%). Original outcomes and recovery records remain distinct.
-- The six-model comparisons use exact shared task IDs within each suite: 391 core, 386 attack/control, 117 cross-border and 186 reference tasks. The report includes full coverage, errors, per-role and per-indicator metrics, probability quality and paired scenario-group intervals.
-- Jev matched all 384 exact indicator sets in the new six-condition follow-up, including 288 held-out cases. These hold out combinations of the same definitions and fact sentences. All 64 fact groups retained their predicted set across six role/presentation views.
-- The source study retains 27,908 recorded Jev assessments and 3,456 corrected style-judge decisions in its earlier dated snapshot. The report includes all 105 advanced/general and 40 referral questions with their observed coverage and descriptive outputs.
+The new 12-page main report leads with clear conclusions, defined counts and actual response excerpts. Each original case shows the complete prompt, what a useful answer requires and what each model did. Aggregate charts distinguish recognition, protective suggestions and collection assistance that proceeds before material concerns are resolved. The 43-page technical companion preserves the detailed benchmark, question catalogs and historical snapshots.
 
-## Methods and use
+## Evidence added
 
-The package adds 12 grading methods, 19 worked instances and three five-tier teaching arrays containing 15 analyst-authored responses. Component precision/recall/F1, exact-set agreement, arithmetic error, probability scores, ranking and order consistency preserve the distinctions needed to interpret a grade.
+- 50 actual hosted responses: five complete source contexts × five model configurations × two conditions. All completed, were usable and were read in full. Four prompts are exact published advice-seeking cases; the fifth is a complete documented notebook variant that explicitly asks for risk analysis.
+- Ten Jev panels on the same complete contexts, with explicit questions and recorded next-step choices.
+- Six separately scored response criteria, behavior flags, exact excerpt offsets, response hashes and primary-source legal checks. Automated text reviews and Jev's proposed grades retain separate status.
+- 125 varied authored answers: five source scenarios × five intended tiers × five examples. The design mixes length, register, format and technical detail. The completed pilot has 125 pointwise assessments and 50 logical pairs in both orders; field warnings remain visible.
+- Final general/perspective source coverage: 56,348 usable outcomes among 56,358 requested, including 23 separate valid supplements. Ten remain unusable; all original failures and zero unknown outcomes are recorded.
 
-The version workflow prepares blind bundles, records model/configuration/scoring identities, imports receipts and compares exact shared tasks. Future Jev versions and Gemini 4 have distinct target records. Each future run requires a confirmed served model identifier and version.
+## Main conclusion
 
-The CLI provides readable summaries, `--json`, `doctor` and `comparisons`. The README, current guides and explanatory code comments describe the benchmark's purpose, behavior and evidence directly. Original prompts, executed inputs and recorded observations preserve their exact text.
+Useful safeguards and risky advice often coexist. In the original assignment and 68% loan cases, every tested language model supplied some collection implementation before resolving the obligation. Gemma 4 gave the clearest qualified review-before-payment route in the worker-help case. DeepSeek and Kimi often challenged debt pressure but overclaimed the law; GPT-OSS and Tactical repeatedly reinforced collection or repayment. Jev recognized the concerns under focused questioning and selected relevant verification steps.
 
-## Evidence dates and validation
+The evidence-assisted condition adds both source summaries and protective instructions. It changes the answers, while legal scope errors and some facilitation remain. One answer per case and configuration supports a descriptive case comparison. Independent human, legal and worker-informed validation remains open.
 
-The comparison snapshot is dated September 30, 2026 at 20:05:37 UTC. Source/style prefixes were captured between 17:15 and 17:21 UTC. The indicator follow-up is dated 20:29:56 UTC and the terminal recovery supplement 20:30:13 UTC. Continuing campaigns produce later evidence under their recorded protocols.
+## Software and continuing scope
 
-The comparison projection explicitly checks nested task identities and numeric schemas. It retains 220 transport-completed records as invalid decisions in requested denominators. Earlier journals preserve the original transport outcomes, and the stricter projection has its own versioned analysis.
+`duecare-eval report` now prints the original-case scorecard. Offline reproduction covers the main report, Jev annotations, reference bank, source completion and existing technical suites. Comparison logic includes weighted criteria, critical caps, missing-score bounds, both-order checks, connected comparison groups and weight sensitivity. Version workflows retain pinned served identities for future Jev releases and the requested Gemini 4 target.
 
-The older composite-indicator suite supplies short label names and generator-selected reference sets. A targeted semantic review identified ambiguous facts and overlapping labels. `docs/REFERENCE_REVIEW.md` records concrete examples, observed probabilities and verified payload digests. Its 36.8% result measures reference agreement; the explicit-condition follow-up adds a separately defined comparison.
+The six-model technical comparisons, 145 advanced/referral question templates, constructed scenarios, style controls, response arrays, agent work, multilingual assessment and longitudinal comparisons remain in scope. Each evidence layer retains its own dated capture and protocol.
 
-Public evidence consists of reviewed research examples and allowlisted numeric records. Independent worker, domain, legal and native-language review are additional validation milestones. The research program retains live agents, Migrasia evidence integration, multilingual assessment and recurring model-version comparisons.
+## Download and reproduce
 
-## Reproduce offline
+- [Main report PDF](https://github.com/alisonjieli-png/duecare-eval/releases/download/v0.1.0-rc.3/duecare_preliminary_report.pdf)
+- [Technical companion PDF](https://github.com/alisonjieli-png/duecare-eval/releases/download/v0.1.0-rc.3/duecare_technical_appendix.pdf)
+- [Main manuscript](docs/PAPER.md)
+- [Reproduction instructions](README.md#reproduce-and-inspect)
 
-```bash
-python tools/reproduce_comparisons.py --check
-python tools/reproduce_findings.py --check
-python tools/reproduce_indicator_followup.py --check
-python tools/reproduce_jev_recovery.py --check
-python tools/check_grading_rubrics.py
-duecare-eval doctor
-pytest -q
-```
-
-The source repository, matching manuscript, PDF and evidence manifests accompany this release. `SHA256SUMS` records the distributed file bytes. Rights information is in `NOTICE.md`.
+`SHA256SUMS` identifies the distributed file bytes. Verification receipts distinguish software checks from domain validation. Public examples and excerpts have been reviewed for identifying data and operationally enabling material; full sensitive responses remain in the research archive. See `NOTICE.md` for reuse terms.

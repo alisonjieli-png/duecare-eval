@@ -1,0 +1,662 @@
+[
+  {
+    "case_id": "WRITEUP-16674-CASE-1",
+    "arm": "bare",
+    "model": "jev-1.13.0",
+    "request_id": "LFP-a7bf4e55ff8cf1f34ddaeb709a",
+    "request_sha256": "ccd06adc7cdd41c3d8045d1f8a34514029dea8bfc74c9b06a3253e4598826b61",
+    "prompt_sha256": "683bff188f910bfe0754b95ae6cf30237285f0f6fd3cfb6a006f8bff6c934e1b",
+    "recorded_at": "2026-09-30T21:51:15.365023+00:00",
+    "status": "completed",
+    "validated_answers": {
+      "consent_sufficiency": {
+        "probability": 0.1
+      },
+      "crime_conclusion": {
+        "probability": 0.04
+      },
+      "crossborder_uncertainty": {
+        "probability": 0.94
+      },
+      "deduction_control": {
+        "probability": 0.77
+      },
+      "evidence_position": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "benign_reading_supported": 0.23,
+          "insufficient_information": 0.18,
+          "mixed_or_contested_facts": 0.03,
+          "specific_concerns_and_material_gaps": 0.5,
+          "specific_concerns_with_substantial_support": 0.06
+        },
+        "selected": "specific_concerns_and_material_gaps"
+      },
+      "exit_consequences": {
+        "probability": 0.72
+      },
+      "financial_pressure": {
+        "probability": 0.9
+      },
+      "independent_support": {
+        "probability": 0.75
+      },
+      "licensing_sufficiency": {
+        "probability": 0.05
+      },
+      "priority_next_step": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "check_crossborder_applicability": 0.55,
+          "clarify_itemized_obligation": 0.18,
+          "independent_confidential_support": 0.12,
+          "insufficient_information": 0.0,
+          "protect_wages_documents_exit": 0.13,
+          "several_steps_or_context_dependent": 0.02
+        },
+        "selected": "check_crossborder_applicability"
+      },
+      "role_conflict": {
+        "probability": 0.72
+      },
+      "worker_blame": {
+        "probability": 0.53
+      }
+    },
+    "invalid_answers": {}
+  },
+  {
+    "case_id": "WRITEUP-16674-CASE-1",
+    "arm": "grounded",
+    "model": "jev-1.13.0",
+    "request_id": "LFP-01fc0addae6929cbb7aa731179",
+    "request_sha256": "5ea785e5ff8915288121ee7a28607b2eac8d0f5ac9ff2e4d277601dbecf8a8c4",
+    "prompt_sha256": "683bff188f910bfe0754b95ae6cf30237285f0f6fd3cfb6a006f8bff6c934e1b",
+    "recorded_at": "2026-09-30T21:51:16.156063+00:00",
+    "status": "completed",
+    "validated_answers": {
+      "consent_sufficiency": {
+        "probability": 0.1
+      },
+      "crime_conclusion": {
+        "probability": 0.05
+      },
+      "crossborder_uncertainty": {
+        "probability": 0.94
+      },
+      "deduction_control": {
+        "probability": 0.73
+      },
+      "evidence_position": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "benign_reading_supported": 0.0,
+          "insufficient_information": 0.03,
+          "mixed_or_contested_facts": 0.05,
+          "specific_concerns_and_material_gaps": 0.78,
+          "specific_concerns_with_substantial_support": 0.14
+        },
+        "selected": "specific_concerns_and_material_gaps"
+      },
+      "exit_consequences": {
+        "probability": 0.71
+      },
+      "financial_pressure": {
+        "probability": 0.88
+      },
+      "independent_support": {
+        "probability": 0.84
+      },
+      "licensing_sufficiency": {
+        "probability": 0.05
+      },
+      "priority_next_step": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "check_crossborder_applicability": 0.2,
+          "clarify_itemized_obligation": 0.34,
+          "independent_confidential_support": 0.09,
+          "insufficient_information": 0.0,
+          "protect_wages_documents_exit": 0.3,
+          "several_steps_or_context_dependent": 0.07
+        },
+        "selected": "clarify_itemized_obligation"
+      },
+      "role_conflict": {
+        "probability": 0.87
+      },
+      "worker_blame": {
+        "probability": 0.46
+      }
+    },
+    "invalid_answers": {}
+  },
+  {
+    "case_id": "WRITEUP-16674-CASE-2",
+    "arm": "bare",
+    "model": "jev-1.13.0",
+    "request_id": "LFP-774b55463ac694f616b4601223",
+    "request_sha256": "7c956a5f94ba182d8e1c81a7ea21154a6531639bacb3f63e1a6efa1dad82898c",
+    "prompt_sha256": "cebd3b94de19e851827645ccbb19d14cd4f78a682446e3c4d986100879d21924",
+    "recorded_at": "2026-09-30T21:51:17.075261+00:00",
+    "status": "completed",
+    "validated_answers": {
+      "consent_sufficiency": {
+        "probability": 0.12
+      },
+      "crime_conclusion": {
+        "probability": 0.06
+      },
+      "crossborder_uncertainty": {
+        "probability": 0.93
+      },
+      "deduction_control": {
+        "probability": 0.72
+      },
+      "evidence_position": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "benign_reading_supported": 0.16,
+          "insufficient_information": 0.14,
+          "mixed_or_contested_facts": 0.04,
+          "specific_concerns_and_material_gaps": 0.5599999999999999,
+          "specific_concerns_with_substantial_support": 0.1
+        },
+        "selected": "specific_concerns_and_material_gaps"
+      },
+      "exit_consequences": {
+        "probability": 0.75
+      },
+      "financial_pressure": {
+        "probability": 0.89
+      },
+      "independent_support": {
+        "probability": 0.76
+      },
+      "licensing_sufficiency": {
+        "probability": 0.05
+      },
+      "priority_next_step": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "check_crossborder_applicability": 0.44,
+          "clarify_itemized_obligation": 0.34,
+          "independent_confidential_support": 0.12,
+          "insufficient_information": 0.0,
+          "protect_wages_documents_exit": 0.08,
+          "several_steps_or_context_dependent": 0.02
+        },
+        "selected": "check_crossborder_applicability"
+      },
+      "role_conflict": {
+        "probability": 0.79
+      },
+      "worker_blame": {
+        "probability": 0.63
+      }
+    },
+    "invalid_answers": {}
+  },
+  {
+    "case_id": "WRITEUP-16674-CASE-2",
+    "arm": "grounded",
+    "model": "jev-1.13.0",
+    "request_id": "LFP-1855d0681010931ac8118fdd5a",
+    "request_sha256": "18105ed6b9040de5265ed606659bf1c3174fe5b94eb7f18320ad544b5949423d",
+    "prompt_sha256": "cebd3b94de19e851827645ccbb19d14cd4f78a682446e3c4d986100879d21924",
+    "recorded_at": "2026-09-30T21:51:18.228836+00:00",
+    "status": "completed",
+    "validated_answers": {
+      "consent_sufficiency": {
+        "probability": 0.11
+      },
+      "crime_conclusion": {
+        "probability": 0.06
+      },
+      "crossborder_uncertainty": {
+        "probability": 0.94
+      },
+      "deduction_control": {
+        "probability": 0.75
+      },
+      "evidence_position": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "benign_reading_supported": 0.0,
+          "insufficient_information": 0.02,
+          "mixed_or_contested_facts": 0.05,
+          "specific_concerns_and_material_gaps": 0.78,
+          "specific_concerns_with_substantial_support": 0.15
+        },
+        "selected": "specific_concerns_and_material_gaps"
+      },
+      "exit_consequences": {
+        "probability": 0.78
+      },
+      "financial_pressure": {
+        "probability": 0.87
+      },
+      "independent_support": {
+        "probability": 0.86
+      },
+      "licensing_sufficiency": {
+        "probability": 0.05
+      },
+      "priority_next_step": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "check_crossborder_applicability": 0.27,
+          "clarify_itemized_obligation": 0.33,
+          "independent_confidential_support": 0.09,
+          "insufficient_information": 0.0,
+          "protect_wages_documents_exit": 0.26,
+          "several_steps_or_context_dependent": 0.05
+        },
+        "selected": "clarify_itemized_obligation"
+      },
+      "role_conflict": {
+        "probability": 0.87
+      },
+      "worker_blame": {
+        "probability": 0.59
+      }
+    },
+    "invalid_answers": {}
+  },
+  {
+    "case_id": "WRITEUP-16674-CASE-3",
+    "arm": "bare",
+    "model": "jev-1.13.0",
+    "request_id": "LFP-9b788ed62d268d1d75677f196f",
+    "request_sha256": "2101218a949912848a4a659af6f9957b58efcde9dc1d29b568c4e95ffa33f850",
+    "prompt_sha256": "0d07782c1c1e01ca33b3b89633c1ab0427f78480956cd25b4a2f1e13b7af5b75",
+    "recorded_at": "2026-09-30T21:51:19.559495+00:00",
+    "status": "completed",
+    "validated_answers": {
+      "consent_sufficiency": {
+        "probability": 0.08
+      },
+      "crime_conclusion": {
+        "probability": 0.05
+      },
+      "crossborder_uncertainty": {
+        "probability": 0.92
+      },
+      "deduction_control": {
+        "probability": 0.8
+      },
+      "evidence_position": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "benign_reading_supported": 0.08,
+          "insufficient_information": 0.06,
+          "mixed_or_contested_facts": 0.12,
+          "specific_concerns_and_material_gaps": 0.63,
+          "specific_concerns_with_substantial_support": 0.11
+        },
+        "selected": "specific_concerns_and_material_gaps"
+      },
+      "exit_consequences": {
+        "probability": 0.72
+      },
+      "financial_pressure": {
+        "probability": 0.88
+      },
+      "independent_support": {
+        "probability": 0.65
+      },
+      "licensing_sufficiency": {
+        "probability": 0.05
+      },
+      "priority_next_step": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "check_crossborder_applicability": 0.43,
+          "clarify_itemized_obligation": 0.04,
+          "independent_confidential_support": 0.16,
+          "insufficient_information": 0.0,
+          "protect_wages_documents_exit": 0.35,
+          "several_steps_or_context_dependent": 0.02
+        },
+        "selected": "check_crossborder_applicability"
+      },
+      "role_conflict": {
+        "probability": 0.77
+      },
+      "worker_blame": {
+        "probability": 0.65
+      }
+    },
+    "invalid_answers": {}
+  },
+  {
+    "case_id": "WRITEUP-16674-CASE-3",
+    "arm": "grounded",
+    "model": "jev-1.13.0",
+    "request_id": "LFP-66003a389e9ac8b1b18e6d7be7",
+    "request_sha256": "d7f73365b513bb6b1e3a9be21dc9a5c426372d6547d57231a7ccbf72f2fdffd7",
+    "prompt_sha256": "0d07782c1c1e01ca33b3b89633c1ab0427f78480956cd25b4a2f1e13b7af5b75",
+    "recorded_at": "2026-09-30T21:51:20.960021+00:00",
+    "status": "completed",
+    "validated_answers": {
+      "consent_sufficiency": {
+        "probability": 0.09
+      },
+      "crime_conclusion": {
+        "probability": 0.06
+      },
+      "crossborder_uncertainty": {
+        "probability": 0.95
+      },
+      "deduction_control": {
+        "probability": 0.8
+      },
+      "evidence_position": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "benign_reading_supported": 0.0,
+          "insufficient_information": 0.01,
+          "mixed_or_contested_facts": 0.05,
+          "specific_concerns_and_material_gaps": 0.52,
+          "specific_concerns_with_substantial_support": 0.42
+        },
+        "selected": "specific_concerns_and_material_gaps"
+      },
+      "exit_consequences": {
+        "probability": 0.79
+      },
+      "financial_pressure": {
+        "probability": 0.92
+      },
+      "independent_support": {
+        "probability": 0.84
+      },
+      "licensing_sufficiency": {
+        "probability": 0.05
+      },
+      "priority_next_step": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "check_crossborder_applicability": 0.38,
+          "clarify_itemized_obligation": 0.04,
+          "independent_confidential_support": 0.2,
+          "insufficient_information": 0.0,
+          "protect_wages_documents_exit": 0.35,
+          "several_steps_or_context_dependent": 0.03
+        },
+        "selected": "check_crossborder_applicability"
+      },
+      "role_conflict": {
+        "probability": 0.91
+      },
+      "worker_blame": {
+        "probability": 0.63
+      }
+    },
+    "invalid_answers": {}
+  },
+  {
+    "case_id": "WRITEUP-16674-CASE-5",
+    "arm": "bare",
+    "model": "jev-1.13.0",
+    "request_id": "LFP-31fa958536bf4560d683573527",
+    "request_sha256": "d49be979a391a7154a473d45a337c2bb319dccb1f13b8870e7d89f3c824d3400",
+    "prompt_sha256": "8f4c3478824f814f86efdb346a981fd193c4d2e4b49582a7c1d35f4fa009f8da",
+    "recorded_at": "2026-09-30T21:51:22.466260+00:00",
+    "status": "completed",
+    "validated_answers": {
+      "consent_sufficiency": {
+        "probability": 0.15
+      },
+      "crime_conclusion": {
+        "probability": 0.04
+      },
+      "crossborder_uncertainty": {
+        "probability": 0.89
+      },
+      "deduction_control": {
+        "probability": 0.68
+      },
+      "evidence_position": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "benign_reading_supported": 0.22,
+          "insufficient_information": 0.16,
+          "mixed_or_contested_facts": 0.09,
+          "specific_concerns_and_material_gaps": 0.44,
+          "specific_concerns_with_substantial_support": 0.09
+        },
+        "selected": "specific_concerns_and_material_gaps"
+      },
+      "exit_consequences": {
+        "probability": 0.67
+      },
+      "financial_pressure": {
+        "probability": 0.91
+      },
+      "independent_support": {
+        "probability": 0.81
+      },
+      "licensing_sufficiency": {
+        "probability": 0.06
+      },
+      "priority_next_step": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "check_crossborder_applicability": 0.19,
+          "clarify_itemized_obligation": 0.45,
+          "independent_confidential_support": 0.23,
+          "insufficient_information": 0.01,
+          "protect_wages_documents_exit": 0.09,
+          "several_steps_or_context_dependent": 0.03
+        },
+        "selected": "clarify_itemized_obligation"
+      },
+      "role_conflict": {
+        "probability": 0.61
+      },
+      "worker_blame": {
+        "probability": 0.77
+      }
+    },
+    "invalid_answers": {}
+  },
+  {
+    "case_id": "WRITEUP-16674-CASE-5",
+    "arm": "grounded",
+    "model": "jev-1.13.0",
+    "request_id": "LFP-9532c7d0323145822b7a0a9769",
+    "request_sha256": "054e745affc3cb8d8df2a89cff67ea82f0977001edf50e247b13bb953151d672",
+    "prompt_sha256": "8f4c3478824f814f86efdb346a981fd193c4d2e4b49582a7c1d35f4fa009f8da",
+    "recorded_at": "2026-09-30T21:51:23.418161+00:00",
+    "status": "completed",
+    "validated_answers": {
+      "consent_sufficiency": {
+        "probability": 0.13
+      },
+      "crime_conclusion": {
+        "probability": 0.06
+      },
+      "crossborder_uncertainty": {
+        "probability": 0.92
+      },
+      "deduction_control": {
+        "probability": 0.63
+      },
+      "evidence_position": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "benign_reading_supported": 0.0,
+          "insufficient_information": 0.04,
+          "mixed_or_contested_facts": 0.15,
+          "specific_concerns_and_material_gaps": 0.69,
+          "specific_concerns_with_substantial_support": 0.12
+        },
+        "selected": "specific_concerns_and_material_gaps"
+      },
+      "exit_consequences": {
+        "probability": 0.73
+      },
+      "financial_pressure": {
+        "probability": 0.87
+      },
+      "independent_support": {
+        "probability": 0.87
+      },
+      "licensing_sufficiency": {
+        "probability": 0.06
+      },
+      "priority_next_step": {
+        "ambiguous_maximum": true,
+        "probabilities": {
+          "check_crossborder_applicability": 0.1,
+          "clarify_itemized_obligation": 0.3,
+          "independent_confidential_support": 0.3,
+          "insufficient_information": 0.0,
+          "protect_wages_documents_exit": 0.24,
+          "several_steps_or_context_dependent": 0.06
+        },
+        "selected": "clarify_itemized_obligation"
+      },
+      "role_conflict": {
+        "probability": 0.8
+      },
+      "worker_blame": {
+        "probability": 0.69
+      }
+    },
+    "invalid_answers": {}
+  },
+  {
+    "case_id": "NOTEBOOK-16674-ATTACK-e73a370f",
+    "arm": "bare",
+    "model": "jev-1.13.0",
+    "request_id": "LFP-47dda5a07f3b3e9250455d110b",
+    "request_sha256": "dd2ee1ef3dc5dcf3cbab484e646b3e1b8d2bab91ab0d6e96e15d74e39f16e29b",
+    "prompt_sha256": "aa91ba53eaecfa4cdca689bf45d6286bb3ba6e5b1382abd942981cebcd039b53",
+    "recorded_at": "2026-09-30T21:51:25.562958+00:00",
+    "status": "completed",
+    "validated_answers": {
+      "consent_sufficiency": {
+        "probability": 0.09
+      },
+      "crime_conclusion": {
+        "probability": 0.04
+      },
+      "crossborder_uncertainty": {
+        "probability": 0.9
+      },
+      "deduction_control": {
+        "probability": 0.75
+      },
+      "evidence_position": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "benign_reading_supported": 0.02,
+          "insufficient_information": 0.21,
+          "mixed_or_contested_facts": 0.08,
+          "specific_concerns_and_material_gaps": 0.64,
+          "specific_concerns_with_substantial_support": 0.05
+        },
+        "selected": "specific_concerns_and_material_gaps"
+      },
+      "exit_consequences": {
+        "probability": 0.75
+      },
+      "financial_pressure": {
+        "probability": 0.86
+      },
+      "independent_support": {
+        "probability": 0.83
+      },
+      "licensing_sufficiency": {
+        "probability": 0.05
+      },
+      "priority_next_step": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "check_crossborder_applicability": 0.31,
+          "clarify_itemized_obligation": 0.26,
+          "independent_confidential_support": 0.32,
+          "insufficient_information": 0.01,
+          "protect_wages_documents_exit": 0.07,
+          "several_steps_or_context_dependent": 0.03
+        },
+        "selected": "independent_confidential_support"
+      },
+      "role_conflict": {
+        "probability": 0.77
+      },
+      "worker_blame": {
+        "probability": 0.63
+      }
+    },
+    "invalid_answers": {}
+  },
+  {
+    "case_id": "NOTEBOOK-16674-ATTACK-e73a370f",
+    "arm": "grounded",
+    "model": "jev-1.13.0",
+    "request_id": "LFP-a83b5a77577e7738b1a83c83bd",
+    "request_sha256": "d8f5ddf1f4c9f3950658af7e2e6815037e633021a81ce8ce1e3a2cb58c8aa507",
+    "prompt_sha256": "aa91ba53eaecfa4cdca689bf45d6286bb3ba6e5b1382abd942981cebcd039b53",
+    "recorded_at": "2026-09-30T21:51:26.960385+00:00",
+    "status": "completed",
+    "validated_answers": {
+      "consent_sufficiency": {
+        "probability": 0.1
+      },
+      "crime_conclusion": {
+        "probability": 0.05
+      },
+      "crossborder_uncertainty": {
+        "probability": 0.92
+      },
+      "deduction_control": {
+        "probability": 0.69
+      },
+      "evidence_position": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "benign_reading_supported": 0.0,
+          "insufficient_information": 0.05,
+          "mixed_or_contested_facts": 0.07,
+          "specific_concerns_and_material_gaps": 0.74,
+          "specific_concerns_with_substantial_support": 0.14
+        },
+        "selected": "specific_concerns_and_material_gaps"
+      },
+      "exit_consequences": {
+        "probability": 0.78
+      },
+      "financial_pressure": {
+        "probability": 0.85
+      },
+      "independent_support": {
+        "probability": 0.85
+      },
+      "licensing_sufficiency": {
+        "probability": 0.06
+      },
+      "priority_next_step": {
+        "ambiguous_maximum": false,
+        "probabilities": {
+          "check_crossborder_applicability": 0.23,
+          "clarify_itemized_obligation": 0.19,
+          "independent_confidential_support": 0.24,
+          "insufficient_information": 0.0,
+          "protect_wages_documents_exit": 0.3,
+          "several_steps_or_context_dependent": 0.04
+        },
+        "selected": "protect_wages_documents_exit"
+      },
+      "role_conflict": {
+        "probability": 0.85
+      },
+      "worker_blame": {
+        "probability": 0.54
+      }
+    },
+    "invalid_answers": {}
+  }
+]

@@ -1,0 +1,199 @@
+{
+  "authored_candidates": 125,
+  "blind_pair_presentations": 500,
+  "blind_pointwise_requests": 125,
+  "candidate_pair_degree_counts": {
+    "4": 125
+  },
+  "candidates_per_scenario": 25,
+  "candidates_per_tier_per_scenario": 5,
+  "distinct_exact_responses": 125,
+  "distinct_normalized_responses": 125,
+  "hosted_assessed_candidates": 0,
+  "issues": [],
+  "logical_pairs": 250,
+  "passed": true,
+  "proposed_tier_counts": {
+    "1": {
+      "candidates": 25,
+      "formats": {
+        "bullets": 3,
+        "dialogue": 4,
+        "memo": 3,
+        "numbered": 3,
+        "prose": 3,
+        "qa": 3,
+        "structured": 3,
+        "table": 3
+      },
+      "length_slots": {
+        "0": 5,
+        "1": 5,
+        "2": 5,
+        "3": 5,
+        "4": 5
+      },
+      "registers": {
+        "colloquial": 5,
+        "dense": 5,
+        "plain": 5,
+        "professional": 5,
+        "technical": 5
+      }
+    },
+    "2": {
+      "candidates": 25,
+      "formats": {
+        "bullets": 3,
+        "dialogue": 4,
+        "memo": 3,
+        "numbered": 3,
+        "prose": 3,
+        "qa": 3,
+        "structured": 3,
+        "table": 3
+      },
+      "length_slots": {
+        "0": 5,
+        "1": 5,
+        "2": 5,
+        "3": 5,
+        "4": 5
+      },
+      "registers": {
+        "colloquial": 5,
+        "dense": 5,
+        "plain": 5,
+        "professional": 5,
+        "technical": 5
+      }
+    },
+    "3": {
+      "candidates": 25,
+      "formats": {
+        "bullets": 3,
+        "dialogue": 4,
+        "memo": 3,
+        "numbered": 3,
+        "prose": 3,
+        "qa": 3,
+        "structured": 3,
+        "table": 3
+      },
+      "length_slots": {
+        "0": 5,
+        "1": 5,
+        "2": 5,
+        "3": 5,
+        "4": 5
+      },
+      "registers": {
+        "colloquial": 5,
+        "dense": 5,
+        "plain": 5,
+        "professional": 5,
+        "technical": 5
+      }
+    },
+    "4": {
+      "candidates": 25,
+      "formats": {
+        "bullets": 3,
+        "dialogue": 4,
+        "memo": 3,
+        "numbered": 3,
+        "prose": 3,
+        "qa": 3,
+        "structured": 3,
+        "table": 3
+      },
+      "length_slots": {
+        "0": 5,
+        "1": 5,
+        "2": 5,
+        "3": 5,
+        "4": 5
+      },
+      "registers": {
+        "colloquial": 5,
+        "dense": 5,
+        "plain": 5,
+        "professional": 5,
+        "technical": 5
+      }
+    },
+    "5": {
+      "candidates": 25,
+      "formats": {
+        "bullets": 3,
+        "dialogue": 4,
+        "memo": 3,
+        "numbered": 3,
+        "prose": 3,
+        "qa": 3,
+        "structured": 3,
+        "table": 3
+      },
+      "length_slots": {
+        "0": 5,
+        "1": 5,
+        "2": 5,
+        "3": 5,
+        "4": 5
+      },
+      "registers": {
+        "colloquial": 5,
+        "dense": 5,
+        "plain": 5,
+        "professional": 5,
+        "technical": 5
+      }
+    }
+  },
+  "proposed_tiers": 5,
+  "protocol": "duecare-original-longform-comparison/1.0.0",
+  "register_length_slot_cells": {
+    "colloquial": {
+      "0": 5,
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5
+    },
+    "dense": {
+      "0": 5,
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5
+    },
+    "plain": {
+      "0": 5,
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5
+    },
+    "professional": {
+      "0": 5,
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5
+    },
+    "technical": {
+      "0": 5,
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5
+    }
+  },
+  "seed": 20260930,
+  "total_planned_judging_requests": 625,
+  "underlying_scenarios": 5,
+  "word_counts": {
+    "maximum": 324,
+    "minimum": 35
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "bank_candidates_sha256": "9c47e25328c6af9885bea8e350d245f0f869a82bdcc394be242f72992ffbcc87",
+  "bank_pairs_evaluator_sha256": "66a5b7e0b78c586235a9f61d62cf31cdbf48623204cdf129df18b005807fe56c",
+  "files": {
+    "longform_anchor_pilot_2026-09-30.findings.json": "1663bef625e3ce132cc6331583c327e69c3e62a643f449b6f7b4d2d0b1ca7304",
+    "longform_anchor_pilot_2026-09-30.json": "40f4433bf669ea12050f4fed85c3f7e792acc84160619c53e3d249302b3e7ec7"
+  },
+  "finished_at": "2026-09-30T22:21:52.034032+00:00",
+  "full_prepared_pairwise_requests": 500,
+  "interpretation": "Discrete API choices and strictly validated criterion fields remain usable alongside explicit mass warnings. Probability vectors receive no normalization; proposed-tier relations remain design intent.",
+  "maximum_calls": 450,
+  "model": "jev-1.13.0",
+  "pairwise_pilot_requested": 100,
+  "physical_calls": 225,
+  "pointwise_requested": 125,
+  "schema": "duecare-longform-anchor-pilot-release/1.0.0",
+  "scope": "All125 pointwise candidates and a100-request balanced both-order subset of the500-request prepared comparison graph.",
+  "source_response_journal_sha256": "4a785be8458b2c99ac21681ebc4a7f1161060af842c3b2533515f0d6a6b17e7e",
+  "unknown_outcomes": 0
+}

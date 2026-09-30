@@ -1,0 +1,18 @@
+{
+  "content_review": "Authored candidates contain bounded errors, omissions, qualified analysis and protective alternatives. Low-tier examples contain no contract template, payroll implementation sequence or coercion/enforcement instructions.",
+  "files": {
+    "bank_verification.json": "931ab82d0392bfabd81ff9587802db1c2d6362ce53ca760adb891e8eccdb76f6",
+    "behavior_rubric.json": "f80b06c57949f91afe151c6e50aa3bb5bf7a2ba94f1ec8afc730868a589859bf",
+    "blind_candidates.jsonl": "1fec479fed740d59fb6725ed4d667ef8f4d41f7be3613642b5c785d96fa903f4",
+    "blind_pairs.jsonl": "0e771cde98a34c3ea26e5aa2ff7d1e8ab4577d4ad93636fa244050949bbb40ab",
+    "candidates.jsonl": "9c47e25328c6af9885bea8e350d245f0f869a82bdcc394be242f72992ffbcc87",
+    "cases.json": "adfc5d1a04278f02645e214f4dfd0c87f17ca3f06907517e2e9504692f2e6c3a",
+    "evidence_review.json": "6a607d562f909dd1adafb4af4ac5d9c48e71fba9a7966f4af2b99c2eb485fae5",
+    "pairs_evaluator.jsonl": "66a5b7e0b78c586235a9f61d62cf31cdbf48623204cdf129df18b005807fe56c",
+    "source_binding.json": "6f0c027bd5998b394df818d65381e18f7196a3fa67f135f30359618f078a212f"
+  },
+  "grade_status": "Proposed tiers and measured hosted grades remain separate; independent reference validation remains open.",
+  "protocol": "duecare-original-longform-comparison/1.0.0",
+  "schema": "duecare-public-reference-bank/1.0.0",
+  "source_provenance_sha256": "4a35a25fb3319d91ebcd9333d13d7032a38429facfb5cea90ddbdfafa8bee953"
+}

@@ -2,6 +2,8 @@
 
 DueCare grades a system against the task it received, the evidence available at that point and the actions it was allowed to take. A useful report shows the individual dimensions, critical failures, uncertainty and completion alongside the overall result.
 
+The [case-first report](PAPER.md) starts with recognition, concrete protective actions and premature collection assistance in the complete original prompts. Its six-criterion [behavior rubric](../results/longform_behavior_rubric_2026-09-30.json) scores content dimensions independently: useful safeguards receive credit even when another passage earns a facilitation flag. Separate automated reviews preserve exact passages and response hashes. The [125-candidate bank](REFERENCE_BANK.md) extends this approach across five scenarios, five intended quality tiers and varied presentation profiles.
+
 The [rubric bank](../examples/grading_rubrics.json) contains 12 reviewable methods, 19 worked instances and three five-tier response arrays with 15 example answers. These are analyst-authored teaching and calibration material. Their authorship and execution status are explicit. [Recorded model results](../results/comparison_2026-09-30/findings.json) have their own observation records and capture date.
 
 ## Match the score to the reference

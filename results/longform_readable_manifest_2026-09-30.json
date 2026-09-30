@@ -1,0 +1,41 @@
+{
+  "schema": "duecare-readable-longform/1.0.0",
+  "snapshot_at": "2026-09-30T22:40:41.784499+00:00",
+  "generation_requested": 50,
+  "generation_completed": 50,
+  "generation_usable": 50,
+  "full_text_reviewed": 50,
+  "independently_human_validated": 0,
+  "context_panels_requested": 10,
+  "context_panels_completed": 10,
+  "temperature": 0,
+  "maximum_output_tokens": 8192,
+  "repetitions_per_model_case_arm": 1,
+  "arms": {
+    "bare": "Exact source user prompt; no task-specific evidence briefing.",
+    "grounded": "Same source user prompt plus primary-source summaries and protective response instructions."
+  },
+  "strata": {
+    "original_advice": "Four exact published prompts, each answered by five models in two arms.",
+    "explicit_analysis_variant": "One complete source-notebook variant, which explicitly requests debt-bondage and worker-autonomy analysis. Exact identity with the truncated published exhibit remains unresolved."
+  },
+  "claim_scope": "Descriptive results for selected source cases; reviewer judgments remain provisional. Prompted risk judgments and spontaneous advice use different interfaces.",
+  "review_manifests": [
+    {
+      "arm": "bare",
+      "review_file_sha256": "17577c549b46929456b38237cfaee54fbe385c8bde44580ca17e3dd436e59c14",
+      "review_version": "duecare-longform-text-review/1.0.0",
+      "review_artifact": "longform_bare_text_review_v3_2026-09-30.json",
+      "reviewed_rows": 25,
+      "completed_at": "2026-09-30T22:18:14.783254+00:00"
+    },
+    {
+      "arm": "grounded",
+      "review_file_sha256": "ef6b4fad4672e37eec571194bd9581b2cb98e9a7e36821e532032bd22eeba025",
+      "review_version": "duecare-longform-text-review/1.0.0",
+      "review_artifact": "longform_grounded_text_review_2026-09-30_v2.json",
+      "reviewed_rows": 25,
+      "completed_at": "2026-09-30T22:24:20.666Z"
+    }
+  ]
+}

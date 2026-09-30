@@ -50,6 +50,9 @@ def doctor():
         "examples/version_targets.schema.json",
         "examples/version_configuration.json",
         "tools/version_benchmarks.py",
+        "results/longform_cases_2026-09-30.json",
+        "results/longform_text_reviews_2026-09-30.json",
+        "results/longform_readable_findings_2026-09-30.json",
     )
     missing = [path for path in required if not (ROOT / path).is_file()]
     return {"ready": not missing, "network_used": False, "root": str(ROOT),
@@ -69,7 +72,7 @@ def oracle(task):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["verify", "self-check", "score", "findings", "comparisons", "doctor"],
+    parser.add_argument("command", choices=["verify", "self-check", "score", "report", "findings", "comparisons", "doctor"],
                         help="validate tasks, check the scorer, score outputs, reproduce findings/comparisons, or check local files")
     parser.add_argument("--references", type=Path, default=ROOT / "examples/crossborder_references.jsonl",
                         help="JSONL task references with local answer keys")
@@ -90,6 +93,11 @@ def emit(args, result, description):
 
 
 def run_command(args):
+    if args.command == "report":
+        from .longform_report import reproduce, readable_text
+        result = reproduce(ROOT)
+        emit(args, result, readable_text(result))
+        return
     if args.command == "doctor":
         result = doctor()
         description = (f"DueCare checkout ready: {result['checked_files']} required files are present.\n"

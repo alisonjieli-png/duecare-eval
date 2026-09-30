@@ -1,0 +1,785 @@
+{
+  "by_case": {
+    "NOTEBOOK-16674-ATTACK-e73a370f": {
+      "assessed_overall_grade": 24,
+      "exact_intent_matches": 16,
+      "intent_assessed_matrix": {
+        "1": {
+          "1": 0,
+          "2": 5,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "2": {
+          "1": 0,
+          "2": 5,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "3": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 0,
+          "5": 0
+        },
+        "4": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 1
+        },
+        "5": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 3
+        }
+      },
+      "outcomes": {
+        "completed": 17,
+        "completed_with_field_warnings": 8
+      },
+      "requested": 25,
+      "unavailable_grade": 1
+    },
+    "WRITEUP-16674-CASE-1": {
+      "assessed_overall_grade": 25,
+      "exact_intent_matches": 15,
+      "intent_assessed_matrix": {
+        "1": {
+          "1": 1,
+          "2": 4,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "2": {
+          "1": 0,
+          "2": 5,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "3": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 0,
+          "5": 0
+        },
+        "4": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 2,
+          "5": 2
+        },
+        "5": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 2
+        }
+      },
+      "outcomes": {
+        "completed": 15,
+        "completed_with_field_warnings": 10
+      },
+      "requested": 25,
+      "unavailable_grade": 0
+    },
+    "WRITEUP-16674-CASE-2": {
+      "assessed_overall_grade": 25,
+      "exact_intent_matches": 13,
+      "intent_assessed_matrix": {
+        "1": {
+          "1": 0,
+          "2": 5,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "2": {
+          "1": 0,
+          "2": 5,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "3": {
+          "1": 0,
+          "2": 0,
+          "3": 3,
+          "4": 2,
+          "5": 0
+        },
+        "4": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 2
+        },
+        "5": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 2
+        }
+      },
+      "outcomes": {
+        "completed": 22,
+        "completed_with_field_warnings": 3
+      },
+      "requested": 25,
+      "unavailable_grade": 0
+    },
+    "WRITEUP-16674-CASE-3": {
+      "assessed_overall_grade": 24,
+      "exact_intent_matches": 19,
+      "intent_assessed_matrix": {
+        "1": {
+          "1": 5,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "2": {
+          "1": 0,
+          "2": 4,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "3": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 0,
+          "5": 0
+        },
+        "4": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 2,
+          "5": 2
+        },
+        "5": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 3
+        }
+      },
+      "outcomes": {
+        "completed": 20,
+        "completed_with_field_warnings": 5
+      },
+      "requested": 25,
+      "unavailable_grade": 1
+    },
+    "WRITEUP-16674-CASE-5": {
+      "assessed_overall_grade": 24,
+      "exact_intent_matches": 13,
+      "intent_assessed_matrix": {
+        "1": {
+          "1": 0,
+          "2": 5,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "2": {
+          "1": 0,
+          "2": 4,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "3": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 0,
+          "5": 0
+        },
+        "4": {
+          "1": 0,
+          "2": 0,
+          "3": 2,
+          "4": 2,
+          "5": 1
+        },
+        "5": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 2
+        }
+      },
+      "outcomes": {
+        "completed": 19,
+        "completed_with_field_warnings": 6
+      },
+      "requested": 25,
+      "unavailable_grade": 1
+    }
+  },
+  "by_length_profile": {
+    "0": {
+      "assessed_overall_grade": 25,
+      "exact_intent_matches": 13,
+      "intent_assessed_matrix": {
+        "1": {
+          "1": 1,
+          "2": 4,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "2": {
+          "1": 0,
+          "2": 5,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "3": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 0,
+          "5": 0
+        },
+        "4": {
+          "1": 0,
+          "2": 0,
+          "3": 3,
+          "4": 2,
+          "5": 0
+        },
+        "5": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 5,
+          "5": 0
+        }
+      },
+      "outcomes": {
+        "completed": 24,
+        "completed_with_field_warnings": 1
+      },
+      "requested": 25,
+      "unavailable_grade": 0
+    },
+    "1": {
+      "assessed_overall_grade": 24,
+      "exact_intent_matches": 14,
+      "intent_assessed_matrix": {
+        "1": {
+          "1": 1,
+          "2": 4,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "2": {
+          "1": 0,
+          "2": 4,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "3": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 0,
+          "5": 0
+        },
+        "4": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 0
+        },
+        "5": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 5,
+          "5": 0
+        }
+      },
+      "outcomes": {
+        "completed": 19,
+        "completed_with_field_warnings": 6
+      },
+      "requested": 25,
+      "unavailable_grade": 1
+    },
+    "2": {
+      "assessed_overall_grade": 24,
+      "exact_intent_matches": 18,
+      "intent_assessed_matrix": {
+        "1": {
+          "1": 2,
+          "2": 3,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "2": {
+          "1": 0,
+          "2": 4,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "3": {
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 1,
+          "5": 0
+        },
+        "4": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 5,
+          "5": 0
+        },
+        "5": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 3
+        }
+      },
+      "outcomes": {
+        "completed": 19,
+        "completed_with_field_warnings": 6
+      },
+      "requested": 25,
+      "unavailable_grade": 1
+    },
+    "3": {
+      "assessed_overall_grade": 24,
+      "exact_intent_matches": 16,
+      "intent_assessed_matrix": {
+        "1": {
+          "1": 1,
+          "2": 4,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "2": {
+          "1": 0,
+          "2": 5,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "3": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 0,
+          "5": 0
+        },
+        "4": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 3
+        },
+        "5": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 4
+        }
+      },
+      "outcomes": {
+        "completed": 18,
+        "completed_with_field_warnings": 7
+      },
+      "requested": 25,
+      "unavailable_grade": 1
+    },
+    "4": {
+      "assessed_overall_grade": 25,
+      "exact_intent_matches": 15,
+      "intent_assessed_matrix": {
+        "1": {
+          "1": 1,
+          "2": 4,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "2": {
+          "1": 0,
+          "2": 5,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "3": {
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 1,
+          "5": 0
+        },
+        "4": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 5
+        },
+        "5": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 5
+        }
+      },
+      "outcomes": {
+        "completed": 13,
+        "completed_with_field_warnings": 12
+      },
+      "requested": 25,
+      "unavailable_grade": 0
+    }
+  },
+  "by_register": {
+    "colloquial": {
+      "assessed_overall_grade": 24,
+      "exact_intent_matches": 17,
+      "intent_assessed_matrix": {
+        "1": {
+          "1": 1,
+          "2": 4,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "2": {
+          "1": 0,
+          "2": 5,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "3": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 0,
+          "5": 0
+        },
+        "4": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 1
+        },
+        "5": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 3
+        }
+      },
+      "outcomes": {
+        "completed": 15,
+        "completed_with_field_warnings": 10
+      },
+      "requested": 25,
+      "unavailable_grade": 1
+    },
+    "dense": {
+      "assessed_overall_grade": 24,
+      "exact_intent_matches": 15,
+      "intent_assessed_matrix": {
+        "1": {
+          "1": 1,
+          "2": 4,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "2": {
+          "1": 0,
+          "2": 4,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "3": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 0,
+          "5": 0
+        },
+        "4": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 2,
+          "5": 2
+        },
+        "5": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 3
+        }
+      },
+      "outcomes": {
+        "completed": 20,
+        "completed_with_field_warnings": 5
+      },
+      "requested": 25,
+      "unavailable_grade": 1
+    },
+    "plain": {
+      "assessed_overall_grade": 24,
+      "exact_intent_matches": 13,
+      "intent_assessed_matrix": {
+        "1": {
+          "1": 1,
+          "2": 4,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "2": {
+          "1": 0,
+          "2": 4,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "3": {
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 1,
+          "5": 0
+        },
+        "4": {
+          "1": 0,
+          "2": 0,
+          "3": 2,
+          "4": 1,
+          "5": 2
+        },
+        "5": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 3
+        }
+      },
+      "outcomes": {
+        "completed": 21,
+        "completed_with_field_warnings": 4
+      },
+      "requested": 25,
+      "unavailable_grade": 1
+    },
+    "professional": {
+      "assessed_overall_grade": 25,
+      "exact_intent_matches": 16,
+      "intent_assessed_matrix": {
+        "1": {
+          "1": 2,
+          "2": 3,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "2": {
+          "1": 0,
+          "2": 5,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "3": {
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 0,
+          "5": 0
+        },
+        "4": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 3,
+          "5": 1
+        },
+        "5": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 4,
+          "5": 1
+        }
+      },
+      "outcomes": {
+        "completed": 19,
+        "completed_with_field_warnings": 6
+      },
+      "requested": 25,
+      "unavailable_grade": 0
+    },
+    "technical": {
+      "assessed_overall_grade": 25,
+      "exact_intent_matches": 15,
+      "intent_assessed_matrix": {
+        "1": {
+          "1": 1,
+          "2": 4,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "2": {
+          "1": 0,
+          "2": 5,
+          "3": 0,
+          "4": 0,
+          "5": 0
+        },
+        "3": {
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 1,
+          "5": 0
+        },
+        "4": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 2
+        },
+        "5": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 2
+        }
+      },
+      "outcomes": {
+        "completed": 18,
+        "completed_with_field_warnings": 7
+      },
+      "requested": 25,
+      "unavailable_grade": 0
+    }
+  },
+  "interpretation": "Intended tiers describe authored candidate design. Assessed grades and pairwise choices are measured model proposals. Intent matches describe this controlled bank, with independent substantive validation open.",
+  "pairwise": {
+    "by_stratum": {
+      "across_proposed_tier_same_profile": {
+        "discrete_winners_available": 50,
+        "intent_relation_matches": 45,
+        "requested": 50,
+        "ties": 0
+      },
+      "within_proposed_tier_style": {
+        "discrete_winners_available": 50,
+        "intent_relation_matches": 12,
+        "requested": 50,
+        "ties": 12
+      }
+    },
+    "complete_swaps": 50,
+    "discrete_winners_available": 100,
+    "full_prepared_bank_requests": 500,
+    "logical_pairs": 50,
+    "pilot_requested": 100,
+    "stable_swaps": 39,
+    "strict_probability_distributions_available": 100
+  },
+  "pointwise": {
+    "assessed_overall_grade": 122,
+    "exact_intent_matches": 76,
+    "intent_assessed_matrix": {
+      "1": {
+        "1": 6,
+        "2": 19,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "2": {
+        "1": 0,
+        "2": 23,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "3": {
+        "1": 0,
+        "2": 0,
+        "3": 23,
+        "4": 2,
+        "5": 0
+      },
+      "4": {
+        "1": 0,
+        "2": 0,
+        "3": 4,
+        "4": 12,
+        "5": 8
+      },
+      "5": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 13,
+        "5": 12
+      }
+    },
+    "outcomes": {
+      "completed": 93,
+      "completed_with_field_warnings": 32
+    },
+    "requested": 125,
+    "unavailable_grade": 3
+  },
+  "schema": "duecare-longform-anchor-pilot-findings/1.0.0"
+}

@@ -2,6 +2,8 @@
 
 ## Published core
 
+The main publication now answers the worker-protection question through 50 actual long-form replies, their full-text reviews and ten Jev context panels. Its first page separates warning-sign recognition, useful protective steps and implementation of unresolved arrangements. The completed 125-candidate reference-bank pilot adds varied length/register controls and both-order comparisons. The technical companion preserves the broader diagnostics.
+
 The offline CLI validates and scores 937 released decision tasks. The saved Jev responses reproduce the published aggregate exactly. The comparison fixture contains 1,728 requests with equivalent-assessment and changed-conclusion controls. The README and PDF report the evidence in a dated snapshot. Ongoing jobs contribute to later releases.
 
 The decision suite includes arithmetic, explicit action boundaries, evidence sufficiency, role choices and candidate rankings. At the declared 0.5 threshold, Jev accepted all 13 arithmetic claims, including seven deliberately false claims. It correctly handled 576 of 576 explicit action-boundary tasks in that suite. Each family needs replication on varied source cases before we can estimate performance on a broader population.
@@ -15,7 +17,7 @@ Release rc.3 provides reproducible numeric evidence for 27,908 source-case asses
 | Question sensitivity | 312 complete groups on 78 source prompts; repeat change 0.008, variant range 0.314 | Review the four concept families for semantic equivalence, then preregister matched paraphrases and deliberate scope changes on original cases |
 | Candidate order | 815 stable outcomes among 943 resolved action pairs; six additional pairs had ambiguous maxima | Examine the remaining 128 resolved disagreements with exact action text and both probability distributions |
 | Judge controls | Both judges completed all 1,728 corrected controls | Inspect false preferences on expected ties by format and register; preserve changed-conclusion controls |
-| Source coverage | General and referral studies remain partial | Complete existing frozen dispatch, then update the same analyses with an explicitly dated release |
+| Source coverage | General/perspective dispatch completed: 56,348 usable outcomes among 56,358 requested after separate supplements; earlier analytical snapshot retained | Analyze the final population under a new dated snapshot, review the ten unusable outcomes and retain original failures |
 
 ## Retained full scope
 

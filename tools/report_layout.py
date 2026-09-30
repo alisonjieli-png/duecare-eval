@@ -81,9 +81,9 @@ class Report:
         ]))
         self.md.extend(["#### " + identity, "", question, "", detail, ""])
 
-    def write(self):
-        (self.root / "docs/PAPER.md").write_text("\n".join(self.md))
-        output = self.root / "output/pdf/duecare_preliminary_report.pdf"
+    def write(self, manuscript_path="docs/PAPER.md", pdf_path="output/pdf/duecare_preliminary_report.pdf"):
+        (self.root / manuscript_path).write_text("\n".join(self.md))
+        output = self.root / pdf_path
         output.parent.mkdir(parents=True, exist_ok=True)
 
         def footer(canvas, doc):

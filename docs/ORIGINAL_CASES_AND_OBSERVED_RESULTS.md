@@ -1,5 +1,7 @@
 # Original cases and observed Jev responses
 
+For the latest complete-prompt replication and five-model response comparison, begin with [the case-first report](PAPER.md). The gallery below preserves an earlier dated set of Jev source-question observations. It complements the new salary-deduction, cross-border collection, high-interest loan and worker-help examples.
+
 The source-based track preserves imported case text exactly and asks Jev a separately recorded review question. It measures typed assessments of the original context. The historical GPT-OSS study records prose responses, while the 937-task scenario suite tests explicit decision contracts. Each track retains its own inputs and interpretation.
 
 Snapshot: 2026-09-30T16:42:01.351903+00:00. The historical archive contains 300 recorded GPT-OSS outputs from 100 source test IDs and 94 distinct prompt texts. The new studies request 56,358 general/perspective assessments and 16,800 referral/control assessments; completed counts are in [the snapshot](../results/source_study_snapshot.json). Repeats and variants share source cases.

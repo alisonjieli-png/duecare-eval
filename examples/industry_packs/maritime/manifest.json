@@ -1,0 +1,39 @@
+{
+  "schema": "duecare-extension-pack/1.0.0",
+  "pack_id": "duecare-maritime-starter",
+  "version": "1.0.0",
+  "industry": "maritime",
+  "title": "Dockside repair work and a reserve held from final wages",
+  "description": "Two substantive authored variants for indicator evidence, clarification and worker-centred advice. References are provisional and hidden from model inputs. The changed fact groups form a package comparison. This prepared pack contains no model observations or independent domain-validation claim.",
+  "files": {
+    "cases": "cases.jsonl",
+    "rubric": "rubric.json",
+    "questions": "questions.json",
+    "sources": "sources.json"
+  },
+  "file_sha256": {
+    "cases": "2e018b8abcb6d761854965807912ad070dd999715c83308f6c006fe7510123b6",
+    "rubric": "08407f72b6150f096af13a2684a05addec462a9b1e29c9953d5539b98abfd989",
+    "questions": "79a79578a6041eab12478a7c46714d44dc74876c984b91d4427abc36dacdfd61",
+    "sources": "f54b872f7f75d0122b333f98fd72fc2372564baa98e26235c4118683241fa8f1"
+  },
+  "privacy": {
+    "contains_personal_data": false,
+    "identifiable_person_assessment": false,
+    "review_status": "author_declared"
+  },
+  "groups": [
+    {
+      "group_id": "industry-maritime-pair",
+      "design": "paired_variant",
+      "variant_ids": [
+        "concern",
+        "mixed"
+      ],
+      "changed_factors": [
+        "Whether final earnings are actually retained as leverage for an asserted reserve.",
+        "The response to a concrete request to finish the dockside assignment and obtain advice."
+      ]
+    }
+  ]
+}

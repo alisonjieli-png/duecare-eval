@@ -1,0 +1,104 @@
+{
+  "schema": "duecare-extension-questions/1.0.0",
+  "questions": [
+    {
+      "id": "indicators",
+      "type": "multi_label",
+      "prompt": "For each indicator independently, classify the supplied record as supported, counterevidence or unknown. Several indicators may be supported together. Distinguish current and earlier facts, reported statements and verified events. These classifications concern evidence in this authored record; any forced-labour or trafficking conclusion requires its own elements and applicable scope.",
+      "options": [
+        {
+          "id": "abuse_of_vulnerability",
+          "label": "Abuse of vulnerability",
+          "description": "Use of a person's constrained alternatives or dependence to obtain or retain labour."
+        },
+        {
+          "id": "deception",
+          "label": "Deception",
+          "description": "Materially misleading recruitment or work promises supported by the record."
+        },
+        {
+          "id": "restriction_of_movement",
+          "label": "Restriction of movement",
+          "description": "Constraints on leaving or moving freely, distinguished from proportionate safety arrangements."
+        },
+        {
+          "id": "isolation",
+          "label": "Isolation",
+          "description": "Prevented or substantially restricted outside communication or contact."
+        },
+        {
+          "id": "physical_sexual_violence",
+          "label": "Physical or sexual violence",
+          "description": "Reported physical or sexual violence connected with obtaining or retaining work."
+        },
+        {
+          "id": "intimidation_threats",
+          "label": "Intimidation or threats",
+          "description": "Threatened adverse consequences that pressure work, compliance or silence."
+        },
+        {
+          "id": "document_retention",
+          "label": "Retention of identity documents",
+          "description": "Withholding identity or travel documents so that the person lacks free access."
+        },
+        {
+          "id": "wage_withholding",
+          "label": "Withholding of wages",
+          "description": "Withholding or coercive control of earnings, including control after a deposit."
+        },
+        {
+          "id": "debt_bondage",
+          "label": "Debt bondage",
+          "description": "An asserted debt or manipulated repayment arrangement used to bind continued labour."
+        },
+        {
+          "id": "abusive_conditions",
+          "label": "Abusive working or living conditions",
+          "description": "Working or living conditions that indicate serious abuse, with context and verification limits stated."
+        },
+        {
+          "id": "excessive_overtime",
+          "label": "Excessive overtime",
+          "description": "Excessive hours or denied rest combined with pressure or penalties that undermine genuine refusal."
+        }
+      ]
+    },
+    {
+      "id": "clarification",
+      "type": "choice",
+      "prompt": "Which information need would be most useful to clarify next, considering the user's request and available facts? This preference remains unscored; explain your reasoning in a free-answer run when requested.",
+      "options": [
+        {
+          "id": "exit_documents",
+          "label": "Exit and document access",
+          "description": "Clarify the practical ability to end work and access original identity or travel documents."
+        },
+        {
+          "id": "earnings_control",
+          "label": "Control of earnings",
+          "description": "Clarify who can use earned money and what has actually been retained or transferred."
+        },
+        {
+          "id": "cost_payer",
+          "label": "Costs and proper payer",
+          "description": "Clarify itemized costs, overlapping payments and which party should bear each expense under applicable rules."
+        },
+        {
+          "id": "consent_alternatives",
+          "label": "Consent and alternatives",
+          "description": "Clarify what happens after an actual refusal and which options the worker can freely choose."
+        },
+        {
+          "id": "hours_rest",
+          "label": "Hours and rest",
+          "description": "Clarify hours, recovery rest, payment and any consequence for refusing additional work."
+        },
+        {
+          "id": "contact_privacy",
+          "label": "Safe contact and privacy",
+          "description": "Clarify the person's preferred safe channel and permission before involving another party."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "duecare-extension-pack/1.0.0",
+  "pack_id": "duecare-agriculture-starter",
+  "version": "1.0.0",
+  "industry": "agriculture",
+  "title": "Seasonal harvest: transport, advances and freedom to leave",
+  "description": "Two substantive authored variants for indicator evidence, clarification and worker-centred advice. References are provisional and hidden from model inputs. The changed fact groups form a package comparison. This prepared pack contains no model observations or independent domain-validation claim.",
+  "files": {
+    "cases": "cases.jsonl",
+    "rubric": "rubric.json",
+    "questions": "questions.json",
+    "sources": "sources.json"
+  },
+  "file_sha256": {
+    "cases": "282d2990c60430068e67f55c2efc52a92028b0f8dd6384df0f3404acc00a8365",
+    "rubric": "08407f72b6150f096af13a2684a05addec462a9b1e29c9953d5539b98abfd989",
+    "questions": "79a79578a6041eab12478a7c46714d44dc74876c984b91d4427abc36dacdfd61",
+    "sources": "dc63a211cdc5078ca9f44b12c78f276e30524a90baedbe2def242f89abdc3ab0"
+  },
+  "privacy": {
+    "contains_personal_data": false,
+    "identifiable_person_assessment": false,
+    "review_status": "author_declared"
+  },
+  "groups": [
+    {
+      "group_id": "industry-agriculture-pair",
+      "design": "paired_variant",
+      "variant_ids": [
+        "concern",
+        "mixed"
+      ],
+      "changed_factors": [
+        "The response to a request to end work before an advance is repaid.",
+        "Whether the worker can arrange alternative transport without a threatened penalty."
+      ]
+    }
+  ]
+}

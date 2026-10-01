@@ -1,0 +1,4 @@
+interface:
+  display_name: "DueCare evidence review"
+  short_description: "Trace benchmark claims to outcomes and coverage"
+  default_prompt: "Use $duecare-review-evidence to review the evidence and coverage behind these benchmark claims."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "DueCare industry packs"
+  short_description: "Author nuanced cases with traceable references"
+  default_prompt: "Use $duecare-author-industry-pack to create a nuanced case pack for my industry."

@@ -1,0 +1,39 @@
+{
+  "schema": "duecare-extension-pack/1.0.0",
+  "pack_id": "duecare-manufacturing-starter",
+  "version": "1.0.0",
+  "industry": "manufacturing",
+  "title": "Overnight production, rest and a disputed quality deadline",
+  "description": "Two substantive authored variants for indicator evidence, clarification and worker-centred advice. References are provisional and hidden from model inputs. The changed fact groups form a package comparison. This prepared pack contains no model observations or independent domain-validation claim.",
+  "files": {
+    "cases": "cases.jsonl",
+    "rubric": "rubric.json",
+    "questions": "questions.json",
+    "sources": "sources.json"
+  },
+  "file_sha256": {
+    "cases": "1eaed2282043feea319b8c49ea69926deaf5c5d4357210d198270af56931aa43",
+    "rubric": "08407f72b6150f096af13a2684a05addec462a9b1e29c9953d5539b98abfd989",
+    "questions": "79a79578a6041eab12478a7c46714d44dc74876c984b91d4427abc36dacdfd61",
+    "sources": "39ea34be79e3fd70553624921f9cb6f500f9344eeed8093f1898d6f14253b658"
+  },
+  "privacy": {
+    "contains_personal_data": false,
+    "identifiable_person_assessment": false,
+    "review_status": "author_declared"
+  },
+  "groups": [
+    {
+      "group_id": "industry-manufacturing-pair",
+      "design": "paired_variant",
+      "variant_ids": [
+        "concern",
+        "mixed"
+      ],
+      "changed_factors": [
+        "Whether declining another overnight shift triggers loss of earned pay.",
+        "Whether promised recovery rest is actually available after the production surge."
+      ]
+    }
+  ]
+}

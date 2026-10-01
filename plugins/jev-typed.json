@@ -1,0 +1,8 @@
+{
+  "schema": "duecare-extension-plugin/1.0.0",
+  "plugin_id": "jev-typed",
+  "version": "1.0.0",
+  "adapter": "jev-typed",
+  "description": "Prepare typed Jev request fields. Each multi-label item becomes an independent supported/counterevidence/unknown choice. Add the exact hosted model binding at dispatch.",
+  "capabilities": ["typed_questions", "independent_multilabel"]
+}

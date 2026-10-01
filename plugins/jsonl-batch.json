@@ -1,0 +1,8 @@
+{
+  "schema": "duecare-extension-plugin/1.0.0",
+  "plugin_id": "jsonl-batch",
+  "version": "1.0.0",
+  "adapter": "jsonl-batch",
+  "description": "Prepare one provider-neutral chat body per JSONL record with an opaque custom ID and body hash. A reviewed harness supplies dispatch settings and preserves outcomes.",
+  "capabilities": ["jsonl_batch", "chat_messages", "primitive_answers"]
+}

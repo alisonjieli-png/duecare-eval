@@ -1,0 +1,39 @@
+{
+  "schema": "duecare-extension-pack/1.0.0",
+  "pack_id": "duecare-construction-starter",
+  "version": "1.0.0",
+  "industry": "construction",
+  "title": "A subcontractor's accommodation account and control of pay",
+  "description": "Two substantive authored variants for indicator evidence, clarification and worker-centred advice. References are provisional and hidden from model inputs. The changed fact groups form a package comparison. This prepared pack contains no model observations or independent domain-validation claim.",
+  "files": {
+    "cases": "cases.jsonl",
+    "rubric": "rubric.json",
+    "questions": "questions.json",
+    "sources": "sources.json"
+  },
+  "file_sha256": {
+    "cases": "d6f40d55191ade2dedbbc34ac5b0146bb749288a52ed092b1fe417b6a1e9fcb3",
+    "rubric": "08407f72b6150f096af13a2684a05addec462a9b1e29c9953d5539b98abfd989",
+    "questions": "79a79578a6041eab12478a7c46714d44dc74876c984b91d4427abc36dacdfd61",
+    "sources": "6eb1480d6baf01d9406ca4b57de9df4d99eebbf7a98f3caf40456a847c821e3e"
+  },
+  "privacy": {
+    "contains_personal_data": false,
+    "identifiable_person_assessment": false,
+    "review_status": "author_declared"
+  },
+  "groups": [
+    {
+      "group_id": "industry-construction-pair",
+      "design": "paired_variant",
+      "variant_ids": [
+        "concern",
+        "mixed"
+      ],
+      "changed_factors": [
+        "Who controls the bank card and post-pay accommodation transfers.",
+        "Whether leaving the subcontractor's assignment is tied to repayment and loss of earned pay."
+      ]
+    }
+  ]
+}

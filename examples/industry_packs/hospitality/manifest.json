@@ -1,0 +1,39 @@
+{
+  "schema": "duecare-extension-pack/1.0.0",
+  "pack_id": "duecare-hospitality-starter",
+  "version": "1.0.0",
+  "industry": "hospitality",
+  "title": "A kitchen placement, training costs and an original passport",
+  "description": "Two substantive authored variants for indicator evidence, clarification and worker-centred advice. References are provisional and hidden from model inputs. The changed fact groups form a package comparison. This prepared pack contains no model observations or independent domain-validation claim.",
+  "files": {
+    "cases": "cases.jsonl",
+    "rubric": "rubric.json",
+    "questions": "questions.json",
+    "sources": "sources.json"
+  },
+  "file_sha256": {
+    "cases": "562807dbd74732fd1e9990425254cb7ef55ba5fc88705d6d30e9df20c0de77d0",
+    "rubric": "08407f72b6150f096af13a2684a05addec462a9b1e29c9953d5539b98abfd989",
+    "questions": "79a79578a6041eab12478a7c46714d44dc74876c984b91d4427abc36dacdfd61",
+    "sources": "20f8a5e99973ad19ce03118b0edef08f095c5d6ec01d565fd5e7d22042803598"
+  },
+  "privacy": {
+    "contains_personal_data": false,
+    "identifiable_person_assessment": false,
+    "review_status": "author_declared"
+  },
+  "groups": [
+    {
+      "group_id": "industry-hospitality-pair",
+      "design": "paired_variant",
+      "variant_ids": [
+        "concern",
+        "mixed"
+      ],
+      "changed_factors": [
+        "Access to the original passport when requested for independent advice.",
+        "Whether the disputed course account is used to require continued work in the kitchen."
+      ]
+    }
+  ]
+}

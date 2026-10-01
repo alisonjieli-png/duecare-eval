@@ -1,0 +1,8 @@
+{
+  "schema": "duecare-extension-plugin/1.0.0",
+  "plugin_id": "chat-messages",
+  "version": "1.0.0",
+  "adapter": "chat-messages",
+  "description": "Prepare chat messages for primitive categorical and ordinal responses. A reviewed harness handles provider selection, dispatch and outcome recording.",
+  "capabilities": ["chat_messages", "primitive_answers"]
+}

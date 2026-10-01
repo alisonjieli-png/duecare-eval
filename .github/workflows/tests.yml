@@ -34,6 +34,13 @@ jobs:
       - run: python tools/reproduce_model_expansion.py --check
       - run: python tools/check_breadth_design.py --check
       - run: python tools/prepare_narrative_indicators_v2.py --check
+      - name: Validate industry packs and prepare offline harness inputs
+        run: |
+          for pack in agriculture construction manufacturing hospitality maritime platform_delivery; do
+            python tools/check_extension_pack.py "examples/industry_packs/$pack" --plugin plugins/jev-typed.json
+            python tools/check_extension_pack.py "examples/industry_packs/$pack" --plugin plugins/chat-messages.json --include-sources
+            python tools/check_extension_pack.py "examples/industry_packs/$pack" --plugin plugins/jsonl-batch.json
+          done
       - run: python -c 'from duecare_eval.case_exhibits import verify; print(verify("."))'
       - run: python -c 'from duecare_eval.call_accounting import summarize; print(summarize("."))'
       - run: duecare-eval report

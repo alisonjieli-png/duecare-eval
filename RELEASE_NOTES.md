@@ -1,6 +1,21 @@
 # Do AI models recognize exploitation — and help?
 
-## Current release: v0.1.0-rc.5
+## Current release: v0.1.0-rc.6
+
+This release makes the benchmark easier to extend across industries and harnesses.
+
+- Six industry packs provide twelve paired case variants, with exact source references, narrative hashes, evidence spans and five-tier response rubrics.
+- A Python extension library validates packs and prepares three data-only adapter formats: Jev typed questions, chat messages and batch JSONL. Reference answers and evaluator metadata stay outside model inputs.
+- Three reusable skills guide industry-pack authoring, harness integration and evidence review. The starter generator creates a new pack while preserving existing files.
+- The continuous-research guide explains the separate hosted research service, bounded generation, quota recovery, private journals and publication snapshots.
+
+The industry library contains 144 prepared semantic judgments and zero recorded model calls or assessed model responses. Existing observations, scientific findings and both PDF reports retain the reviewed rc.5 snapshot and unchanged bytes. The new ongoing research runs are separate from this release's evidence population.
+
+Release: https://github.com/alisonjieli-png/duecare-eval/releases/tag/v0.1.0-rc.6
+
+Report (unchanged rc.5 research snapshot): https://github.com/alisonjieli-png/duecare-eval/releases/download/v0.1.0-rc.6/duecare_preliminary_report.pdf
+
+## Historical release: v0.1.0-rc.5
 
 This release explains model behavior through documented exploitation indicators and expands the case evidence readers can inspect.
 

@@ -1,30 +1,10 @@
 {
-  "duration_seconds": 294.785,
+  "duration_seconds": 305.205,
   "errors": 0,
   "failures": 0,
-  "full_run_final": false,
+  "full_run_final": true,
   "network": "disabled_by_test_fixture",
   "scope": "public exported code and evidence; private provider execution has separate receipts",
   "skipped": 0,
-  "tests": 432,
-  "verification_runs": [
-    {
-      "counts": {
-        "errors": 0,
-        "failures": 0,
-        "skipped": 0,
-        "tests": 400
-      },
-      "scope": "full public suite at collection"
-    },
-    {
-      "counts": {
-        "errors": 0,
-        "failures": 0,
-        "skipped": 0,
-        "tests": 32
-      },
-      "scope": "subsequently added public test files; disjoint test identities verified"
-    }
-  ]
+  "tests": 479
 }

@@ -4,7 +4,7 @@
     "results/longform_anchor_pilot_2026-09-30.manifest.json": "8dca101dd41b74b5697657eecd4036deb1be524f4ef34bd5161fb0c366f43688",
     "results/source_completion_2026-09-30.json": "9cc4301641c7f5a0ae278d139afb98364d54f2a4f01534138898cbb2c837b586"
   },
-  "claim_scope": "The rc.5 editorial and instrument expansion uses preserved observations and zero new inference calls. Prepared narrative decisions, historical model outputs, automated reviews, call accounting and independent validation have separate status. New Jev ILO/menu/narrative performance remains unmeasured after the earlier HTTP402 response.",
+  "claim_scope": "The rc.6 extension kit adds authored industry packs, offline adapters and reusable skills. Its example library has zero model calls and zero assessed outputs. Scientific findings and PDF reports retain the reviewed rc.5 snapshot. Ongoing private hosted studies have separate receipts and remain outside this publication evidence population.",
   "created_at": "2026-09-30T15:02:29.666759+00:00",
   "current_evidence": "results/documented_indicator_sources_2026-10-01.json",
   "evidence_snapshots": {
@@ -107,10 +107,14 @@
     "complete_case_exhibits",
     "canonical_call_accounting",
     "narrative_social_and_staged_decision_instruments",
-    "deterministic_action_and_followup_messages"
+    "deterministic_action_and_followup_messages",
+    "industry_extension_pack_sdk",
+    "six_industry_matched_examples",
+    "three_data_only_harness_profiles",
+    "three_reusable_research_skills"
   ],
   "public_implementation_sha256": {
-    "src/duecare_eval/__init__.py": "4d0d9fc6b8337e4e1ed2595cb6fd1d6c6a321ba2ce46384bb332eb4de9167711",
+    "src/duecare_eval/__init__.py": "adf7c4102e71326809c4464e5bb7314dca0585597fc606c5e9f63c39c0598b49",
     "src/duecare_eval/anchor_pilot.py": "529cbc231737034a0d48d71802bc345fddb163c275385e7d75470306d5f7573d",
     "src/duecare_eval/artifact_safety.py": "57b7ac041e3dafae6b69af616ed2faa314f75b1e340008de4defe7d3e29a427e",
     "src/duecare_eval/benchmark.py": "c1896dfe659b85afb9c91b9113ff6f6f4e1b8973d8bc0d685a152c6c8b4a23ff",
@@ -125,6 +129,7 @@
     "src/duecare_eval/decision_metrics.py": "fa9f8bc401b1a38fdfd7f6938b22b77f8ffe7597afb316ff3cc4191f715a4c55",
     "src/duecare_eval/decisioning.py": "edae0a0307ce2f45d00f132c501e50e0dc5ac1f3a1835b724714a20dd5b833ab",
     "src/duecare_eval/expanded_benchmark.py": "c52fd6978e530d8b642727d0fbfce6892dde79408d31b8f8546030fd20af902e",
+    "src/duecare_eval/extensions.py": "d3582232dad17861460c0bd4f680b698d7e51786760aed9ec232b9e23073d977",
     "src/duecare_eval/indicator_followup.py": "65d7f2b869ce602bc640e02b27b34b43ae78e45164df714d73819a9e97ccb52c",
     "src/duecare_eval/jev_visuals.py": "8c3ba2a089931f847bfee064d1731c719433cf1edeaad5a05e2c5f1f8d8fa1c3",
     "src/duecare_eval/ledger.py": "9723067b1fb5f6c75290a91eb3339e59488131183c00026b8e41f1b779872af6",
@@ -153,9 +158,11 @@
     "tools/build_report.py": "b979f2f688f01b9ddb53790cd43748a351e3ec307dc7c73a05ab1adea1053b5c",
     "tools/build_technical_report.py": "b900238dc8803f9c823b30307483c3ad8a44d0c368c7b1e416837cd65bb28922",
     "tools/check_breadth_design.py": "a7e594ff40c1d5cd8460dbc4d2831766749a9f610a6ca94114004d37d30c3195",
+    "tools/check_extension_pack.py": "803f5c433f4296ec9912d345ace2d8891c8991dcbe57a35250ec5ef4812b2ad6",
     "tools/check_grading_rubrics.py": "eccd9b1a333666466437f39c10fa32aec82c33e3d1f6f5948574b1407b2d56e3",
     "tools/check_protection_harness.py": "5b509b3074d689fda92bf43839a3d5494fb2b429e7f993d81ea2c935eb3efb30",
     "tools/check_reference_bank.py": "bb72966386b69522958c52e4b112157b46751009c63374535b146dec7aa312e2",
+    "tools/create_extension_pack.py": "1ef0bbe2671b9f6935c6ea250b68c8439007eb0f6be125fb6be7728b3657a792",
     "tools/prepare_indicator_followup.py": "3b1f8bcd85faa4d668712ec731b399a8bec609104762ef0441340bac110c208a",
     "tools/prepare_narrative_indicators_v2.py": "bee60dc497ba06c2d7d7a86ad324ddabf5538edf9b6ce77df0a840f8fe056242",
     "tools/report_case_expansion.py": "ecf2a55b790583eab7f3b8fd67a9699cf7b817a2b1d24d2056a3ad99242321e1",
@@ -197,7 +204,65 @@
       "sha256": "e90383f90d16269746a5eef9cea91b4a415eb9f88e9a234b3acfa554bdc68ec9"
     }
   },
-  "release": "v0.1.0-rc.5",
+  "rc6_extension_kit": {
+    "assessed_model_outputs": 0,
+    "authored_case_variants": 12,
+    "case_question_slots": 24,
+    "files": {
+      "docs/CONTINUOUS_RESEARCH.md": "83d7a10c9820eae96142ad185b3dd9875e1810ed8d03eca64600a080cb996017",
+      "docs/EXTENDING_DUECARE.md": "56190db833cf9a4cbc3ec29657a4d7031d99e65ce66e554b434ac50513972329",
+      "examples/industry_packs/agriculture/cases.jsonl": "282d2990c60430068e67f55c2efc52a92028b0f8dd6384df0f3404acc00a8365",
+      "examples/industry_packs/agriculture/manifest.json": "48f42ea5a534f80be69bb460c32a8a67a317153cada312f397802280612ef292",
+      "examples/industry_packs/agriculture/questions.json": "79a79578a6041eab12478a7c46714d44dc74876c984b91d4427abc36dacdfd61",
+      "examples/industry_packs/agriculture/rubric.json": "08407f72b6150f096af13a2684a05addec462a9b1e29c9953d5539b98abfd989",
+      "examples/industry_packs/agriculture/sources.json": "dc63a211cdc5078ca9f44b12c78f276e30524a90baedbe2def242f89abdc3ab0",
+      "examples/industry_packs/construction/cases.jsonl": "d6f40d55191ade2dedbbc34ac5b0146bb749288a52ed092b1fe417b6a1e9fcb3",
+      "examples/industry_packs/construction/manifest.json": "0d05d0b29f150d52a684632e2d18baf01699d4c09f14f50c99d481e8c30f8f3e",
+      "examples/industry_packs/construction/questions.json": "79a79578a6041eab12478a7c46714d44dc74876c984b91d4427abc36dacdfd61",
+      "examples/industry_packs/construction/rubric.json": "08407f72b6150f096af13a2684a05addec462a9b1e29c9953d5539b98abfd989",
+      "examples/industry_packs/construction/sources.json": "6eb1480d6baf01d9406ca4b57de9df4d99eebbf7a98f3caf40456a847c821e3e",
+      "examples/industry_packs/hospitality/cases.jsonl": "562807dbd74732fd1e9990425254cb7ef55ba5fc88705d6d30e9df20c0de77d0",
+      "examples/industry_packs/hospitality/manifest.json": "ba3f3b48dad4a813eedfaa23f069b82bee58e0fa2ed805018fee9d69ff29687e",
+      "examples/industry_packs/hospitality/questions.json": "79a79578a6041eab12478a7c46714d44dc74876c984b91d4427abc36dacdfd61",
+      "examples/industry_packs/hospitality/rubric.json": "08407f72b6150f096af13a2684a05addec462a9b1e29c9953d5539b98abfd989",
+      "examples/industry_packs/hospitality/sources.json": "20f8a5e99973ad19ce03118b0edef08f095c5d6ec01d565fd5e7d22042803598",
+      "examples/industry_packs/library.json": "d84be86bda778b0f55bf30fedba5ae69e6b5ae08656d6a279f2ad758684251b5",
+      "examples/industry_packs/manufacturing/cases.jsonl": "1eaed2282043feea319b8c49ea69926deaf5c5d4357210d198270af56931aa43",
+      "examples/industry_packs/manufacturing/manifest.json": "c57d1a6ec7d858e54f651fde2af6a744a93812a09a0959e3042d25a87db399af",
+      "examples/industry_packs/manufacturing/questions.json": "79a79578a6041eab12478a7c46714d44dc74876c984b91d4427abc36dacdfd61",
+      "examples/industry_packs/manufacturing/rubric.json": "08407f72b6150f096af13a2684a05addec462a9b1e29c9953d5539b98abfd989",
+      "examples/industry_packs/manufacturing/sources.json": "39ea34be79e3fd70553624921f9cb6f500f9344eeed8093f1898d6f14253b658",
+      "examples/industry_packs/maritime/cases.jsonl": "2e018b8abcb6d761854965807912ad070dd999715c83308f6c006fe7510123b6",
+      "examples/industry_packs/maritime/manifest.json": "706887f14da657e2e866f2bd499279417bf1371b453119131708ecad3d19c640",
+      "examples/industry_packs/maritime/questions.json": "79a79578a6041eab12478a7c46714d44dc74876c984b91d4427abc36dacdfd61",
+      "examples/industry_packs/maritime/rubric.json": "08407f72b6150f096af13a2684a05addec462a9b1e29c9953d5539b98abfd989",
+      "examples/industry_packs/maritime/sources.json": "f54b872f7f75d0122b333f98fd72fc2372564baa98e26235c4118683241fa8f1",
+      "examples/industry_packs/platform_delivery/cases.jsonl": "10fd91889a6a2210edb1cba3e0b22d60d0da926766489ed04c7a436a03147e96",
+      "examples/industry_packs/platform_delivery/manifest.json": "dd4c7ba4d602de15f2ed6e41d2522ff447d022633fd52c50ff88f058289db2ae",
+      "examples/industry_packs/platform_delivery/questions.json": "79a79578a6041eab12478a7c46714d44dc74876c984b91d4427abc36dacdfd61",
+      "examples/industry_packs/platform_delivery/rubric.json": "08407f72b6150f096af13a2684a05addec462a9b1e29c9953d5539b98abfd989",
+      "examples/industry_packs/platform_delivery/sources.json": "6cfe28f49bd03c891cb5bf1865b79db8de0f2ebefbb3b130fe2256b3b74995a8",
+      "plugins/chat-messages.json": "207b4e4c5d8ce728488de0b1958d769d5038b3dc7da2c9c45246426b0f55dc80",
+      "plugins/jev-typed.json": "06618df4ae4e08c7bf57b183a2aaacb47cec306bbefaff61fd5c98187e376645",
+      "plugins/jsonl-batch.json": "d03453e2c84b6c3c178698e6b5f2dfbe7ee40c975d438bd81a933423f6c8b9a4",
+      "skills/duecare-author-industry-pack/SKILL.md": "e08ebf80d2d182c7468be58c2c300d4eae1af58006460a5cf7e6128f6e649af0",
+      "skills/duecare-author-industry-pack/agents/openai.yaml": "230f7429cd58185fb312489ebfffb43157eaabe9f872a3e626c4ac40961cb581",
+      "skills/duecare-connect-harness/SKILL.md": "a621d8907005bc7167bada307614c46030ac1d6b4a613dc1b84574b009494e97",
+      "skills/duecare-connect-harness/agents/openai.yaml": "67d6433a4f1c8ffd46c77b1d41e054094db90e8db1744927ae6de8ffeb27e999",
+      "skills/duecare-review-evidence/SKILL.md": "b05708aa2039ef8bdf431022ead52ff4778e79ed6f9fc1ad0889449da4d11227",
+      "skills/duecare-review-evidence/agents/openai.yaml": "790692114defd7c7121317f44b81c84eb4a7ede0e1eed4cb07b3d7c94cfe0283"
+    },
+    "industry_packs": 6,
+    "matched_groups": 6,
+    "model_calls": 0,
+    "scientific_snapshot_release": "v0.1.0-rc.5",
+    "semantic_judgment_slots": 144,
+    "unchanged_pdf_sha256": {
+      "duecare_preliminary_report.pdf": "fd319fc5edc44db82baefb713a8249f5885171d86bc23387c1717eb3ace480d7",
+      "duecare_technical_appendix.pdf": "9f4c8fbf2f6edf42d0d9feb1147fe8ba5f4006250bc732819df911b053ff2861"
+    }
+  },
+  "release": "v0.1.0-rc.6",
   "schema": "duecare-public-export/1.0.0",
   "source_campaign_hashes": {
     "bulk-ladders-v1": "0d6da61e7558264cd44ac214a1b3a8f79617aefa3052b0c70f6750d660fe3106",
@@ -221,5 +286,5 @@
     "tools/expanded_benchmark.py": "fbf494d0deda2718e85ceaf0ce3760d56001444d4fb1813deef85e51c321cb5e",
     "tools/response_variation.py": "3c98fdd2402dfe711a10a6449b8cfffc0962dd332aca34ef36caa8d20f76382b"
   },
-  "updated_at": "2026-10-01T03:05:41.223688+00:00"
+  "updated_at": "2026-10-01T14:25:37.587685+00:00"
 }

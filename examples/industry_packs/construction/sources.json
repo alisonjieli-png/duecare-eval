@@ -1,0 +1,29 @@
+{
+  "schema": "duecare-extension-sources/1.0.0",
+  "sources": [
+    {
+      "id": "ILO_INDICATORS_2025_FULL",
+      "title": "ILO indicators of forced labour: 2025 revised edition",
+      "url": "https://www.ilo.org/sites/default/files/2025-11/ILO%20Indicators%20of%20Forced%20Labour%202025.pdf",
+      "accessed_on": "2026-10-01",
+      "summary": "Explains threats, document retention, wage withholding and debt bondage through coercion and constrained consent. It includes forced return of wages after bank payment and deliberate debt manipulation.",
+      "scope": "Frontline detection and referral guidance. Interpret combinations and the worker's circumstances; one indicator alone does not confirm forced labour. Protective inquiry and a categorical finding are distinct."
+    },
+    {
+      "id": "FATF_APG_FINANCIAL_FLOWS_2018",
+      "title": "Financial Flows from Human Trafficking",
+      "url": "https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/Human-Trafficking-2018.pdf",
+      "accessed_on": "2026-10-01",
+      "summary": "Describes manipulated debt, identity-document retention, immigration threats and third-party control of wages or bank accounts. Financial analysis follows actors, beneficiaries and actual flows rather than relying on business labels.",
+      "scope": "FATF-APG literature review, contributed cases, workshops and financial-sector/NGO input. Typologies and financial red flags guide investigation; they are not prevalence estimates or proof that an unexplained payment is trafficking."
+    },
+    {
+      "id": "UNODC_RECRUITMENT_FEES_2015",
+      "title": "The Role of Recruitment Fees and Abusive and Fraudulent Recruitment Practices of Recruitment Agencies in Trafficking in Persons",
+      "url": "https://www.unodc.org/documents/human-trafficking/2015/Recruitment_Fees_Report-Final-22_June_2015_AG_Final.pdf",
+      "accessed_on": "2026-10-01",
+      "summary": "Explains how recruitment fees, borrowing, deception and coercive recruitment can connect to trafficking, including debts and financial commitments that constrain workers' choices.",
+      "scope": "Literature/case-law review, expert meetings and 47 expert consultations in Indonesia, Peru, Bahrain and the UAE. A comparative mechanisms study, rather than a representative worker-prevalence survey."
+    }
+  ]
+}

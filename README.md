@@ -2,7 +2,7 @@
 
 [![Offline checks](https://github.com/alisonjieli-png/duecare-eval/actions/workflows/tests.yml/badge.svg)](https://github.com/alisonjieli-png/duecare-eval/actions/workflows/tests.yml)
 
-[Read the findings](docs/PAPER.md) · [Download the report](https://github.com/alisonjieli-png/duecare-eval/releases/download/v0.1.0-rc.5/duecare_preliminary_report.pdf) · [Versioned release](https://github.com/alisonjieli-png/duecare-eval/releases/tag/v0.1.0-rc.5) · [Earlier technical studies](docs/TECHNICAL_REPORT.md)
+[Read the findings](docs/PAPER.md) · [Download the report](https://github.com/alisonjieli-png/duecare-eval/releases/download/v0.1.0-rc.6/duecare_preliminary_report.pdf) · [Versioned release](https://github.com/alisonjieli-png/duecare-eval/releases/tag/v0.1.0-rc.6) · [Extend the benchmark](docs/EXTENDING_DUECARE.md)
 
 The models sometimes recognize exploitation risks and recommend useful protections, but their advice changes substantially with the scenario. The clearest shared weakness is **warning about a questionable debt while still helping collect it**. In the original cross-border payment-assignment and 68% loan cases, all five language models supplied some collection implementation before resolving the worker’s obligation.
 
@@ -15,6 +15,12 @@ Jev recognized financial-pressure and wage-control concerns when asked focused q
 DueCare examines internationally documented patterns: recruitment-related debt, pressure to use a particular lender or service provider, threats during collection, control of wages or documents, deceptive terms and restrictions on leaving. The practical question is what those arrangements do to the worker's choices. Changing a debt's label or moving collection across a border leaves that question open.
 
 The [evidence guide](docs/DOCUMENTED_EXPLOITATION_INDICATORS.md) connects those questions to the ILO's 2025 forced-labour indicators, the Palermo Protocol and published investigations by Migrasia/Winrock, Amnesty International and FATF-APG. It distinguishes a warning sign, a supported exploitation mechanism, grounds for further review and a legal conclusion. Historical model inputs and grades keep their original versions.
+
+## Add an industry, model or harness
+
+Release rc.6 adds a reusable [extension kit](docs/EXTENDING_DUECARE.md): twelve substantial case variants across agriculture, construction, manufacturing, hospitality, maritime repair and platform delivery. Each matched pair keeps its facts, source references, evidence spans and grading rules together. Three data-only adapters prepare Jev questions, chat messages and batch JSONL; three [skills](skills/) guide case authoring, harness integration and evidence review.
+
+The kit includes offline validators and tests. Its examples contain 144 prepared semantic judgments and zero recorded model calls. The downloadable research report and its findings retain the reviewed rc.5 snapshot. A separate [continuous research service](docs/CONTINUOUS_RESEARCH.md) advances new hosted tests and bounded research workers; later releases will incorporate reviewed results from those runs.
 
 ![Jev and eleven text models on the same full cases](docs/figures/full_context_action_choices.png)
 
@@ -95,7 +101,7 @@ Controlled indicator matching measures supplied conditions; the long-form report
 ```bash
 git clone https://github.com/alisonjieli-png/duecare-eval.git
 cd duecare-eval
-git checkout v0.1.0-rc.5
+git checkout v0.1.0-rc.6
 sha256sum --check SHA256SUMS
 python -m venv .venv
 source .venv/bin/activate
@@ -112,6 +118,7 @@ python tools/reproduce_context_scaffold.py --check
 python tools/reproduce_model_expansion.py --check
 python tools/check_breadth_design.py --check
 python tools/prepare_narrative_indicators_v2.py --check
+python tools/check_extension_pack.py examples/industry_packs/agriculture
 python -c 'from duecare_eval.case_exhibits import verify; print(verify("."))'
 python -c 'from duecare_eval.call_accounting import summarize; print(summarize("."))'
 python tools/reproduce_findings.py --check

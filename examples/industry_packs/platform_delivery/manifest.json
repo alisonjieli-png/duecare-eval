@@ -1,0 +1,39 @@
+{
+  "schema": "duecare-extension-pack/1.0.0",
+  "pack_id": "duecare-platform-delivery-starter",
+  "version": "1.0.0",
+  "industry": "platform_delivery",
+  "title": "A delivery account, equipment debt and referral conditions",
+  "description": "Two substantive authored variants for indicator evidence, clarification and worker-centred advice. References are provisional and hidden from model inputs. The changed fact groups form a package comparison. This prepared pack contains no model observations or independent domain-validation claim.",
+  "files": {
+    "cases": "cases.jsonl",
+    "rubric": "rubric.json",
+    "questions": "questions.json",
+    "sources": "sources.json"
+  },
+  "file_sha256": {
+    "cases": "10fd91889a6a2210edb1cba3e0b22d60d0da926766489ed04c7a436a03147e96",
+    "rubric": "08407f72b6150f096af13a2684a05addec462a9b1e29c9953d5539b98abfd989",
+    "questions": "79a79578a6041eab12478a7c46714d44dc74876c984b91d4427abc36dacdfd61",
+    "sources": "6cfe28f49bd03c891cb5bf1865b79db8de0f2ebefbb3b130fe2256b3b74995a8"
+  },
+  "privacy": {
+    "contains_personal_data": false,
+    "identifiable_person_assessment": false,
+    "review_status": "author_declared"
+  },
+  "groups": [
+    {
+      "group_id": "industry-platform_delivery-pair",
+      "design": "paired_variant",
+      "variant_ids": [
+        "concern",
+        "mixed"
+      ],
+      "changed_factors": [
+        "Whether the equipment balance requires continued delivery work.",
+        "Whether referrals are compulsory and linked to threatened disclosure, or a genuinely optional bonus."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": "duecare-industry-library/1.0.0",
+  "prepared_on": "2026-10-01",
+  "packs": [
+    {
+      "industry": "agriculture",
+      "path": "examples/industry_packs/agriculture",
+      "case_count": 2,
+      "word_counts": [
+        416,
+        412
+      ],
+      "group_count": 1
+    },
+    {
+      "industry": "construction",
+      "path": "examples/industry_packs/construction",
+      "case_count": 2,
+      "word_counts": [
+        438,
+        441
+      ],
+      "group_count": 1
+    },
+    {
+      "industry": "manufacturing",
+      "path": "examples/industry_packs/manufacturing",
+      "case_count": 2,
+      "word_counts": [
+        429,
+        425
+      ],
+      "group_count": 1
+    },
+    {
+      "industry": "hospitality",
+      "path": "examples/industry_packs/hospitality",
+      "case_count": 2,
+      "word_counts": [
+        432,
+        433
+      ],
+      "group_count": 1
+    },
+    {
+      "industry": "maritime",
+      "path": "examples/industry_packs/maritime",
+      "case_count": 2,
+      "word_counts": [
+        432,
+        435
+      ],
+      "group_count": 1
+    },
+    {
+      "industry": "platform_delivery",
+      "path": "examples/industry_packs/platform_delivery",
+      "case_count": 2,
+      "word_counts": [
+        464,
+        465
+      ],
+      "group_count": 1
+    }
+  ],
+  "prepared_cases": 12,
+  "prepared_groups": 6,
+  "executed_model_calls": 0,
+  "assessed_model_outputs": 0,
+  "independent_human_validation_count": 0,
+  "harness_profiles": [
+    "jev-typed",
+    "chat-messages",
+    "jsonl-batch"
+  ],
+  "scope": "Prepared authored starter cases. Field support and counterevidence are provisional; action and clarification preferences have no imposed correctness key."
+}

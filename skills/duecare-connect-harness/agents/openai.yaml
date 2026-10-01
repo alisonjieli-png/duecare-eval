@@ -1,0 +1,4 @@
+interface:
+  display_name: "DueCare harness connections"
+  short_description: "Connect typed, chat and imported-response harnesses"
+  default_prompt: "Use $duecare-connect-harness to connect my model harness and validate its payloads offline."

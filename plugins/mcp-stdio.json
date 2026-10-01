@@ -1,0 +1,19 @@
+{
+  "schema": "duecare-mcp-launch-profile/1.0.0",
+  "profile_id": "duecare-knowledge-stdio",
+  "transport": "stdio",
+  "sdk_distribution": "mcp",
+  "sdk_version": "2.2.0",
+  "command": "duecare-mcp",
+  "args": ["--public-root", "REPLACE_WITH_REVIEWED_PUBLIC_CHECKOUT"],
+  "environment": {},
+  "setup": "Install the mcp extra, replace the checkout placeholder and register this command in the host's MCP configuration. This file describes a launch profile; it changes no host settings.",
+  "effects": {
+    "read_only": true,
+    "model_calls": false,
+    "network_listener": false,
+    "external_actions": false,
+    "filesystem_writes": false
+  },
+  "benchmark_boundary": "Provide only a prepared record's payload to the target model. Record source, rubric and tool context as distinct conditions. Case answer keys and evaluator labels remain outside the MCP interface."
+}

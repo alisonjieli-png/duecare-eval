@@ -1,6 +1,22 @@
 # Do AI models recognize exploitation — and help?
 
-## Current release: v0.1.0-rc.6
+## Current release: v0.1.0-rc.7
+
+This release makes DueCare's research materials available to other harnesses and prepares a typed candidate package for Baltor.
+
+- Nine read-only knowledge operations expose full blinded cases, source citations, response rubrics, indicator definitions and action/follow-up templates.
+- An official-SDK MCP stdio server provides tools and resources with strict input validation. Tests cover both the 2026-07-28 and 2025-11-25 protocol paths.
+- A candidate exporter carries exact file hashes, source revision, typed operation contracts, code-asset cards, skills and setup guidance. Baltor's own contract readers and MCP adapter have a separate local compatibility probe.
+- Two new skills cover knowledge packaging and staged agent evaluation, bringing the portable set to five.
+- The operating guide records unlimited daily research allowances and completion-driven expansion across all seventeen validated hosted targets.
+
+The MCP/bridge checks exercise software and prepared materials, with zero project-provider inference calls. They establish no new model-performance or worker-safety finding. The full candidate contains coordinator reference files; model-visible API projections keep those labels separate. Candidate export retains unresolved general redistribution rights from `NOTICE.md` and leaves receiving-catalogue admission distinct from local compatibility.
+
+The main report and technical appendix retain the reviewed rc.5 scientific snapshot and unchanged PDF bytes. Continuing private model runs have their own journals and assessment status.
+
+Release: https://github.com/alisonjieli-png/duecare-eval/releases/tag/v0.1.0-rc.7
+
+## Historical release: v0.1.0-rc.6
 
 This release makes the benchmark easier to extend across industries and harnesses.
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design DueCare agent evaluations"
+  short_description: "Design evidence-grounded agent evaluations"
+  default_prompt: "Use $duecare-design-agent-evaluation to design matched agent tasks with safe actions and verifiable outcomes."

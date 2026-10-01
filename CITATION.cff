@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "Please cite the dated release and the task population supporting the result. Independent domain and worker review are recorded as separate evidence milestones."
 title: "DueCare: Do AI Models Recognize Exploitation — and Help?"
 type: software
-version: 0.1.0-rc.6
+version: 0.1.0-rc.7
 date-released: 2026-10-01
 authors:
   - family-names: Amarel

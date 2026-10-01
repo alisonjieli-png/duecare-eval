@@ -8,9 +8,11 @@ A researcher proposes questions from the approved source packet. An investigator
 
 Generated data stays within fixed schemas. The workers have no shell, account-management, publishing or outreach tools. A failed evidence-span check keeps a candidate in quarantine. Earlier source prompts, executed requests and observations retain their original versions. Automated review and agreement supply research evidence; independent human, legal and worker-informed validation remain separate milestones.
 
-## Budgets and provider limits
+## Usage and provider limits
 
-The October 1 operating configuration permits up to 1,000 new attempt reservations and 4,000,000 reserved output tokens per UTC day. Each reservation counts the requested output ceiling, rather than a billed token total. Failed and unresolved attempts consume the allowance. Dispatch uses groups of at most three inference requests, and provider limits can stop it sooner.
+The October 1, 2026 policy revision uses unlimited daily attempt and output-token allowances, as requested by the owner. JSON `null` records each unlimited setting. Usage accounting continues, including failed and unresolved attempts. A reservation measures the requested output allocation, rather than a billed token total.
+
+Each invocation follows the selected experiment's pending work, concurrency and output settings. Completion wakes the scheduler for the next eligible work. Existing experiment settings retain their versions, while provider availability and resource safeguards govern execution.
 
 The scheduler follows observed retry/reset metadata. If an HTTP429 response supplies no usable reset time, it applies conservative backoff and bounded availability probes. Authentication and account/payment stops stay held for review. The current Jev HTTP402 remains an account-review stop; the service performs no purchases or plan changes.
 
@@ -22,10 +24,10 @@ Each attempt receives a journal reservation before transport. Restart recovery c
 
 Daily reporting separates requested slots, physical attempts, completed outputs, usable answers and assessed responses. Access checks have their own counts. Generated case variants and repeated judgments share sampling groups, so larger call totals remain distinct from broader independent case coverage.
 
-Automatic expansion admits at most one new pair per UTC day, with pending-case and pending-slot bounds. This gives assessment time to catch up with generation. Source context, response scaffolds, model identity and output format remain explicit experimental factors.
+Research cycles follow proposals, case generation, independent-model criticism, benchmark responses and assessment attempts. Completed dependencies make the next cycle eligible, without daily worker/admission quotas or fixed case/slot backlog ceilings. Automatic expansion covers all seventeen validated hosted targets. Invalid cases retain their quarantine records and permit another cycle; unknown call outcomes stay held for reconciliation. Source context, response scaffolds, model identity and output format remain explicit experimental factors.
 
 ## Reuse the portable parts
 
 Start with the [industry-pack guide](EXTENDING_DUECARE.md), then connect a prepared payload to an existing authorized runner. Preserve its exact input bytes, model/settings identity, budget and outcome receipt. The [skills](../skills/) cover authoring, integration and evidence review; the plugin profiles are declarative preparation formats.
 
-Local research and reporting continue automatically. Public releases use reviewed, dated exports. Release rc.6 adds the extension kit while preserving the rc.5 report's evidence snapshot; ongoing private runs will enter future reports after their own assessment and export checks.
+Local research and reporting continue automatically. Public releases use reviewed, dated exports. Release rc.7 adds knowledge-transfer interfaces and records the uncapped operating policy while preserving the rc.5 report's evidence snapshot. Ongoing private runs enter later reports after their own assessment and export checks.

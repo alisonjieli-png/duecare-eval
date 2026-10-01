@@ -1,0 +1,4 @@
+interface:
+  display_name: "Package DueCare knowledge"
+  short_description: "Prepare portable, traceable DueCare knowledge"
+  default_prompt: "Use $duecare-package-knowledge to prepare a provenance-preserving DueCare transfer bundle for the selected harness."

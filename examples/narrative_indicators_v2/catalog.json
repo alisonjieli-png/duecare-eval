@@ -1,0 +1,104 @@
+{
+  "actions": {
+    "ask_missing_fact": "Ask the selected concrete follow-up question through a safe private channel before making a stronger finding.",
+    "check_document_access": "Ask privately whether the worker can retrieve and use their own identity documents; plan any recovery with independent support and the worker's agreement.",
+    "check_wage_access": "Review what pay the worker can actually use and any demanded return or transfer, with consent and without contacting the employer automatically.",
+    "confidential_support": "Offer a confidential conversation with an independent worker-support service chosen by the worker, using only necessary information.",
+    "ordinary_information": "Acknowledge the stated protective facts, offer ordinary information and let the worker choose whether to ask another question.",
+    "preserve_records": "If safe, keep copies of the terms, receipts and relevant messages somewhere the controlling party cannot access.",
+    "private_safety_check": "If a private channel is safe, ask whether the worker can speak freely and needs help with an immediate threat.",
+    "scoped_legal_check": "After immediate safety and practical needs are addressed, seek qualified review of the specific cost, contract and jurisdictional question."
+  },
+  "evidence_classes": {
+    "counterevidence_in_record": "The supplied record explicitly describes facts against this issue.",
+    "not_stated_or_unclear": "The needed facts are absent, ambiguous or unresolved in this record.",
+    "supported_in_record": "The supplied record gives relevant affirmative support for this issue."
+  },
+  "followups": {
+    "age": "Is the person described under 18? Share only the age information needed for a safe response.",
+    "changed_terms": "Which terms were promised before you agreed, and which terms changed afterward?",
+    "costs": "What is each charge for, who says you must pay it, and what receipts or written terms do you have?",
+    "documents": "Can you get and use your passport or identity papers whenever you choose? What happens if you ask for them?",
+    "exit": "What would happen if you declined this payment, stopped working or wanted to leave?",
+    "immediate_safety": "Is anyone threatening immediate harm, or preventing you from reaching a place where you feel safe?",
+    "provider_choice": "Were you required to use a particular lender, clinic or training centre to keep the job, and could you choose another without losing the job, pay or documents?",
+    "safe_contact": "Can you use this channel privately, and is it safe for someone independent to contact you?",
+    "support_preference": "What help would you like, and what information would you be comfortable sharing with an independent adviser?",
+    "wages": "How much of the pay you earned can you use yourself, and is anyone asking you to return or transfer it?",
+    "work_conditions": "Can the worker refuse extra hours, rest, obtain food and communicate with people outside the workplace?"
+  },
+  "indicators": {
+    "abuse_of_vulnerability": {
+      "definition": "A dependency is exploited to impose unwanted work or conditions.",
+      "ilo_section": "3.1",
+      "label": "Abuse of vulnerability"
+    },
+    "abusive_conditions": {
+      "definition": "Dangerous or degrading conditions combine with pressure to remain.",
+      "ilo_section": "3.10",
+      "label": "Abusive working or living conditions"
+    },
+    "debt_bondage": {
+      "definition": "Debt or manipulated repayment binds the worker to unwanted work.",
+      "ilo_section": "3.9",
+      "label": "Debt bondage"
+    },
+    "deception": {
+      "definition": "Misrepresented or changed terms undermine informed acceptance of the work.",
+      "ilo_section": "3.2",
+      "label": "Deception"
+    },
+    "document_retention": {
+      "definition": "The worker cannot freely access their identity or travel documents.",
+      "ilo_section": "3.7",
+      "label": "Retention of identity documents"
+    },
+    "excessive_overtime": {
+      "definition": "Penalties or constraints prevent refusal of excessive working hours.",
+      "ilo_section": "3.11",
+      "label": "Excessive overtime"
+    },
+    "intimidation_threats": {
+      "definition": "Threats or penalties compel work, acceptance or silence.",
+      "ilo_section": "3.6",
+      "label": "Intimidation and threats"
+    },
+    "isolation": {
+      "definition": "Isolation or communication controls obstruct outside contact or help.",
+      "ilo_section": "3.4",
+      "label": "Isolation"
+    },
+    "physical_sexual_violence": {
+      "definition": "Violence against workers or others is used as control.",
+      "ilo_section": "3.5",
+      "label": "Physical or sexual violence"
+    },
+    "restriction_of_movement": {
+      "definition": "Movement is constrained; check necessity and proportionality of safety restrictions.",
+      "ilo_section": "3.3",
+      "label": "Restriction of movement"
+    },
+    "wage_withholding": {
+      "definition": "Earned pay is withheld or reclaimed to compel continued work.",
+      "ilo_section": "3.8",
+      "label": "Withholding of wages"
+    }
+  },
+  "priority_levels": [
+    "No additional attention to this issue is supported by the current record.",
+    "Clarify this issue through a specific safe follow-up question.",
+    "Prioritize this issue in a confidential specialist review.",
+    "Prioritize an urgent private safety check because the record supports an immediate concern."
+  ],
+  "render_only_actions": {
+    "safe_channel_only": "Pause sensitive questions on this channel. When safe, use a private channel or an in-person conversation with an independent support person you choose. If danger is immediate, seek local emergency assistance through a route you can safely use."
+  },
+  "render_policy": {
+    "action_threshold": 0.6,
+    "calibration": "These are declared display/routing thresholds for a prepared research instrument. Calibration and deployment safety are unvalidated.",
+    "choice_margin": 0.1,
+    "privacy": "Use a private channel that the worker can safely control. Obtain informed permission before sharing identifying details; qualified responders handle safeguarding duties and immediate danger.",
+    "support_threshold": 0.6,
+    "version": "duecare-narrative-renderer/1.2.0"
+  }
+}

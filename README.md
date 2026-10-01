@@ -2,13 +2,19 @@
 
 [![Offline checks](https://github.com/alisonjieli-png/duecare-eval/actions/workflows/tests.yml/badge.svg)](https://github.com/alisonjieli-png/duecare-eval/actions/workflows/tests.yml)
 
-[Read the findings](docs/PAPER.md) · [Download the report](https://github.com/alisonjieli-png/duecare-eval/releases/download/v0.1.0-rc.4/duecare_preliminary_report.pdf) · [Versioned release](https://github.com/alisonjieli-png/duecare-eval/releases/tag/v0.1.0-rc.4) · [Earlier technical studies](docs/TECHNICAL_REPORT.md)
+[Read the findings](docs/PAPER.md) · [Download the report](https://github.com/alisonjieli-png/duecare-eval/releases/download/v0.1.0-rc.5/duecare_preliminary_report.pdf) · [Versioned release](https://github.com/alisonjieli-png/duecare-eval/releases/tag/v0.1.0-rc.5) · [Earlier technical studies](docs/TECHNICAL_REPORT.md)
 
 The models sometimes recognize exploitation risks and recommend useful protections, but their advice changes substantially with the scenario. The clearest shared weakness is **warning about a questionable debt while still helping collect it**. In the original cross-border payment-assignment and 68% loan cases, all five language models supplied some collection implementation before resolving the worker’s obligation.
 
 Gemma 4 gave the clearest qualified review-before-payment route when a worker asked whether repayment was morally right. DeepSeek and Kimi often recognized debt pressure, but their protective advice also included overbroad legal claims. GPT-OSS and Tactical Gemma repeatedly treated collection as a business task; both reinforced repayment when the worker expressed guilt.
 
-Jev recognized financial-pressure and wage-control concerns when asked focused questions about the same complete cases. The shared-context study now asks those same twelve questions of eleven text models alongside Jev. On the original-context cases, Jev prioritizes jurisdiction checks in three of four; DeepSeek chooses independent support in all four, and Kimi splits between support and checking the obligation. Those are observed priorities under a common menu, with their practical quality still subject to case-specific review.
+Jev recognized financial-pressure and wage-control concerns when asked focused questions about the same complete cases. Its broad menu favored a broad jurisdiction check in three of four cases. That identifies a measurement gap: the menu leaves specific ILO indicators, Palermo Protocol elements and concrete protective decisions largely unmeasured. The report shows every question, option and returned value for the cross-border assignment case, so readers can inspect what the result actually establishes.
+
+## The indicators we are testing
+
+DueCare examines internationally documented patterns: recruitment-related debt, pressure to use a particular lender or service provider, threats during collection, control of wages or documents, deceptive terms and restrictions on leaving. The practical question is what those arrangements do to the worker's choices. Changing a debt's label or moving collection across a border leaves that question open.
+
+The [evidence guide](docs/DOCUMENTED_EXPLOITATION_INDICATORS.md) connects those questions to the ILO's 2025 forced-labour indicators, the Palermo Protocol and published investigations by Migrasia/Winrock, Amnesty International and FATF-APG. It distinguishes a warning sign, a supported exploitation mechanism, grounds for further review and a legal conclusion. Historical model inputs and grades keep their original versions.
 
 ![Jev and eleven text models on the same full cases](docs/figures/full_context_action_choices.png)
 
@@ -44,9 +50,13 @@ In the worker-help case, the person asks whether they should repay recruiter-imp
 
 In the 68% loan case, Kimi explicitly discusses wage control and debt bondage and protects direct wage access and revocability. It nevertheless helps automate repayment of an obligation it has yet to validate. Useful safeguards, remaining facilitation and unresolved legal scope coexist.
 
-The [report](docs/PAPER.md) presents the full original prompts, each model’s behavior, selected exact excerpts, appropriate-response criteria and capability gaps. [Review records](results/longform_text_reviews_2026-09-30.json) preserve criterion explanations; [selected excerpts](results/longform_selected_excerpts_2026-09-30.json) include response hashes and character offsets.
+The [report](docs/PAPER.md) gives the assignment case several pages: its full prompt, all twelve Jev questions and outputs, complete menus, a full evidence-assisted Gemma reply and a critique. A worker-help exhibit includes Gemma's complete replies in both conditions and the entire added source briefing. [Complete exhibit records](results/complete_case_exhibits_2026-10-01.json) preserve all executed messages and three unchanged response strings with hashes. The selection supports close reading of useful advice and remaining errors; the aggregate charts retain the wider model comparison and its failures.
+
+[Review records](results/longform_text_reviews_2026-09-30.json) preserve criterion explanations; [selected excerpts](results/longform_selected_excerpts_2026-09-30.json) include response hashes and character offsets. Full operational instructions that could enable exploitation remain in the restricted research archive.
 
 ## Evidence and review status
+
+The [dated call audit](docs/CALL_ACCOUNTING.md) covers 119,889 Jev API attempts and 84,359 native hosted model attempt reservations, including retries and grading. Ten native reservations have no completion record at capture. The 32-answer context/scaffold study is one small experiment within that broader work. Repeated questions share source material, so call volume and independent case breadth retain separate counts.
 
 The expansion adds six hosted targets: GLM 5.3, GLM 5.3 Flash, GPT-OSS 120B, MiniMax M3, Nemotron 3 Ultra and Mistral Large 3. Their original-prompt study records 46 complete answers and 14 truncated outputs among 60 requested. A separate two-request GLM control check completes the salary-deduction answers with `think=low`; targeted reading still finds material legal-rule errors. The [model coverage guide](docs/MODEL_COVERAGE_AND_ADAPTERS.md) distinguishes model access, serving settings, complete outputs and behavior review.
 
@@ -59,6 +69,10 @@ The main findings use automated assistant full-text reviews, with independently 
 The source is Taylor S. Amarel’s [2025 GPT-OSS investigation](https://www.kaggle.com/competitions/openai-gpt-oss-20b-red-teaming/writeups/llm-complicity-in-modern-slavery-from-native-blind), followed by the [DueCare research](https://www.kaggle.com/competitions/gemma-4-good-hackathon/writeups/new-writeup-1779103293133). Original research prompts, adapted scenarios and controlled comparisons each retain their provenance. First-person wording belongs to the research material. Public exports contain reviewed examples, bounded excerpts and numeric evidence; the wider response archive remains restricted.
 
 ## Grading and comparisons
+
+The [narrative decision instrument](docs/NARRATIVE_INDICATORS_V2.md) prepares social-post screening, first-person and intake narratives, staged worker-help situations and benign controls. It separates evidence for each indicator, Palermo elements, review priority, concrete protective actions and the next useful question. A deterministic renderer turns selected action and follow-up IDs into prepared messages, so a bounded decision workflow can operate without a second LLM. Case safety and independent validation remain requirements before deployment.
+
+These new instruments have a separate version and execution status. The earlier Jev ILO/menu attempt returned HTTP402 and produced zero usable answers. This release preserves that limitation alongside the completed older studies.
 
 The context/text-scaffold trial holds the user question fixed while varying available history and a DueCare system instruction separately. Both DeepSeek and Gemma complete all sixteen conditions, for 32 answers. The blinded full-text review finds full-credit recognition and useful protective content in both conditions, with improvements concentrated in worker choice, legal qualification and some action ordering. It also records a safety-ordering regression and several worse legal assessments with more history. The [expanded design](docs/EXPANDED_QUESTION_DESIGN.md) covers direct and indirect questions, worker perspectives, decision stages, role advice, rankings, counterfactuals and staged pressure.
 
@@ -81,7 +95,7 @@ Controlled indicator matching measures supplied conditions; the long-form report
 ```bash
 git clone https://github.com/alisonjieli-png/duecare-eval.git
 cd duecare-eval
-git checkout v0.1.0-rc.4
+git checkout v0.1.0-rc.5
 sha256sum --check SHA256SUMS
 python -m venv .venv
 source .venv/bin/activate
@@ -97,6 +111,9 @@ python tools/check_protection_harness.py --check
 python tools/reproduce_context_scaffold.py --check
 python tools/reproduce_model_expansion.py --check
 python tools/check_breadth_design.py --check
+python tools/prepare_narrative_indicators_v2.py --check
+python -c 'from duecare_eval.case_exhibits import verify; print(verify("."))'
+python -c 'from duecare_eval.call_accounting import summarize; print(summarize("."))'
 python tools/reproduce_findings.py --check
 python tools/reproduce_comparisons.py --check
 python tools/reproduce_indicator_followup.py --check

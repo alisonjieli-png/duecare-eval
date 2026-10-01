@@ -1,17 +1,17 @@
 {
   "main": {
-    "pages": 17,
-    "sha256": "7581dfdf62e313abac49f1570cf94d2513d45dc6cf02e6fc2517d7448dac0032",
-    "bytes": 846925
+    "pages": 36,
+    "sha256": "fd319fc5edc44db82baefb713a8249f5885171d86bc23387c1717eb3ace480d7",
+    "bytes": 896083
   },
   "technical": {
     "pages": 43,
     "sha256": "9f4c8fbf2f6edf42d0d9feb1147fe8ba5f4006250bc732819df911b053ff2861",
     "bytes": 288773
   },
-  "reviewed_at": "2026-10-01T00:55:03.067734+00:00",
-  "scope": "Rendered-page layout/readability checks; independent domain validation remains open.",
+  "reviewed_at": "2026-10-01T03:05:41.248739+00:00",
+  "scope": "Rendered-page layout/readability checks; separate from independent domain and worker validation.",
   "main_pages_visually_inspected": true,
   "technical_unchanged_from_rc3": true,
-  "findings": "Final rendered pages checked for clipping, overlap, table/figure labels and footers. Earlier technical PDF retains its verified bytes."
+  "findings": "Final main-report pages rendered and checked for clipped text, table continuity, figure labels and readable full-response exhibits."
 }

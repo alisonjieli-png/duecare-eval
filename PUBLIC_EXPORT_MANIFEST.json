@@ -4,9 +4,9 @@
     "results/longform_anchor_pilot_2026-09-30.manifest.json": "8dca101dd41b74b5697657eecd4036deb1be524f4ef34bd5161fb0c366f43688",
     "results/source_completion_2026-09-30.json": "9cc4301641c7f5a0ae278d139afb98364d54f2a4f01534138898cbb2c837b586"
   },
-  "claim_scope": "Dated research cases and controlled comparisons. Prepared instruments, recorded model outputs, automated reviews and independent validation retain separate status. No new Jev ILO/menu result was obtained after the HTTP402 response.",
+  "claim_scope": "The rc.5 editorial and instrument expansion uses preserved observations and zero new inference calls. Prepared narrative decisions, historical model outputs, automated reviews, call accounting and independent validation have separate status. New Jev ILO/menu/narrative performance remains unmeasured after the earlier HTTP402 response.",
   "created_at": "2026-09-30T15:02:29.666759+00:00",
-  "current_evidence": "results/structured_extraction_2026-10-01.manifest.json",
+  "current_evidence": "results/documented_indicator_sources_2026-10-01.json",
   "evidence_snapshots": {
     "results/comparison_2026-09-30/snapshot.json": {
       "sha256": "c9e4d9c2e5cb962c4b1a69be6b3f93b850ac9c91e5fbef615dc3105774d02dc4",
@@ -102,14 +102,21 @@
     "blind_context_scaffold_review",
     "worker_help_review_expansion",
     "versioned_ilo_and_menu_instruments",
-    "protection_first_harness_prototype"
+    "protection_first_harness_prototype",
+    "international_documented_indicator_crosswalk",
+    "complete_case_exhibits",
+    "canonical_call_accounting",
+    "narrative_social_and_staged_decision_instruments",
+    "deterministic_action_and_followup_messages"
   ],
   "public_implementation_sha256": {
-    "src/duecare_eval/__init__.py": "de8a7722c45c838f038204f3a5cb4862edd40e25fc6f6e2c0b74aaa1c0167c25",
+    "src/duecare_eval/__init__.py": "4d0d9fc6b8337e4e1ed2595cb6fd1d6c6a321ba2ce46384bb332eb4de9167711",
     "src/duecare_eval/anchor_pilot.py": "529cbc231737034a0d48d71802bc345fddb163c275385e7d75470306d5f7573d",
     "src/duecare_eval/artifact_safety.py": "57b7ac041e3dafae6b69af616ed2faa314f75b1e340008de4defe7d3e29a427e",
     "src/duecare_eval/benchmark.py": "c1896dfe659b85afb9c91b9113ff6f6f4e1b8973d8bc0d685a152c6c8b4a23ff",
     "src/duecare_eval/breadth_design.py": "c3ea40e43d4d1a713559828f6bada5934263b0c174d13e7bf13fafb3c65b00fd",
+    "src/duecare_eval/call_accounting.py": "c643ca574859ceb6e883997147464c60b6778bbc9c5df38143300582aa120404",
+    "src/duecare_eval/case_exhibits.py": "e1131c06f3bdee94b61798414ea5581ea25410fb7f6bacbd4d9799c11e7b8f47",
     "src/duecare_eval/comparison_analysis.py": "149f75977a4b7ef60697b73941455ec673c1dd001a72c38e7a3a1c180fb9d9e2",
     "src/duecare_eval/comparison_expansion.py": "c8b44d6d7517dd2670b4f5df0d96e4ddc1b567d1b412778026ded0b3495ee1b8",
     "src/duecare_eval/console.py": "fc83527a144fbd30dab039b03738a7fa232550574b3c5f2d077bedb75710bee6",
@@ -126,9 +133,10 @@
     "src/duecare_eval/matched_context.py": "bc3d65cff5f46985a66c65b8245fc3fc2efe867ac20578e46ff5b033b573cdc2",
     "src/duecare_eval/matched_context_adapter.py": "f4526d5cfdd5dc7dabf5d7f2b5fbc0a43162082405bbf5ed0bfc2a38adae9617",
     "src/duecare_eval/model_expansion.py": "4403ff2e6d4e78aba830b1e7403337fe6782d60e206a00f12bffaf212c288e8f",
+    "src/duecare_eval/narrative_indicators_v2.py": "6d616cce16aef6dc38965c90f83c5f5243af73781d3e28cfbaf882952e51f2ba",
     "src/duecare_eval/panel.py": "bae98cde2ac2aa7c796748ac7d15fb98b3e5e3396ec4dc6d8f1347f21e9abcb7",
     "src/duecare_eval/protection_harness.py": "0b140c8cc04205cea0f9b6e192b7317681100d9a03f2bab9307702e428375960",
-    "src/duecare_eval/public_cli.py": "e9c9a5490d7285d6478755f51a1e13bff15ae6cba8f300512de32d551b14913e",
+    "src/duecare_eval/public_cli.py": "0a9600fa7324ff70402aef778b18a0ffcc1572fd010029ca211e19e6cd65534c",
     "src/duecare_eval/recovery_analysis.py": "042edd0c72cc02df2f8dc4f8da0bed21982609dfe355c9f7cc3b8ae159dd7a3f",
     "src/duecare_eval/reference_bank.py": "e3e3fa1674b3e336f77b0ddd47f3bc90f78f969efba1debfa9bd7026e6b8c13a",
     "src/duecare_eval/response_extract.py": "55ab7879aa8a2a53fb0b543ec044096ebb4f967a85f4f522a086b0f266605647",
@@ -142,13 +150,15 @@
     "src/duecare_eval/study_design.py": "1fec3c509f764e2b086a8224da4365052ae042961f9dc34873bffccdea22511a",
     "src/duecare_eval/vault.py": "7b236d4e068f9449433d85854be6d877f076b1394d901d79cd35bd112f03ab7b",
     "src/duecare_eval/version_benchmarks.py": "0c025c05491270686385befb76cb0a3b10df68d56250ec3e83459ad1be3d662a",
-    "tools/build_report.py": "14510e627760a505fd16fde7017a7a6ba348214b3367cae91d61255916863468",
+    "tools/build_report.py": "b979f2f688f01b9ddb53790cd43748a351e3ec307dc7c73a05ab1adea1053b5c",
     "tools/build_technical_report.py": "b900238dc8803f9c823b30307483c3ad8a44d0c368c7b1e416837cd65bb28922",
     "tools/check_breadth_design.py": "a7e594ff40c1d5cd8460dbc4d2831766749a9f610a6ca94114004d37d30c3195",
     "tools/check_grading_rubrics.py": "eccd9b1a333666466437f39c10fa32aec82c33e3d1f6f5948574b1407b2d56e3",
     "tools/check_protection_harness.py": "5b509b3074d689fda92bf43839a3d5494fb2b429e7f993d81ea2c935eb3efb30",
     "tools/check_reference_bank.py": "bb72966386b69522958c52e4b112157b46751009c63374535b146dec7aa312e2",
     "tools/prepare_indicator_followup.py": "3b1f8bcd85faa4d668712ec731b399a8bec609104762ef0441340bac110c208a",
+    "tools/prepare_narrative_indicators_v2.py": "bee60dc497ba06c2d7d7a86ad324ddabf5538edf9b6ce77df0a840f8fe056242",
+    "tools/report_case_expansion.py": "ecf2a55b790583eab7f3b8fd67a9699cf7b817a2b1d24d2056a3ad99242321e1",
     "tools/report_layout.py": "10a61b22dd40b83e9d0a844653dc23e6d2a22bdb92a611efca2d45e45aa4f1ec",
     "tools/reproduce_comparisons.py": "176c6ead27f3812f458f372c6b43c7841d6be68973be1a892ca10666d5ec4cb9",
     "tools/reproduce_context_scaffold.py": "9f80ee7cc467b3d00000a1e9d7248cd28eac87cab1fc3be8fd4945fa91824125",
@@ -166,8 +176,28 @@
     "tools/reproduce_structured_extraction.py": "aaab2d266a09ea94c6620e738e1d0f02b463d6d57d727ccad59fda8534b8b47c",
     "tools/version_benchmarks.py": "8727d51d461b213452f3ed11d8880c4910e038f9679e8bdc18d2929130e5e821"
   },
-  "publication_title": "Do AI models recognize exploitation and offer useful protection?",
-  "release": "v0.1.0-rc.4",
+  "publication_title": "Do AI models recognize documented exploitation indicators and offer useful protection?",
+  "rc5_evidence": {
+    "examples/narrative_indicators_v2/manifest.json": {
+      "sha256": "e76d10ce1861d666799b2c62dd9de37c7f26f2ca42c95eb2b834600492e26d41"
+    },
+    "results/complete_case_exhibits_2026-10-01.json": {
+      "sha256": "345e666d9d52b5b10b100d2965233abde88e151641081875b4fae9e99957e03f"
+    },
+    "results/documented_indicator_sources_2026-10-01.json": {
+      "sha256": "cd87c508790a945105a98b54d1a928dcc3c869ef07612b6439466b417157760f"
+    },
+    "results/jev_call_accounting_2026-10-01.json": {
+      "sha256": "bcda1e02d78b75ee8bb81a6e0ccf1047f050fc2d99ca828b0ea38f1313885cc7"
+    },
+    "results/model_availability_2026-10-01.json": {
+      "sha256": "b4fc677aab1b5cdc2bb6d5eac961940b661ab103d7487f47f79df2467d1dad6e"
+    },
+    "results/native_call_accounting_2026-10-01.json": {
+      "sha256": "e90383f90d16269746a5eef9cea91b4a415eb9f88e9a234b3acfa554bdc68ec9"
+    }
+  },
+  "release": "v0.1.0-rc.5",
   "schema": "duecare-public-export/1.0.0",
   "source_campaign_hashes": {
     "bulk-ladders-v1": "0d6da61e7558264cd44ac214a1b3a8f79617aefa3052b0c70f6750d660fe3106",
@@ -191,5 +221,5 @@
     "tools/expanded_benchmark.py": "fbf494d0deda2718e85ceaf0ce3760d56001444d4fb1813deef85e51c321cb5e",
     "tools/response_variation.py": "3c98fdd2402dfe711a10a6449b8cfffc0962dd332aca34ef36caa8d20f76382b"
   },
-  "updated_at": "2026-10-01T00:54:59.634317+00:00"
+  "updated_at": "2026-10-01T03:05:41.223688+00:00"
 }

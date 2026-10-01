@@ -1,0 +1,445 @@
+{
+  "captured_at": "2026-10-01T02:31:16.318083+00:00",
+  "copied_duplicate_reservation_rows_removed": 1590,
+  "deduplication": "Union reservations by(at,provider,model,key,request_sha256), including original timestamp. Copied identical reservations and outcomes count once; deliberate later attempts retain distinct timestamps/keys. Source exports and reused answer rows add no calls.",
+  "frozen_private_receipt_sha256": "250541cf8fd34ce841007c4f9ec2366d22d0b6bc9717a1d559268b37bfba94e3",
+  "ledger_files_with_jev": 46,
+  "limits": [
+    "Canonical hosted runners reserve immediately before transport and record its outcome. These ledgers establish API attempts, not the provider's internal GPU inference or billing count.",
+    "Failed HTTP/provider/validation attempts remain in call totals. Recorded completion means an outcome was written, not that a valid model answer was produced.",
+    "No raw prompt or complete model response is copied into this accounting snapshot. No provider, account, controller or existing journal is modified."
+  ],
+  "logical_coverage": {
+    "attacks": {
+      "combined_usable": 7200,
+      "interpretation": "Latest logical outcomes; successful separately recorded supplements retain original failures.",
+      "primary_usable": 7199,
+      "recorded_primary_ids": 7200,
+      "requested": 7200
+    },
+    "bulk_grading": {
+      "jobs": {
+        "grade-generate-gemma4-jev": {
+          "outcomes": {
+            "completed": 1344
+          },
+          "recorded": 1344,
+          "requested": 4016,
+          "usable": 1344
+        },
+        "grade-generate-gpt-oss-jev": {
+          "outcomes": {
+            "completed": 1337
+          },
+          "recorded": 1337,
+          "requested": 4016,
+          "usable": 1337
+        },
+        "grade-generate-tactical-jev": {
+          "outcomes": {
+            "budget_or_quota_stop": 1,
+            "completed": 8760,
+            "provider_error": 9,
+            "quota": 2
+          },
+          "recorded": 8772,
+          "requested": 20080,
+          "usable": 8760
+        }
+      },
+      "recorded": 11453,
+      "requested": 28112,
+      "usable": 11441
+    },
+    "core": {
+      "combined_usable": 12000,
+      "interpretation": "Latest logical outcomes; successful separately recorded supplements retain original failures.",
+      "primary_usable": 11999,
+      "recorded_primary_ids": 12000,
+      "requested": 12000
+    },
+    "crossborder": {
+      "jobs": {
+        "calibration-jev": {
+          "outcomes": {
+            "completed": 408
+          },
+          "recorded": 408,
+          "requested": 408,
+          "usable": 408
+        },
+        "decisions-jev": {
+          "outcomes": {
+            "completed": 937
+          },
+          "recorded": 937,
+          "requested": 937,
+          "usable": 937
+        },
+        "grade-ladders-tactical-jev": {
+          "outcomes": {
+            "completed": 240
+          },
+          "recorded": 240,
+          "requested": 240,
+          "usable": 240
+        },
+        "grade-prose-deepseek-jev": {
+          "outcomes": {
+            "completed": 102
+          },
+          "recorded": 102,
+          "requested": 144,
+          "usable": 102
+        },
+        "grade-prose-gemma4-31b-jev": {
+          "outcomes": {
+            "completed": 142,
+            "provider_error": 1
+          },
+          "recorded": 143,
+          "requested": 144,
+          "usable": 142
+        },
+        "grade-prose-gpt-oss-20b-jev": {
+          "outcomes": {
+            "completed": 97
+          },
+          "recorded": 97,
+          "requested": 144,
+          "usable": 97
+        },
+        "grade-prose-kimi-jev": {
+          "outcomes": {
+            "completed": 95
+          },
+          "recorded": 95,
+          "requested": 144,
+          "usable": 95
+        },
+        "grade-prose-tactical-jev": {
+          "outcomes": {
+            "completed": 144
+          },
+          "recorded": 144,
+          "requested": 144,
+          "usable": 144
+        }
+      },
+      "recorded": 2166,
+      "requested": 2305,
+      "usable": 2165
+    },
+    "explicit_indicator_followup": {
+      "requested": 384,
+      "usable": 384
+    },
+    "judge_calibration": {
+      "combined_usable": 2788,
+      "interpretation": "Latest logical outcomes; successful separately recorded supplements retain original failures.",
+      "primary_usable": 2785,
+      "recorded_primary_ids": 2790,
+      "requested": 2790
+    },
+    "main_prose_grading": {
+      "materialized_grade_rows": 4397,
+      "requested_note": "Full revised plans draw 2000 cases per target in two arms:20000 possible Jev grading slots across five targets. Older run outputs are retained as a separate protocol. Materialized grade rows differ from successful physical call outcomes.",
+      "usable_graded_rows": 4331
+    },
+    "original_longform": {
+      "fieldwise_core_complete_grading_panels": 45,
+      "requested_context_panels": 10,
+      "requested_grading_panels": 50,
+      "strict_complete_grading_panels": 3,
+      "usable_context_panels": 10
+    },
+    "rc4_context_scaffold": {
+      "jev_calls": 0,
+      "llm_responses": 32
+    },
+    "rc4_ilo_menu": {
+      "attempted": 1,
+      "http_status": 402,
+      "requested": 72,
+      "unattempted": 71,
+      "usable": 0
+    },
+    "rc4_matched_bridge_reuse": {
+      "archived_jev_panels_reused": 8,
+      "new_jev_calls": 0
+    },
+    "reference_anchor_pilot": {
+      "field_warning_packets": 32,
+      "pairwise_requested": 100,
+      "pointwise_requested": 125,
+      "recorded": 225,
+      "requested": 225,
+      "strict_complete_packets": 193,
+      "usable_overall_grades": 122,
+      "usable_pair_choices": 100
+    },
+    "reference_decisions": {
+      "combined_usable": 201,
+      "interpretation": "Latest logical outcomes; successful separately recorded supplements retain original failures.",
+      "primary_usable": 201,
+      "recorded_primary_ids": 201,
+      "requested": 201
+    },
+    "referral_control": {
+      "combined_usable": 16798,
+      "primary_usable": 16790,
+      "requested": 16800
+    },
+    "source_questions": {
+      "by_track": {
+        "perspective_expansion": {
+          "combined_usable": 3643,
+          "primary_usable": 3643,
+          "requested": 3648
+        },
+        "source_context": {
+          "combined_usable": 52705,
+          "primary_usable": 52682,
+          "requested": 52710
+        }
+      },
+      "combined_usable": 56348,
+      "execution_finished_at": "2026-09-30T21:47:46.274871+00:00",
+      "primary_usable": 56325,
+      "remaining_unusable": 10,
+      "requested": 56358
+    },
+    "style_comparisons": {
+      "jev_calls": 0,
+      "logical_assessments": 3456,
+      "other_judges": [
+        "DeepSeek Flash",
+        "Kimi K3"
+      ]
+    },
+    "transport_pilot": {
+      "logical_questions": 64,
+      "physical_requests": 38,
+      "usable_logical_answers": 64
+    },
+    "variation_grading": {
+      "jobs": {
+        "grade-generate-gemma4-jev": {
+          "outcomes": {
+            "completed": 286
+          },
+          "recorded": 286,
+          "requested": 864,
+          "usable": 286
+        },
+        "grade-generate-gpt-oss-jev": {
+          "outcomes": {
+            "completed": 287,
+            "provider_error": 1
+          },
+          "recorded": 288,
+          "requested": 864,
+          "usable": 287
+        },
+        "grade-generate-tactical-jev": {
+          "outcomes": {
+            "completed": 3864,
+            "provider_error": 1,
+            "quota": 2
+          },
+          "recorded": 3867,
+          "requested": 4320,
+          "usable": 3864
+        }
+      },
+      "recorded": 4441,
+      "requested": 6048,
+      "usable": 4437
+    }
+  },
+  "metric": "Recorded physical provider API attempts. Successful inference, usable answers, logical requests and independent validation remain separate quantities.",
+  "numeric_attempt_projection_sha256": "518a17621e3161d15c4daaf4c2949099398e26ad760cfce0eb54baf1b9ce8166",
+  "schema": "duecare-canonical-jev-accounting/1.0.0",
+  "scope": "Canonical live Jev benchmark campaigns and declared supplements, September30 through rc.4's first ILO/menu attempt. Earlier smoke/probe journals outside this whitelist are excluded; this is an exact scoped subtotal and an all-history lower bound.",
+  "totals": {
+    "by_campaign": {
+      "attacks": {
+        "first_attempt_at": "2026-09-30T04:41:21.110151+00:00",
+        "last_attempt_at": "2026-09-30T20:29:57.979517+00:00",
+        "outcome_counts": {
+          "completed": 7200,
+          "provider_error": 39
+        },
+        "physical_api_attempts": 7239,
+        "recorded_outcomes": 7239,
+        "unknown_outcomes": 0
+      },
+      "bulk_grading": {
+        "first_attempt_at": "2026-09-30T14:33:32.968309+00:00",
+        "last_attempt_at": "2026-09-30T22:22:20.615305+00:00",
+        "outcome_counts": {
+          "completed": 11441,
+          "provider_error": 141,
+          "quota": 2,
+          "unavailable": 7
+        },
+        "physical_api_attempts": 11591,
+        "recorded_outcomes": 11591,
+        "unknown_outcomes": 0
+      },
+      "core": {
+        "first_attempt_at": "2026-09-30T04:40:25.416623+00:00",
+        "last_attempt_at": "2026-09-30T20:29:57.032145+00:00",
+        "outcome_counts": {
+          "completed": 12000,
+          "provider_error": 58
+        },
+        "physical_api_attempts": 12058,
+        "recorded_outcomes": 12058,
+        "unknown_outcomes": 0
+      },
+      "crossborder": {
+        "first_attempt_at": "2026-09-30T13:50:09.041667+00:00",
+        "last_attempt_at": "2026-09-30T21:52:56.374401+00:00",
+        "outcome_counts": {
+          "completed": 2333,
+          "provider_error": 18
+        },
+        "physical_api_attempts": 2351,
+        "recorded_outcomes": 2351,
+        "unknown_outcomes": 0
+      },
+      "explicit_indicator_followup": {
+        "first_attempt_at": "2026-09-30T20:23:13.475820+00:00",
+        "last_attempt_at": "2026-09-30T20:29:47.794340+00:00",
+        "outcome_counts": {
+          "completed": 384
+        },
+        "physical_api_attempts": 384,
+        "recorded_outcomes": 384,
+        "unknown_outcomes": 0
+      },
+      "judge_calibration": {
+        "first_attempt_at": "2026-09-30T04:44:17.237385+00:00",
+        "last_attempt_at": "2026-09-30T20:30:02.437714+00:00",
+        "outcome_counts": {
+          "completed": 2788,
+          "provider_error": 28
+        },
+        "physical_api_attempts": 2816,
+        "recorded_outcomes": 2816,
+        "unknown_outcomes": 0
+      },
+      "main_prose_grading": {
+        "first_attempt_at": "2026-09-30T06:07:40.993605+00:00",
+        "last_attempt_at": "2026-09-30T22:24:54.998093+00:00",
+        "outcome_counts": {
+          "completed": 4617,
+          "provider_error": 66,
+          "quota": 2,
+          "unavailable": 1
+        },
+        "physical_api_attempts": 4686,
+        "recorded_outcomes": 4686,
+        "unknown_outcomes": 0
+      },
+      "original_longform": {
+        "first_attempt_at": "2026-09-30T21:51:14.288036+00:00",
+        "last_attempt_at": "2026-09-30T21:55:08.151951+00:00",
+        "outcome_counts": {
+          "completed": 13,
+          "invalid_response": 97
+        },
+        "physical_api_attempts": 110,
+        "recorded_outcomes": 110,
+        "unknown_outcomes": 0
+      },
+      "rc4_ilo_menu": {
+        "first_attempt_at": "2026-09-30T23:29:42.644312+00:00",
+        "last_attempt_at": "2026-09-30T23:29:42.644312+00:00",
+        "outcome_counts": {
+          "quota": 1
+        },
+        "physical_api_attempts": 1,
+        "recorded_outcomes": 1,
+        "unknown_outcomes": 0
+      },
+      "reference_anchor_pilot": {
+        "first_attempt_at": "2026-09-30T22:16:18.173018+00:00",
+        "last_attempt_at": "2026-09-30T22:21:49.942340+00:00",
+        "outcome_counts": {
+          "completed": 193,
+          "completed_with_field_warnings": 32
+        },
+        "physical_api_attempts": 225,
+        "recorded_outcomes": 225,
+        "unknown_outcomes": 0
+      },
+      "reference_decisions": {
+        "first_attempt_at": "2026-09-30T04:44:16.115269+00:00",
+        "last_attempt_at": "2026-09-30T05:02:59.542345+00:00",
+        "outcome_counts": {
+          "completed": 201,
+          "provider_error": 1
+        },
+        "physical_api_attempts": 202,
+        "recorded_outcomes": 202,
+        "unknown_outcomes": 0
+      },
+      "referral_control": {
+        "first_attempt_at": "2026-09-30T16:21:07.621895+00:00",
+        "last_attempt_at": "2026-09-30T20:30:12.992278+00:00",
+        "outcome_counts": {
+          "completed": 16798,
+          "provider_error": 119
+        },
+        "physical_api_attempts": 16917,
+        "recorded_outcomes": 16917,
+        "unknown_outcomes": 0
+      },
+      "source_questions": {
+        "first_attempt_at": "2026-09-30T16:18:03.922731+00:00",
+        "last_attempt_at": "2026-09-30T21:47:44.656230+00:00",
+        "outcome_counts": {
+          "completed": 56343,
+          "completed_diagnostic": 6,
+          "provider_error": 428,
+          "unavailable": 3
+        },
+        "physical_api_attempts": 56780,
+        "recorded_outcomes": 56780,
+        "unknown_outcomes": 0
+      },
+      "transport_pilot": {
+        "first_attempt_at": "2026-09-30T21:21:09.172530+00:00",
+        "last_attempt_at": "2026-09-30T21:21:49.076147+00:00",
+        "outcome_counts": {
+          "completed": 38
+        },
+        "physical_api_attempts": 38,
+        "recorded_outcomes": 38,
+        "unknown_outcomes": 0
+      },
+      "variation_grading": {
+        "first_attempt_at": "2026-09-30T15:00:13.491912+00:00",
+        "last_attempt_at": "2026-09-30T22:22:32.100922+00:00",
+        "outcome_counts": {
+          "completed": 4437,
+          "provider_error": 52,
+          "quota": 2
+        },
+        "physical_api_attempts": 4491,
+        "recorded_outcomes": 4491,
+        "unknown_outcomes": 0
+      }
+    },
+    "custom_runner_attempt_field_unspecified": 380,
+    "explicit_one_physical_attempt": 119509,
+    "explicit_zero_physical_attempts": 0,
+    "first_attempt_at": "2026-09-30T04:40:25.416623+00:00",
+    "last_attempt_at": "2026-09-30T23:29:42.644312+00:00",
+    "physical_api_attempts": 119889,
+    "recorded_outcomes": 119889,
+    "unknown_outcomes": 0
+  }
+}

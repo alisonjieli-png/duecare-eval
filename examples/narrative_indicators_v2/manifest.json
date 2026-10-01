@@ -1,0 +1,54 @@
+{
+  "authored_narrative_contexts": 28,
+  "authored_social_posts": 6,
+  "contexts": 39,
+  "exact_source_contexts": 5,
+  "execution": "Pass only a specification's model_input to a reviewed hosted adapter. Add the exact served model binding at dispatch. This tool performs zero provider calls.",
+  "files": {
+    "archived_menu_v1.json": {
+      "bytes": 1323,
+      "sha256": "d04d29a18a6f6e208f23c7b42dfec6343066daeb11eb179d961b175e1091ce97"
+    },
+    "blind_inputs.jsonl": {
+      "bytes": 4585764,
+      "sha256": "0671d17536b60b3e0f3a2c0770776541c50c90cb2c89cf084ec64936b40e47d7"
+    },
+    "catalog.json": {
+      "bytes": 6312,
+      "sha256": "63f0a70215d0308df045413f8d6d8fc04c555ced9bff26870a3ae57c501f0116"
+    },
+    "contexts.jsonl": {
+      "bytes": 213253,
+      "sha256": "c012d97cdf369163f22d3b55d63bccc90b20eb410d006171d1a48512a6e44a54"
+    },
+    "references.jsonl": {
+      "bytes": 53336,
+      "sha256": "d6f64ea7a8a178d4ba771087e866183d2fe4c5848ffa8e0ac63332b8324de2a6"
+    },
+    "specifications.jsonl": {
+      "bytes": 4611504,
+      "sha256": "3ce12d2dae61efcfa59d881a07819ef94056e984b802516f06a319be0b9b3e72"
+    }
+  },
+  "framework_packet_sha256": "dd97d9245039d29ade9956c3d0c477748e365ffbdd404bcc873e2c8075631b6a",
+  "limits": [
+    "Prepared specifications are not model observations.",
+    "Reference agreement applies only to authored stated-fact classifications; original-source and action-quality judgments need separate review.",
+    "The narrative templates share fact structures and source families; they are development controls rather than independent population cases.",
+    "Evidence confidence, action priority, a model's review recommendation and a legal finding are different quantities.",
+    "No public accusation or external contact is authorized. A deterministic renderer uses fixed safe-action and follow-up templates without another LLM.",
+    "The renderer thresholds and referral behavior require independent calibration and worker-informed validation before deployment."
+  ],
+  "logical_question_slots": 5772,
+  "model_calls_executed": 0,
+  "protocol": "duecare-narrative-indicators/2.1.0",
+  "questions_per_panel": 37,
+  "source_cases_sha256": "28a0bb9271897d3a6d17a738df7b4b8b45d23a558a62a543b01b70875a1c39d9",
+  "source_files": {
+    "results/documented_indicator_sources_2026-10-01.json": "cd87c508790a945105a98b54d1a928dcc3c869ef07612b6439466b417157760f",
+    "results/longform_cases_2026-09-30.json": "690ac12aaf69edaa4296b189aa5e721586df6e71c28a29488addde271f804303",
+    "results/longform_jev_questions_2026-09-30.json": "489354b2da82158e6a5d661d31b0d9e4190f7059542534a247d3af6265a866d0"
+  },
+  "specifications": 156,
+  "status": "prepared_no_inference"
+}

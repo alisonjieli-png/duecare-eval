@@ -36,6 +36,38 @@ The [inventory](../results/model_inventory_2026-10-01.json) records 62 advertise
 
 Two tools-disabled CLI diagnostics selected `opencode-go/qwen3.8-flash`. Each stopped before an answer. The second captured `UnknownError` with the message “Unexpected server error. Check server logs for details.” The evidence establishes two CLI invocations. Internal provider-call counts, served identity and the underlying error cause remain unknown. These diagnostics measure the attempted CLI deployment, with Qwen answer quality awaiting a successful response.
 
+## Scale of the broader runs
+
+The 32-response context/scaffold comparison is one small, matched experiment within a larger program. The [native-call accounting snapshot](../results/native_call_accounting_2026-10-01.json), captured October 1 at 02:38:18–02:38:22 UTC, contains 84,359 non-Jev hosted-call attempt reservations across the selected campaigns. Of these, 84,349 have recorded outcomes and ten remain open. Attempts include grading, repeated conditions, retries and unsuccessful responses. The six CLI invocations in this audit have their own accounting because their internal provider-call counts are unknown.
+
+At that capture, the bulk Tactical lane had 16,421 completed generations among 20,080 requested. Its separate variation lane had completed 4,320 of 4,320. The two style judges supplied 3,456 completed comparisons from 3,458 attempts. The 74,640 archived prompt strings describe the source inventory; call evidence comes from journals. Each published journal-prefix hash fixes the records included in this selected-campaign audit while ongoing work continues.
+
+GLM 5.3 already has 49 recorded attempts in the newest five-experiment bundle: 20 in the source-answer/access-check study, 16 in the matched-context study, twelve in the adapter study and one in the separate low-effort source-case check. GLM 5.3 Flash has 43 in that bundle, plus earlier judge and comparison work. Their reported model IDs and request conditions are part of the evidence.
+
+## Refreshed availability and local classification
+
+The [metadata-only availability check](../results/model_availability_2026-10-01.json) at 02:43:28 UTC found the same 17 hosted Ollama tags and 62 CLI catalog routes. Hosted candidates outside the current eleven text-model comparison include `deepseek-v4-pro:0813`, `glm-5.2`, `minimax-m2.7`, `nemotron-3-super`, `nemotron-3-nano:30b`, `kimi-k2.6` and `kimi-k2.7-code`. Their catalog presence is recorded; a future inference test would establish access and performance under a declared condition.
+
+The installed Ollama catalog contains six entries with different execution roles:
+
+| Installed entry | Metadata classification | Project execution scope |
+|---|---|---|
+| GLM 5.3 Flash, GLM 5.2, DeepSeek V4 Flash 0731 and Kimi K2.7 Code cloud aliases | Four small alias records point to hosted Ollama models. The GLM 5.3 Flash alias is 317 bytes. | Hosted inference remains distinct from local weight execution. |
+| `qwen2.5-coder:7b` | Local generative weights; reported 7.6B parameters and about 4.68 GB. | The project's local-LLM execution prohibition applies. |
+| `nomic-embed-text:latest` | A 137M-parameter embedding model, about 274 MB. | Small local embeddings have separate permission; they supply embeddings rather than full advice answers. |
+
+This availability pass made metadata requests and dispatched zero inference requests. It downloaded no model weights and changed no running controller or account configuration.
+
+## Proposed decision-model and classifier comparisons
+
+TypeSafe's documented hosted model is `jev-1.13.0`, with text input, a 64k total request budget and a 32k limit for state plus the longest question. Its documentation places domain customization in the request's state, instructions and criteria, with atomic questions combined in code. An official open-weight Jev release remains unverified in this review. [TypeSafe model documentation](https://docs.typesafe.ai/models).
+
+OpenJev is an independent, Qwen-based 27B typed-decision model. Its model card describes choice, yes/no probability and score outputs; it lists CC BY-NC 4.0 weights and Apache 2.0 helper/serving code. The Hugging Face Inference Providers section lists no serving provider. A hosted deployment, license fit and data-handling review are therefore part of preparing a DueCare comparison. OpenJev has no DueCare inference result in this snapshot. [OpenJev model card](https://huggingface.co/openjev/openjev).
+
+`MoritzLaurer/ModernBERT-large-zeroshot-v2.0` is a separate 0.4B text-classification candidate under Apache 2.0. Its model card lists HF Inference API support; account-specific access remains untested here. A classifier adapter would need explicit label semantics, input-length checks and calibrated thresholds before its outputs could join the benchmark. [ModernBERT classifier card](https://huggingface.co/MoritzLaurer/ModernBERT-large-zeroshot-v2.0).
+
+A useful next comparison would retain the full source cases and assess source-linked Palermo components, ILO warning signs and remedy priorities separately. Include benign controls, evidence sufficiency and worker-choice questions. Test option-order stability and calibration before combining scores. New remote providers require a privacy review before they receive restricted responses; all proposed candidates retain separate model, provider, license and method identities.
+
 ## Reproduce the records offline
 
 From the public checkout:

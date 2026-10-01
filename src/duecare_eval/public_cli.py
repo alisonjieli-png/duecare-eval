@@ -96,6 +96,7 @@ def run_command(args):
     if args.command == "report":
         from .longform_report import reproduce, readable_text
         from .structured_extraction import reproduce as structured_findings
+        from .call_accounting import summarize as call_summary
         result = reproduce(ROOT)
         working = structured_findings(ROOT)["working_configurations"]
         jev = working["jev"]
@@ -107,11 +108,15 @@ def run_command(args):
         result["shared_full_context_coverage"] = {key: {field: value[field] for field in
             ("native_condition", "requested_panels", "complete_panels", "partial_panels", "typed_fields_available", "typed_fields_requested")}
             for key, value in working.items()}
+        result["dated_call_accounting"] = call_summary(ROOT)
         description = readable_text(result) + "\n\nJev on the same four original full contexts:\n" + (
             f"  First action: jurisdiction checks in {choices.count('check_crossborder_applicability')}/4; "
             f"actual costs and obligation in {choices.count('clarify_itemized_obligation')}/4.\n"
             f"The common-question study includes {len(working)} working configurations, with serving settings and extraction methods recorded separately.\n"
-            "See the main report for case-by-case action choices, missing fields and the context/scaffold study.")
+            "The historical menu leaves specific ILO/Palermo recognition and concrete action selection largely unmeasured.\n"
+            "The dated campaign audit contains 119,889 Jev attempts and 84,359 native model reservations, including grading and retries; ten native outcomes are open.\n"
+            "The 32-answer context/scaffold comparison is one small study within that broader program.\n"
+            "See the main report for complete case exhibits, missing fields and prepared narrative/social-post tests.")
         emit(args, result, description)
         return
     if args.command == "doctor":

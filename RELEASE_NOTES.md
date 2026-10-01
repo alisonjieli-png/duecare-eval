@@ -1,5 +1,23 @@
 # Do AI models recognize exploitation — and help?
 
+## Current release: v0.1.0-rc.5
+
+This release explains model behavior through documented exploitation indicators and expands the case evidence readers can inspect.
+
+- Nine primary publications connect recruitment debt, compulsory lender/provider referrals, aggressive collection, wage/document control and the Palermo Protocol to specific assessment questions. Historical prompts and grades retain their original versions.
+- The cross-border assignment case includes every Jev question, all offered choices and its returned values in both conditions. Three complete Gemma replies and their executed message records support close reading; operationally enabling material remains restricted.
+- A dated audit reconciles 119,889 Jev API attempts and 84,359 native hosted-model reservations. Ten native reservations have no completion record at capture. These counts include grading, failures and retries. The 32-answer context/scaffold experiment is one small study within that program.
+- A separately versioned narrative instrument prepares source cases, first-person/intake records, social posts, staged worker-help situations and benign comparisons. Indicator evidence, urgency, Palermo elements, actions and specific follow-up questions have separate outputs. Fixed-message rendering supports bounded decisions without another LLM.
+- Hosted availability and proposed open-weight classifiers have their own evidence status. GLM 5.3 and Flash already have recorded hosted tests; OpenJev and ModernBERT remain proposed comparators.
+
+The rc.5 report/instrument revision dispatches zero inference requests. New Jev ILO/menu/narrative performance remains unmeasured following the earlier HTTP402 response. Prepared test specifications and offline software checks have separate status from model results and independent worker-safety validation.
+
+Main report: https://github.com/alisonjieli-png/duecare-eval/releases/download/v0.1.0-rc.5/duecare_preliminary_report.pdf
+
+Versioned release: https://github.com/alisonjieli-png/duecare-eval/releases/tag/v0.1.0-rc.5
+
+## Historical release: v0.1.0-rc.4
+
 Release `v0.1.0-rc.4` puts Jev in the main case tables and shared-model visuals, expands the hosted model roster, and separates recognition, practical protection, legal reliability and serving-interface limitations.
 
 ## Read this first

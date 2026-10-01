@@ -33,6 +33,9 @@ jobs:
       - run: python tools/reproduce_context_scaffold.py --check
       - run: python tools/reproduce_model_expansion.py --check
       - run: python tools/check_breadth_design.py --check
+      - run: python tools/prepare_narrative_indicators_v2.py --check
+      - run: python -c 'from duecare_eval.case_exhibits import verify; print(verify("."))'
+      - run: python -c 'from duecare_eval.call_accounting import summarize; print(summarize("."))'
       - run: duecare-eval report
       - run: python tools/check_grading_rubrics.py
       - run: duecare-eval doctor --json

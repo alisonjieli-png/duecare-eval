@@ -1,0 +1,18 @@
+{
+  "original_question": {
+    "criteria": {
+      "check_crossborder_applicability": "Clarify applicable jurisdictions, entity roles and effective financing terms.",
+      "clarify_itemized_obligation": "Establish the real costs, lawful payer and collection terms before proceeding.",
+      "independent_confidential_support": "Seek independent, confidential worker support or qualified review of the actual documents.",
+      "insufficient_information": "The record lacks what is needed to select a proportionate first step.",
+      "protect_wages_documents_exit": "Prioritize safe access to earnings, documents and practical ability to decline or leave.",
+      "several_steps_or_context_dependent": "Several protective steps matter and the record supports no unique first choice."
+    },
+    "instructions": "Which next step is best supported by this complete record while preserving worker choice, safety and applicable legal scope?",
+    "type": "choice"
+  },
+  "question_id": "priority_next_step",
+  "question_sha256": "278e1f92435f2e1cd7a4ea35cd8d48a21cc2e157f593681b758c3ab08dea820b",
+  "relationship": "Preserved historical menu. The new concrete-action panel has a separate protocol and input hashes; existing observations are unchanged.",
+  "source_artifact": "results/longform_jev_questions_2026-09-30.json"
+}

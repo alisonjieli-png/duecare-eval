@@ -1,0 +1,313 @@
+{
+  "captured_at": "2026-10-01T02:43:28.095449+00:00",
+  "inference_requests_dispatched": 0,
+  "local_llm_execution": false,
+  "metadata_only": true,
+  "model_downloads": 0,
+  "process_actions": 0,
+  "schema": "duecare-model-availability/1.0.0",
+  "scope": "Metadata visibility and local/cloud classification. Existing benchmark receipts separately establish which models actually answered. The local-LLM prohibition remains in force; small embedding models have separate permission.",
+  "surfaces": {
+    "hosted_ollama": {
+      "http_status": 200,
+      "metadata_response_sha256": "f7fcbe3dcaee2ea14ea83cbbd87174cac86070227c843761d051c0e021763d30",
+      "model_count": 17,
+      "models": [
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "kimi-k3",
+          "name": "kimi-k3",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 1560860324864
+        },
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "mistral-large-3:675b",
+          "name": "mistral-large-3:675b",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 682000000000
+        },
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "gemma4:31b",
+          "name": "gemma4:31b",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 62546177752
+        },
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 230500000000
+        },
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 65290180781
+        },
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 0
+        },
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "glm-5.3",
+          "name": "glm-5.3",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 755433728000
+        },
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "kimi-k2.7-code",
+          "name": "kimi-k2.7-code",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 595148192736
+        },
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "minimax-m2.7",
+          "name": "minimax-m2.7",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 480836588544
+        },
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "deepseek-v4-pro:0813",
+          "name": "deepseek-v4-pro:0813",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 892744322880
+        },
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "deepseek-v4.1-flash",
+          "name": "deepseek-v4.1-flash",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 486723007816
+        },
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 13780162412
+        },
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "minimax-m3",
+          "name": "minimax-m3",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 0
+        },
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "glm-5.2",
+          "name": "glm-5.2",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 0
+        },
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "glm-5.3-flash",
+          "name": "glm-5.3-flash",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 328250014584
+        },
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "kimi-k2.6",
+          "name": "kimi-k2.6",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 595148192736
+        },
+        {
+          "classification": "hosted_catalog_tag",
+          "family": "",
+          "model": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "parameter_size": "",
+          "remote_model": null,
+          "reported_size_bytes": 32645090390
+        }
+      ]
+    },
+    "installed_ollama": {
+      "http_status": 200,
+      "metadata_response_sha256": "f8d734c4dfe3cdf86b3c5156b6ffc982f0a37e6fb145919051c2357cd96c3ab4",
+      "model_count": 6,
+      "models": [
+        {
+          "classification": "local_generative_model",
+          "family": "qwen2",
+          "model": "qwen2.5-coder:7b",
+          "name": "qwen2.5-coder:7b",
+          "parameter_size": "7.6B",
+          "remote_model": null,
+          "reported_size_bytes": 4683087561
+        },
+        {
+          "classification": "cloud_alias",
+          "family": "",
+          "model": "glm-5.3-flash:cloud",
+          "name": "glm-5.3-flash:cloud",
+          "parameter_size": "321B",
+          "remote_model": "glm-5.3-flash",
+          "remote_provider": "ollama.com",
+          "reported_size_bytes": 317
+        },
+        {
+          "classification": "local_embedding",
+          "family": "nomic-bert",
+          "model": "nomic-embed-text:latest",
+          "name": "nomic-embed-text:latest",
+          "parameter_size": "137M",
+          "remote_model": null,
+          "reported_size_bytes": 274302450
+        },
+        {
+          "classification": "cloud_alias",
+          "family": "",
+          "model": "deepseek-v4-flash:0731-cloud",
+          "name": "deepseek-v4-flash:0731-cloud",
+          "parameter_size": "304B",
+          "remote_model": "deepseek-v4-flash:0731",
+          "remote_provider": "ollama.com",
+          "reported_size_bytes": 326
+        },
+        {
+          "classification": "cloud_alias",
+          "family": "",
+          "model": "glm-5.2:cloud",
+          "name": "glm-5.2:cloud",
+          "parameter_size": "756B",
+          "remote_model": "glm-5.2",
+          "remote_provider": "ollama.com",
+          "reported_size_bytes": 290
+        },
+        {
+          "classification": "cloud_alias",
+          "family": "",
+          "model": "kimi-k2.7-code:cloud",
+          "name": "kimi-k2.7-code:cloud",
+          "parameter_size": "1.04T",
+          "remote_model": "kimi-k2.7-code",
+          "remote_provider": "ollama.com",
+          "reported_size_bytes": 320
+        }
+      ]
+    },
+    "opencode_catalog": {
+      "catalog_count": 62,
+      "catalog_ids": [
+        "ollama-cloud/deepseek-v4-flash",
+        "ollama-cloud/deepseek-v4-flash:0731",
+        "ollama-cloud/deepseek-v4-pro",
+        "ollama-cloud/deepseek-v4-pro:0813",
+        "ollama-cloud/deepseek-v4.1-flash",
+        "ollama-cloud/gemma4:31b",
+        "ollama-cloud/glm-5.1",
+        "ollama-cloud/glm-5.2",
+        "ollama-cloud/glm-5.3",
+        "ollama-cloud/glm-5.3-flash",
+        "ollama-cloud/gpt-oss:120b",
+        "ollama-cloud/gpt-oss:20b",
+        "ollama-cloud/kimi-k2.5",
+        "ollama-cloud/kimi-k2.6",
+        "ollama-cloud/kimi-k2.7-code",
+        "ollama-cloud/kimi-k3",
+        "ollama-cloud/minimax-m2.5",
+        "ollama-cloud/minimax-m2.7",
+        "ollama-cloud/minimax-m3",
+        "ollama-cloud/mistral-large-3:675b",
+        "ollama-cloud/nemotron-3-nano:30b",
+        "ollama-cloud/nemotron-3-super",
+        "ollama-cloud/nemotron-3-ultra",
+        "ollama-cloud/qwen3.5:397b",
+        "opencode-go/deepseek-v4-flash",
+        "opencode-go/deepseek-v4-flash-vision-exp",
+        "opencode-go/deepseek-v4-pro",
+        "opencode-go/deepseek-v4.1-flash",
+        "opencode-go/glm-5.2",
+        "opencode-go/glm-5.3",
+        "opencode-go/glm-5.3-flash",
+        "opencode-go/gpt-5.6-luna",
+        "opencode-go/gpt-6-luna",
+        "opencode-go/grok-4.6",
+        "opencode-go/grok-4.7",
+        "opencode-go/hy3",
+        "opencode-go/hy4-preview",
+        "opencode-go/kimi-k2.7-code",
+        "opencode-go/kimi-k3",
+        "opencode-go/longcat-2.0",
+        "opencode-go/longcat-2.5-preview-free",
+        "opencode-go/mimo-v2.5",
+        "opencode-go/mimo-v2.5-pro",
+        "opencode-go/mimo-v2.6-flash",
+        "opencode-go/mimo-v2.6-pro",
+        "opencode-go/minimax-m2.7",
+        "opencode-go/minimax-m3",
+        "opencode-go/muse-spark-1.2-contributor",
+        "opencode-go/muse-spark-1.3-contributor",
+        "opencode-go/qwen3.7-plus",
+        "opencode-go/qwen3.8-flash",
+        "opencode-go/qwen3.8-max",
+        "opencode-go/space-bunny-free",
+        "opencode/big-pickle",
+        "opencode/ling-3.0-flash-fin-free",
+        "opencode/longcat-2.5-preview-free",
+        "opencode/mimo-v2.6-flash-free",
+        "opencode/muse-spark-1.3-contributor-free",
+        "opencode/nemotron-3-ultra-free",
+        "opencode/nemotron-3.5-lightning-free",
+        "opencode/space-bunny-free",
+        "tactical/gemma-4-coding-abliterated"
+      ],
+      "catalog_projection_sha256": "433dbd4d5c4adc018c265040b895cfffcaf5fcf7fcfab6cbf7c861be1d273f0f",
+      "exit_code": 0,
+      "freshness_scope": "Installed CLI catalog read; advertised routes may include cached entries. A route listing alone provides no inference-access or answer-quality result.",
+      "provider_counts": {
+        "ollama-cloud": 24,
+        "opencode": 8,
+        "opencode-go": 29,
+        "tactical": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "claim_scope": "Additional offline interpretation of preserved recorded objects and exact question schemas. No inference calls, syntax insertion, probability imputation or normalization. Original strict statuses and earlier public snapshots are preserved.",
+  "cohorts": {
+    "adapter_v1_1": {
+      "targets": {
+        "glm-5-3": {
+          "family": "glm",
+          "id": "glm-5-3",
+          "model": "glm-5.3",
+          "provider": "ollama"
+        },
+        "glm-5-3-flash": {
+          "family": "glm",
+          "id": "glm-5-3-flash",
+          "model": "glm-5.3-flash",
+          "provider": "ollama"
+        },
+        "gpt-oss-20b": {
+          "id": "gpt-oss-20b",
+          "model": "gpt-oss:20b",
+          "provider": "ollama"
+        }
+      }
+    },
+    "baseline": {
+      "targets": {
+        "deepseek-flash": {
+          "model": "deepseek-v4.1-flash",
+          "provider": "ollama"
+        },
+        "gemma-abliterated": {
+          "model": "gemma-4-coding-abliterated",
+          "provider": "tactical"
+        },
+        "gemma4-31b": {
+          "model": "gemma4:31b",
+          "provider": "ollama"
+        },
+        "glm-5-3": {
+          "family": "glm",
+          "model": "glm-5.3",
+          "provider": "ollama"
+        },
+        "glm-5-3-flash": {
+          "family": "glm",
+          "model": "glm-5.3-flash",
+          "provider": "ollama"
+        },
+        "gpt-oss-120b": {
+          "family": "openai",
+          "model": "gpt-oss:120b",
+          "provider": "ollama"
+        },
+        "gpt-oss-20b": {
+          "model": "gpt-oss:20b",
+          "provider": "ollama"
+        },
+        "jev": {
+          "model": "jev-1.13.0",
+          "provider": "jev"
+        },
+        "kimi-k3": {
+          "model": "kimi-k3",
+          "provider": "ollama"
+        },
+        "minimax-m3": {
+          "family": "minimax",
+          "model": "minimax-m3",
+          "provider": "ollama"
+        },
+        "mistral-large-3-675b": {
+          "family": "mistral",
+          "model": "mistral-large-3:675b",
+          "provider": "ollama"
+        },
+        "nemotron-3-ultra": {
+          "family": "nvidia",
+          "model": "nemotron-3-ultra",
+          "provider": "ollama"
+        }
+      }
+    }
+  },
+  "files": {
+    "results/longform_cases_2026-09-30.json": "690ac12aaf69edaa4296b189aa5e721586df6e71c28a29488addde271f804303",
+    "results/longform_jev_questions_2026-09-30.json": "489354b2da82158e6a5d661d31b0d9e4190f7059542534a247d3af6265a866d0",
+    "results/longform_primary_sources_2026-09-30.json": "839759c5566c990c43ae2e52ee708e6bc2a726d9ec6c7c59ac93b2b12785f183",
+    "results/matched_context_2026-09-30.jsonl": "80ac7600174fc8d66369bef94d6e96a607add082801a787fff1a75a6a685e6c9",
+    "results/matched_context_adapter_2026-10-01.jsonl": "3734e9a7dda41ff8db933e6d2a67bd8f6723cd99e53d214786877d5b6d902d09",
+    "results/structured_extraction_2026-10-01.jsonl": "c18e0518c30a18f380e060960980e53748a8731cf504443ca8759615308bca78"
+  },
+  "policy": {
+    "anchoring": "The response begins with an object and the exact first key answers. Decode the already complete inner object; the remaining text must be empty or one outer closing brace. No character is added or removed inside the decoded object.",
+    "binary_half": "An exact positive probability0.5 is an uncertainty/tie, displayed as0.5 rather than credited as clear recognition.",
+    "complete_order": [
+      "original strict completion",
+      "earliest complete whole-response fenced JSON",
+      "earliest complete anchored inner answers object",
+      "earliest complete object under exact known question schemas with missing redundant type tags recorded"
+    ],
+    "missing_type_tags": "A separate known-question-schema method reads unchanged values when type is absent and the fields are exactly noul for a binary question, or choice plus probabilities for a choice question. The declared question supplies its schema. Wrong type tags and extra keys remain invalid; missing_type_tags is explicit metadata.",
+    "numeric_contract": "Preserve raw values. Enforce exact question IDs, type tags, finite probabilities, option membership and selected maxima. Choice mass tolerance0.0001; no normalization. Retain every maximum at ties.",
+    "original_layers": "The September30 baseline and October1 adapter snapshots retain their original statuses, counts and selected observations. This is an additional named interpretation layer.",
+    "partial_order": "When no complete candidate is available, select the earliest transport-completed, exact-ID object with at least one individually valid field. Use known question schemas for eligible missing type tags; conflicting types and extra fields remain invalid. If none has a valid field, retain the earliest exact-ID object and its validation errors. Format priority within an attempt is plain JSON, whole-response fence, anchored inner object."
+  },
+  "private_source_digests": {
+    "adapter_v1_1": {
+      "raw_attempts": "6fb31bbad9f265745b0a47362f8280e68a36ba1c98b4d9dc6b12212dffc78b27",
+      "receipt": "01c17670994aefcd33fd4537cf1e8c4510fb4a099bece60c8a96a00c134aecf7",
+      "requests": "e306ac46e0e955e763ad587c467fd8a57c9b22f403b008412caa927fa5b89e9c"
+    },
+    "baseline": {
+      "raw_attempts": "550dd2399e6f7584d188ac7893af3508646e854e6ef77b634459fe1b02022396",
+      "receipt": "435bffc62912f7f7596a66edc199320d5394d2e728780014da3611f6f2b44d2b",
+      "requests": "6527135c005d9bbf53cdc534a74e5b3c6a1ea2c6ad6aa9b892d5671e294e57fc"
+    }
+  },
+  "schema": "duecare-structured-field-extraction/1.2.0",
+  "selection_policy_sha256": "330f64dbe7c69db59a9da3d624384bc1245bf464c9f01e1952e50156cb3a1730",
+  "snapshot_at": "2026-10-01T00:17:42.284063+00:00"
+}

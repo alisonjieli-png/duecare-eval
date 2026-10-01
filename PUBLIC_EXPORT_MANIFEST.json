@@ -4,8 +4,9 @@
     "results/longform_anchor_pilot_2026-09-30.manifest.json": "8dca101dd41b74b5697657eecd4036deb1be524f4ef34bd5161fb0c366f43688",
     "results/source_completion_2026-09-30.json": "9cc4301641c7f5a0ae278d139afb98364d54f2a4f01534138898cbb2c837b586"
   },
+  "claim_scope": "Dated research cases and controlled comparisons. Prepared instruments, recorded model outputs, automated reviews and independent validation retain separate status. No new Jev ILO/menu result was obtained after the HTTP402 response.",
   "created_at": "2026-09-30T15:02:29.666759+00:00",
-  "current_evidence": "results/longform_readable_manifest_2026-09-30.json",
+  "current_evidence": "results/structured_extraction_2026-10-01.manifest.json",
   "evidence_snapshots": {
     "results/comparison_2026-09-30/snapshot.json": {
       "sha256": "c9e4d9c2e5cb962c4b1a69be6b3f93b850ac9c91e5fbef615dc3105774d02dc4",
@@ -37,6 +38,47 @@
     "private_provider_adapters",
     "personal_or_worker_case_data"
   ],
+  "expansion_evidence": {
+    "examples/breadth_depth_v1/manifest.json": {
+      "sha256": "8f3b8037beff8e3bf1d0224f551e57a8a1053cb0f0feed396446f9b654ad7606"
+    },
+    "results/context_scaffold_findings_2026-10-01.json": {
+      "sha256": "53e7d8da1df7dad8d5c7552a62c8ddfec93b7700ab2d457659cfbe1dfc14870c"
+    },
+    "results/context_scaffold_review_2026-10-01.json": {
+      "sha256": "a9c5229d608179def224b8f2bc376d316267c8933fe62633b3efec4c104068eb"
+    },
+    "results/glm_low_control_reading_2026-10-01.json": {
+      "sha256": "e47fbfd22754011d6f4312937f79665e074c89cde0c4b4393eb92f283a8794e3"
+    },
+    "results/ilo_menu_execution_2026-10-01.json": {
+      "sha256": "3b06cd2256e0b6399871535995f0167e8d482bafc942a7ee026ec4457cb0325b"
+    },
+    "results/jev_visuals_2026-09-30.json": {
+      "sha256": "1f7ecf0f0ccba8013311c5793db9302948b7e47c8611b43e07a528cc09b928f9"
+    },
+    "results/matched_context_2026-09-30.manifest.json": {
+      "sha256": "9fedb5938983963aac75229cf7d995effe67fb22b062302733d457774311e272"
+    },
+    "results/matched_context_adapter_2026-10-01.manifest.json": {
+      "sha256": "ee98d58b3e0294aa9cd54d8765bfc34f3d81e32a56a20b9d0f5fffda6ddfe61f"
+    },
+    "results/model_expansion_2026-10-01.json": {
+      "sha256": "bef3c28c803a4a9fb76c52a1f371193ecd7a74eae8b51bd2cc9b654c941ac9ac"
+    },
+    "results/model_inventory_2026-10-01.json": {
+      "sha256": "a77be04e9ce60d28131f7dacbf01cad8598876a4e207d6194aae09c2cae495c7"
+    },
+    "results/new_models_worker_help_review_2026-10-01.json": {
+      "sha256": "9acf27e4bfb8856a43b93e496e19c9c9ff8b14ad11bbe4c162044d82a7404d35"
+    },
+    "results/protection_harness_checks_v2_1.json": {
+      "sha256": "49dd7c6821d37043dbe4a38da278f45396152620c1ef76f08b434b9604ce30f7"
+    },
+    "results/structured_extraction_2026-10-01.manifest.json": {
+      "sha256": "1a9b593c61649856af0525584ee86538505dd87563f485eef658eecbd8ca54e2"
+    }
+  },
   "intentional_source_difference": "decisioning.decision_tasks historical factory disabled; normalization and scoring unchanged.",
   "interpretation": "Dated task populations and reference contracts; independent domain, worker and language review are additional evidence milestones.",
   "no_new_license_granted": true,
@@ -52,26 +94,41 @@
     "fifty_original_longform_responses_reviewed",
     "independent_behavior_axes",
     "125_varied_reference_candidates",
-    "completed_source_request_population"
+    "completed_source_request_population",
+    "jev_in_main_case_tables_and_figures",
+    "twelve_configuration_full_context_comparison",
+    "separate_serving_control_and_format_interpretation_records",
+    "six_additional_hosted_models",
+    "blind_context_scaffold_review",
+    "worker_help_review_expansion",
+    "versioned_ilo_and_menu_instruments",
+    "protection_first_harness_prototype"
   ],
   "public_implementation_sha256": {
     "src/duecare_eval/__init__.py": "de8a7722c45c838f038204f3a5cb4862edd40e25fc6f6e2c0b74aaa1c0167c25",
     "src/duecare_eval/anchor_pilot.py": "529cbc231737034a0d48d71802bc345fddb163c275385e7d75470306d5f7573d",
     "src/duecare_eval/artifact_safety.py": "57b7ac041e3dafae6b69af616ed2faa314f75b1e340008de4defe7d3e29a427e",
     "src/duecare_eval/benchmark.py": "c1896dfe659b85afb9c91b9113ff6f6f4e1b8973d8bc0d685a152c6c8b4a23ff",
+    "src/duecare_eval/breadth_design.py": "c3ea40e43d4d1a713559828f6bada5934263b0c174d13e7bf13fafb3c65b00fd",
     "src/duecare_eval/comparison_analysis.py": "149f75977a4b7ef60697b73941455ec673c1dd001a72c38e7a3a1c180fb9d9e2",
     "src/duecare_eval/comparison_expansion.py": "c8b44d6d7517dd2670b4f5df0d96e4ddc1b567d1b412778026ded0b3495ee1b8",
     "src/duecare_eval/console.py": "fc83527a144fbd30dab039b03738a7fa232550574b3c5f2d077bedb75710bee6",
+    "src/duecare_eval/context_scaffold.py": "332a4bb865785b13efb41d90b650509bde56bfb8e32e49cea2c15da7da37c8ff",
     "src/duecare_eval/contracts.py": "98293f67699b2f790bc0499f0d415c2c947a07cf390fd22949ab43e3e60abce4",
     "src/duecare_eval/decision_metrics.py": "fa9f8bc401b1a38fdfd7f6938b22b77f8ffe7597afb316ff3cc4191f715a4c55",
     "src/duecare_eval/decisioning.py": "edae0a0307ce2f45d00f132c501e50e0dc5ac1f3a1835b724714a20dd5b833ab",
     "src/duecare_eval/expanded_benchmark.py": "c52fd6978e530d8b642727d0fbfce6892dde79408d31b8f8546030fd20af902e",
     "src/duecare_eval/indicator_followup.py": "65d7f2b869ce602bc640e02b27b34b43ae78e45164df714d73819a9e97ccb52c",
+    "src/duecare_eval/jev_visuals.py": "8c3ba2a089931f847bfee064d1731c719433cf1edeaad5a05e2c5f1f8d8fa1c3",
     "src/duecare_eval/ledger.py": "9723067b1fb5f6c75290a91eb3339e59488131183c00026b8e41f1b779872af6",
     "src/duecare_eval/longform_annotations.py": "ec66c00523fc7f1e4fb396e6d07c5671100d7c796ebb815bc6154fc73b518d3f",
     "src/duecare_eval/longform_report.py": "335f65f853b87e1bf8865336a6a58404b7e30d0b6b2f5095e5fce8aadadd708c",
+    "src/duecare_eval/matched_context.py": "bc3d65cff5f46985a66c65b8245fc3fc2efe867ac20578e46ff5b033b573cdc2",
+    "src/duecare_eval/matched_context_adapter.py": "f4526d5cfdd5dc7dabf5d7f2b5fbc0a43162082405bbf5ed0bfc2a38adae9617",
+    "src/duecare_eval/model_expansion.py": "4403ff2e6d4e78aba830b1e7403337fe6782d60e206a00f12bffaf212c288e8f",
     "src/duecare_eval/panel.py": "bae98cde2ac2aa7c796748ac7d15fb98b3e5e3396ec4dc6d8f1347f21e9abcb7",
-    "src/duecare_eval/public_cli.py": "f4054c863f15693aaef8543efdd4bd3588a0deb08763e68b5ca925e94cb60f01",
+    "src/duecare_eval/protection_harness.py": "0b140c8cc04205cea0f9b6e192b7317681100d9a03f2bab9307702e428375960",
+    "src/duecare_eval/public_cli.py": "e9c9a5490d7285d6478755f51a1e13bff15ae6cba8f300512de32d551b14913e",
     "src/duecare_eval/recovery_analysis.py": "042edd0c72cc02df2f8dc4f8da0bed21982609dfe355c9f7cc3b8ae159dd7a3f",
     "src/duecare_eval/reference_bank.py": "e3e3fa1674b3e336f77b0ddd47f3bc90f78f969efba1debfa9bd7026e6b8c13a",
     "src/duecare_eval/response_extract.py": "55ab7879aa8a2a53fb0b543ec044096ebb4f967a85f4f522a086b0f266605647",
@@ -81,27 +138,36 @@
     "src/duecare_eval/source_analysis.py": "41a14dff451f5dca12c933a91af23a9500e5212aca6e35e8c23e7291859548aa",
     "src/duecare_eval/source_completion.py": "b9d60dc8a43e1a2fa66c39350a196f7f8adeea8893719f728d433f363f32b1a3",
     "src/duecare_eval/stats.py": "fcff2c4cae8fe7e1970d01f1ba452a26fee2ca0fbf27cb2359185cb1109b3960",
+    "src/duecare_eval/structured_extraction.py": "a5af0c2d6b94bad1977dfc4973098a42d4437e079c77f3f698dc26efc5efba39",
     "src/duecare_eval/study_design.py": "1fec3c509f764e2b086a8224da4365052ae042961f9dc34873bffccdea22511a",
     "src/duecare_eval/vault.py": "7b236d4e068f9449433d85854be6d877f076b1394d901d79cd35bd112f03ab7b",
     "src/duecare_eval/version_benchmarks.py": "0c025c05491270686385befb76cb0a3b10df68d56250ec3e83459ad1be3d662a",
-    "tools/build_report.py": "f4758165583065a11c656abf304e08097e92a8f727228490fa3aac799b436ceb",
+    "tools/build_report.py": "14510e627760a505fd16fde7017a7a6ba348214b3367cae91d61255916863468",
     "tools/build_technical_report.py": "b900238dc8803f9c823b30307483c3ad8a44d0c368c7b1e416837cd65bb28922",
+    "tools/check_breadth_design.py": "a7e594ff40c1d5cd8460dbc4d2831766749a9f610a6ca94114004d37d30c3195",
     "tools/check_grading_rubrics.py": "eccd9b1a333666466437f39c10fa32aec82c33e3d1f6f5948574b1407b2d56e3",
+    "tools/check_protection_harness.py": "5b509b3074d689fda92bf43839a3d5494fb2b429e7f993d81ea2c935eb3efb30",
     "tools/check_reference_bank.py": "bb72966386b69522958c52e4b112157b46751009c63374535b146dec7aa312e2",
     "tools/prepare_indicator_followup.py": "3b1f8bcd85faa4d668712ec731b399a8bec609104762ef0441340bac110c208a",
-    "tools/report_layout.py": "24f9b0a50a45dbbac785a4c427aafdeb6a0a6cc6311ede7bf2d37bfd6c00a762",
+    "tools/report_layout.py": "10a61b22dd40b83e9d0a844653dc23e6d2a22bdb92a611efca2d45e45aa4f1ec",
     "tools/reproduce_comparisons.py": "176c6ead27f3812f458f372c6b43c7841d6be68973be1a892ca10666d5ec4cb9",
+    "tools/reproduce_context_scaffold.py": "9f80ee7cc467b3d00000a1e9d7248cd28eac87cab1fc3be8fd4945fa91824125",
     "tools/reproduce_findings.py": "0ae025a18f12aa0e89512f6f0ac347105bff901cc3f463fe4903be8d96f91b39",
     "tools/reproduce_indicator_followup.py": "b45ad0bc1f94aadddf55e10b7b9b8731bd7a645944bf698dfa359583bc45a23e",
     "tools/reproduce_jev_recovery.py": "f08a4c1a96659307d3c43bc3d6d86a235ee1aa0a236743cb9825bc35baf40f53",
+    "tools/reproduce_jev_visuals.py": "bf5c38ed83427ef1ebfbfe78a83bfbb400b144f1141fc40dd0e6ae632fa88033",
     "tools/reproduce_longform.py": "43866a4d2fb40f75369aaa83917247db5fd9f5c99de9bb48f66016d2534c7852",
     "tools/reproduce_longform_anchor_pilot.py": "70f335a17e5929372860e1dd21649a48ab04e9c5b0154535631e110b1753119d",
     "tools/reproduce_longform_annotations.py": "c38a9c65bf33d7817efe881b95d2fd06b5317f27e799a50b83c248bb7d27d6c0",
+    "tools/reproduce_matched_context.py": "acde162873587b03243339ebb0a3d81ec38246a59ef195d746e8b70d41168346",
+    "tools/reproduce_matched_context_adapter.py": "2cc254ebd5d3b43badc42819ed8aa0410a2c48af8f4fe647f5d021d0ce4fd20a",
+    "tools/reproduce_model_expansion.py": "00328a334add218716df7d2b698e67ffcd2bf86a72a113b276a2acb3a567104a",
     "tools/reproduce_source_completion.py": "f1bd08ec0142ccc65de861e6f12b077fc74fa166be54a7a9a6001dbf55d73808",
+    "tools/reproduce_structured_extraction.py": "aaab2d266a09ea94c6620e738e1d0f02b463d6d57d727ccad59fda8534b8b47c",
     "tools/version_benchmarks.py": "8727d51d461b213452f3ed11d8880c4910e038f9679e8bdc18d2929130e5e821"
   },
-  "publication_title": "Do AI models recognize exploitation \u2014 and help?",
-  "release": "v0.1.0-rc.3",
+  "publication_title": "Do AI models recognize exploitation and offer useful protection?",
+  "release": "v0.1.0-rc.4",
   "schema": "duecare-public-export/1.0.0",
   "source_campaign_hashes": {
     "bulk-ladders-v1": "0d6da61e7558264cd44ac214a1b3a8f79617aefa3052b0c70f6750d660fe3106",
@@ -125,5 +191,5 @@
     "tools/expanded_benchmark.py": "fbf494d0deda2718e85ceaf0ce3760d56001444d4fb1813deef85e51c321cb5e",
     "tools/response_variation.py": "3c98fdd2402dfe711a10a6449b8cfffc0962dd332aca34ef36caa8d20f76382b"
   },
-  "updated_at": "2026-09-30T22:49:49.602609+00:00"
+  "updated_at": "2026-10-01T00:54:59.634317+00:00"
 }

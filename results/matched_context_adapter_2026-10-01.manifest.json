@@ -1,0 +1,55 @@
+{
+  "claim_scope": "A separately labeled adapter condition, retaining all baseline outcomes and all requested follow-up slots. Cloud JSON enforcement is unavailable according to the provider's structured-output documentation.",
+  "documentation": [
+    "https://ollama.com/library/glm-5.3",
+    "https://ollama.com/library/glm-5.3-flash",
+    "https://docs.ollama.com/capabilities/thinking",
+    "https://docs.ollama.com/api/openai-compatibility",
+    "https://docs.ollama.com/api/chat",
+    "https://docs.ollama.com/capabilities/structured-outputs"
+  ],
+  "execution_protocol": "duecare-matched-context-adapter/1.1.0",
+  "files": {
+    "results/longform_cases_2026-09-30.json": "690ac12aaf69edaa4296b189aa5e721586df6e71c28a29488addde271f804303",
+    "results/longform_jev_questions_2026-09-30.json": "489354b2da82158e6a5d661d31b0d9e4190f7059542534a247d3af6265a866d0",
+    "results/longform_primary_sources_2026-09-30.json": "839759c5566c990c43ae2e52ee708e6bc2a726d9ec6c7c59ac93b2b12785f183",
+    "results/matched_context_2026-09-30.jsonl": "80ac7600174fc8d66369bef94d6e96a607add082801a787fff1a75a6a685e6c9",
+    "results/matched_context_adapter_2026-10-01.jsonl": "3734e9a7dda41ff8db933e6d2a67bd8f6723cd99e53d214786877d5b6d902d09"
+  },
+  "formatting_instruction": "Evaluate the supplied state against each supplied typed question. Return one plain JSON object with exactly one top-level key, answers, containing exactly the supplied question IDs. For a noul question return {\"type\":\"noul\",\"noul\":p}, where p is the probability that the answer to the question is yes, a finite number from 0 to 1. For a choice question return {\"type\":\"choice\",\"choice\":selected_option,\"probabilities\":{option:p,...}}, including every supplied criterion key exactly once. Choice probabilities must sum to 1; choice must identify an option with the highest probability. Preserve the question wording and criterion meanings. Return the answers together in a single JSON object, without prose, Markdown or extra fields.",
+  "physical_calls": 22,
+  "preflight_targets_passed": [
+    "glm-5-3",
+    "glm-5-3-flash"
+  ],
+  "requested": 24,
+  "schema": "duecare-matched-context-adapter-public/1.0.0",
+  "snapshot_at": "2026-10-01T00:06:36.531360+00:00",
+  "source_digests": {
+    "all_attempts": "6fb31bbad9f265745b0a47362f8280e68a36ba1c98b4d9dc6b12212dffc78b27",
+    "execution_plan": "fa49276f9f9ea8bb8a47481e9923d3733a7d2c37dec252051c943a85b5dcf7cf",
+    "final_receipt": "01c17670994aefcd33fd4537cf1e8c4510fb4a099bece60c8a96a00c134aecf7",
+    "physical_call_journal": "5e7f79f8a1d5c7064e39daf6ddd2b8da6942b53c9eda54226b00aaff61550cc9",
+    "thinking_metadata": "a8063765ee8d74eada29e85818aca2c7d75e3719a1bd4580d9d7edc9a53c1417"
+  },
+  "targets": {
+    "glm-5-3": {
+      "family": "glm",
+      "id": "glm-5-3",
+      "model": "glm-5.3",
+      "provider": "ollama"
+    },
+    "glm-5-3-flash": {
+      "family": "glm",
+      "id": "glm-5-3-flash",
+      "model": "glm-5.3-flash",
+      "provider": "ollama"
+    },
+    "gpt-oss-20b": {
+      "id": "gpt-oss-20b",
+      "model": "gpt-oss:20b",
+      "provider": "ollama"
+    }
+  },
+  "unknown_outcomes": 0
+}

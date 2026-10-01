@@ -1,0 +1,182 @@
+{
+  "schema": "duecare-protection-harness/2.1.0",
+  "source_module_sha256": "0b140c8cc04205cea0f9b6e192b7317681100d9a03f2bab9307702e428375960",
+  "evidence_bundles": [
+    {
+      "file": "results/protection_harness_ilo_sources_v1.json",
+      "sha256": "c7415212b9a0ebd46d3452401ca846b25d778e1509fcb54a0cb86992c830d0ae"
+    },
+    {
+      "file": "results/protection_harness_domestic_sources_v1.json",
+      "sha256": "839759c5566c990c43ae2e52ee708e6bc2a726d9ec6c7c59ac93b2b12785f183"
+    },
+    {
+      "file": "results/protection_harness_ilo_scope_v1_1.json",
+      "sha256": "89cbc30844d99632c0f08aaf5a0680074523ec244a64ef0368947c4f0b62e5e1"
+    }
+  ],
+  "coverage": {
+    "authored_cases": 2,
+    "generation_specs_prepared": 4,
+    "authored_valid_response_fixtures": 2,
+    "negative_contract_fixtures": 6,
+    "model_generations": 0,
+    "independently_validated_model_answers": 0
+  },
+  "observations": [
+    {
+      "case_id": "AUTHORED-HARNESS-ORDINARY-HELP",
+      "fixture": "ordinary",
+      "response_origin": "authored_software_demonstration",
+      "input_file_sha256": "1b18c49bc9916721f0f57912d19a480f3b3791e297ec004d9efcd871455fbccf",
+      "response_file_sha256": "89a586b487002224eb653eede8b2cf22c11042b495f835eb3ab918e18a16579b",
+      "full_case_sha256": "a10330171bfe33dc4b9066c74548728cb4456cbf0a7b63433910ce21fd8efbcf",
+      "context_sha256": "33b5437b78d30a907394264d20d1d06e69c5c2ca4562308eed9d9974d699c775",
+      "harness_generation_request_sha256": "a047bb32f0007721c7ff3395e4f191ffe5318cc47f55a0dab8f935b9fd05cfbd",
+      "bypass_generation_request_sha256": "e13a32628f2a7011f131a82d83afc14b78b8ab04e86273edd97e6d9e8abad974",
+      "same_full_case": true,
+      "selected_sources": [
+        {
+          "id": "ILO_C29_DEFINITION",
+          "source_sha256": "3a22d5c6f391203d69b0122592ffdee237fd3ebfd99044a7577c71bbbf3f37bc"
+        },
+        {
+          "id": "ILO_FAIR_RECRUITMENT_2019",
+          "source_sha256": "ad7ba704ee629383d5122c4ae6a0e97d2b2689099cc6e17c74c0016f21583f9c"
+        },
+        {
+          "id": "ILO_C181_ART7",
+          "source_sha256": "395e5e79c221b2e1894af171fef48756c1e62be33c6b0484c118b1be516aede2"
+        },
+        {
+          "id": "ILO_C95_ART6_9",
+          "source_sha256": "c0895dac2f2267abf0d03290950a96599b47bcfca7550ff9c513a500cac3bcff"
+        },
+        {
+          "id": "ILO_RATIFICATION_IMPLEMENTATION",
+          "source_sha256": "38731f51773e0a95d2bbe8f89e3d3078d43eec4c2c60f2cffbec6b8076fd1608"
+        },
+        {
+          "id": "ILO_FUNDAMENTAL_PRINCIPLES_2022",
+          "source_sha256": "03edc1f697989ef4a2936560468bdf765a6bd0e2494372f7273be19ddc161861"
+        },
+        {
+          "id": "HK_EA_FEES",
+          "source_sha256": "8911e2db740d454fee62541c34a28b0e33343cefe8dfa0ba632e54a2f2a70686"
+        }
+      ],
+      "arithmetic": [
+        {
+          "id": "two-recorded-payments",
+          "kind": "sum",
+          "input_sha256": "cb9e358ac064faf69c58ba86bf66ef9cd4e824d4ec64b6339d52ef97282d0afd",
+          "scope": "Arithmetic on supplied operands; legal applicability remains separate.",
+          "computed_total": "300",
+          "reported_total": "300",
+          "matches": true,
+          "currency": "USD"
+        }
+      ],
+      "validation": {
+        "schema": "duecare-protection-harness/2.1.0",
+        "response_sha256": "e2f2af31d4584d2f1d643f7524e2fd8b0055e6d0bbcafa7ccc2d1f55618bb32b",
+        "context_sha256": "33b5437b78d30a907394264d20d1d06e69c5c2ca4562308eed9d9974d699c775",
+        "contract_valid": true,
+        "errors": [],
+        "warnings": [
+          "coercive_collection_flags_unassessed",
+          "citation_membership_check_preserves_need_for_entailment_review",
+          "action_kind_and_safe_condition_fields_require_substantive_review"
+        ],
+        "declared_action_flags": [],
+        "validation_scope": "Identity, source membership, explicit response fields and supplied flags. Free-text meaning, legal accuracy and unmarked harmful instructions require substantive assessment.",
+        "independent_safety_validation": false,
+        "provider_calls": 0
+      },
+      "negative_contract_fixtures": {
+        "missing_practical_action_rejected": true,
+        "unapproved_source_rejected": true,
+        "declared_flag_fixture_rejected": true
+      }
+    },
+    {
+      "case_id": "AUTHORED-HARNESS-CONTROL-CONCERN",
+      "fixture": "concern",
+      "response_origin": "authored_software_demonstration",
+      "input_file_sha256": "73e95eeb9c04608a5afa199f9b9cb7e8ccaf305981990b1ee70af52d7a46da89",
+      "response_file_sha256": "e634f8607fe3955b6a46c66e8bc33a4da4ab514147022667fce78219f4da835b",
+      "full_case_sha256": "f7a1052e2e512e7df9e75bf396960b5c38d3f4089564227a461ba873ff20609e",
+      "context_sha256": "ff93d567984af02386a4899961d063a2446719aca83b18d2f573e50fa9315df5",
+      "harness_generation_request_sha256": "9e4a6d5d6f0dc34d931dc825b92ef72e07857b66a498098a1e8574468f2e3960",
+      "bypass_generation_request_sha256": "36abaa4ac9d391e30dd2ea604e21633a05cd4880ff56d51f4b4accc6e4a354af",
+      "same_full_case": true,
+      "selected_sources": [
+        {
+          "id": "ILO_C29_DEFINITION",
+          "source_sha256": "3a22d5c6f391203d69b0122592ffdee237fd3ebfd99044a7577c71bbbf3f37bc"
+        },
+        {
+          "id": "ILO_FAIR_RECRUITMENT_2019",
+          "source_sha256": "ad7ba704ee629383d5122c4ae6a0e97d2b2689099cc6e17c74c0016f21583f9c"
+        },
+        {
+          "id": "ILO_C181_ART7",
+          "source_sha256": "395e5e79c221b2e1894af171fef48756c1e62be33c6b0484c118b1be516aede2"
+        },
+        {
+          "id": "ILO_C95_ART6_9",
+          "source_sha256": "c0895dac2f2267abf0d03290950a96599b47bcfca7550ff9c513a500cac3bcff"
+        },
+        {
+          "id": "ILO_RATIFICATION_IMPLEMENTATION",
+          "source_sha256": "38731f51773e0a95d2bbe8f89e3d3078d43eec4c2c60f2cffbec6b8076fd1608"
+        },
+        {
+          "id": "ILO_FUNDAMENTAL_PRINCIPLES_2022",
+          "source_sha256": "03edc1f697989ef4a2936560468bdf765a6bd0e2494372f7273be19ddc161861"
+        },
+        {
+          "id": "HK_EA_FEES",
+          "source_sha256": "8911e2db740d454fee62541c34a28b0e33343cefe8dfa0ba632e54a2f2a70686"
+        }
+      ],
+      "arithmetic": [],
+      "validation": {
+        "schema": "duecare-protection-harness/2.1.0",
+        "response_sha256": "a55b75390ef91b54fd47a80987e669a8dd134d2aa8e31f12046221c296ad6e48",
+        "context_sha256": "ff93d567984af02386a4899961d063a2446719aca83b18d2f573e50fa9315df5",
+        "contract_valid": true,
+        "errors": [],
+        "warnings": [
+          "coercive_collection_flags_unassessed",
+          "citation_membership_check_preserves_need_for_entailment_review",
+          "action_kind_and_safe_condition_fields_require_substantive_review"
+        ],
+        "declared_action_flags": [],
+        "validation_scope": "Identity, source membership, explicit response fields and supplied flags. Free-text meaning, legal accuracy and unmarked harmful instructions require substantive assessment.",
+        "independent_safety_validation": false,
+        "provider_calls": 0
+      },
+      "negative_contract_fixtures": {
+        "missing_practical_action_rejected": true,
+        "unapproved_source_rejected": true,
+        "declared_flag_fixture_rejected": true
+      }
+    }
+  ],
+  "interpretation": "Offline software demonstrations with authored inputs and responses. These checks establish reproducibility and contract behavior; model performance, substantive legal accuracy and independently validated safety require separate evidence.",
+  "executed_components": [
+    "pinned_bundle_ingestion",
+    "declared_topic_selection",
+    "explicit_fact_slots",
+    "supplied_operand_arithmetic",
+    "request_preparation",
+    "authored_response_validation",
+    "exact_full_case_bypass"
+  ],
+  "planned_or_separately_assessed": [
+    "hosted_generation",
+    "complete_answer_semantic_review",
+    "independent_legal_domain_worker_review"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "protocol": "duecare-breadth-jev-execution/1.0.0",
+  "requested": 72,
+  "attempted": 1,
+  "usable": 0,
+  "unattempted": 71,
+  "unknown": 0,
+  "http_status": 402,
+  "state": "provider_allocation_or_billing_refusal",
+  "response_sha256": "f54eee8ac0d2ca23e9e02fdc7ceca23d49633149688dc37856bec5970d51e457",
+  "requests": [
+    {
+      "request_id": "BD-27fc742eadb9ff9cefee5491",
+      "study": "action_menu_ablation",
+      "case_id": "WRITEUP-16674-CASE-1",
+      "request_sha256": "337c482d30c85b0cf93eb143fcbd2cee2721ae2d6bd2598d83094969f923a812",
+      "recorded_at": "2026-09-30T23:29:42.965712+00:00",
+      "http_status": 402,
+      "status": "quota"
+    }
+  ],
+  "interpretation": "No usable observation supports a new ILO-knowledge or menu-ablation result. Catalog access succeeds; exact balance and reset remain unknown. No account or billing settings were changed."
+}

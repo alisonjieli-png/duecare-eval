@@ -1,0 +1,85 @@
+{
+  "schema": "duecare-public-breadth-design/1.0.0",
+  "snapshot_at": "2026-10-01T00:40:29.086606+00:00",
+  "banks": [
+    {
+      "file": "action_menu_requests.jsonl",
+      "sha256": "50a70cd9de4959342580762d9464afe62cc8a213a24c03df6a73b3ad676aceae",
+      "rows": 30
+    },
+    {
+      "file": "ilo_application_requests.jsonl",
+      "sha256": "307a6e242becf81965d0902b5c04e417e0be49250253c7b1a41d39b6ff6990b6",
+      "rows": 40
+    },
+    {
+      "file": "ilo_knowledge_requests.jsonl",
+      "sha256": "8f299b9033e9df1c4adafbfc9291f5f7dc3ec2ee5feadfeb464a56b00a510c98",
+      "rows": 2
+    },
+    {
+      "file": "breadth_prose_requests.jsonl",
+      "sha256": "8ef2fdea119467e1d00ff30813a395a25adf1a00b1394bc0277b6b3028f390bb",
+      "rows": 96
+    },
+    {
+      "file": "breadth_canary_v2_requests.jsonl",
+      "sha256": "4b937eafa1cfcff8637dc2a0e64cbce5423f496264968f1c27badbe1b4149c80",
+      "rows": 16
+    },
+    {
+      "file": "breadth_typed_canary_requests.jsonl",
+      "sha256": "f85ca8938aed9ff293893382b28e99c17ca7ec6dc2393f0ca283479a66dc1857",
+      "rows": 16
+    }
+  ],
+  "overlap": "Canary rows are subsets/typed adaptations; counts are design-specific and should not be added as independent cases.",
+  "full_factorial": {
+    "schema": "duecare-breadth-depth/1.0.0",
+    "status": "design_manifest_prepared_no_dispatch",
+    "axes": {
+      "themes": [
+        "salary_deduction",
+        "collection_assignment",
+        "high_interest_novation",
+        "worker_guilt"
+      ],
+      "conditions": [
+        "concern",
+        "worker_control"
+      ],
+      "stages": [
+        "before_commitment",
+        "after_arrival",
+        "payment_demand"
+      ],
+      "question_types": [
+        "direct_screening",
+        "indirect_advice",
+        "worker_first_person",
+        "professional_role",
+        "action_ranking",
+        "missing_facts_uncertainty",
+        "counterfactual",
+        "multistep_pressure"
+      ],
+      "contexts": [
+        "minimal",
+        "whole_case",
+        "evidence_enriched"
+      ],
+      "harnesses": [
+        "off",
+        "on"
+      ]
+    },
+    "factorial_conditions_per_model": 1152,
+    "formula": "4 themes * 2 conditions * 3 stages * 8 question forms * 3 context views * 2 scaffold levels",
+    "generator": "breadth.iter_prose(cases, packet, packet_sha, full=True)",
+    "case_pairs": "Concern and worker-control variants share theme, stage, question, context and scaffold. Their explicit cost/control facts differ; this is a matched condition package rather than a single-sentence causal ablation.",
+    "time": "Authored event stages within each scenario; these are neither repeated calendar-time model trials nor a claim of observed worker histories.",
+    "multi_step": "One question form assesses a fixed three-step pressure vignette in one response. Interactive multi-turn execution remains a separate future protocol."
+  },
+  "context_meaning": "Minimal contains the current staged event. Whole-case contains history through that event. Enriched adds source evidence. Future events remain withheld.",
+  "model_execution": "Dispatch and outcomes have separate receipts. Prepared banks alone contain no model observations."
+}

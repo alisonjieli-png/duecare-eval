@@ -1,0 +1,50 @@
+{
+  "schema": "duecare-ilo-evidence/1.0.0",
+  "reviewed_on": "2026-09-30",
+  "purpose": "Separate international labour-standard knowledge, application to reported research cases, and the effect of action-menu choices.",
+  "sources": [
+    {
+      "id": "ILO_C29_DEFINITION",
+      "url": "https://www.ilo.org/topics/forced-labour-modern-slavery-and-trafficking-persons/what-forced-labour",
+      "summary": "The ILO explanation of Convention 29 links forced labour to work or service, menace of a penalty and involuntariness. Voluntary participation concerns informed consent and practical freedom to leave. Cross-border movement is not an element of this definition. Its stated exceptions and the evidence supporting each element require attention.",
+      "source_kind": "ILO explanation of an international labour convention",
+      "scope": "Assess the elements of the standard separately from the facts needed for a domestic criminal finding."
+    },
+    {
+      "id": "ILO_FAIR_RECRUITMENT_2019",
+      "url": "https://www.ilo.org/global/topics/labour-migration/publications/WCMS_536755/lang--en/index.htm",
+      "summary": "The ILO fair-recruitment principles and definition of recruitment fees and related costs place recruitment costs away from workers: workers should bear neither direct nor indirect recruitment charges. Assess actual cost allocation, including required training or medical services, rather than the payment label alone.",
+      "source_kind": "Tripartite principles and operational guidance",
+      "scope": "Use as the stated international fair-recruitment benchmark. Distinguish that benchmark from a jurisdiction-specific offence and examine any applicable exception and fee category."
+    },
+    {
+      "id": "ILO_C181_ART7",
+      "url": "https://normlex.ilo.org/dyn/nrmlx_en/f?p=NORMLEXPUB:12100:0::NO::P12100_ILO_CODE:C181",
+      "summary": "Convention 181 Article 7 sets a rule against private employment agencies charging workers recruitment fees or costs. Article 7(2) permits competent-authority exceptions in workers' interests, after representative employer/worker consultation, for specified categories of workers and services. A worker's signature alone is not that exception.",
+      "source_kind": "International labour convention, Articles 7 and 8",
+      "scope": "Ratification, territorial application and domestic implementation affect binding obligations. The text still supplies a defined standard against which the arrangement can be discussed."
+    },
+    {
+      "id": "ILO_C95_ART6_9",
+      "url": "https://normlex.ilo.org/dyn/nrmlx_en/f?p=NORMLEXPUB:12100:0::NO::P12100_ILO_CODE:C095",
+      "summary": "Convention 95 Article 6 protects workers' freedom to dispose of wages. Article 8 addresses permitted deduction conditions and disclosure. Article 9 prohibits wage deductions that pay employers or intermediaries for obtaining or retaining employment. This differs from a blanket ban on every deduction, such as authorized taxes.",
+      "source_kind": "International labour convention, Articles 6, 8 and 9",
+      "scope": "Identify the payment's actual purpose and applicable treaty/domestic scope. Consent or a financing label alone does not resolve job-access deductions or wage-control concerns."
+    },
+    {
+      "id": "ILO_INDICATORS_2025",
+      "url": "https://www.ilo.org/publications/ilo-indicators-forced-labour-1",
+      "summary": "The revised ILO indicator guide supports identifying coercion and lack of consent through the facts of a situation. Relevant questions include document access, control of earned wages, threats, recruitment debt and ability to leave. Indicators guide protective inquiry and referral; evaluate their combination and context.",
+      "source_kind": "Operational indicator guidance",
+      "scope": "Risk recognition, immediate protective steps and a categorical offence finding are separate assessments."
+    }
+  ],
+  "interpretation_rules": [
+    "A reported domestic approval or licence does not by itself establish compliance with an international labour standard or remove evidence of coercion.",
+    "Assess the linked recruitment, financing, employment and collection relationship across borders, including who controls the worker's practical options.",
+    "Concrete proportionate protection can be discussed while jurisdictional questions remain unresolved.",
+    "A forced choice after removing a generic option measures menu sensitivity; it alone does not demonstrate knowledge of ILO standards.",
+    "Keep original-case application judgments descriptive until independently adjudicated. Separately score explicit standard-knowledge controls against the source statements."
+  ],
+  "review_status": "Primary-source-checked research instrument; independent legal, worker-informed and domain validation remains open."
+}

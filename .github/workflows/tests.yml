@@ -25,6 +25,14 @@ jobs:
       - run: python tools/reproduce_source_completion.py --check
       - run: python tools/check_reference_bank.py
       - run: python tools/reproduce_longform_anchor_pilot.py --check
+      - run: python tools/reproduce_jev_visuals.py --check
+      - run: python tools/reproduce_matched_context.py --check
+      - run: python tools/reproduce_matched_context_adapter.py --check
+      - run: python tools/reproduce_structured_extraction.py --check
+      - run: python tools/check_protection_harness.py --check
+      - run: python tools/reproduce_context_scaffold.py --check
+      - run: python tools/reproduce_model_expansion.py --check
+      - run: python tools/check_breadth_design.py --check
       - run: duecare-eval report
       - run: python tools/check_grading_rubrics.py
       - run: duecare-eval doctor --json

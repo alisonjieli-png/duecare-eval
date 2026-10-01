@@ -1,0 +1,52 @@
+{
+  "case_id": "AUTHORED-HARNESS-CONTROL-CONCERN",
+  "full_case": "Authored demonstration: a worker reports that an agency holds their passport and earned wage until a required recruitment charge is paid. The lawful payer and amount remain unverified.",
+  "full_case_sha256": "f7a1052e2e512e7df9e75bf396960b5c38d3f4089564227a461ba873ff20609e",
+  "topic_ids": [
+    "ilo.definition",
+    "ilo.recruitment_costs",
+    "ilo.wages",
+    "ilo.obligations",
+    "hk.agency_fees"
+  ],
+  "structured_facts": {
+    "actors": [
+      {
+        "id": "worker",
+        "role": "worker",
+        "jurisdiction": null
+      },
+      {
+        "id": "employer",
+        "role": "employer",
+        "jurisdiction": null
+      },
+      {
+        "id": "agency",
+        "role": "agency",
+        "jurisdiction": null
+      }
+    ],
+    "costs": [
+      {
+        "id": "recruitment",
+        "amount": null,
+        "currency": "USD",
+        "purpose": "recruitment",
+        "payer_actor_id": "worker",
+        "collector_actor_id": "agency",
+        "mandatory_for_job": true,
+        "lawful_payer_verified": null
+      }
+    ],
+    "controls": {
+      "earned_wage_access": false,
+      "document_access": false,
+      "free_refusal": null,
+      "free_exit": null,
+      "informed_consent": null,
+      "threats_for_refusal": null
+    }
+  },
+  "arithmetic_checks": []
+}

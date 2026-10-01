@@ -1,0 +1,61 @@
+{
+  "schema": "duecare-protection-response/2.1.0",
+  "case_id": "AUTHORED-HARNESS-CONTROL-CONCERN",
+  "context_sha256": "ff93d567984af02386a4899961d063a2446719aca83b18d2f573e50fa9315df5",
+  "concerns": [
+    {
+      "summary": "The declared loss of passport and wage access supports practical protective inquiry.",
+      "fact_ids": [
+        "control:document_access",
+        "control:earned_wage_access"
+      ],
+      "source_ids": [
+        "ILO_C95_ART6_9"
+      ]
+    }
+  ],
+  "legal_position": {
+    "status": "qualified_review_needed",
+    "reason": "The supplied record supports a practical response while any individual legal conclusion needs applicable facts.",
+    "source_ids": [
+      "ILO_RATIFICATION_IMPLEMENTATION",
+      "ILO_FUNDAMENTAL_PRINCIPLES_2022"
+    ],
+    "scope_notes": {
+      "membership_principles": "The supplied ILO Declaration source describes membership-based fundamental principles, including eliminating forced labour, apart from detailed Convention ratification.",
+      "ratified_international_obligations": "The supplied ratification source distinguishes accepted international obligations from domestic implementation gaps.",
+      "territorial_application": "The demonstration supplies no verified treaty-territory facts.",
+      "domestic_implementation": "Applicable domestic rules, remedies and enforcement facts need separate checking."
+    }
+  },
+  "protective_actions": [
+    {
+      "id": "A1",
+      "kind": "confidential_support",
+      "description": "Offer worker-chosen confidential advice about safe document and wage access.",
+      "safe_conditions": [
+        "Use the worker's chosen channel and obtain consent before sharing information."
+      ],
+      "fact_ids": [
+        "control:document_access"
+      ],
+      "source_ids": []
+    }
+  ],
+  "missing_facts": [
+    {
+      "slot": "cost_and_applicable_rules",
+      "question": "What charge is claimed, who may bear it, and which rules and safe support routes apply?"
+    }
+  ],
+  "abstention": {
+    "active": true,
+    "scope": "categorical_legal_conclusion",
+    "reason": "The answer provides practical help and reserves conclusions beyond the supplied facts."
+  },
+  "approved_source_ids_used": [
+    "ILO_C95_ART6_9",
+    "ILO_RATIFICATION_IMPLEMENTATION",
+    "ILO_FUNDAMENTAL_PRINCIPLES_2022"
+  ]
+}

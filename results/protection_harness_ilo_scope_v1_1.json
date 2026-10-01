@@ -1,0 +1,24 @@
+{
+  "schema": "duecare-ilo-scope-addendum/1.1.0",
+  "reviewed_on": "2026-09-30",
+  "relationship": "Additional source checking after v1 instruments were frozen. Preserve all v1 inputs and receipts; a future combined evidence arm uses a new version.",
+  "sources": [
+    {
+      "id": "ILO_RATIFICATION_IMPLEMENTATION",
+      "url": "https://www.ilo.org/international-labour-standards/how-international-labour-standards-are-created",
+      "summary": "Ratification is the formal acceptance of a Convention or Protocol as a legally binding instrument. Implementation and domestic enforcement are separate questions; an implementation gap does not itself cancel the international obligation accepted through ratification.",
+      "scope": "Keep international obligation, territorial application and domestic implementation in separate fields."
+    },
+    {
+      "id": "ILO_FUNDAMENTAL_PRINCIPLES_2022",
+      "url": "https://www.ilo.org/resource/other/annual-review-under-follow-ilo-declaration-fundamental-principles-and",
+      "summary": "The ILO Declaration on Fundamental Principles and Rights at Work, amended in 2022, commits ILO Members to the fundamental principles and rights whether or not they have ratified the relevant Conventions. Elimination of forced or compulsory labour is among those principles.",
+      "scope": "Distinguish membership-based fundamental-principle obligations from the claim that every state is bound by every detailed provision of every Convention."
+    }
+  ],
+  "additional_knowledge_controls": [
+    {"id": "fundamental_principles_membership", "statement": "ILO Members have a commitment to the fundamental principle of eliminating forced or compulsory labour even where they have not ratified the relevant Convention.", "expected": true, "source_id": "ILO_FUNDAMENTAL_PRINCIPLES_2022"},
+    {"id": "unimplemented_ratification_cancels_obligation", "statement": "Once a state ratifies a Convention, a gap in its domestic implementation automatically cancels the international obligation it accepted.", "expected": false, "source_id": "ILO_RATIFICATION_IMPLEMENTATION"}
+  ],
+  "execution_status": "Prepared source addendum; no observations attributed to this version."
+}

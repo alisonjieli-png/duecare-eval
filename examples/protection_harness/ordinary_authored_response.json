@@ -1,0 +1,44 @@
+{
+  "schema": "duecare-protection-response/2.1.0",
+  "case_id": "AUTHORED-HARNESS-ORDINARY-HELP",
+  "context_sha256": "33b5437b78d30a907394264d20d1d06e69c5c2ca4562308eed9d9974d699c775",
+  "concerns": [],
+  "legal_position": {
+    "status": "limited_source_comparison",
+    "reason": "The supplied record supports a practical response while any individual legal conclusion needs applicable facts.",
+    "source_ids": [
+      "ILO_RATIFICATION_IMPLEMENTATION",
+      "ILO_FUNDAMENTAL_PRINCIPLES_2022"
+    ],
+    "scope_notes": {
+      "membership_principles": "The supplied ILO Declaration source describes membership-based fundamental principles, including eliminating forced labour, apart from detailed Convention ratification.",
+      "ratified_international_obligations": "The supplied ratification source distinguishes accepted international obligations from domestic implementation gaps.",
+      "territorial_application": "The demonstration supplies no verified treaty-territory facts.",
+      "domestic_implementation": "Applicable domestic rules, remedies and enforcement facts need separate checking."
+    }
+  },
+  "protective_actions": [
+    {
+      "id": "A1",
+      "kind": "ordinary_help",
+      "description": "Explain that the two recorded payments total300 and preserve the worker's choice about any further advice.",
+      "safe_conditions": [
+        "Use the worker's chosen channel and obtain consent before sharing information."
+      ],
+      "fact_ids": [
+        "control:earned_wage_access"
+      ],
+      "source_ids": []
+    }
+  ],
+  "missing_facts": [],
+  "abstention": {
+    "active": false,
+    "scope": "none",
+    "reason": "The answer provides practical help and reserves conclusions beyond the supplied facts."
+  },
+  "approved_source_ids_used": [
+    "ILO_RATIFICATION_IMPLEMENTATION",
+    "ILO_FUNDAMENTAL_PRINCIPLES_2022"
+  ]
+}

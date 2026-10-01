@@ -1,0 +1,63 @@
+{
+  "case_id": "AUTHORED-HARNESS-ORDINARY-HELP",
+  "full_case": "Authored demonstration: an employer paid recruitment costs without recovery from the worker. The worker keeps their passport, bank access and full wages, may refuse or leave without penalty, and asks for an explanation of two recorded payments of150 units each.",
+  "full_case_sha256": "a10330171bfe33dc4b9066c74548728cb4456cbf0a7b63433910ce21fd8efbcf",
+  "topic_ids": [
+    "ilo.definition",
+    "ilo.recruitment_costs",
+    "ilo.wages",
+    "ilo.obligations",
+    "hk.agency_fees"
+  ],
+  "structured_facts": {
+    "actors": [
+      {
+        "id": "worker",
+        "role": "worker",
+        "jurisdiction": null
+      },
+      {
+        "id": "employer",
+        "role": "employer",
+        "jurisdiction": null
+      },
+      {
+        "id": "agency",
+        "role": "agency",
+        "jurisdiction": null
+      }
+    ],
+    "costs": [
+      {
+        "id": "recruitment",
+        "amount": "0",
+        "currency": "USD",
+        "purpose": "recruitment",
+        "payer_actor_id": "employer",
+        "collector_actor_id": "agency",
+        "mandatory_for_job": false,
+        "lawful_payer_verified": true
+      }
+    ],
+    "controls": {
+      "earned_wage_access": true,
+      "document_access": true,
+      "free_refusal": true,
+      "free_exit": true,
+      "informed_consent": true,
+      "threats_for_refusal": false
+    }
+  },
+  "arithmetic_checks": [
+    {
+      "id": "two-recorded-payments",
+      "kind": "sum",
+      "currency": "USD",
+      "amounts": [
+        "150",
+        "150"
+      ],
+      "reported_total": "300"
+    }
+  ]
+}

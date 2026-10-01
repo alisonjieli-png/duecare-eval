@@ -92,7 +92,7 @@ class Report:
             canvas.line(52, 799, 543, 799)
             canvas.setFont("Helvetica", 7)
             canvas.setFillColor(MUTED)
-            canvas.drawString(52, 811, "DUECARE / MODEL BENCHMARK / SEPTEMBER 2026")
+            canvas.drawString(52, 811, "DUECARE / MODEL BEHAVIOR / 2026")
             canvas.drawString(52, 29, self.stamp)
             canvas.drawRightString(543, 29, str(doc.page))
             canvas.restoreState()

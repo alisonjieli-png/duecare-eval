@@ -1,12 +1,21 @@
 # Do AI models recognize exploitation — and help?
 
-Release `v0.1.0-rc.3` rebuilds DueCare around the original research question: whether models recognize human-trafficking and exploitation indicators and suggest useful protective action.
+Release `v0.1.0-rc.4` puts Jev in the main case tables and shared-model visuals, expands the hosted model roster, and separates recognition, practical protection, legal reliability and serving-interface limitations.
 
 ## Read this first
 
-The new 12-page main report leads with clear conclusions, defined counts and actual response excerpts. Each original case shows the complete prompt, what a useful answer requires and what each model did. Aggregate charts distinguish recognition, protective suggestions and collection assistance that proceeds before material concerns are resolved. The 43-page technical companion preserves the detailed benchmark, question catalogs and historical snapshots.
+The 17-page main report leads with conclusions and includes Jev alongside eleven text-model configurations on the same full source contexts. It preserves the complete original prompts, bounded response excerpts and defined denominators. The unchanged 43-page technical companion preserves the earlier detailed studies and question catalogs.
 
 ## Evidence added
+
+- Twelve working configurations answer the same twelve questions on four original cases in two conditions. All 960 binary values and 1,147/1,152 total fields are available under the explicitly recorded serving and extraction methods. Five invalid choice fields remain missing. Earlier strict-format outcomes remain intact.
+- Six additional hosted targets produce 46 complete and 14 truncated answers among 60 requested. The two GLM models complete separate matched salary-deduction requests after switching to their supported low-thinking setting; legal errors remain in the completed replies.
+- Ten complete additional worker-help answers are reviewed, with two truncated answers unassessed. Optional worker-chosen settlement is distinguished from unsupported legal reassurance or coercive collection.
+- A 32-answer controlled trial separates available history from a DueCare text scaffold. Worker-choice and legal-qualification assessments improve in several pairs; safety ordering has a regression and more history sometimes worsens legal calibration.
+- Prepared direct/indirect, role, stage, context and scaffold instruments cover 184 distinct request specifications, with a 1,152-condition full-factorial design documented separately. The ILO/menu study obtains no usable Jev result after an HTTP 402 response: one failed attempt and 71 unattempted requests remain visible.
+- A portable protection-first harness prototype selects pinned sources, tracks explicit facts, checks arithmetic and validates response structure. Authored fixture checks use zero model calls and have a separate validation scope.
+
+## Earlier evidence retained
 
 - 50 actual hosted responses: five complete source contexts × five model configurations × two conditions. All completed, were usable and were read in full. Four prompts are exact published advice-seeking cases; the fifth is a complete documented notebook variant that explicitly asks for risk analysis.
 - Ten Jev panels on the same complete contexts, with explicit questions and recorded next-step choices.
@@ -28,8 +37,8 @@ The six-model technical comparisons, 145 advanced/referral question templates, c
 
 ## Download and reproduce
 
-- [Main report PDF](https://github.com/alisonjieli-png/duecare-eval/releases/download/v0.1.0-rc.3/duecare_preliminary_report.pdf)
-- [Technical companion PDF](https://github.com/alisonjieli-png/duecare-eval/releases/download/v0.1.0-rc.3/duecare_technical_appendix.pdf)
+- [Main report PDF](https://github.com/alisonjieli-png/duecare-eval/releases/download/v0.1.0-rc.4/duecare_preliminary_report.pdf)
+- [Technical companion PDF](https://github.com/alisonjieli-png/duecare-eval/releases/download/v0.1.0-rc.4/duecare_technical_appendix.pdf)
 - [Main manuscript](docs/PAPER.md)
 - [Reproduction instructions](README.md#reproduce-and-inspect)
 

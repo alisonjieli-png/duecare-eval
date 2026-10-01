@@ -1,0 +1,95 @@
+{
+  "archived_jev_panels": 8,
+  "execution_protocol": "duecare-matched-fullcontext/1.0.0",
+  "files": {
+    "results/longform_cases_2026-09-30.json": "690ac12aaf69edaa4296b189aa5e721586df6e71c28a29488addde271f804303",
+    "results/longform_jev_questions_2026-09-30.json": "489354b2da82158e6a5d661d31b0d9e4190f7059542534a247d3af6265a866d0",
+    "results/longform_primary_sources_2026-09-30.json": "839759c5566c990c43ae2e52ee708e6bc2a726d9ec6c7c59ac93b2b12785f183",
+    "results/matched_context_2026-09-30.jsonl": "80ac7600174fc8d66369bef94d6e96a607add082801a787fff1a75a6a685e6c9"
+  },
+  "new_physical_calls": 136,
+  "new_recorded_logical_panels": 88,
+  "new_strict_complete_panels": 37,
+  "private_source_digests": {
+    "all_attempt_receipts": "550dd2399e6f7584d188ac7893af3508646e854e6ef77b634459fe1b02022396",
+    "context_interpretation_policy": "050537ddfad933e1288fb894feadea6a4caff4c72fb2d0ecdf7d9f1d49506bcd",
+    "execution_plan": "43a2a7fb26dd5ab73938d2862c5554052dbbc4a4a51233218d3dd94db7a90867",
+    "fence_selection_policy": "34d01797b85e5737098c2dc8b50940cdd88876b372519164a4ce24526aa7dadf",
+    "finished_receipt": "435bffc62912f7f7596a66edc199320d5394d2e728780014da3611f6f2b44d2b",
+    "physical_call_journal": "3677d0813095925e537acf8b4f3f75c1664aefd159d98aef4302aa314fa6e36f"
+  },
+  "provenance": "Full private transcripts and all attempt digests are retained. Public projection contains numeric decisions, exact task identities and coverage. Source text/evidence already present in the public case package reconstructs each shared semantic digest.",
+  "requested_new_panels": 88,
+  "schema": "duecare-matched-context-public/1.0.0",
+  "selection_policy": {
+    "allowed_transformation": "Remove exactly one leading ```json newline (or ``` newline) and its matching trailing newline ``` after outer whitespace trimming.",
+    "coverage": "Complete-panel availability, individually valid fields and all requested panels have separate counts. Cross-model statistics use named matched intersections.",
+    "numeric_contract": "Exact question IDs, types, choice membership, selected maximum and raw finite probabilities. Choice mass tolerance is 0.0001, matching the original panel validator. No normalization.",
+    "retained_evidence": "Original strict status, all attempt receipt and response digests, selected attempt and explicit extraction method remain available.",
+    "schema": "duecare-whole-response-fence-extraction/1.0.0",
+    "selection_order": [
+      "Use the strict completed observation selected by the original runner.",
+      "If there is no strict completion, select the earliest attempt with completed transport and a whole-response JSON fence whose contents pass the identical question-ID and numeric validation.",
+      "If neither is available, retain the original runner's latest outcome and any individually valid fields from that outcome."
+    ],
+    "syntax_boundary": "Missing braces, commas, keys or values remain invalid. There are no semantic or numeric repairs."
+  },
+  "snapshot_at": "2026-09-30T23:58:15.416970+00:00",
+  "targets": {
+    "deepseek-flash": {
+      "model": "deepseek-v4.1-flash",
+      "provider": "ollama"
+    },
+    "gemma-abliterated": {
+      "model": "gemma-4-coding-abliterated",
+      "provider": "tactical"
+    },
+    "gemma4-31b": {
+      "model": "gemma4:31b",
+      "provider": "ollama"
+    },
+    "glm-5-3": {
+      "family": "glm",
+      "model": "glm-5.3",
+      "provider": "ollama"
+    },
+    "glm-5-3-flash": {
+      "family": "glm",
+      "model": "glm-5.3-flash",
+      "provider": "ollama"
+    },
+    "gpt-oss-120b": {
+      "family": "openai",
+      "model": "gpt-oss:120b",
+      "provider": "ollama"
+    },
+    "gpt-oss-20b": {
+      "model": "gpt-oss:20b",
+      "provider": "ollama"
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "provider": "jev"
+    },
+    "kimi-k3": {
+      "model": "kimi-k3",
+      "provider": "ollama"
+    },
+    "minimax-m3": {
+      "family": "minimax",
+      "model": "minimax-m3",
+      "provider": "ollama"
+    },
+    "mistral-large-3-675b": {
+      "family": "mistral",
+      "model": "mistral-large-3:675b",
+      "provider": "ollama"
+    },
+    "nemotron-3-ultra": {
+      "family": "nvidia",
+      "model": "nemotron-3-ultra",
+      "provider": "ollama"
+    }
+  },
+  "unknown_outcomes": 0
+}

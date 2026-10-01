@@ -95,8 +95,24 @@ def emit(args, result, description):
 def run_command(args):
     if args.command == "report":
         from .longform_report import reproduce, readable_text
+        from .structured_extraction import reproduce as structured_findings
         result = reproduce(ROOT)
-        emit(args, result, readable_text(result))
+        working = structured_findings(ROOT)["working_configurations"]
+        jev = working["jev"]
+        choices = [p["answers"]["priority_next_step"]["selected"] for p in jev["panels"] if p["arm"] == "bare"]
+        result["jev_original_context"] = {"requested_cases": len(choices),
+            "jurisdiction_check_first": choices.count("check_crossborder_applicability"),
+            "actual_obligation_first": choices.count("clarify_itemized_obligation"),
+            "interpretation": "Observed preferences under explicit questions, separate from free-form advice."}
+        result["shared_full_context_coverage"] = {key: {field: value[field] for field in
+            ("native_condition", "requested_panels", "complete_panels", "partial_panels", "typed_fields_available", "typed_fields_requested")}
+            for key, value in working.items()}
+        description = readable_text(result) + "\n\nJev on the same four original full contexts:\n" + (
+            f"  First action: jurisdiction checks in {choices.count('check_crossborder_applicability')}/4; "
+            f"actual costs and obligation in {choices.count('clarify_itemized_obligation')}/4.\n"
+            f"The common-question study includes {len(working)} working configurations, with serving settings and extraction methods recorded separately.\n"
+            "See the main report for case-by-case action choices, missing fields and the context/scaffold study.")
+        emit(args, result, description)
         return
     if args.command == "doctor":
         result = doctor()

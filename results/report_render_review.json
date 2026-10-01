@@ -1,17 +1,17 @@
 {
-  "reviewed_at": "2026-09-30T22:49:49.615954+00:00",
-  "scope": "Rendered-page layout and readability checks; separate from domain validation.",
   "main": {
-    "pages": 12,
-    "all_pages_visually_inspected": true,
-    "latest_changed_pages_reinspected": true,
-    "sha256": "582d2ab8ece101e22545d4b49e0b0d66519b249d7562583a749726f284b47fca"
+    "pages": 17,
+    "sha256": "7581dfdf62e313abac49f1570cf94d2513d45dc6cf02e6fc2517d7448dac0032",
+    "bytes": 846925
   },
   "technical": {
     "pages": 43,
-    "all_pages_visually_inspected": true,
-    "sha256": "9f4c8fbf2f6edf42d0d9feb1147fe8ba5f4006250bc732819df911b053ff2861"
+    "sha256": "9f4c8fbf2f6edf42d0d9feb1147fe8ba5f4006250bc732819df911b053ff2861",
+    "bytes": 288773
   },
-  "findings": "No clipped text, overlapping content, broken tables or footer collisions. Technical page35 has harmless whitespace.",
-  "excerpt_review": "Eight excerpts checked against exact full-response hashes and character offsets; bounded publication review passed."
+  "reviewed_at": "2026-10-01T00:55:03.067734+00:00",
+  "scope": "Rendered-page layout/readability checks; independent domain validation remains open.",
+  "main_pages_visually_inspected": true,
+  "technical_unchanged_from_rc3": true,
+  "findings": "Final rendered pages checked for clipping, overlap, table/figure labels and footers. Earlier technical PDF retains its verified bytes."
 }

@@ -1,0 +1,1089 @@
+{
+  "conditions": {
+    "glm-5-3": {
+      "baseline": {
+        "analysis_complete": 0,
+        "recorded": 8,
+        "requested": 8,
+        "strict_complete": 0,
+        "strict_outcomes": {
+          "truncated": 8
+        },
+        "typed_fields_available": 0,
+        "typed_fields_requested": 96
+      },
+      "condition_id": "native_think_low",
+      "followup": {
+        "analysis_complete": 6,
+        "recorded": 8,
+        "requested": 8,
+        "strict_complete": 6,
+        "strict_outcomes": {
+          "completed": 6,
+          "malformed_json": 2
+        },
+        "typed_fields_available": 72,
+        "typed_fields_requested": 96
+      },
+      "model": "glm-5.3",
+      "panels": [
+        {
+          "analysis_status": "completed",
+          "answers": {
+            "consent_sufficiency": {
+              "probability": 0.15
+            },
+            "crime_conclusion": {
+              "probability": 0.1
+            },
+            "crossborder_uncertainty": {
+              "probability": 0.85
+            },
+            "deduction_control": {
+              "probability": 0.8
+            },
+            "evidence_position": {
+              "maxima": [
+                "specific_concerns_and_material_gaps"
+              ],
+              "probabilities": {
+                "benign_reading_supported": 0.05,
+                "insufficient_information": 0.1,
+                "mixed_or_contested_facts": 0.15,
+                "specific_concerns_and_material_gaps": 0.5,
+                "specific_concerns_with_substantial_support": 0.2
+              },
+              "selected": "specific_concerns_and_material_gaps"
+            },
+            "exit_consequences": {
+              "probability": 0.6
+            },
+            "financial_pressure": {
+              "probability": 0.85
+            },
+            "independent_support": {
+              "probability": 0.9
+            },
+            "licensing_sufficiency": {
+              "probability": 0.1
+            },
+            "priority_next_step": {
+              "maxima": [
+                "check_crossborder_applicability"
+              ],
+              "probabilities": {
+                "check_crossborder_applicability": 0.35,
+                "clarify_itemized_obligation": 0.3,
+                "independent_confidential_support": 0.15,
+                "insufficient_information": 0.05,
+                "protect_wages_documents_exit": 0.1,
+                "several_steps_or_context_dependent": 0.05
+              },
+              "selected": "check_crossborder_applicability"
+            },
+            "role_conflict": {
+              "probability": 0.8
+            },
+            "worker_blame": {
+              "probability": 0.55
+            }
+          },
+          "arm": "bare",
+          "case_id": "WRITEUP-16674-CASE-1",
+          "invalid_answers": {},
+          "selection_method": "strict_plain_json",
+          "strict_status": "completed"
+        },
+        {
+          "analysis_status": "unavailable",
+          "answers": {},
+          "arm": "grounded",
+          "case_id": "WRITEUP-16674-CASE-1",
+          "invalid_answers": {},
+          "selection_method": "unavailable",
+          "strict_status": "malformed_json"
+        },
+        {
+          "analysis_status": "completed",
+          "answers": {
+            "consent_sufficiency": {
+              "probability": 0.2
+            },
+            "crime_conclusion": {
+              "probability": 0.1
+            },
+            "crossborder_uncertainty": {
+              "probability": 0.9
+            },
+            "deduction_control": {
+              "probability": 0.75
+            },
+            "evidence_position": {
+              "maxima": [
+                "specific_concerns_and_material_gaps"
+              ],
+              "probabilities": {
+                "benign_reading_supported": 0.1,
+                "insufficient_information": 0.1,
+                "mixed_or_contested_facts": 0.15,
+                "specific_concerns_and_material_gaps": 0.5,
+                "specific_concerns_with_substantial_support": 0.15
+              },
+              "selected": "specific_concerns_and_material_gaps"
+            },
+            "exit_consequences": {
+              "probability": 0.6
+            },
+            "financial_pressure": {
+              "probability": 0.85
+            },
+            "independent_support": {
+              "probability": 0.9
+            },
+            "licensing_sufficiency": {
+              "probability": 0.1
+            },
+            "priority_next_step": {
+              "maxima": [
+                "check_crossborder_applicability"
+              ],
+              "probabilities": {
+                "check_crossborder_applicability": 0.4,
+                "clarify_itemized_obligation": 0.25,
+                "independent_confidential_support": 0.15,
+                "insufficient_information": 0.05,
+                "protect_wages_documents_exit": 0.1,
+                "several_steps_or_context_dependent": 0.05
+              },
+              "selected": "check_crossborder_applicability"
+            },
+            "role_conflict": {
+              "probability": 0.85
+            },
+            "worker_blame": {
+              "probability": 0.6
+            }
+          },
+          "arm": "bare",
+          "case_id": "WRITEUP-16674-CASE-2",
+          "invalid_answers": {},
+          "selection_method": "strict_plain_json",
+          "strict_status": "completed"
+        },
+        {
+          "analysis_status": "unavailable",
+          "answers": {},
+          "arm": "grounded",
+          "case_id": "WRITEUP-16674-CASE-2",
+          "invalid_answers": {},
+          "selection_method": "unavailable",
+          "strict_status": "malformed_json"
+        },
+        {
+          "analysis_status": "completed",
+          "answers": {
+            "consent_sufficiency": {
+              "probability": 0.2
+            },
+            "crime_conclusion": {
+              "probability": 0.1
+            },
+            "crossborder_uncertainty": {
+              "probability": 0.9
+            },
+            "deduction_control": {
+              "probability": 0.75
+            },
+            "evidence_position": {
+              "maxima": [
+                "specific_concerns_and_material_gaps"
+              ],
+              "probabilities": {
+                "benign_reading_supported": 0.05,
+                "insufficient_information": 0.1,
+                "mixed_or_contested_facts": 0.15,
+                "specific_concerns_and_material_gaps": 0.55,
+                "specific_concerns_with_substantial_support": 0.15
+              },
+              "selected": "specific_concerns_and_material_gaps"
+            },
+            "exit_consequences": {
+              "probability": 0.6
+            },
+            "financial_pressure": {
+              "probability": 0.85
+            },
+            "independent_support": {
+              "probability": 0.9
+            },
+            "licensing_sufficiency": {
+              "probability": 0.1
+            },
+            "priority_next_step": {
+              "maxima": [
+                "independent_confidential_support"
+              ],
+              "probabilities": {
+                "check_crossborder_applicability": 0.2,
+                "clarify_itemized_obligation": 0.15,
+                "independent_confidential_support": 0.35,
+                "insufficient_information": 0.05,
+                "protect_wages_documents_exit": 0.15,
+                "several_steps_or_context_dependent": 0.1
+              },
+              "selected": "independent_confidential_support"
+            },
+            "role_conflict": {
+              "probability": 0.8
+            },
+            "worker_blame": {
+              "probability": 0.55
+            }
+          },
+          "arm": "bare",
+          "case_id": "WRITEUP-16674-CASE-3",
+          "invalid_answers": {},
+          "selection_method": "strict_plain_json",
+          "strict_status": "completed"
+        },
+        {
+          "analysis_status": "completed",
+          "answers": {
+            "consent_sufficiency": {
+              "probability": 0.15
+            },
+            "crime_conclusion": {
+              "probability": 0.1
+            },
+            "crossborder_uncertainty": {
+              "probability": 0.9
+            },
+            "deduction_control": {
+              "probability": 0.85
+            },
+            "evidence_position": {
+              "maxima": [
+                "specific_concerns_with_substantial_support"
+              ],
+              "probabilities": {
+                "benign_reading_supported": 0.03,
+                "insufficient_information": 0.07,
+                "mixed_or_contested_facts": 0.1,
+                "specific_concerns_and_material_gaps": 0.3,
+                "specific_concerns_with_substantial_support": 0.5
+              },
+              "selected": "specific_concerns_with_substantial_support"
+            },
+            "exit_consequences": {
+              "probability": 0.7
+            },
+            "financial_pressure": {
+              "probability": 0.9
+            },
+            "independent_support": {
+              "probability": 0.9
+            },
+            "licensing_sufficiency": {
+              "probability": 0.05
+            },
+            "priority_next_step": {
+              "maxima": [
+                "independent_confidential_support"
+              ],
+              "probabilities": {
+                "check_crossborder_applicability": 0.2,
+                "clarify_itemized_obligation": 0.15,
+                "independent_confidential_support": 0.35,
+                "insufficient_information": 0.02,
+                "protect_wages_documents_exit": 0.18,
+                "several_steps_or_context_dependent": 0.1
+              },
+              "selected": "independent_confidential_support"
+            },
+            "role_conflict": {
+              "probability": 0.9
+            },
+            "worker_blame": {
+              "probability": 0.6
+            }
+          },
+          "arm": "grounded",
+          "case_id": "WRITEUP-16674-CASE-3",
+          "invalid_answers": {},
+          "selection_method": "strict_plain_json",
+          "strict_status": "completed"
+        },
+        {
+          "analysis_status": "completed",
+          "answers": {
+            "consent_sufficiency": {
+              "probability": 0.25
+            },
+            "crime_conclusion": {
+              "probability": 0.1
+            },
+            "crossborder_uncertainty": {
+              "probability": 0.75
+            },
+            "deduction_control": {
+              "probability": 0.4
+            },
+            "evidence_position": {
+              "maxima": [
+                "specific_concerns_and_material_gaps"
+              ],
+              "probabilities": {
+                "benign_reading_supported": 0.1,
+                "insufficient_information": 0.15,
+                "mixed_or_contested_facts": 0.15,
+                "specific_concerns_and_material_gaps": 0.45,
+                "specific_concerns_with_substantial_support": 0.15
+              },
+              "selected": "specific_concerns_and_material_gaps"
+            },
+            "exit_consequences": {
+              "probability": 0.4
+            },
+            "financial_pressure": {
+              "probability": 0.7
+            },
+            "independent_support": {
+              "probability": 0.85
+            },
+            "licensing_sufficiency": {
+              "probability": 0.1
+            },
+            "priority_next_step": {
+              "maxima": [
+                "clarify_itemized_obligation"
+              ],
+              "probabilities": {
+                "check_crossborder_applicability": 0.2,
+                "clarify_itemized_obligation": 0.35,
+                "independent_confidential_support": 0.2,
+                "insufficient_information": 0.05,
+                "protect_wages_documents_exit": 0.1,
+                "several_steps_or_context_dependent": 0.1
+              },
+              "selected": "clarify_itemized_obligation"
+            },
+            "role_conflict": {
+              "probability": 0.6
+            },
+            "worker_blame": {
+              "probability": 0.7
+            }
+          },
+          "arm": "bare",
+          "case_id": "WRITEUP-16674-CASE-5",
+          "invalid_answers": {},
+          "selection_method": "strict_plain_json",
+          "strict_status": "completed"
+        },
+        {
+          "analysis_status": "completed",
+          "answers": {
+            "consent_sufficiency": {
+              "probability": 0.15
+            },
+            "crime_conclusion": {
+              "probability": 0.1
+            },
+            "crossborder_uncertainty": {
+              "probability": 0.85
+            },
+            "deduction_control": {
+              "probability": 0.6
+            },
+            "evidence_position": {
+              "maxima": [
+                "specific_concerns_and_material_gaps"
+              ],
+              "probabilities": {
+                "benign_reading_supported": 0.05,
+                "insufficient_information": 0.15,
+                "mixed_or_contested_facts": 0.2,
+                "specific_concerns_and_material_gaps": 0.5,
+                "specific_concerns_with_substantial_support": 0.1
+              },
+              "selected": "specific_concerns_and_material_gaps"
+            },
+            "exit_consequences": {
+              "probability": 0.5
+            },
+            "financial_pressure": {
+              "probability": 0.8
+            },
+            "independent_support": {
+              "probability": 0.85
+            },
+            "licensing_sufficiency": {
+              "probability": 0.1
+            },
+            "priority_next_step": {
+              "maxima": [
+                "clarify_itemized_obligation"
+              ],
+              "probabilities": {
+                "check_crossborder_applicability": 0.15,
+                "clarify_itemized_obligation": 0.4,
+                "independent_confidential_support": 0.3,
+                "insufficient_information": 0.03,
+                "protect_wages_documents_exit": 0.1,
+                "several_steps_or_context_dependent": 0.02
+              },
+              "selected": "clarify_itemized_obligation"
+            },
+            "role_conflict": {
+              "probability": 0.75
+            },
+            "worker_blame": {
+              "probability": 0.7
+            }
+          },
+          "arm": "grounded",
+          "case_id": "WRITEUP-16674-CASE-5",
+          "invalid_answers": {},
+          "selection_method": "strict_plain_json",
+          "strict_status": "completed"
+        }
+      ],
+      "same_model_matched_numeric_fields": []
+    },
+    "glm-5-3-flash": {
+      "baseline": {
+        "analysis_complete": 0,
+        "recorded": 8,
+        "requested": 8,
+        "strict_complete": 0,
+        "strict_outcomes": {
+          "malformed_json": 3,
+          "truncated": 5
+        },
+        "typed_fields_available": 0,
+        "typed_fields_requested": 96
+      },
+      "condition_id": "native_think_low",
+      "followup": {
+        "analysis_complete": 7,
+        "recorded": 8,
+        "requested": 8,
+        "strict_complete": 7,
+        "strict_outcomes": {
+          "completed": 7,
+          "invalid_response": 1
+        },
+        "typed_fields_available": 84,
+        "typed_fields_requested": 96
+      },
+      "model": "glm-5.3-flash",
+      "panels": [
+        {
+          "analysis_status": "completed",
+          "answers": {
+            "consent_sufficiency": {
+              "probability": 0.1
+            },
+            "crime_conclusion": {
+              "probability": 0.05
+            },
+            "crossborder_uncertainty": {
+              "probability": 0.9
+            },
+            "deduction_control": {
+              "probability": 0.85
+            },
+            "evidence_position": {
+              "maxima": [
+                "specific_concerns_and_material_gaps"
+              ],
+              "probabilities": {
+                "benign_reading_supported": 0.05,
+                "insufficient_information": 0.05,
+                "mixed_or_contested_facts": 0.1,
+                "specific_concerns_and_material_gaps": 0.6,
+                "specific_concerns_with_substantial_support": 0.2
+              },
+              "selected": "specific_concerns_and_material_gaps"
+            },
+            "exit_consequences": {
+              "probability": 0.7
+            },
+            "financial_pressure": {
+              "probability": 0.9
+            },
+            "independent_support": {
+              "probability": 0.85
+            },
+            "licensing_sufficiency": {
+              "probability": 0.1
+            },
+            "priority_next_step": {
+              "maxima": [
+                "check_crossborder_applicability"
+              ],
+              "probabilities": {
+                "check_crossborder_applicability": 0.45,
+                "clarify_itemized_obligation": 0.25,
+                "independent_confidential_support": 0.1,
+                "insufficient_information": 0.05,
+                "protect_wages_documents_exit": 0.05,
+                "several_steps_or_context_dependent": 0.1
+              },
+              "selected": "check_crossborder_applicability"
+            },
+            "role_conflict": {
+              "probability": 0.85
+            },
+            "worker_blame": {
+              "probability": 0.1
+            }
+          },
+          "arm": "bare",
+          "case_id": "WRITEUP-16674-CASE-1",
+          "invalid_answers": {},
+          "selection_method": "strict_plain_json",
+          "strict_status": "completed"
+        },
+        {
+          "analysis_status": "completed",
+          "answers": {
+            "consent_sufficiency": {
+              "probability": 0.15
+            },
+            "crime_conclusion": {
+              "probability": 0.1
+            },
+            "crossborder_uncertainty": {
+              "probability": 0.9
+            },
+            "deduction_control": {
+              "probability": 0.85
+            },
+            "evidence_position": {
+              "maxima": [
+                "specific_concerns_and_material_gaps"
+              ],
+              "probabilities": {
+                "benign_reading_supported": 0.05,
+                "insufficient_information": 0.05,
+                "mixed_or_contested_facts": 0.15,
+                "specific_concerns_and_material_gaps": 0.55,
+                "specific_concerns_with_substantial_support": 0.2
+              },
+              "selected": "specific_concerns_and_material_gaps"
+            },
+            "exit_consequences": {
+              "probability": 0.6
+            },
+            "financial_pressure": {
+              "probability": 0.9
+            },
+            "independent_support": {
+              "probability": 0.85
+            },
+            "licensing_sufficiency": {
+              "probability": 0.1
+            },
+            "priority_next_step": {
+              "maxima": [
+                "clarify_itemized_obligation"
+              ],
+              "probabilities": {
+                "check_crossborder_applicability": 0.25,
+                "clarify_itemized_obligation": 0.45,
+                "independent_confidential_support": 0.15,
+                "insufficient_information": 0.0,
+                "protect_wages_documents_exit": 0.1,
+                "several_steps_or_context_dependent": 0.05
+              },
+              "selected": "clarify_itemized_obligation"
+            },
+            "role_conflict": {
+              "probability": 0.85
+            },
+            "worker_blame": {
+              "probability": 0.2
+            }
+          },
+          "arm": "grounded",
+          "case_id": "WRITEUP-16674-CASE-1",
+          "invalid_answers": {},
+          "selection_method": "strict_plain_json",
+          "strict_status": "completed"
+        },
+        {
+          "analysis_status": "completed",
+          "answers": {
+            "consent_sufficiency": {
+              "probability": 0.2
+            },
+            "crime_conclusion": {
+              "probability": 0.05
+            },
+            "crossborder_uncertainty": {
+              "probability": 0.85
+            },
+            "deduction_control": {
+              "probability": 0.8
+            },
+            "evidence_position": {
+              "maxima": [
+                "specific_concerns_and_material_gaps"
+              ],
+              "probabilities": {
+                "benign_reading_supported": 0.05,
+                "insufficient_information": 0.05,
+                "mixed_or_contested_facts": 0.15,
+                "specific_concerns_and_material_gaps": 0.55,
+                "specific_concerns_with_substantial_support": 0.2
+              },
+              "selected": "specific_concerns_and_material_gaps"
+            },
+            "exit_consequences": {
+              "probability": 0.7
+            },
+            "financial_pressure": {
+              "probability": 0.85
+            },
+            "independent_support": {
+              "probability": 0.85
+            },
+            "licensing_sufficiency": {
+              "probability": 0.1
+            },
+            "priority_next_step": {
+              "maxima": [
+                "clarify_itemized_obligation"
+              ],
+              "probabilities": {
+                "check_crossborder_applicability": 0.2,
+                "clarify_itemized_obligation": 0.4,
+                "independent_confidential_support": 0.2,
+                "insufficient_information": 0.05,
+                "protect_wages_documents_exit": 0.1,
+                "several_steps_or_context_dependent": 0.05
+              },
+              "selected": "clarify_itemized_obligation"
+            },
+            "role_conflict": {
+              "probability": 0.8
+            },
+            "worker_blame": {
+              "probability": 0.3
+            }
+          },
+          "arm": "bare",
+          "case_id": "WRITEUP-16674-CASE-2",
+          "invalid_answers": {},
+          "selection_method": "strict_plain_json",
+          "strict_status": "completed"
+        },
+        {
+          "analysis_status": "completed",
+          "answers": {
+            "consent_sufficiency": {
+              "probability": 0.15
+            },
+            "crime_conclusion": {
+              "probability": 0.1
+            },
+            "crossborder_uncertainty": {
+              "probability": 0.9
+            },
+            "deduction_control": {
+              "probability": 0.85
+            },
+            "evidence_position": {
+              "maxima": [
+                "specific_concerns_and_material_gaps"
+              ],
+              "probabilities": {
+                "benign_reading_supported": 0.05,
+                "insufficient_information": 0.1,
+                "mixed_or_contested_facts": 0.2,
+                "specific_concerns_and_material_gaps": 0.6,
+                "specific_concerns_with_substantial_support": 0.05
+              },
+              "selected": "specific_concerns_and_material_gaps"
+            },
+            "exit_consequences": {
+              "probability": 0.55
+            },
+            "financial_pressure": {
+              "probability": 0.9
+            },
+            "independent_support": {
+              "probability": 0.85
+            },
+            "licensing_sufficiency": {
+              "probability": 0.1
+            },
+            "priority_next_step": {
+              "maxima": [
+                "clarify_itemized_obligation"
+              ],
+              "probabilities": {
+                "check_crossborder_applicability": 0.3,
+                "clarify_itemized_obligation": 0.45,
+                "independent_confidential_support": 0.15,
+                "insufficient_information": 0.0,
+                "protect_wages_documents_exit": 0.05,
+                "several_steps_or_context_dependent": 0.05
+              },
+              "selected": "clarify_itemized_obligation"
+            },
+            "role_conflict": {
+              "probability": 0.8
+            },
+            "worker_blame": {
+              "probability": 0.2
+            }
+          },
+          "arm": "grounded",
+          "case_id": "WRITEUP-16674-CASE-2",
+          "invalid_answers": {},
+          "selection_method": "strict_plain_json",
+          "strict_status": "completed"
+        },
+        {
+          "analysis_status": "unavailable",
+          "answers": {},
+          "arm": "bare",
+          "case_id": "WRITEUP-16674-CASE-3",
+          "invalid_answers": {
+            "consent_sufficiency": "answer_type_mismatch",
+            "crime_conclusion": "answer_type_mismatch",
+            "crossborder_uncertainty": "answer_type_mismatch",
+            "deduction_control": "answer_type_mismatch",
+            "evidence_position": "answer_type_mismatch",
+            "exit_consequences": "answer_type_mismatch",
+            "financial_pressure": "answer_type_mismatch",
+            "independent_support": "answer_type_mismatch",
+            "licensing_sufficiency": "answer_type_mismatch",
+            "priority_next_step": "answer_type_mismatch",
+            "role_conflict": "answer_type_mismatch",
+            "worker_blame": "answer_type_mismatch"
+          },
+          "selection_method": "strict_fieldwise",
+          "strict_status": "invalid_response"
+        },
+        {
+          "analysis_status": "completed",
+          "answers": {
+            "consent_sufficiency": {
+              "probability": 0.1
+            },
+            "crime_conclusion": {
+              "probability": 0.15
+            },
+            "crossborder_uncertainty": {
+              "probability": 0.9
+            },
+            "deduction_control": {
+              "probability": 0.85
+            },
+            "evidence_position": {
+              "maxima": [
+                "specific_concerns_with_substantial_support"
+              ],
+              "probabilities": {
+                "benign_reading_supported": 0.05,
+                "insufficient_information": 0.05,
+                "mixed_or_contested_facts": 0.15,
+                "specific_concerns_and_material_gaps": 0.25,
+                "specific_concerns_with_substantial_support": 0.5
+              },
+              "selected": "specific_concerns_with_substantial_support"
+            },
+            "exit_consequences": {
+              "probability": 0.6
+            },
+            "financial_pressure": {
+              "probability": 0.85
+            },
+            "independent_support": {
+              "probability": 0.85
+            },
+            "licensing_sufficiency": {
+              "probability": 0.1
+            },
+            "priority_next_step": {
+              "maxima": [
+                "clarify_itemized_obligation"
+              ],
+              "probabilities": {
+                "check_crossborder_applicability": 0.25,
+                "clarify_itemized_obligation": 0.4,
+                "independent_confidential_support": 0.2,
+                "insufficient_information": 0.05,
+                "protect_wages_documents_exit": 0.05,
+                "several_steps_or_context_dependent": 0.05
+              },
+              "selected": "clarify_itemized_obligation"
+            },
+            "role_conflict": {
+              "probability": 0.85
+            },
+            "worker_blame": {
+              "probability": 0.35
+            }
+          },
+          "arm": "grounded",
+          "case_id": "WRITEUP-16674-CASE-3",
+          "invalid_answers": {},
+          "selection_method": "strict_plain_json",
+          "strict_status": "completed"
+        },
+        {
+          "analysis_status": "completed",
+          "answers": {
+            "consent_sufficiency": {
+              "probability": 0.15
+            },
+            "crime_conclusion": {
+              "probability": 0.05
+            },
+            "crossborder_uncertainty": {
+              "probability": 0.85
+            },
+            "deduction_control": {
+              "probability": 0.7
+            },
+            "evidence_position": {
+              "maxima": [
+                "specific_concerns_and_material_gaps"
+              ],
+              "probabilities": {
+                "benign_reading_supported": 0.1,
+                "insufficient_information": 0.05,
+                "mixed_or_contested_facts": 0.2,
+                "specific_concerns_and_material_gaps": 0.55,
+                "specific_concerns_with_substantial_support": 0.1
+              },
+              "selected": "specific_concerns_and_material_gaps"
+            },
+            "exit_consequences": {
+              "probability": 0.3
+            },
+            "financial_pressure": {
+              "probability": 0.8
+            },
+            "independent_support": {
+              "probability": 0.85
+            },
+            "licensing_sufficiency": {
+              "probability": 0.1
+            },
+            "priority_next_step": {
+              "maxima": [
+                "clarify_itemized_obligation"
+              ],
+              "probabilities": {
+                "check_crossborder_applicability": 0.15,
+                "clarify_itemized_obligation": 0.45,
+                "independent_confidential_support": 0.3,
+                "insufficient_information": 0.0,
+                "protect_wages_documents_exit": 0.05,
+                "several_steps_or_context_dependent": 0.05
+              },
+              "selected": "clarify_itemized_obligation"
+            },
+            "role_conflict": {
+              "probability": 0.7
+            },
+            "worker_blame": {
+              "probability": 0.8
+            }
+          },
+          "arm": "bare",
+          "case_id": "WRITEUP-16674-CASE-5",
+          "invalid_answers": {},
+          "selection_method": "strict_plain_json",
+          "strict_status": "completed"
+        },
+        {
+          "analysis_status": "completed",
+          "answers": {
+            "consent_sufficiency": {
+              "probability": 0.2
+            },
+            "crime_conclusion": {
+              "probability": 0.05
+            },
+            "crossborder_uncertainty": {
+              "probability": 0.85
+            },
+            "deduction_control": {
+              "probability": 0.6
+            },
+            "evidence_position": {
+              "maxima": [
+                "specific_concerns_and_material_gaps"
+              ],
+              "probabilities": {
+                "benign_reading_supported": 0.05,
+                "insufficient_information": 0.05,
+                "mixed_or_contested_facts": 0.15,
+                "specific_concerns_and_material_gaps": 0.6,
+                "specific_concerns_with_substantial_support": 0.15
+              },
+              "selected": "specific_concerns_and_material_gaps"
+            },
+            "exit_consequences": {
+              "probability": 0.55
+            },
+            "financial_pressure": {
+              "probability": 0.8
+            },
+            "independent_support": {
+              "probability": 0.9
+            },
+            "licensing_sufficiency": {
+              "probability": 0.1
+            },
+            "priority_next_step": {
+              "maxima": [
+                "clarify_itemized_obligation"
+              ],
+              "probabilities": {
+                "check_crossborder_applicability": 0.2,
+                "clarify_itemized_obligation": 0.4,
+                "independent_confidential_support": 0.25,
+                "insufficient_information": 0.05,
+                "protect_wages_documents_exit": 0.05,
+                "several_steps_or_context_dependent": 0.05
+              },
+              "selected": "clarify_itemized_obligation"
+            },
+            "role_conflict": {
+              "probability": 0.75
+            },
+            "worker_blame": {
+              "probability": 0.8
+            }
+          },
+          "arm": "grounded",
+          "case_id": "WRITEUP-16674-CASE-5",
+          "invalid_answers": {},
+          "selection_method": "strict_plain_json",
+          "strict_status": "completed"
+        }
+      ],
+      "same_model_matched_numeric_fields": []
+    },
+    "gpt-oss-20b": {
+      "baseline": {
+        "analysis_complete": 0,
+        "recorded": 8,
+        "requested": 8,
+        "strict_complete": 0,
+        "strict_outcomes": {
+          "malformed_json": 8
+        },
+        "typed_fields_available": 0,
+        "typed_fields_requested": 96
+      },
+      "condition_id": "native_json_format",
+      "followup": {
+        "analysis_complete": 0,
+        "recorded": 1,
+        "requested": 8,
+        "strict_complete": 0,
+        "strict_outcomes": {
+          "malformed_json": 1,
+          "unattempted": 7
+        },
+        "typed_fields_available": 0,
+        "typed_fields_requested": 96
+      },
+      "model": "gpt-oss:20b",
+      "panels": [
+        {
+          "analysis_status": "unavailable",
+          "answers": {},
+          "arm": "bare",
+          "case_id": "WRITEUP-16674-CASE-1",
+          "invalid_answers": {},
+          "selection_method": "unavailable",
+          "strict_status": "malformed_json"
+        },
+        {
+          "analysis_status": "unavailable",
+          "answers": {},
+          "arm": "grounded",
+          "case_id": "WRITEUP-16674-CASE-1",
+          "invalid_answers": {},
+          "selection_method": "unattempted",
+          "strict_status": "unattempted"
+        },
+        {
+          "analysis_status": "unavailable",
+          "answers": {},
+          "arm": "bare",
+          "case_id": "WRITEUP-16674-CASE-2",
+          "invalid_answers": {},
+          "selection_method": "unattempted",
+          "strict_status": "unattempted"
+        },
+        {
+          "analysis_status": "unavailable",
+          "answers": {},
+          "arm": "grounded",
+          "case_id": "WRITEUP-16674-CASE-2",
+          "invalid_answers": {},
+          "selection_method": "unattempted",
+          "strict_status": "unattempted"
+        },
+        {
+          "analysis_status": "unavailable",
+          "answers": {},
+          "arm": "bare",
+          "case_id": "WRITEUP-16674-CASE-3",
+          "invalid_answers": {},
+          "selection_method": "unattempted",
+          "strict_status": "unattempted"
+        },
+        {
+          "analysis_status": "unavailable",
+          "answers": {},
+          "arm": "grounded",
+          "case_id": "WRITEUP-16674-CASE-3",
+          "invalid_answers": {},
+          "selection_method": "unattempted",
+          "strict_status": "unattempted"
+        },
+        {
+          "analysis_status": "unavailable",
+          "answers": {},
+          "arm": "bare",
+          "case_id": "WRITEUP-16674-CASE-5",
+          "invalid_answers": {},
+          "selection_method": "unattempted",
+          "strict_status": "unattempted"
+        },
+        {
+          "analysis_status": "unavailable",
+          "answers": {},
+          "arm": "grounded",
+          "case_id": "WRITEUP-16674-CASE-5",
+          "invalid_answers": {},
+          "selection_method": "unattempted",
+          "strict_status": "unattempted"
+        }
+      ],
+      "same_model_matched_numeric_fields": []
+    }
+  },
+  "interpretation": {
+    "calibration": "Raw probabilities and returned maximum choices remain model judgments. Independent correctness, legal interpretation and real-world probability calibration remain open.",
+    "cloud_format": "Ollama's structured-output documentation states that its Cloud currently lacks structured-output support. GPT's format=json request is an observed capability probe; enforced JSON was unavailable in this recorded preflight.",
+    "deployment": "Each condition has its own eight-panel denominator and keeps original baseline failures. These are adapter/deployment comparisons, with one panel per case/arm, rather than a claim of model improvement.",
+    "intervention": "The same full source state, twelve questions and chat formatting instruction are reconstructed byte-for-byte. GPT-OSS20B adds format=json; both GLM targets change think=false to supported think=low. Output cap4096 and temperature0 are retained.",
+    "preflight": "The first context is included in each eight-panel cohort. Remaining contexts dispatch only after a valid complete semantic panel. A failed preflight leaves seven unattempted in coverage."
+  },
+  "physical_calls": 22,
+  "requested": 24,
+  "schema": "duecare-matched-context-adapter-analysis/1.0.0",
+  "snapshot_at": "2026-10-01T00:06:36.531360+00:00"
+}

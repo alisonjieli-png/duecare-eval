@@ -1,0 +1,4 @@
+interface:
+  display_name: "Find a harness component"
+  short_description: "Find and verify reusable harness components"
+  default_prompt: "Use $harness-find-component to locate the smallest suitable component and check its contract."

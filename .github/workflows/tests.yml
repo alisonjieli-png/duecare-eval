@@ -51,5 +51,10 @@ jobs:
           python tools/export_baltor_candidate.py "$RUNNER_TEMP/duecare-baltor-candidate"
           python tools/export_baltor_candidate.py "$RUNNER_TEMP/duecare-baltor-candidate" --verify
       - run: duecare-eval doctor --json
+      - name: Verify and exercise the offline component library
+        run: |
+          harness-components check --full
+          harness-components search "email" --kind function --limit 3
+          harness-components run text.email_normalize --input '{"email":"Case+tag@EXAMPLE.ORG"}'
       - run: sha256sum --check SHA256SUMS
       - run: pytest -q

@@ -1,10 +1,19 @@
 {
-  "duration_seconds": 352.12,
+  "duration_seconds": 353.96,
   "errors": 0,
   "failures": 0,
   "full_run_final": true,
-  "network": "disabled_by_test_fixture",
-  "scope": "public exported code and evidence; private provider execution has separate receipts",
+  "junit_sha256": "84638ce531580582933170a668ef31a7d75d10cd2e6aec7796f948149a6a3b1b",
+  "network": "Local fixtures; ordinary socket connections guarded in both test trees. Provider calls are outside this suite.",
+  "post_format_subset": {
+    "errors": 0,
+    "failures": 0,
+    "junit_sha256": "898f910008bec9e91d2b3cbd93bc3efeff0ff07c8fd26b1cdef43f48b0405c0b",
+    "scope": "Repeated component tests after trimming trailing blank lines in new data/search modules. This subset belongs to the full test population and is counted once.",
+    "skipped": 0,
+    "tests": 817
+  },
+  "scope": "Offline public evidence, library fixtures and actual local MCP stdio clients; independent domain and worker review has separate evidence.",
   "skipped": 0,
-  "tests": 596
+  "tests": 1426
 }

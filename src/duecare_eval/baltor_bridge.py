@@ -28,9 +28,11 @@ PACK_NAMES = ("agriculture", "construction", "manufacturing", "hospitality", "ma
 PACK_FILES = ("manifest.json", "cases.jsonl", "questions.json", "rubric.json", "sources.json")
 SKILL_NAMES = ("duecare-author-industry-pack", "duecare-connect-harness", "duecare-review-evidence",
                "duecare-package-knowledge", "duecare-design-agent-evaluation")
-# The dependency closure is explicit. In particular, neither runs/ nor full
-# narrative cases/reference banks nor model output files are selected.
-EXPORT_PATHS = tuple(sorted((
+LEGACY_LAYOUT = "legacy-skills/v1"
+CURRENT_LAYOUT = "harness-components-skills/v1"
+# Both layouts contain the same closed knowledge dependency set and five named
+# skills. The broader harness library has its own distribution and lifecycle.
+COMMON_EXPORT_PATHS = tuple(sorted((
     "NOTICE.md", "src/duecare_eval/__init__.py", "src/duecare_eval/contracts.py",
     "src/duecare_eval/extensions.py", "src/duecare_eval/knowledge.py",
     "src/duecare_eval/mcp_server.py", "src/duecare_eval/baltor_bridge.py",
@@ -44,8 +46,18 @@ EXPORT_PATHS = tuple(sorted((
     "plugins/mcp-stdio.json",
     *("plugins/" + name + ".json" for name in ("jev-typed", "chat-messages", "jsonl-batch")),
     *("examples/industry_packs/" + name + "/" + member for name in PACK_NAMES for member in PACK_FILES),
-    *("skills/" + name + "/" + member for name in SKILL_NAMES for member in ("SKILL.md", "agents/openai.yaml")),
 )))
+LAYOUT_PATHS = {
+    profile: tuple(sorted((*COMMON_EXPORT_PATHS,
+        *(prefix + name + "/" + member for name in SKILL_NAMES
+          for member in ("SKILL.md", "agents/openai.yaml")))))
+    for profile, prefix in ((LEGACY_LAYOUT, "skills/"),
+                            (CURRENT_LAYOUT, "harness_components/skills/"))
+}
+# Existing profile contents stay fixed. A larger dependency closure requires a
+# separately named profile, preserving validation of already published bundles.
+# Public callers that use this constant receive the current export closure.
+EXPORT_PATHS = LAYOUT_PATHS[CURRENT_LAYOUT]
 # These are the receiving CataloguePackage implementation's limits, not limits
 # on DueCare research or the number of generated/admitted knowledge items.
 MAX_FILE_BYTES = 8 * 1024 * 1024
@@ -221,7 +233,7 @@ class PreloadedOperations:
 
 def _file_record(name, raw):
     role = "executable_tool" if name.endswith(".py") else "configuration" if name.startswith("plugins/") else "other"
-    if name.startswith("skills/"):
+    if name.startswith(("skills/", "harness_components/skills/")):
         role = "skill_definition" if name.endswith("/SKILL.md") else "configuration"
     elif name.startswith("docs/"):
         role = "skill_reference"
@@ -271,13 +283,19 @@ def _asset(package, source, notice_digest):
     return value
 
 
-def export_candidate(source_root, destination, *, captured_at=None):
+def _layout_paths(profile):
+    _require(type(profile) is str and profile in LAYOUT_PATHS, "unsupported_layout_profile")
+    return LAYOUT_PATHS[profile]
+
+
+def export_candidate(source_root, destination, *, captured_at=None, layout_profile=CURRENT_LAYOUT):
     """Write one fresh candidate directory from the independent public checkout.
 
-    No file outside EXPORT_PATHS is copied. Git metadata and pyproject.toml
+    Only the selected exact layout is copied. Git metadata and pyproject.toml
     establish identity only. Source changes during capture refuse the export.
     The output is not a catalogue release bundle and contains no approval.
     """
+    export_paths = _layout_paths(layout_profile)
     root = _root(source_root)
     output = Path(destination).absolute()
     _require(not output.exists() and not output.is_symlink(), "destination_already_exists")
@@ -285,7 +303,7 @@ def export_candidate(source_root, destination, *, captured_at=None):
     parent = _root(output.parent)
     _require(not output.is_relative_to(root) and not root.is_relative_to(output), "destination_overlaps_source")
     before = _source_state(root)
-    blobs = {name: _read(root, name) for name in EXPORT_PATHS}
+    blobs = {name: _read(root, name) for name in export_paths}
     _require(sum(map(len, blobs.values())) <= MAX_PACKAGE_BYTES, "package_too_large")
     matches_base = _matches_commit(root, before["base_commit"], blobs)
     # Load only the knowledge closure and verify its existing manifest hashes.
@@ -305,7 +323,8 @@ def export_candidate(source_root, destination, *, captured_at=None):
               "base_commit_is_exported_tree": matches_base}
     contracts = operation_contracts()
     assets = [_asset(package, source, _digest(blobs["NOTICE.md"]))]
-    candidate = {"schema": VERSION, "lifecycle": "candidate", "admitted": False, "served": False,
+    candidate = {"schema": VERSION, "layout_profile": layout_profile,
+        "lifecycle": "candidate", "admitted": False, "served": False,
         "source": source, "rights": {"license": "unknown", "reuse_permission": "unresolved",
             "notice_path": "NOTICE.md", "notice_sha256": _digest(blobs["NOTICE.md"]),
             "third_party_rights": "Each cited source retains its own rights and terms."},
@@ -348,6 +367,10 @@ def validate_candidate(directory):
     candidate = loads_strict(_read(root, "candidate.json").decode())
     _require(candidate.get("schema") == VERSION and candidate.get("lifecycle") == "candidate"
              and candidate.get("admitted") is False and candidate.get("served") is False, "candidate_only_required")
+    # rc.8 predates the layout field. Its missing declaration selects only the
+    # exact legacy closure; an explicit null or unknown profile is refused.
+    layout_profile = candidate["layout_profile"] if "layout_profile" in candidate else LEGACY_LAYOUT
+    export_paths = _layout_paths(layout_profile)
     _require(candidate.get("full_bundle_contains_evaluator_references") is True
              and candidate.get("target_input") == "payload_only"
              and candidate.get("coordinator_only_fixture_files") == ["examples/industry_packs/" + name + "/cases.jsonl" for name in PACK_NAMES],
@@ -361,8 +384,8 @@ def validate_candidate(directory):
              and package["body_form"] == "package", "package_manifest_mismatch")
     files = package["files"]
     _require(type(files) is list and all(type(entry) is dict for entry in files)
-             and [entry.get("path") for entry in files] == list(EXPORT_PATHS), "exact_allowlist_required")
-    expected_paths = set(ROOT_DOCUMENTS) | {"files/" + name for name in EXPORT_PATHS}
+             and [entry.get("path") for entry in files] == list(export_paths), "exact_allowlist_required")
+    expected_paths = set(ROOT_DOCUMENTS) | {"files/" + name for name in export_paths}
     actual_paths = set()
     for parent, directories, members in os.walk(root, followlinks=False):
         for name in directories + members:
@@ -370,9 +393,12 @@ def validate_candidate(directory):
             _require(not path.is_symlink(), "symlink_member_refused")
         actual_paths.update((Path(parent) / name).relative_to(root).as_posix() for name in members)
     _require(actual_paths == expected_paths, "unexpected_candidate_files")
+    total_file_bytes = 0
     for entry in files:
         raw = _read(root, "files/" + entry["path"])
         _require(entry == _file_record(entry["path"], raw), "package_file_identity_mismatch")
+        total_file_bytes += len(raw)
+        _require(total_file_bytes <= MAX_PACKAGE_BYTES, "package_too_large")
     counts = _file_counts(files)
     _require(all(candidate.get(key) == value for key, value in counts.items()), "package_file_counts_mismatch")
     package_digest = _digest(_json_bytes({"record_type": "catalogue_package/v1", "files": files}))
@@ -384,6 +410,7 @@ def validate_candidate(directory):
     _require(_digest(_json_bytes(assets)) == candidate["code_assets_sha256"], "code_asset_digest_mismatch")
     contracts = loads_strict(_read(root, "operation-contracts.json").decode())
     _require(contracts == operation_contracts() and _digest(_json_bytes(contracts)) == candidate["operation_contracts_sha256"], "operation_contract_mismatch")
-    return {"schema": VERSION, "lifecycle": "candidate", "files_verified": len(files), **counts,
+    return {"schema": VERSION, "layout_profile": layout_profile,
+            "lifecycle": "candidate", "files_verified": len(files), **counts,
             "package_sha256": package_digest, "source": candidate["source"],
             "rights": candidate["rights"], "model_calls_executed": 0, "admitted": False, "served": False}

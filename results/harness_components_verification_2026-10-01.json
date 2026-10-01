@@ -1,0 +1,234 @@
+{
+  "captured_at": "2026-10-01T17:58:24.178146+00:00",
+  "catalog": {
+    "catalog_reproduced": true,
+    "catalog_sha256": "1a5f66bece91e18ea17624bf4d989f3144b2e5fa1fff8add85ee85bb0f7d1489",
+    "counts": {
+      "function": 158,
+      "query_preset": 13888,
+      "skill": 11,
+      "upstream_reference": 1393
+    },
+    "declared_examples_passed": 158,
+    "files_checked": 15462,
+    "files_skipped": 0,
+    "files_total": 15462,
+    "full": true,
+    "ok": true,
+    "project_provider_model_calls": 0,
+    "scope": "Offline artifact integrity and declared examples; independent edge tests run in pytest."
+  },
+  "claims": "Tests check software behavior and bytes. Retrieval relevance, model capability, legal application and worker-safety validation need their own assessment.",
+  "function_groups": {
+    "data": 48,
+    "search": 50,
+    "text": 60
+  },
+  "library_work_project_provider_model_calls": 0,
+  "mcp": {
+    "malformed_calls": "strict pre-coercion validation, exact INVALID_PARAMS regression checks",
+    "sdk": "2.2.0",
+    "tested_stdio_protocols": [
+      "2026-07-28",
+      "2025-11-25"
+    ],
+    "tools": 4
+  },
+  "public_tests": {
+    "duration_seconds": 353.96,
+    "errors": 0,
+    "failures": 0,
+    "full_run_final": true,
+    "junit_sha256": "84638ce531580582933170a668ef31a7d75d10cd2e6aec7796f948149a6a3b1b",
+    "network": "Local fixtures; ordinary socket connections guarded in both test trees. Provider calls are outside this suite.",
+    "post_format_subset": {
+      "errors": 0,
+      "failures": 0,
+      "junit_sha256": "898f910008bec9e91d2b3cbd93bc3efeff0ff07c8fd26b1cdef43f48b0405c0b",
+      "scope": "Repeated component tests after trimming trailing blank lines in new data/search modules. This subset belongs to the full test population and is counted once.",
+      "skipped": 0,
+      "tests": 817
+    },
+    "scope": "Offline public evidence, library fixtures and actual local MCP stdio clients; independent domain and worker review has separate evidence.",
+    "skipped": 0,
+    "tests": 1426
+  },
+  "query_bank": {
+    "catalog_sha256": "5b83dab178bb2cbb71f76d5a0a1e3694a5b9a928f3aa3a3a47fa0156c35b78f0",
+    "execution_status": "saved unexecuted presets; exact query/source-row and payload hashes verified",
+    "inventory_sha256": "99ebc9b3c6548ca8f3ded673ed7be348463dc9cb2cfb6c4e9aefa2f25c21ba49",
+    "license_sha256": "1956143295d05dc2664f813b4d5727928609661749cad1bf4710ef1585921eb5"
+  },
+  "release": "v0.1.0-rc.9",
+  "scientific_snapshot_release": "v0.1.0-rc.5",
+  "scope": "Reusable component software and discovery metadata; earlier benchmark inputs, outcomes and report PDFs retain their published snapshot.",
+  "skills": {
+    "independent_forward_trial": {
+      "path": "results/harness_workflow_trial_2026-10-01.json",
+      "scope": "A separate agent followed all six workflows on fictional supplied text and a minimal temporary component copy; 29 CLI calls behaved as expected, including four refusals.",
+      "sha256": "3cc6afef471cff35466926775e6d58fc3974f470a2f88d6cdcaed6879910d632"
+    },
+    "new_workflow_skills": 6,
+    "original_skill_moves": {
+      "skills/duecare-author-industry-pack/SKILL.md": {
+        "path": "harness_components/skills/duecare-author-industry-pack/SKILL.md",
+        "sha256": "e08ebf80d2d182c7468be58c2c300d4eae1af58006460a5cf7e6128f6e649af0"
+      },
+      "skills/duecare-author-industry-pack/agents/openai.yaml": {
+        "path": "harness_components/skills/duecare-author-industry-pack/agents/openai.yaml",
+        "sha256": "230f7429cd58185fb312489ebfffb43157eaabe9f872a3e626c4ac40961cb581"
+      },
+      "skills/duecare-connect-harness/SKILL.md": {
+        "path": "harness_components/skills/duecare-connect-harness/SKILL.md",
+        "sha256": "a621d8907005bc7167bada307614c46030ac1d6b4a613dc1b84574b009494e97"
+      },
+      "skills/duecare-connect-harness/agents/openai.yaml": {
+        "path": "harness_components/skills/duecare-connect-harness/agents/openai.yaml",
+        "sha256": "67d6433a4f1c8ffd46c77b1d41e054094db90e8db1744927ae6de8ffeb27e999"
+      },
+      "skills/duecare-design-agent-evaluation/SKILL.md": {
+        "path": "harness_components/skills/duecare-design-agent-evaluation/SKILL.md",
+        "sha256": "bf57c9f3f961c315bb8ac915e9f0966cd390a15105d2ca0f68b864064573c582"
+      },
+      "skills/duecare-design-agent-evaluation/agents/openai.yaml": {
+        "path": "harness_components/skills/duecare-design-agent-evaluation/agents/openai.yaml",
+        "sha256": "69d34a92ff289b4407226c955f71423def5097175cf457bde531bf0efe345a26"
+      },
+      "skills/duecare-package-knowledge/SKILL.md": {
+        "path": "harness_components/skills/duecare-package-knowledge/SKILL.md",
+        "sha256": "9545efee642c841da669337a79afcf10ce2f5c845a33dd31f6208ff4dbc3ce6e"
+      },
+      "skills/duecare-package-knowledge/agents/openai.yaml": {
+        "path": "harness_components/skills/duecare-package-knowledge/agents/openai.yaml",
+        "sha256": "6ee402ba97fc3445ea8a2b51544af0da43f2e3ca61ad346f45adacbf60304934"
+      },
+      "skills/duecare-review-evidence/SKILL.md": {
+        "path": "harness_components/skills/duecare-review-evidence/SKILL.md",
+        "sha256": "b05708aa2039ef8bdf431022ead52ff4778e79ed6f9fc1ad0889449da4d11227"
+      },
+      "skills/duecare-review-evidence/agents/openai.yaml": {
+        "path": "harness_components/skills/duecare-review-evidence/agents/openai.yaml",
+        "sha256": "790692114defd7c7121317f44b81c84eb4a7ede0e1eed4cb07b3d7c94cfe0283"
+      }
+    },
+    "quick_validate_passed": 11,
+    "total": 11
+  },
+  "unchanged_pdf_sha256": {
+    "duecare_preliminary_report.pdf": "fd319fc5edc44db82baefb713a8249f5885171d86bc23387c1717eb3ace480d7",
+    "duecare_technical_appendix.pdf": "9f4c8fbf2f6edf42d0d9feb1147fe8ba5f4006250bc732819df911b053ff2861"
+  },
+  "upstream_discovery": {
+    "catalog_sha256": "722e595934db517eb918079056322192859074c78bb4663ca96e2483156bfe32",
+    "github_api_cli_invocations": 8,
+    "inventory_sha256": "61232f96a074293067b55054a0aa352e2ee0813e795c8d3e8d046a32b123deff",
+    "project_provider_model_calls": 0,
+    "status": "commit-pinned metadata; unreviewed, uninstalled and unverified"
+  },
+  "wheel": {
+    "archive_check": {
+      "agent_ui_files_included": 11,
+      "catalog_files_included_and_hash_verified": 15462,
+      "console_entrypoints_verified": [
+        "harness-components",
+        "harness-components-mcp"
+      ],
+      "duplicate_members": 0,
+      "harness_logical_uncompressed_bytes": 66838143,
+      "harness_members_source_hash_verified": 15481,
+      "license_members": {
+        "duecare_eval_public-0.1.0rc9.dist-info/licenses/NOTICE.md": "4ff797d4c00b8285dab5b4bb2d885fa2bdf340bca618e68a2e6e4c603b80224a",
+        "harness_components/search_queries/SOURCE_LICENSE.txt": "1956143295d05dc2664f813b4d5727928609661749cad1bf4710ef1585921eb5"
+      },
+      "passed": true,
+      "skill_files_included": 11,
+      "tests_and_operator_tools_excluded": true
+    },
+    "build": {
+      "dependency_installation": false,
+      "flags": [
+        "--no-deps",
+        "--no-build-isolation",
+        "--no-index"
+      ],
+      "network_dependency_downloads": 0,
+      "setuptools_version": "78.1.1",
+      "wheel_backend_version": "0.46.3"
+    },
+    "bytes": 23907961,
+    "catalog_sha256": "1a5f66bece91e18ea17624bf4d989f3144b2e5fa1fff8add85ee85bb0f7d1489",
+    "counts": {
+      "function": 158,
+      "query_preset": 13888,
+      "skill": 11,
+      "upstream_reference": 1393
+    },
+    "install_check": {
+      "cli_checks": [
+        "check --full",
+        "search",
+        "run",
+        "mcp --help"
+      ],
+      "cwd_outside_checkout": true,
+      "full_integrity_files_checked": 15462,
+      "full_integrity_files_skipped": 0,
+      "function_samples_with_independent_expected_results": [
+        "text.email_normalize",
+        "search.bm25_rank",
+        "data.query_encode"
+      ],
+      "hash_checked_data_kinds_retrieved": [
+        "query_preset",
+        "upstream_reference",
+        "skill"
+      ],
+      "installed_module_path_asserted": true,
+      "isolated_interpreter": true,
+      "passed": true,
+      "runtime_dependency_installation": false,
+      "separate_temporary_virtual_environment": true
+    },
+    "model_calls": 0,
+    "network_calls": 0,
+    "optional_mcp_check": {
+      "cwd_outside_checkout": true,
+      "installed_package_path_asserted": true,
+      "invalid_params_boolean_coercion_rejected_per_protocol": true,
+      "passed": true,
+      "protocols": [
+        "2026-07-28",
+        "2025-11-25"
+      ],
+      "sdk_reused_from_existing_environment": true,
+      "sdk_version": "2.2.0",
+      "tools_checked_per_protocol": [
+        "harness_summary",
+        "harness_search",
+        "harness_get",
+        "harness_run"
+      ],
+      "transport": "stdio"
+    },
+    "preformat_receipt": {
+      "name": "wheel-verification-preformat.json",
+      "sha256": "35c49c90c0ed07a56ad0592092477019bfa302b101be811ccd68283fe59930ad",
+      "wheel_sha256": "53d3ef743ace82868dbedfdfae42936d749f9e856354411e419e5608a381b5a7"
+    },
+    "schema_version": "1.0.0",
+    "verification_notes": [
+      "This wheel was rebuilt and independently reinstalled after removing exactly one trailing newline from each of 88 source files. Comparison with the earlier wheel confirmed no other Python source-byte changes and unchanged entry metadata except source hashes. Every current archive, installed API, CLI and MCP check passed.",
+      "The installed full integrity check and CLI full check repeat the same 15462-file population; their counts are not additive.",
+      "Upstream references remained unreviewed, uninstalled and unverified metadata; no upstream source bodies were downloaded or executed."
+    ],
+    "verification_scope": "Offline wheel contents and separate installed-package execution; software checks, not model or domain validation.",
+    "wheel_name": "duecare_eval_public-0.1.0rc9-py3-none-any.whl",
+    "wheel_sha256": "44bb969222d7e354f095c6acadcc1f3afe6277429b19268fcf99d9c91b419926"
+  },
+  "workspace_mirror": {
+    "file_count": 15489,
+    "logical_bytes": 66947908,
+    "matching_files": true,
+    "original_installed_skill_files_unchanged": 10
+  }
+}

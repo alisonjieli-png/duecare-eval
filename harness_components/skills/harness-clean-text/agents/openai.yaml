@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clean text with components"
+  short_description: "Apply traceable text and email transformations"
+  default_prompt: "Use $harness-clean-text to clean this text while preserving its original evidence."

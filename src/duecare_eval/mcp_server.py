@@ -16,7 +16,7 @@ def create_server(public_root):
     try:
         from mcp.server import MCPServer
         from mcp.shared.exceptions import MCPError
-        from mcp_types import ErrorData, INVALID_PARAMS, ToolAnnotations
+        from mcp_types import INVALID_PARAMS, ToolAnnotations
     except ImportError as exc:
         raise RuntimeError("Install the DueCare mcp extra to run the stdio server.") from exc
 
@@ -32,7 +32,7 @@ def create_server(public_root):
                     raise KnowledgeError("tool_params_object_required")
                 validate_operation(params.get("name"), params.get("arguments"))
             except KnowledgeError as exc:
-                raise MCPError(ErrorData(code=INVALID_PARAMS, message=str(exc))) from exc
+                raise MCPError(code=INVALID_PARAMS, message=str(exc)) from exc
         return await call_next(ctx)
 
     server = MCPServer("DueCare Knowledge", version="1.0.0", log_level="WARNING",

@@ -2,7 +2,7 @@
 
 [![Offline checks](https://github.com/alisonjieli-png/duecare-eval/actions/workflows/tests.yml/badge.svg)](https://github.com/alisonjieli-png/duecare-eval/actions/workflows/tests.yml)
 
-[Read the findings](docs/PAPER.md) · [Download the report](https://github.com/alisonjieli-png/duecare-eval/releases/download/v0.1.0-rc.8/duecare_preliminary_report.pdf) · [Versioned release](https://github.com/alisonjieli-png/duecare-eval/releases/tag/v0.1.0-rc.8) · [Use the knowledge in your harness](docs/KNOWLEDGE_TRANSFER.md)
+[Read the findings](docs/PAPER.md) · [Download the report](https://github.com/alisonjieli-png/duecare-eval/releases/download/v0.1.0-rc.9/duecare_preliminary_report.pdf) · [Versioned release](https://github.com/alisonjieli-png/duecare-eval/releases/tag/v0.1.0-rc.9) · [Find a small harness component](harness_components/README.md)
 
 The models sometimes recognize exploitation risks and recommend useful protections, but their advice changes substantially with the scenario. The clearest shared weakness is **warning about a questionable debt while still helping collect it**. In the original cross-border payment-assignment and 68% loan cases, all five language models supplied some collection implementation before resolving the worker’s obligation.
 
@@ -20,7 +20,11 @@ The [evidence guide](docs/DOCUMENTED_EXPLOITATION_INDICATORS.md) connects those 
 
 The [extension kit](docs/EXTENDING_DUECARE.md) contains twelve substantial case variants across agriculture, construction, manufacturing, hospitality, maritime repair and platform delivery. Each matched pair keeps its facts, source references, evidence spans and grading rules together. Three data-only adapters prepare Jev questions, chat messages and batch JSONL.
 
-Release rc.8 adds a [knowledge-transfer interface](docs/KNOWLEDGE_TRANSFER.md): nine read-only Python/MCP operations, source and indicator lookups, concrete action/follow-up templates and a typed Baltor candidate exporter. Five [skills](skills/) cover case authoring, harness integration, evidence review, knowledge packaging and staged agent evaluation. The candidate retains exact file hashes, provenance and rights status for the receiving system's review.
+The [knowledge-transfer interface](docs/KNOWLEDGE_TRANSFER.md) provides nine read-only Python/MCP operations, source and indicator lookups, concrete action/follow-up templates and a typed Baltor candidate exporter. Five domain [skills](harness_components/skills/) cover case authoring, harness integration, evidence review, knowledge packaging and staged agent evaluation. The candidate retains exact file hashes, provenance and rights status for the receiving system's review.
+
+The root [harness component library](harness_components/README.md) supplies **158 small callable functions**: 60 text utilities, 50 search/retrieval helpers and 48 structured-data operations. Eleven workflow skills include the five domain skills and six focused component workflows. The same catalogue holds 13,888 saved search queries and 1,393 commit-pinned upstream references, with those data-only categories counted separately. Each function has a file, version, JSON contract and executable examples; Python, CLI and a separate four-tool MCP interface make it usable by other harnesses.
+
+Start with `python3 -m harness_components search "email" --kind function`, inspect the selected contract with `get`, then call it with `run`. Email handling, caller-supplied slang lexicons, literal grep, BM25 retrieval, SQL builders and strict JSON/CSV transforms all work offline. The [library guide](harness_components/README.md) shows concrete examples and the checks for adding another component.
 
 The kit includes offline validators and tests. Its industry examples contain 144 prepared semantic judgments and zero recorded model calls. The downloadable research report and its findings retain the reviewed rc.5 snapshot. A separate [continuous research service](docs/CONTINUOUS_RESEARCH.md) advances hosted tests and completion-driven research cycles with unlimited daily usage allowances; later reports will incorporate assessed results from those runs.
 
@@ -103,7 +107,7 @@ Controlled indicator matching measures supplied conditions; the long-form report
 ```bash
 git clone https://github.com/alisonjieli-png/duecare-eval.git
 cd duecare-eval
-git checkout v0.1.0-rc.8
+git checkout v0.1.0-rc.9
 sha256sum --check SHA256SUMS
 python -m venv .venv
 source .venv/bin/activate

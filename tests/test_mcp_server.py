@@ -11,6 +11,7 @@ import anyio
 from mcp import Client
 from mcp.client.stdio import StdioServerParameters
 from mcp.shared.exceptions import MCPError
+from mcp_types import INVALID_PARAMS
 
 from duecare_eval.knowledge import KnowledgeLibrary, OPERATION_SCHEMAS
 from duecare_eval.mcp_server import create_server
@@ -56,13 +57,15 @@ def test_official_stdio_negotiation_tools_resources_and_blinding(mode, version):
                 assert len(json.loads(rubric.contents[0].text)["rubric"]["dimensions"]) == 6
                 rejected = await client.call_tool("get_source", {"source_id": "../../private"})
                 assert rejected.is_error
-                with pytest.raises(MCPError):
+                with pytest.raises(MCPError) as rejected:
                     await client.call_tool("read_file", {"path": "/etc/passwd"})
+                assert rejected.value.code == INVALID_PARAMS
                 for arguments in ({"pack_id": pack_id, "include_sources": "false"},
                                   {"pack_id": pack_id, "include_sources": 1},
                                   {"pack_id": pack_id, "path": "/etc/passwd"}):
-                    with pytest.raises(MCPError):
+                    with pytest.raises(MCPError) as rejected:
                         await client.call_tool("prepare_benchmark", arguments)
+                    assert rejected.value.code == INVALID_PARAMS
     anyio.run(check)
 
 

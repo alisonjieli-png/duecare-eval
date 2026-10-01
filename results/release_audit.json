@@ -1,6 +1,6 @@
 {
   "checks": "path allowlist, symlinks, common credentials/private paths, numeric-output schemas, exact source and comparison reproduction",
-  "files_checked": 326,
+  "files_checked": 15808,
   "findings": [],
   "passed": true,
   "scope": "allowlisted_public_export_only",

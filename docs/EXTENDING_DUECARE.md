@@ -56,9 +56,11 @@ Keep source context and a response scaffold as separate experimental factors whe
 
 For an agent-assisted workflow, use one of the three skill folders:
 
-- [duecare-author-industry-pack](../skills/duecare-author-industry-pack/SKILL.md) develops a versioned case pack with paired variants, sources and evidence checks.
-- [duecare-connect-harness](../skills/duecare-connect-harness/SKILL.md) prepares a model adapter while preserving hidden references and execution accounting.
-- [duecare-review-evidence](../skills/duecare-review-evidence/SKILL.md) checks what a result supports and drafts a case-first explanation.
+- [duecare-author-industry-pack](../harness_components/skills/duecare-author-industry-pack/SKILL.md) develops a versioned case pack with paired variants, sources and evidence checks.
+- [duecare-connect-harness](../harness_components/skills/duecare-connect-harness/SKILL.md) prepares a model adapter while preserving hidden references and execution accounting.
+- [duecare-review-evidence](../harness_components/skills/duecare-review-evidence/SKILL.md) checks what a result supports and drafts a case-first explanation.
+
+The root [component library](../harness_components/README.md) holds all eleven skills alongside small text, retrieval and structured-data functions. Use its catalogue to find an existing operation before adding another implementation.
 
 Each folder includes its `SKILL.md` and agent metadata. Use the folder directly as task guidance or install it through your coding agent's skill installer. Keep any existing customized skill under its own version. An authoring skill prepares material; the execution layer supplies provider access and a separately recorded budget.
 

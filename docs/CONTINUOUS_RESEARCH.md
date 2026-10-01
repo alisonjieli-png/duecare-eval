@@ -28,6 +28,6 @@ Research cycles follow proposals, case generation, independent-model criticism, 
 
 ## Reuse the portable parts
 
-Start with the [industry-pack guide](EXTENDING_DUECARE.md), then connect a prepared payload to an existing authorized runner. Preserve its exact input bytes, model/settings identity, budget and outcome receipt. The [skills](../skills/) cover authoring, integration and evidence review; the plugin profiles are declarative preparation formats.
+Start with the [industry-pack guide](EXTENDING_DUECARE.md), then connect a prepared payload to an existing authorized runner. Preserve its exact input bytes, model/settings identity, budget and outcome receipt. The [skills](../harness_components/skills/) cover authoring, integration, evidence review and component workflows; the plugin profiles are declarative preparation formats. The [component library](../harness_components/README.md) supplies small offline text, retrieval and structured-data operations.
 
 Local research and reporting continue automatically. Public releases use reviewed, dated exports. Release rc.8 adds knowledge-transfer interfaces and records the uncapped operating policy while preserving the rc.5 report's evidence snapshot. Ongoing private runs enter later reports after their own assessment and export checks.

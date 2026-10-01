@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "duecare-eval-public"
-version = "0.1.0rc8"
+version = "0.1.0rc9"
 description = "Reproducible model comparisons across decisions, source questions, rankings and judge controls"
 requires-python = ">=3.11"
 dependencies = []
@@ -18,10 +18,24 @@ mcp = ["mcp==2.2.0"]
 [project.scripts]
 duecare-eval = "duecare_eval.public_cli:main"
 duecare-mcp = "duecare_eval.mcp_server:main"
+harness-components = "harness_components.__main__:main"
+harness-components-mcp = "harness_components.mcp_server:main"
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["src", "."]
+include = ["duecare_eval*", "harness_components*"]
+exclude = ["harness_components.tests*", "harness_components.tools*"]
+namespaces = false
+
+[tool.setuptools.package-data]
+harness_components = [
+  "README.md", "catalog.json", "inventory.json",
+  "skills/*/SKILL.md", "skills/*/agents/openai.yaml",
+  "search_queries/*.json", "search_queries/*.jsonl", "search_queries/SOURCE_LICENSE.txt",
+  "search_queries/items/*/*.json",
+  "discovery/upstream/*.json", "discovery/upstream/*.jsonl", "discovery/upstream/items/*.json",
+]
 
 [tool.pytest.ini_options]
-pythonpath = ["src"]
-testpaths = ["tests"]
+pythonpath = ["src", "."]
+testpaths = ["tests", "harness_components/tests"]

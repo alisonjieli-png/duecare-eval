@@ -91,7 +91,9 @@ The exporter preserves the [rights notice](../NOTICE.md) and records unresolved 
 
 ## Skills and further work
 
-The [knowledge-packaging skill](../skills/duecare-package-knowledge/SKILL.md) guides cross-project transfer. The [agent-evaluation skill](../skills/duecare-design-agent-evaluation/SKILL.md) designs staged first-person and social-post tests, context/harness comparisons and tool-outcome traces. They join the three [industry, harness and evidence skills](EXTENDING_DUECARE.md#build-a-new-industry-pack).
+The [knowledge-packaging skill](../harness_components/skills/duecare-package-knowledge/SKILL.md) guides cross-project transfer. The [agent-evaluation skill](../harness_components/skills/duecare-design-agent-evaluation/SKILL.md) designs staged first-person and social-post tests, context/harness comparisons and tool-outcome traces. They join the three [industry, harness and evidence skills](EXTENDING_DUECARE.md#build-a-new-industry-pack).
+
+All eleven skills live under `harness_components/skills/`. The [component library](../harness_components/README.md) also supplies 158 callable functions, 13,888 search presets and 1,393 upstream discovery references. Its four-tool MCP interface is separate from the nine-operation knowledge interface described above. The compact Baltor export keeps its exact 61-file closure and five domain skills, using the `harness-components-skills/v1` layout. Validation also accepts the explicitly recognized legacy layout for published rc.8 candidates; mixed layouts fail validation. The full repository carries the larger library.
 
 Staged evaluations need two distinct records: the evidence visible at each turn, and the tool actions and postconditions observed afterwards. The extension chat profile requests categorical answers; spontaneous worker-help prose needs its own response condition. The protection-response validator checks response structure. An action-success claim needs a separate execution and observation record. A versioned study sidecar can preserve those traces without changing existing response schemas or exposing later facts early.
 

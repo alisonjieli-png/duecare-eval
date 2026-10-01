@@ -1,0 +1,69 @@
+{
+  "scope": "Independent fictional-input integration fixtures; no model-performance or incident claims.",
+  "skills_used": [
+    "harness-find-component",
+    "harness-clean-text",
+    "harness-build-local-retrieval",
+    "harness-transform-structured-data",
+    "harness-compose-search-queries",
+    "harness-test-corner-cases"
+  ],
+  "components_selected": [
+    "text.email_normalize",
+    "text.slang_matches",
+    "text.normalize_newlines",
+    "text.unicode_normalize",
+    "data.json_parse",
+    "search.bm25_rank",
+    "search.assemble_context",
+    "search.build_select",
+    "search.precision_at_k"
+  ],
+  "source_files_copied": 20,
+  "copied_bytes": 77513,
+  "cli_invocations": 29,
+  "expected_successes": 25,
+  "expected_refusals": 4,
+  "raw_text_sha256": "314f426ef4309bfa32d74492de8be51248a41a50541d6797cec96d2d52522dde",
+  "raw_codepoints": 108,
+  "normalized_codepoints": 105,
+  "raw_email_span": {
+    "start": 32,
+    "end": 52
+  },
+  "slang_raw_span": {
+    "start": 0,
+    "end": 3,
+    "text": "IDK"
+  },
+  "normalized_email": "Case+tag@example.org",
+  "unsupported_email_status": "unsupported",
+  "retrieval_top_id": "payroll-records",
+  "fixture_precision_at_1": {
+    "denominator": 1,
+    "hits": 1,
+    "precision": 1.0,
+    "returned_at_k": 1
+  },
+  "absent_query_zero_score_results": 4,
+  "selection_policy": "Keep raw ranks; select positive lexical scores for this fixture's context.",
+  "context_citations_verified": 1,
+  "direct_component_matches_verified_library": true,
+  "sql": {
+    "params": [
+      "Case+tag@example.org' OR 1=1 --",
+      10,
+      0
+    ],
+    "sql": "SELECT \"id\", \"email\" FROM \"messages\" WHERE \"email\" = ? ORDER BY \"id\" ASC LIMIT ? OFFSET ?"
+  },
+  "sqlite_rows_returned": 1,
+  "sqlite_scope": ":memory: fixture only",
+  "tampered_dependency_refused": true,
+  "upstream_reference_run_refused": true,
+  "catalogue_digest": "653e1baa202634ebf061196786fb5f7f41f38c71a2101afc077d766f8a2ff5b7",
+  "model_calls": 0,
+  "network_calls": 0,
+  "user_databases_opened": 0,
+  "publication_actions": 0
+}

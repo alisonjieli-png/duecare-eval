@@ -39,6 +39,17 @@ def checkout(tmp_path):
     return root
 
 
+@pytest.fixture
+def legacy_checkout(checkout):
+    """An exact legacy-path source fixture, with the same five skill bytes."""
+    (checkout / "skills").mkdir()
+    for name in B.SKILL_NAMES:
+        (checkout / "harness_components/skills" / name).rename(checkout / "skills" / name)
+    for args in (("add", "-A"), ("-c", "user.name=Offline fixture", "-c", "user.email=fixture@example.invalid", "commit", "-qm", "Legacy layout fixture")):
+        subprocess.run(["git", "-C", str(checkout), *args], check=True, capture_output=True)
+    return checkout
+
+
 def read(path):
     return json.loads(path.read_text())
 
@@ -51,6 +62,7 @@ def test_fresh_export_hashes_rights_and_clean_source_identity(checkout, tmp_path
     destination = tmp_path / "candidate"
     receipt = B.export_candidate(checkout, destination, captured_at="2026-10-01T17:00:00Z")
     assert receipt["files_verified"] == len(B.EXPORT_PATHS)
+    assert receipt["layout_profile"] == B.CURRENT_LAYOUT
     assert receipt["source"]["worktree_dirty"] is False
     assert receipt["source"]["base_commit_is_exported_tree"] is True
     assert receipt["rights"]["license"] == "unknown"
@@ -64,6 +76,7 @@ def test_fresh_export_hashes_rights_and_clean_source_identity(checkout, tmp_path
     assert asset["lifecycle"] == "candidate" and asset["admission_ref"] == ""
     assert asset["body_ref"]["digest"] == receipt["package_sha256"]
     candidate = read(destination / "candidate.json")
+    assert candidate["layout_profile"] == B.CURRENT_LAYOUT
     files = candidate["package"]["files"]
     assert candidate["file_placements"] == receipt["file_placements"] == len(files)
     assert candidate["distinct_file_digests"] == receipt["distinct_file_digests"] == len({
@@ -75,12 +88,115 @@ def test_fresh_export_hashes_rights_and_clean_source_identity(checkout, tmp_path
     assert candidate["receiving_constraints"] == B.RECEIVING_CONSTRAINTS
     roles = {entry["path"]: entry["role"] for entry in candidate["package"]["files"]}
     for name in B.SKILL_NAMES:
-        assert roles["skills/" + name + "/SKILL.md"] == "skill_definition"
-        assert roles["skills/" + name + "/agents/openai.yaml"] == "configuration"
+        assert roles["harness_components/skills/" + name + "/SKILL.md"] == "skill_definition"
+        assert roles["harness_components/skills/" + name + "/agents/openai.yaml"] == "configuration"
     assert roles["docs/KNOWLEDGE_TRANSFER.md"] == "skill_reference"
     candidate["distinct_file_digests"] += 1
     (destination / "candidate.json").write_text(canonical(candidate))
     with pytest.raises(B.BridgeError, match="package_file_counts_mismatch"):
+        B.validate_candidate(destination)
+
+
+def test_layout_profiles_are_exact_closures_with_only_ten_relocated_files():
+    legacy, current = set(B.LAYOUT_PATHS[B.LEGACY_LAYOUT]), set(B.LAYOUT_PATHS[B.CURRENT_LAYOUT])
+    assert len(legacy) == len(current) == 61
+    assert legacy & current == set(B.COMMON_EXPORT_PATHS) and len(legacy & current) == 51
+    old_skills, new_skills = legacy - current, current - legacy
+    assert len(old_skills) == len(new_skills) == 10
+    assert new_skills == {"harness_components/" + path for path in old_skills}
+    assert "plugins/mcp-stdio.json" in legacy & current
+    assert "src/duecare_eval/mcp_server.py" in legacy & current
+    assert not any(path.startswith("harness_components/") and not path.startswith("harness_components/skills/") for path in current)
+
+
+def test_named_legacy_and_undeclared_published_layout_keep_asset_digests(legacy_checkout, tmp_path):
+    destination = tmp_path / "legacy-candidate"
+    named = B.export_candidate(legacy_checkout, destination, layout_profile=B.LEGACY_LAYOUT)
+    assert named["layout_profile"] == B.LEGACY_LAYOUT and named["files_verified"] == 61
+    candidate_path = destination / "candidate.json"
+    candidate = read(candidate_path)
+    assert candidate.pop("layout_profile") == B.LEGACY_LAYOUT
+    candidate_path.write_text(canonical(candidate))
+    assets_before = (destination / "code-assets.json").read_bytes()
+    assets = read(destination / "code-assets.json")
+    qualification = assets[0]["qualification_digest"]
+    package_digest = candidate["package_sha256"]
+    receipt = B.validate_candidate(destination)
+    assert receipt["layout_profile"] == B.LEGACY_LAYOUT and receipt["package_sha256"] == package_digest
+    assert (destination / "code-assets.json").read_bytes() == assets_before
+    assert read(destination / "code-assets.json")[0]["qualification_digest"] == qualification
+    assert "layout_profile" not in read(candidate_path)
+    roles = {row["path"]: row["role"] for row in candidate["package"]["files"]}
+    assert all(roles["skills/" + name + "/SKILL.md"] == "skill_definition" for name in B.SKILL_NAMES)
+
+
+@pytest.mark.parametrize("declaration,error", [(None, "unsupported_layout_profile"), ("unknown/v1", "unsupported_layout_profile"),
+    (1, "unsupported_layout_profile"), (B.LEGACY_LAYOUT, "exact_allowlist_required"), ("missing", "exact_allowlist_required")])
+def test_new_layout_requires_its_own_explicit_supported_declaration(checkout, tmp_path, declaration, error):
+    destination = tmp_path / "candidate"; B.export_candidate(checkout, destination)
+    path = destination / "candidate.json"; candidate = read(path)
+    if declaration == "missing": candidate.pop("layout_profile")
+    else: candidate["layout_profile"] = declaration
+    path.write_text(canonical(candidate))
+    with pytest.raises(B.BridgeError, match=error): B.validate_candidate(destination)
+
+
+def rewrite_candidate_paths(destination, changes):
+    """Keep every digest consistent so rejection tests isolate layout closure."""
+    candidate = read(destination / "candidate.json")
+    package = candidate["package"]
+    for index, entry in enumerate(package["files"]):
+        if entry["path"] not in changes:
+            continue
+        old = destination / "files" / entry["path"]
+        new_name = changes[entry["path"]]; new = destination / "files" / new_name
+        new.parent.mkdir(parents=True, exist_ok=True); old.rename(new)
+        package["files"][index] = B._file_record(new_name, new.read_bytes())
+    package["files"].sort(key=lambda entry: entry["path"])
+    digest = sha256(canonical({"record_type": "catalogue_package/v1", "files": package["files"]}).encode()).hexdigest()
+    candidate["package_sha256"] = candidate["source"]["exported_files_sha256"] = digest
+    candidate.update(B._file_counts(package["files"]))
+    assets = [B._asset(package, candidate["source"], candidate["rights"]["notice_sha256"])]
+    candidate["code_assets_sha256"] = sha256(canonical(assets).encode()).hexdigest()
+    for name, value in (("candidate.json", candidate), ("package.json", package), ("code-assets.json", assets)):
+        (destination / name).write_text(canonical(value))
+
+
+@pytest.mark.parametrize("replacement", ["skills/duecare-author-industry-pack/SKILL.md", "harness_components/skills/unlisted-skill/SKILL.md",
+    "harness_components/components/search/unknown.py"])
+def test_mixed_and_unknown_layouts_fail_even_with_consistent_file_and_asset_hashes(checkout, tmp_path, replacement):
+    destination = tmp_path / "candidate"; B.export_candidate(checkout, destination)
+    original = "harness_components/skills/duecare-author-industry-pack/SKILL.md"
+    rewrite_candidate_paths(destination, {original: replacement})
+    with pytest.raises(B.BridgeError, match="exact_allowlist_required"): B.validate_candidate(destination)
+
+
+def test_new_library_and_additional_skills_stay_outside_default_core(checkout, tmp_path):
+    extras = ("harness_components/skills/new-workflow/SKILL.md", "harness_components/catalog.json", "harness_components/mcp/server.py")
+    for name in extras:
+        path = checkout / name; path.parent.mkdir(parents=True, exist_ok=True); path.write_text("UNSELECTED_LIBRARY_CONTENT")
+    destination = tmp_path / "candidate"
+    assert B.export_candidate(checkout, destination)["files_verified"] == 61
+    assert all(not (destination / "files" / name).exists() for name in extras)
+
+
+def test_unknown_export_layout_is_refused_before_writing(checkout, tmp_path):
+    destination = tmp_path / "candidate"
+    with pytest.raises(B.BridgeError, match="unsupported_layout_profile"):
+        B.export_candidate(checkout, destination, layout_profile="copy-everything")
+    assert not destination.exists()
+
+
+def test_validation_enforces_actual_aggregate_bytes_inclusive_boundary(checkout, tmp_path, monkeypatch):
+    destination = tmp_path / "candidate"
+    B.export_candidate(checkout, destination)
+    files = read(destination / "package.json")["files"]
+    total = sum((destination / "files" / entry["path"]).stat().st_size for entry in files)
+    assert all(entry["size_bytes"] <= B.MAX_FILE_BYTES for entry in files)
+    monkeypatch.setattr(B, "MAX_PACKAGE_BYTES", total)
+    assert B.validate_candidate(destination)["files_verified"] == 61
+    monkeypatch.setattr(B, "MAX_PACKAGE_BYTES", total - 1)
+    with pytest.raises(B.BridgeError, match="package_too_large"):
         B.validate_candidate(destination)
 
 

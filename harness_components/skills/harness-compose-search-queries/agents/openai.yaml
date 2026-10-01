@@ -1,0 +1,4 @@
+interface:
+  display_name: "Compose search queries"
+  short_description: "Prepare literal and parameterized search queries"
+  default_prompt: "Use $harness-compose-search-queries to prepare useful queries for my chosen search system."

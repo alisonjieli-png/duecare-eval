@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build local retrieval"
+  short_description: "Build retrieval over supplied document values"
+  default_prompt: "Use $harness-build-local-retrieval to build and test retrieval over my supplied documents."

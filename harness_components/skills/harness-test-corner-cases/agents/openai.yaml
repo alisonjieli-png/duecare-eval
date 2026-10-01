@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test component corner cases"
+  short_description: "Check component contracts and difficult inputs"
+  default_prompt: "Use $harness-test-corner-cases to test the boundary behavior of these harness components."

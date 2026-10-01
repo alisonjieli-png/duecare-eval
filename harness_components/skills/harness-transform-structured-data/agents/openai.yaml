@@ -1,0 +1,4 @@
+interface:
+  display_name: "Transform structured data"
+  short_description: "Transform JSON, records, CSV and URL data"
+  default_prompt: "Use $harness-transform-structured-data to transform these records with explicit validation."

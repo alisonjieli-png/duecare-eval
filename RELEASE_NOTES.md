@@ -1,6 +1,24 @@
 # Do AI models recognize exploitation — and help?
 
-## Current release: v0.1.0-rc.8
+## Current release: v0.1.0-rc.9
+
+Small reusable tools live together in `harness_components/` at the repository root:
+
+- 158 callable functions in separate files: 60 text, 50 search/retrieval and 48 structured-data operations, with JSON contracts and examples.
+- Eleven workflow skills, including the five original DueCare skills with unchanged contents at `harness_components/skills/`.
+- 13,888 distinct saved search queries, each with its own JSON file and source provenance.
+- 1,393 commit-pinned upstream discovery references from four repositories, with unreviewed status and licence scope explicit.
+- A searchable offline Python/CLI catalogue and a separate four-tool MCP server for discovery, inspection and verified function calls.
+
+Email normalization preserves local-part case and plus tags. Slang lookup uses a supplied lexicon and retains ambiguous meanings and original offsets. Retrieval covers grep, chunks, TF-IDF/BM25, ranking fusion and context assembly. SQL helpers return statements and parameters; structured-data helpers cover JSON, CSV, URLs and encodings. Each contract states its supported inputs.
+
+The compact Baltor candidate uses the new skill paths and retains its exact 61-file dependency set. The validator preserves compatibility with published legacy-layout bundles. External references remain metadata-only discoveries, and saved queries remain unexecuted presets. The library work makes zero project-provider model calls.
+
+Both report PDFs retain the reviewed rc.5 scientific snapshot. Research findings and continuing private model runs keep their existing evidence records. See `harness_components/README.md` for examples and `results/harness_components_verification_2026-10-01.json` for verification.
+
+Release: https://github.com/alisonjieli-png/duecare-eval/releases/tag/v0.1.0-rc.9
+
+## Historical release: v0.1.0-rc.8
 
 This release makes DueCare's research materials available to other harnesses and prepares a typed candidate package for Baltor.
 

@@ -126,6 +126,55 @@ def test_private_parent_or_wrong_remote_is_not_a_source(checkout, tmp_path):
     assert not (tmp_path / "candidate").exists()
 
 
+@pytest.mark.parametrize("origin", [
+    "https://github.com/alisonjieli-png/duecare-eval",
+    "https://github.com/alisonjieli-png/duecare-eval.git",
+    "https://github.com:443/alisonjieli-png/duecare-eval",
+    "https://github.com:443/alisonjieli-png/duecare-eval.git",
+    "git@github.com:alisonjieli-png/duecare-eval",
+    "git@github.com:alisonjieli-png/duecare-eval.git",
+    "ssh://git@github.com/alisonjieli-png/duecare-eval",
+    "ssh://git@github.com/alisonjieli-png/duecare-eval.git",
+    "ssh://git@github.com:22/alisonjieli-png/duecare-eval",
+    "ssh://git@github.com:22/alisonjieli-png/duecare-eval.git",
+])
+def test_same_repository_clone_urls_export_with_canonical_identity(checkout, tmp_path, origin):
+    subprocess.run(["git", "-C", str(checkout), "remote", "set-url", "origin", origin], check=True)
+    receipt = B.export_candidate(checkout, tmp_path / "candidate")
+    assert receipt["source"]["repository"] == B.PUBLIC_ORIGIN
+    assert receipt["source"]["base_commit_is_exported_tree"] is True
+
+
+@pytest.mark.parametrize("origin", [
+    "https://example.invalid/alisonjieli-png/duecare-eval.git",
+    "https://github.com.evil.invalid/alisonjieli-png/duecare-eval.git",
+    "https://github.com/another-owner/duecare-eval.git",
+    "https://github.com/alisonjieli-png/another-repo.git",
+    "https://github.com/alisonjieli-png/duecare-eval.git/extra",
+    "https://github.com/alisonjieli-png/duecare-eval.git?query=secret-value",
+    "https://github.com/alisonjieli-png/duecare-eval.git#fragment",
+    "https://secret-value@github.com/alisonjieli-png/duecare-eval.git",
+    "https://user:secret-value@github.com/alisonjieli-png/duecare-eval.git",
+    "https://github.com:8443/alisonjieli-png/duecare-eval.git",
+    "http://github.com/alisonjieli-png/duecare-eval.git",
+    "git://github.com/alisonjieli-png/duecare-eval.git",
+    "git@evil.invalid:alisonjieli-png/duecare-eval.git",
+    "secret-value@github.com:alisonjieli-png/duecare-eval.git",
+    "ssh://user@github.com/alisonjieli-png/duecare-eval.git",
+    "ssh://git:secret-value@github.com/alisonjieli-png/duecare-eval.git",
+    "ssh://git@github.com:2222/alisonjieli-png/duecare-eval.git",
+    "https://github.com/alisonjieli-png/%64uecare-eval.git",
+    "https://github.com/alisonjieli-png/../alisonjieli-png/duecare-eval.git",
+    "https://github.com\\@evil.invalid/alisonjieli-png/duecare-eval.git",
+])
+def test_noncanonical_or_secret_bearing_origins_are_refused_without_echo(checkout, tmp_path, origin):
+    subprocess.run(["git", "-C", str(checkout), "remote", "set-url", "origin", origin], check=True)
+    with pytest.raises(B.BridgeError, match="^public_origin_required$") as error:
+        B.export_candidate(checkout, tmp_path / "candidate")
+    assert "secret-value" not in str(error.value)
+    assert not (tmp_path / "candidate").exists()
+
+
 def test_existing_destination_is_preserved_and_overlap_refused(checkout, tmp_path):
     destination = tmp_path / "existing"
     destination.mkdir()

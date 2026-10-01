@@ -85,7 +85,7 @@ For the dependency-free Python library, put `files/src` on the Python import pat
 
 Baltor's existing `CodeAssetSpec` and `CataloguePackage` contracts own the receiving shape. The candidate has small discovery cards and separately addressable implementation files. A host preloads the verified knowledge snapshot, then selects operations through the same typed edge; SDK and MCP routes reuse that implementation. Discovery, import, execution, assessment and admission each have separate receipts.
 
-The [dated compatibility record](https://github.com/alisonjieli-png/duecare-eval/blob/v0.1.0-rc.7/results/knowledge_transfer_verification_2026-10-01.json) identifies the tested modules, operation calls and refusal checks. It records local contract compatibility. The downloadable release candidate has its own exact source and file identities.
+The [dated compatibility record](https://github.com/alisonjieli-png/duecare-eval/blob/v0.1.0-rc.8/results/knowledge_transfer_verification_2026-10-01_rc8.json) identifies the tested modules, operation calls and refusal checks. It records local contract compatibility. The downloadable release candidate has its own exact source and file identities.
 
 The exporter preserves the [rights notice](../NOTICE.md) and records unresolved general redistribution rights explicitly. It creates candidate material for Baltor's review path. Live catalogue admission and serving require the receiving system's exact-byte evidence and applicable rights. Compatibility tests and a generated package establish their tested interface behavior, while domain and worker-informed validation remain separate.
 

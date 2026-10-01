@@ -2,7 +2,7 @@
 
 [![Offline checks](https://github.com/alisonjieli-png/duecare-eval/actions/workflows/tests.yml/badge.svg)](https://github.com/alisonjieli-png/duecare-eval/actions/workflows/tests.yml)
 
-[Read the findings](docs/PAPER.md) · [Download the report](https://github.com/alisonjieli-png/duecare-eval/releases/download/v0.1.0-rc.7/duecare_preliminary_report.pdf) · [Versioned release](https://github.com/alisonjieli-png/duecare-eval/releases/tag/v0.1.0-rc.7) · [Use the knowledge in your harness](docs/KNOWLEDGE_TRANSFER.md)
+[Read the findings](docs/PAPER.md) · [Download the report](https://github.com/alisonjieli-png/duecare-eval/releases/download/v0.1.0-rc.8/duecare_preliminary_report.pdf) · [Versioned release](https://github.com/alisonjieli-png/duecare-eval/releases/tag/v0.1.0-rc.8) · [Use the knowledge in your harness](docs/KNOWLEDGE_TRANSFER.md)
 
 The models sometimes recognize exploitation risks and recommend useful protections, but their advice changes substantially with the scenario. The clearest shared weakness is **warning about a questionable debt while still helping collect it**. In the original cross-border payment-assignment and 68% loan cases, all five language models supplied some collection implementation before resolving the worker’s obligation.
 
@@ -20,7 +20,7 @@ The [evidence guide](docs/DOCUMENTED_EXPLOITATION_INDICATORS.md) connects those 
 
 The [extension kit](docs/EXTENDING_DUECARE.md) contains twelve substantial case variants across agriculture, construction, manufacturing, hospitality, maritime repair and platform delivery. Each matched pair keeps its facts, source references, evidence spans and grading rules together. Three data-only adapters prepare Jev questions, chat messages and batch JSONL.
 
-Release rc.7 adds a [knowledge-transfer interface](docs/KNOWLEDGE_TRANSFER.md): nine read-only Python/MCP operations, source and indicator lookups, concrete action/follow-up templates and a typed Baltor candidate exporter. Five [skills](skills/) cover case authoring, harness integration, evidence review, knowledge packaging and staged agent evaluation. The candidate retains exact file hashes, provenance and rights status for the receiving system's review.
+Release rc.8 adds a [knowledge-transfer interface](docs/KNOWLEDGE_TRANSFER.md): nine read-only Python/MCP operations, source and indicator lookups, concrete action/follow-up templates and a typed Baltor candidate exporter. Five [skills](skills/) cover case authoring, harness integration, evidence review, knowledge packaging and staged agent evaluation. The candidate retains exact file hashes, provenance and rights status for the receiving system's review.
 
 The kit includes offline validators and tests. Its industry examples contain 144 prepared semantic judgments and zero recorded model calls. The downloadable research report and its findings retain the reviewed rc.5 snapshot. A separate [continuous research service](docs/CONTINUOUS_RESEARCH.md) advances hosted tests and completion-driven research cycles with unlimited daily usage allowances; later reports will incorporate assessed results from those runs.
 
@@ -103,7 +103,7 @@ Controlled indicator matching measures supplied conditions; the long-form report
 ```bash
 git clone https://github.com/alisonjieli-png/duecare-eval.git
 cd duecare-eval
-git checkout v0.1.0-rc.7
+git checkout v0.1.0-rc.8
 sha256sum --check SHA256SUMS
 python -m venv .venv
 source .venv/bin/activate

@@ -4,7 +4,7 @@
     "results/longform_anchor_pilot_2026-09-30.manifest.json": "8dca101dd41b74b5697657eecd4036deb1be524f4ef34bd5161fb0c366f43688",
     "results/source_completion_2026-09-30.json": "9cc4301641c7f5a0ae278d139afb98364d54f2a4f01534138898cbb2c837b586"
   },
-  "claim_scope": "The rc.7 knowledge-transfer release supplies a read-only library/MCP interface, exact-file Baltor candidate export and five skills. Transfer checks exercise software and prepared research materials with zero project-provider inference calls. Baltor catalogue admission and redistribution rights remain separate. Scientific findings and PDF bytes retain the reviewed rc.5 snapshot; continuing private model runs stay outside this publication evidence population.",
+  "claim_scope": "The knowledge-transfer release supplies a read-only library/MCP interface, exact-file Baltor candidate export and five skills. Transfer checks exercise software and prepared research materials with zero project-provider inference calls. Baltor catalogue admission and redistribution rights remain separate. Scientific findings and PDF bytes retain the reviewed rc.5 snapshot; continuing private model runs stay outside this publication evidence population.",
   "created_at": "2026-09-30T15:02:29.666759+00:00",
   "current_evidence": "results/documented_indicator_sources_2026-10-01.json",
   "evidence_snapshots": {
@@ -120,10 +120,10 @@
     "uncapped_completion_driven_research_policy"
   ],
   "public_implementation_sha256": {
-    "src/duecare_eval/__init__.py": "4cbbf7c8cdcf4ad590693e66e7175ec385867971254b6b466a999d923db9049a",
+    "src/duecare_eval/__init__.py": "bb4577ecc15449a7297a1a06b825ea3faa57c6ebd04115614ea7d11962985f38",
     "src/duecare_eval/anchor_pilot.py": "529cbc231737034a0d48d71802bc345fddb163c275385e7d75470306d5f7573d",
     "src/duecare_eval/artifact_safety.py": "57b7ac041e3dafae6b69af616ed2faa314f75b1e340008de4defe7d3e29a427e",
-    "src/duecare_eval/baltor_bridge.py": "889e6eceb5f6ad0358328742892efc854305d49e3437a64e305c598505382342",
+    "src/duecare_eval/baltor_bridge.py": "842f8e88f2161950e904bf18e21a2eed87cec80a18b45a294382d90de828acd8",
     "src/duecare_eval/benchmark.py": "c1896dfe659b85afb9c91b9113ff6f6f4e1b8973d8bc0d685a152c6c8b4a23ff",
     "src/duecare_eval/breadth_design.py": "c3ea40e43d4d1a713559828f6bada5934263b0c174d13e7bf13fafb3c65b00fd",
     "src/duecare_eval/call_accounting.py": "c643ca574859ceb6e883997147464c60b6778bbc9c5df38143300582aa120404",
@@ -312,6 +312,7 @@
     "public_tests_passed": 566,
     "rights": "NOTICE.md preserved; general redistribution permission unresolved",
     "scientific_snapshot_release": "v0.1.0-rc.5",
+    "scope": "Historical rc.7 tag; hosted export refused the equivalent GitHub Actions origin URL. Corrected by rc.8.",
     "tested_stdio_protocols": [
       "2026-07-28",
       "2025-11-25"
@@ -321,7 +322,54 @@
       "duecare_technical_appendix.pdf": "9f4c8fbf2f6edf42d0d9feb1147fe8ba5f4006250bc732819df911b053ff2861"
     }
   },
-  "release": "v0.1.0-rc.7",
+  "rc8_knowledge_transfer": {
+    "baltor_catalogue_status": "candidate; admission and serving unperformed",
+    "baltor_contract_commit": "585f240ce00bf16da963e7caf5461d12dce836df",
+    "candidate_distinct_file_digests": 51,
+    "candidate_file_placements": 61,
+    "files": {
+      "docs/CONTINUOUS_RESEARCH.md": "d74c98e0ec61909314077f42e2fa56a5b4bc0bd6b43cb4473b757f0a8e68bcec",
+      "docs/KNOWLEDGE_TRANSFER.md": "bf9207346206a38d32487c629b31a028faa86462d78573df4720891e00cfb1e4",
+      "plugins/mcp-stdio.json": "0102e13ab81eaacf1fe3ff395c956d8d313177d948f3eba024d55c20e511b07f",
+      "results/knowledge_transfer_verification_2026-10-01_rc8.json": "26c032a03881664a88f324322bb5eda0588055c0647134f30d87864dd75daffd",
+      "skills/duecare-design-agent-evaluation/SKILL.md": "bf57c9f3f961c315bb8ac915e9f0966cd390a15105d2ca0f68b864064573c582",
+      "skills/duecare-design-agent-evaluation/agents/openai.yaml": "69d34a92ff289b4407226c955f71423def5097175cf457bde531bf0efe345a26",
+      "skills/duecare-package-knowledge/SKILL.md": "9545efee642c841da669337a79afcf10ce2f5c845a33dd31f6208ff4dbc3ce6e",
+      "skills/duecare-package-knowledge/agents/openai.yaml": "6ee402ba97fc3445ea8a2b51544af0da43f2e3ca61ad346f45adacbf60304934",
+      "src/duecare_eval/baltor_bridge.py": "842f8e88f2161950e904bf18e21a2eed87cec80a18b45a294382d90de828acd8",
+      "src/duecare_eval/knowledge.py": "ca8c856c303f9226aa49f30208cfc0a4782911a4284fd2cc1f8cd525c1b9851c",
+      "src/duecare_eval/mcp_server.py": "8a3daad22249e8c415e3f88c1632f56657b64c137bcc3b16d724f1fa4dea4ee6",
+      "tests/baltor_contract_probe.py": "de1a699002141d45a4db464b6a0dd9504d9916a8ecc56fb7aab1e2f8cad52ca5",
+      "tests/test_baltor_bridge.py": "52fc3518fa0a8a965a3822d769e73120a85ee2a7403a81032af8b394f1014d86",
+      "tests/test_knowledge.py": "ae7b1e3f2cebebf7ff9beaf4bb78cc2cabf55b0c7d2d289497661a331a5e1b3b",
+      "tests/test_mcp_server.py": "58fd604059f9055445140d51eb94350010a8969191c9a6a2c717544a5b917102",
+      "tools/export_baltor_candidate.py": "3799e032526a891973d54fca4114a3b3c98b93905e64a68902600576e30af767",
+      "tools/run_duecare_mcp.py": "2612cb3c83eac92da99c2728bbfb3db8a17c3675d67082e9a171e495da89c87e"
+    },
+    "knowledge": {
+      "action_templates": 8,
+      "authored_case_variants": 12,
+      "followup_templates": 11,
+      "indicator_definitions": 11,
+      "industry_packs": 6,
+      "operations": 9,
+      "portable_skills": 5,
+      "source_publications": 9
+    },
+    "mcp_sdk": "2.2.0",
+    "public_tests_passed": 596,
+    "rights": "NOTICE.md preserved; general redistribution permission unresolved",
+    "scientific_snapshot_release": "v0.1.0-rc.5",
+    "tested_stdio_protocols": [
+      "2026-07-28",
+      "2025-11-25"
+    ],
+    "unchanged_pdf_sha256": {
+      "duecare_preliminary_report.pdf": "fd319fc5edc44db82baefb713a8249f5885171d86bc23387c1717eb3ace480d7",
+      "duecare_technical_appendix.pdf": "9f4c8fbf2f6edf42d0d9feb1147fe8ba5f4006250bc732819df911b053ff2861"
+    }
+  },
+  "release": "v0.1.0-rc.8",
   "schema": "duecare-public-export/1.0.0",
   "source_campaign_hashes": {
     "bulk-ladders-v1": "0d6da61e7558264cd44ac214a1b3a8f79617aefa3052b0c70f6750d660fe3106",
@@ -345,5 +393,5 @@
     "tools/expanded_benchmark.py": "fbf494d0deda2718e85ceaf0ce3760d56001444d4fb1813deef85e51c321cb5e",
     "tools/response_variation.py": "3c98fdd2402dfe711a10a6449b8cfffc0962dd332aca34ef36caa8d20f76382b"
   },
-  "updated_at": "2026-10-01T15:37:22.982203+00:00"
+  "updated_at": "2026-10-01T15:57:46.725323+00:00"
 }

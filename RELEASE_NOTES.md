@@ -1,8 +1,10 @@
 # Do AI models recognize exploitation — and help?
 
-## Current release: v0.1.0-rc.7
+## Current release: v0.1.0-rc.8
 
 This release makes DueCare's research materials available to other harnesses and prepares a typed candidate package for Baltor.
+
+It includes the exporter portability correction found by GitHub's hosted checks: equivalent HTTPS and SSH URLs for the same reviewed repository retain one canonical source identity. The rc.7 tag and its failed hosted export checks remain preserved as prior evidence.
 
 - Nine read-only knowledge operations expose full blinded cases, source citations, response rubrics, indicator definitions and action/follow-up templates.
 - An official-SDK MCP stdio server provides tools and resources with strict input validation. Tests cover both the 2026-07-28 and 2025-11-25 protocol paths.
@@ -14,7 +16,7 @@ The MCP/bridge checks exercise software and prepared materials, with zero projec
 
 The main report and technical appendix retain the reviewed rc.5 scientific snapshot and unchanged PDF bytes. Continuing private model runs have their own journals and assessment status.
 
-Release: https://github.com/alisonjieli-png/duecare-eval/releases/tag/v0.1.0-rc.7
+Release: https://github.com/alisonjieli-png/duecare-eval/releases/tag/v0.1.0-rc.8
 
 ## Historical release: v0.1.0-rc.6
 

@@ -1,0 +1,132 @@
+{
+  "schema": "duecare-knowledge-transfer-verification/1.0.0",
+  "recorded_at": "2026-10-01T15:53:12Z",
+  "release": "v0.1.0-rc.8",
+  "scope": "Software and interface checks for transferable research materials. Existing benchmark findings retain their own dated evidence; the continuing private service has separate call journals.",
+  "knowledge": {
+    "operations": 9,
+    "industry_packs": 6,
+    "authored_case_variants": 12,
+    "source_publications": 9,
+    "indicator_definitions": 11,
+    "action_templates": 8,
+    "followup_templates": 11,
+    "portable_skills": 5
+  },
+  "mcp": {
+    "sdk_distribution": "mcp",
+    "sdk_version": "2.2.0",
+    "transport": "stdio",
+    "observed_protocol_versions": [
+      "2026-07-28",
+      "2025-11-25"
+    ],
+    "targeted_tests_passed": 67,
+    "tools_read_only": true,
+    "strict_argument_tests": true,
+    "hidden_reference_invariance": true
+  },
+  "baltor_probe": {
+    "admitted": false,
+    "baltor_commit": "585f240ce00bf16da963e7caf5461d12dce836df",
+    "baltor_contract_files": {
+      "src/loop_engine/core/code_intelligence_assets.py": "8cd07fa3b528436476641da515f88e549b6926f8b57eafad4383fc7bd7d475f2",
+      "src/loop_engine/core/mcp_adapter.py": "71ec296bf31edbcd310f575ec8f43834288400cdeb33db006af6e2afba342e4c",
+      "src/loop_engine/core/service_runtime/catalogue_packages.py": "528dee1d828bd7712841daee45e325f0d720fdde6fe2eaf67b38584988abe247"
+    },
+    "baltor_status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "baltor_worktree_dirty": false,
+    "candidate_package_sha256": "4a13cd6eeaea26088f7bb6b7831dd82e8f526f0f5399a42690cf7634c6b7807c",
+    "code_cards_parsed": 1,
+    "malformed_calls_refused": 3,
+    "model_calls_executed": 0,
+    "network_socket_attempts": 0,
+    "operation_calls_completed": 9,
+    "schema": "duecare-baltor-contract-probe/1.0.0",
+    "scope": "Offline installed-contract compatibility, not independent admission or benchmark quality.",
+    "served": false
+  },
+  "candidate_preview": {
+    "admitted": false,
+    "distinct_file_digests": 51,
+    "file_count_scope": "Package file inventory only; candidate metadata documents are excluded.",
+    "file_placements": 61,
+    "files_verified": 61,
+    "lifecycle": "candidate",
+    "model_calls_executed": 0,
+    "package_sha256": "4a13cd6eeaea26088f7bb6b7831dd82e8f526f0f5399a42690cf7634c6b7807c",
+    "rights": {
+      "license": "unknown",
+      "notice_path": "NOTICE.md",
+      "notice_sha256": "4ff797d4c00b8285dab5b4bb2d885fa2bdf340bca618e68a2e6e4c603b80224a",
+      "reuse_permission": "unresolved",
+      "third_party_rights": "Each cited source retains its own rights and terms."
+    },
+    "schema": "duecare-baltor-candidate/1.0.0",
+    "served": false,
+    "source": {
+      "base_commit": "c804f753c59b58d09c704cc55fea5f72931fe32b",
+      "base_commit_is_exported_tree": false,
+      "captured_at": "2026-10-01T15:51:26.718430+00:00",
+      "content_binding": "exact_exported_file_hashes",
+      "exported_files_sha256": "4a13cd6eeaea26088f7bb6b7831dd82e8f526f0f5399a42690cf7634c6b7807c",
+      "repository": "https://github.com/alisonjieli-png/duecare-eval.git",
+      "worktree_dirty": true,
+      "worktree_status_sha256": "767ff278504f0958ab835a252be68b0e3414dfcfdec2fb0a72fdc1b7443ab3b8"
+    }
+  },
+  "software_tests": {
+    "focused_transfer_tests_passed": 117,
+    "public_suite_receipt": "results/public_verification.json",
+    "focused_is_subset_of_public_suite": true,
+    "bridge_tests_passed": 50
+  },
+  "skill_trials": {
+    "agent_evaluation": {
+      "status": "offline_prepared_fixture_trial",
+      "planned_sessions": 24,
+      "planned_stage_turns": 72,
+      "unique_snapshot_bodies": 56,
+      "authored_trajectories": 3,
+      "fictional_scenario_families": 1,
+      "offline_assertions_passed": 24,
+      "diagnostic_payloads": 108,
+      "real_external_actions": 0,
+      "benchmark_provider_calls": 0,
+      "observed_gap": "Staged histories and execution/postcondition traces require a separate versioned sidecar; categorical adapter outputs and response-shape checks have narrower scope than spontaneous advice and action success."
+    },
+    "knowledge_packaging": {
+      "status": "independent_offline_forward_trial",
+      "file_placements": 61,
+      "distinct_file_digests": 51,
+      "prepared_payload_checks": 72,
+      "focused_tests_passed": 87,
+      "exported_python_query": true,
+      "exported_mcp_stdio_query": true,
+      "installed_baltor_operations": 9,
+      "benchmark_provider_calls": 0
+    }
+  },
+  "evidence_boundaries": {
+    "full_archive_contains_coordinator_reference_files": true,
+    "target_projection": "payload_only",
+    "independent_domain_validation": false,
+    "independent_worker_safety_validation": false,
+    "baltor_admitted": false,
+    "baltor_served": false,
+    "redistribution_permission": "unresolved; preserve NOTICE.md"
+  },
+  "inference_scope": "The MCP, bridge and offline skill-trial checks dispatched zero calls through project model providers.",
+  "prior_attempt": {
+    "tag": "v0.1.0-rc.7",
+    "commit": "c804f753c59b58d09c704cc55fea5f72931fe32b",
+    "hosted_runs": [
+      36886246435,
+      36886246533
+    ],
+    "outcome": "export_gate_refused_equivalent_github_actions_origin",
+    "observed_origin": "https://github.com/alisonjieli-png/duecare-eval",
+    "correction": "Canonical identity now recognizes ordinary HTTPS and SSH URLs for the same exact reviewed repository. Ten positive and twenty negative origin fixtures preserve the repository boundary.",
+    "history_preserved": true
+  }
+}

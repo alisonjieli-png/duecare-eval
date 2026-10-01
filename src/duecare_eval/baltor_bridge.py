@@ -130,16 +130,30 @@ def _git(root, *arguments):
     return result.stdout.decode("utf-8").strip()
 
 
+def _canonical_public_origin(value):
+    """Recognize only ordinary clone URLs for the one public repository.
+
+    HTTPS and SSH may name their default port explicitly. No other host,
+    repository, userinfo, port, query, fragment or encoded path is accepted.
+    Refusal messages deliberately omit the supplied URL, which may be secret.
+    """
+    _require(type(value) is str and re.fullmatch(
+        r"(?:https://github\.com(?::443)?/|ssh://git@github\.com(?::22)?/|git@github\.com:)"
+        r"alisonjieli-png/duecare-eval(?:\.git)?", value) is not None,
+        "public_origin_required")
+    return PUBLIC_ORIGIN
+
+
 def _source_state(root):
     _require(Path(_git(root, "rev-parse", "--show-toplevel")).resolve() == root,
              "independent_public_checkout_required")
-    _require(_git(root, "remote", "get-url", "origin") == PUBLIC_ORIGIN, "public_origin_required")
+    origin = _canonical_public_origin(_git(root, "remote", "get-url", "origin"))
     project = _read(root, "pyproject.toml").decode("utf-8")
     _require(re.search(r'^name\s*=\s*"duecare-eval-public"\s*$', project, re.M), "public_project_required")
     revision = _git(root, "rev-parse", "HEAD")
     _require(re.fullmatch(r"[0-9a-f]{40,64}", revision), "source_revision_required")
     status = _git(root, "status", "--porcelain=v1", "--untracked-files=all")
-    return {"repository": PUBLIC_ORIGIN, "base_commit": revision,
+    return {"repository": origin, "base_commit": revision,
             "worktree_dirty": bool(status), "worktree_status_sha256": _digest(status.encode()),
             "content_binding": "exact_exported_file_hashes"}
 

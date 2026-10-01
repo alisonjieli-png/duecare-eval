@@ -30,4 +30,4 @@ Research cycles follow proposals, case generation, independent-model criticism, 
 
 Start with the [industry-pack guide](EXTENDING_DUECARE.md), then connect a prepared payload to an existing authorized runner. Preserve its exact input bytes, model/settings identity, budget and outcome receipt. The [skills](../skills/) cover authoring, integration and evidence review; the plugin profiles are declarative preparation formats.
 
-Local research and reporting continue automatically. Public releases use reviewed, dated exports. Release rc.7 adds knowledge-transfer interfaces and records the uncapped operating policy while preserving the rc.5 report's evidence snapshot. Ongoing private runs enter later reports after their own assessment and export checks.
+Local research and reporting continue automatically. Public releases use reviewed, dated exports. Release rc.8 adds knowledge-transfer interfaces and records the uncapped operating policy while preserving the rc.5 report's evidence snapshot. Ongoing private runs enter later reports after their own assessment and export checks.
